@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    
+    <style>
+        html, body{
+             margin: 0;
+             padding: 0;
+             box-sizing: border-box;
+        }
+        .header-section{
+            background: #333333;
+            color: #FFF;
+            border-bottom: 1px solid #CCC;
+            height: 60px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            z-index: 99999
+        }
+
+        .menu{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            width: 100%;
+            display: flex;
+            flex-flow: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .menu li{
+            border-bottom: 1px solid #000; 
+            display: flex;
+            width: inherit;
+            justify-content: flex-start;
+            align-items: center;
+            white-space: nowrap;
+            cursor: pointer;
+        }
+
+        .menu li:hover{
+            background: #333;
+            color: #FFF;
+        }
+
+        .menu li a{
+            display: flex;
+            justify-content: center;
+            flex-flow: row;
+            align-items: center;
+            white-space: nowrap;
+        }
+
+        .icon{
+            display: block;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+            text-align: center;
+            line-height: 50px;
+            /* background: #d9d9d9; */
+            height: 50px;
+            width: 50px;
+        }
+
+        /*THE MAGIC BEGINS HERE*/
+        .container{
+            width: 100%;
+            /* border: 1px solid #000; */
+            position: relative;
+            padding-top: 60px;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 260px auto;
+            transition: width 0.75s cubic-bezier(0.25, 0.1, 0.25, 1.0);
+            /*transition: width 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);*/
+        }
+
+        .menu-container{
+            background: #f4f4f4;
+            color: #333;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            overflow: hidden;
+            width: 260px;
+            transition: width 0.75s cubic-bezier(0.25, 0.1, 0.25, 1.0);
+            overflow-y: auto;
+        }
+
+        .collapse{
+            width: 50px;
+            grid-template-columns: 50px auto!important;
+        }
+        /*THE MAGIC ENDS HERE*/
+
+    </style>
+</head>
+<body>
+    <main class="main">
+        <div class="header-section">
+            <button id="hamburger">=</button>
+            <div>BRAND</div>
+        </div>
+        <div class="container">
+            <div class="menu-container">
+                <ul class="menu">
+                    <li><a><i class="fa fa-user icon"></i>Home</a></li>
+                    <li><a><i class="fa fa-info icon"></i>About Us</a></li>
+                    <li><a><i class="fa fa-eye icon"></i>Mission & Vision</a></li>
+                    <li><a><i class="fa fa-phone icon"></i>Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <div>CONTENT</div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#hamburger").click(function(){
+                $(".menu-container, .container").toggleClass("collapse");
+            });
+        });
+    </script>
+</body>
+</html>
