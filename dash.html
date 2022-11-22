@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-md bg-primary">
+    <nav class="navbar navbar-expand-md" style="background-color: #274C77;">
         <div class="container-fluid">
             <img src="img/1565034397472.jfif" alt="logo" class="logo rounded-circle">
             <a href="#" class="navbar-brand fs-2 fw-bolder text-white">&nbsp;Quezon City University</a>
@@ -64,65 +64,49 @@
     <section>
         <div class="container text-center">
             <h1>Announcements</h1>
-            <div id="carouselExampleControls" class="carousel slide align-self-center" data-bs-ride="carousel">
-                <div class="carousel-inner">
+            <div id="carouselExampleControls" class="carousel slide d-flex justify-content-center" data-bs-ride="carousel">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon text-body" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <div class="carousel-inner w-75 rounded-3 padding-5">
                     <div class="carousel-item active">
-                        <div class="card w-75 h-50">
+                        <div class="card p-3" style="background-color: #13212B;">
                             <div class="row align-items-center m-1">
                                 <div class="col-5">
-                                    <img src="img/image 1.png" alt="" class="img-thumbnail border-0">
+                                    <img src="img/Untitled design (1) 1.png" alt="" class="rounded-5 w-75">
                                 </div>
-                                <div class="col-7 text-start">
-                                    <h1>Admission open soon!</h1>
+                                <div class="col-7 text-start text-white">
+                                    <h1 class="text-white">Admission open soon!</h1>
                                     <span class="fs-4" style="text-align: justify;">The QCU admission is will be open at November 11, 2022. Are you looking for university that has good quality education? Quezon University is now here for you!</span>
-                                    <button class="btn btn-sub-1">DETAILS</button>
+                                    <br />
+                                    <div class="w-100 d-flex justify-content-end">
+                                        <button class="btn btn-sub-1">DETAILS</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="card w-75" style="background-color: #13212B;">
+                        <div class="card p-3" style="background-color: #13212B;">
                             <div class="row align-items-center m-1">
                                 <div class="col-5">
-                                    <img src="img/image 1.png" alt="" class="img-thumbnail border-0">
+                                    <img src="img/Untitled design (1) 1.png" alt="" class="rounded-5 w-75">
                                 </div>
-                                <div class="col-7 text-start">
-                                    <span class="fs-4" style="text-align: justify;">The Quezon University has different branches that may near to your location:</span>
-                                    <ul class="fs-5 fw-bolder">
-                                        <li>San Bartolome Campus</li>
-                                        <li>Batasan Campus</li>
-                                        <li>San Francisco Campus</li>
-                                    </ul>
-                                    <button class="btn btn-sub-1">KNOW MORE</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="card w-75">
-                            <div class="row align-items-center m-1">
-                                <div class="col-5">
-                                    <img src="img/image 1.png" alt="" class="img-thumbnail border-0">
-                                </div>
-                                <div class="col-7 text-start">
-                                    <span class="fs-4" style="text-align: justify;">The Quezon University has different branches that may near to your location:</span>
-                                    <ul class="fs-5 fw-bolder">
-                                        <li>San Bartolome Campus</li>
-                                        <li>Batasan Campus</li>
-                                        <li>San Francisco Campus</li>
-                                    </ul>
-                                    <button class="btn btn-sub-1">KNOW MORE</button>
+                                <div class="col-7 text-start text-white">
+                                    <h1 class="text-white">Admission open soon!</h1>
+                                    <span class="fs-4" style="text-align: justify;">The QCU admission is will be open at November 11, 2022. Are you looking for university that has good quality education? Quezon University is now here for you!</span>
+                                    <br />
+                                    <div class="w-100 d-flex justify-content-end">
+                                        <button class="btn btn-sub-1">DETAILS</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="carousel-control-next-icon text-body" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
@@ -230,7 +214,11 @@
             </div>
         </div>
     </section>
-    
+    <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50">
+        <div class="container text-center">
+            <small>Copyright &copy; Your Website</small>
+        </div>
+    </footer>
 
     <script src="css/bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
     <script src="js/loading.js"></script>
