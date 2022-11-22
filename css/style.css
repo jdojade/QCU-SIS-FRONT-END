@@ -122,6 +122,15 @@
   margin-top: 2em;
 }
 /*Pre loader*/
+.navbar-item .active{
+  background-color: #FFFFFF !important;
+  color: #274C77 !important;
+  filter: drop-shadow(0px 25px 0px #FFFFFF) drop-shadow(0px -25px 0px #FFFFFF);
+}
+.navbar{
+  margin: 0 !important;
+  padding: 0 !important;
+}
 
 section{
   margin-bottom: 4vh;
@@ -169,6 +178,7 @@ h1{
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-evenly;
+  align-items: center;
   align-content: center;
   border-radius: .5rem;
   box-shadow: 4px 6px 4px rgba(0, 0, 0, 0.25);
@@ -177,6 +187,14 @@ h1{
   background-color: #13212B;
   color: white !important;
 }
+.flex-item img:hover{
+  filter: invert(100%) grayscale(100%);
+}
 .carousel-control-next-icon, .carousel-control-prev-icon{
   filter: invert(100%);
+}
+.img-icon{
+  width: 9rem;
+  display: flex;
+  justify-self: center;
 }
