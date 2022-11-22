@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-5.2.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
     
     <style>
         html, body{
@@ -84,11 +87,10 @@
             grid-template-columns: 260px auto;
             transition: width 0.75s cubic-bezier(0.25, 0.1, 0.25, 1.0);
         }
-        .container-cus.collapse{
+        .container-cus.magic{
             margin-left: 260px;
             grid-template-columns: 260px auto;
         }
-
         .menu-container{
             background: #f4f4f4;
             color: #333;
@@ -103,20 +105,19 @@
             height: 100vh;
             padding-top: 60px;
         }
-
-        .menu-container.collapse{
+        .menu-container.magic{
             width: 260px;
             grid-template-columns: 50px auto!important;
         }
         /*THE MAGIC ENDS HERE*/
 
         /*****************************************/
-        .navbar-toggler{
+        .sample{
             background-color: rgba(0, 0, 0, 0);
             border: rgba(0, 0, 0, 0);
         }
-        .navbar-toggler div span{
-            background-color: #CCC;
+        .sample div span{
+            background-color: #FFF;
         }
         .animated-icon3 {
         width: 30px;
@@ -176,7 +177,7 @@
         transform-origin: left center;
         }
 
-        .animated-icon3.open span:nth-child(1) {
+        .animated-icon3.magic span:nth-child(1) {
         -webkit-transform: rotate(45deg);
         -moz-transform: rotate(45deg);
         -o-transform: rotate(45deg);
@@ -185,12 +186,12 @@
         left: 8px;
         }
 
-        .animated-icon3.open span:nth-child(2) {
+        .animated-icon3.magic span:nth-child(2) {
         width: 0%;
         opacity: 0;
         }
 
-        .animated-icon3.open span:nth-child(3) {
+        .animated-icon3.magic span:nth-child(3) {
         -webkit-transform: rotate(-45deg);
         -moz-transform: rotate(-45deg);
         -o-transform: rotate(-45deg);
@@ -204,13 +205,32 @@
 </head>
 <body>
     <main class="main">
-        <div class="header-section">
-            <button class="navbar-toggler" type="button" id="hamburger">
-                <div class="animated-icon3"><span></span><span></span><span></span></div>
-            </button>
-            <!--<button id="hamburger">=</button>-->
-            <div>BRAND</div>
-        </div>
+        <nav class="navbar navbar-expand-md fixed-top" style="background-color: #274C77;">
+            <div class="container-fluid">
+                <button class="sample" type="button" id="hamburger">
+                    <div class="animated-icon3"><span></span><span></span><span></span></div>
+                </button><span class="text-white fs-3">&nbsp;|&nbsp;&nbsp;</span>
+                <img src="img/1565034397472.jfif" alt="logo" class="logo rounded-circle">
+                <a href="#" class="navbar-brand fs-5 fw-900 text-white">&nbsp;Quezon City University</a>
+                <button data-bs-toggle="collapse" class="navbar-toggle collapse" type="button" data-bs-target="#navcol-1" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="visually-hidden">Toggle navigation</span>
+                    <span class="navbar-toggle-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse justify-content-end" id="navcol-1">
+                    <ul class="navbar nav">
+                        <li class="navbar-item">
+                            <a href="#" class="nav-link text-white fs-6 fw-900 active">HOME</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#" class="nav-link text-white fs-6 fw-900">CONTACT</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#" class="nav-link text-white fs-6 fw-900">ABOUT QCU</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
         <div class="menu-container">
             <ul class="menu">
                 <li><a><i class="fa fa-user icon"></i>Home</a></li>
@@ -229,8 +249,7 @@
     <script>
         $(document).ready(function(){
             $("#hamburger").click(function(){
-                $(".menu-container, .container-cus").toggleClass("collapse");
-                $(".animated-icon3").toggleClass("open");
+                $(".menu-container, .container-cus, .animated-icon3").toggleClass("magic");
             });
         });
     </script>
