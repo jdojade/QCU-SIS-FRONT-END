@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    <link rel="stylesheet" href="css/fontawesome-free-6.2.1-web/css/all.min.css"/>
     <link rel="stylesheet" href="css/bootstrap-5.2.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nav.css">
@@ -43,17 +43,21 @@
         }
 
         .menu li{
-            border-bottom: 1px solid #000; 
             display: flex;
             width: inherit;
             justify-content: flex-start;
             align-items: center;
             white-space: nowrap;
             cursor: pointer;
+            padding: 5px;
         }
 
         .menu li:hover{
-            background: #333;
+            background: #274C77;
+            color: #FFF;
+        }
+        .menu li.active{
+            background: #274C77;
             color: #FFF;
         }
 
@@ -66,15 +70,17 @@
         }
 
         .icon{
-            display: block;
+            display: flex;
             justify-content: center;
             flex-wrap: wrap;
             align-items: center;
             text-align: center;
             line-height: 50px;
             /* background: #d9d9d9; */
-            height: 50px;
-            width: 50px;
+            height: 40px;
+            width: 40px;
+            align-content: center;
+            margin-right: 9px;
         }
 
         /*THE MAGIC BEGINS HERE*/
@@ -92,8 +98,9 @@
             grid-template-columns: 260px auto;
         }
         .menu-container{
-            background: #f4f4f4;
-            color: #333;
+            background: rgba(39, 76, 119, 0.8);
+
+            color: #FFF;
             display: flex;
             justify-content: flex-start;
             align-items: flex-start;
@@ -103,23 +110,25 @@
             overflow-y: auto;
             position: fixed;
             height: 100vh;
-            padding-top: 60px;
+            padding-top: 70px;
+            z-index: 1000;
         }
         .menu-container.magic{
             width: 260px;
             grid-template-columns: 50px auto!important;
         }
+
         /*THE MAGIC ENDS HERE*/
 
         /*****************************************/
-        .sample{
+        .btn-hamburger{
             background-color: rgba(0, 0, 0, 0);
             border: rgba(0, 0, 0, 0);
         }
-        .sample div span{
+        .btn-hamburger div span{
             background-color: #FFF;
         }
-        .animated-icon3 {
+        .icon-hamburger {
         width: 30px;
         height: 30px;
         position: relative;
@@ -135,7 +144,7 @@
         cursor: pointer;
         }
 
-        .animated-icon3 span {
+        .icon-hamburger span {
         display: block;
         position: absolute;
         height: 3px;
@@ -153,7 +162,7 @@
         transition: .25s ease-in-out;
         }
 
-        .animated-icon3 span:nth-child(1) {
+        .icon-hamburger span:nth-child(1) {
         top: 0px;
         -webkit-transform-origin: left center;
         -moz-transform-origin: left center;
@@ -161,7 +170,7 @@
         transform-origin: left center;
         }
 
-        .animated-icon3 span:nth-child(2) {
+        .icon-hamburger span:nth-child(2) {
         top: 10px;
         -webkit-transform-origin: left center;
         -moz-transform-origin: left center;
@@ -169,7 +178,7 @@
         transform-origin: left center;
         }
 
-        .animated-icon3 span:nth-child(3) {
+        .icon-hamburger span:nth-child(3) {
         top: 20px;
         -webkit-transform-origin: left center;
         -moz-transform-origin: left center;
@@ -177,7 +186,7 @@
         transform-origin: left center;
         }
 
-        .animated-icon3.magic span:nth-child(1) {
+        .icon-hamburger.magic span:nth-child(1) {
         -webkit-transform: rotate(45deg);
         -moz-transform: rotate(45deg);
         -o-transform: rotate(45deg);
@@ -186,12 +195,12 @@
         left: 8px;
         }
 
-        .animated-icon3.magic span:nth-child(2) {
+        .icon-hamburger.magic span:nth-child(2) {
         width: 0%;
         opacity: 0;
         }
 
-        .animated-icon3.magic span:nth-child(3) {
+        .icon-hamburger.magic span:nth-child(3) {
         -webkit-transform: rotate(-45deg);
         -moz-transform: rotate(-45deg);
         -o-transform: rotate(-45deg);
@@ -199,22 +208,109 @@
         top: 21px;
         left: 8px;
         }
+        .navbar-toggler-icon{
+            color: #FFF ;
+        }
+        .navbar-toggler{
+            background-color: rgba(0, 0, 0, 0);
+            border: rgba(0, 0, 0, 0);
+        }
+        .navbar-toggler div span{
+            background-color: #FFF;
+        }
+        .sample{
+            width: 30px;
+            height: 30px;
+            position: relative;
+            margin: 0px;
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+            -webkit-transition: .5s ease-in-out;
+            -moz-transition: .5s ease-in-out;
+            -o-transition: .5s ease-in-out;
+            transition: .5s ease-in-out;
+            cursor: pointer;
+        }
+        .sample span{
+            display: block;
+            position: absolute;
+            height: 3px;
+            width: 100%;
+            border-radius: 9px;
+            opacity: 1;
+            left: 0;
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+            -webkit-transition: .25s ease-in-out;
+            -moz-transition: .25s ease-in-out;
+            -o-transition: .25s ease-in-out;
+            transition: .25s ease-in-out;
+        }
+        
+        .sample span:nth-child(1) {
+            top: 0px;
+            -webkit-transform-origin: left center;
+            -moz-transform-origin: left center;
+            -o-transform-origin: left center;
+            transform-origin: left center;
+        }
 
+        .sample span:nth-child(2) {
+        top: 10px;
+        -webkit-transform-origin: left center;
+        -moz-transform-origin: left center;
+        -o-transform-origin: left center;
+        transform-origin: left center;
+        }
 
+        .sample span:nth-child(3) {
+        top: 20px;
+        -webkit-transform-origin: left center;
+        -moz-transform-origin: left center;
+        -o-transform-origin: left center;
+        transform-origin: left center;
+        }
+
+        .sample.show span:nth-child(1) {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        top: 0px;
+        left: 8px;
+        }
+
+        .sample.show span:nth-child(2) {
+        width: 0%;
+        opacity: 0;
+        }
+
+        .sample.show span:nth-child(3) {
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        top: 21px;
+        left: 8px;
+        }
     </style>
 </head>
 <body>
     <main class="main">
         <nav class="navbar navbar-expand-md fixed-top" style="background-color: #274C77;">
             <div class="container-fluid">
-                <button class="sample" type="button" id="hamburger">
-                    <div class="animated-icon3"><span></span><span></span><span></span></div>
-                </button><span class="text-white fs-3">&nbsp;|&nbsp;&nbsp;</span>
+                <button class="btn-hamburger" type="button" id="hamburger">
+                    <div class="icon-hamburger"><span></span><span></span><span></span></div>
+                </button><span class="text-white fs-3">&nbsp;|&nbsp;</span>
                 <img src="img/1565034397472.jfif" alt="logo" class="logo rounded-circle">
-                <a href="#" class="navbar-brand fs-5 fw-900 text-white">&nbsp;Quezon City University</a>
-                <button data-bs-toggle="collapse" class="navbar-toggle collapse" type="button" data-bs-target="#navcol-1" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="visually-hidden">Toggle navigation</span>
-                    <span class="navbar-toggle-icon"></span>
+                <a href="#" class="navbar-brand fs-6 fw-900 text-white">&nbsp;Quezon City University</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <!--<div class="sample"><span></span><span></span><span></span></div>-->
                 </button>
                 <div class="navbar-collapse collapse justify-content-end" id="navcol-1">
                     <ul class="navbar nav">
@@ -233,10 +329,15 @@
         </nav>
         <div class="menu-container">
             <ul class="menu">
-                <li><a><i class="fa fa-user icon"></i>Home</a></li>
-                <li><a><i class="fa fa-info icon"></i>About Us</a></li>
-                <li><a><i class="fa fa-eye icon"></i>Mission & Vision</a></li>
-                <li><a><i class="fa fa-phone icon"></i>Contact Us</a></li>
+                <li><a><i class="fa-sharp fa-solid fa-clipboard icon"></i>PRE-ENROLLMENT</a></li>
+                <li><a><i class="fa-solid fa-file-lines icon"></i>REQUEST DOCUMENT</a></li>
+                <li><a><i class="fa-solid fa-table-list icon"></i>GRADESLIP</a></li>
+                <li><a><i class="fa-solid fa-list icon"></i>CURRICULUM</a></li>
+                <li><a><i class="fa-solid fa-mobile-screen icon"></i>FACULTY EVALUATION</a></li>
+                <li><a><i class="fa-solid fa-credit-card icon"></i>VACCINATION</a></li>
+                <li><a><i class="fa-solid fa-tag icon"></i>EVENTS</a></li>
+                <li><a><i class="fa-solid fa-calendar-days icon"></i>UNIVERSITY CALENDAR</a></li>
+                <li><a><i class="fa-solid fa-info icon"></i>FAQS</a></li>
             </ul>
         </div>
         <div class="container-cus">
@@ -249,7 +350,7 @@
     <script>
         $(document).ready(function(){
             $("#hamburger").click(function(){
-                $(".menu-container, .container-cus, .animated-icon3").toggleClass("magic");
+                $(".menu-container, .container-cus, .icon-hamburger").toggleClass("magic");
             });
         });
     </script>
