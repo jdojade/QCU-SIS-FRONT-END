@@ -9,305 +9,17 @@
     <link rel="stylesheet" href="css/bootstrap-5.2.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nav.css">
-    
-    <style>
-        html, body{
-             margin: 0;
-             padding: 0;
-             box-sizing: border-box;
-        }
-        .header-section{
-            background: #333333;
-            color: #FFF;
-            border-bottom: 1px solid #CCC;
-            height: 60px;
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            position: fixed;
-            width: 100%;
-            margin: 0;
-            padding: 0;
-            z-index: 99999
-        }
-
-        .menu{
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            width: 100%;
-            display: flex;
-            flex-flow: column;
-            justify-content: flex-start;
-            align-items: center;
-        }
-
-        .menu li{
-            display: flex;
-            width: inherit;
-            justify-content: flex-start;
-            align-items: center;
-            white-space: nowrap;
-            cursor: pointer;
-            padding: 5px;
-        }
-
-        .menu li:hover{
-            background: #274C77;
-            color: #FFF;
-        }
-        .menu li.active{
-            background: #274C77;
-            color: #FFF;
-        }
-
-        .menu li a{
-            display: flex;
-            justify-content: center;
-            flex-flow: row;
-            align-items: center;
-            white-space: nowrap;
-        }
-
-        .icon{
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            align-items: center;
-            text-align: center;
-            line-height: 50px;
-            /* background: #d9d9d9; */
-            height: 40px;
-            width: 40px;
-            align-content: center;
-            margin-right: 9px;
-        }
-
-        /*THE MAGIC BEGINS HERE*/
-        .container-cus{
-            border: 1px solid #000;
-            position: relative;
-            padding-top: 60px;
-            margin-left: 50px;
-
-            transition: width 0.75s cubic-bezier(0.25, 0.1, 0.25, 1.0);
-        }
-        .container-cus.magic{
-            margin-left: 260px;
-            grid-template-columns: 260px auto;
-        }
-        .menu-container{
-            background: rgba(39, 76, 119, 0.8);
-            color: #FFF;
-            display: flex;
-            justify-content: flex-start;
-            align-items: flex-start;
-            overflow: hidden;
-            width: 50px;
-            transition: width 0.75s cubic-bezier(0.25, 0.1, 0.25, 1.0);
-            overflow-y: auto;
-            position: fixed;
-            height: 100vh;
-            padding-top: 70px;
-            z-index: 1000;
-        }
-        .menu-container.magic{
-            width: 260px;
-            grid-template-columns: 50px auto!important;
-        }
-        .menu-container::-webkit-scrollbar {
-            display: none;
-        }
-        /*THE MAGIC ENDS HERE*/
-
-        /*****************************************/
-        .btn-hamburger{
-            background-color: rgba(0, 0, 0, 0);
-            border: rgba(0, 0, 0, 0);
-        }
-        .btn-hamburger div span{
-            background-color: #FFF;
-        }
-        .icon-hamburger {
-        width: 30px;
-        height: 30px;
-        position: relative;
-        margin: 0px;
-        -webkit-transform: rotate(0deg);
-        -moz-transform: rotate(0deg);
-        -o-transform: rotate(0deg);
-        transform: rotate(0deg);
-        -webkit-transition: .5s ease-in-out;
-        -moz-transition: .5s ease-in-out;
-        -o-transition: .5s ease-in-out;
-        transition: .5s ease-in-out;
-        cursor: pointer;
-        }
-
-        .icon-hamburger span {
-        display: block;
-        position: absolute;
-        height: 3px;
-        width: 100%;
-        border-radius: 9px;
-        opacity: 1;
-        left: 0;
-        -webkit-transform: rotate(0deg);
-        -moz-transform: rotate(0deg);
-        -o-transform: rotate(0deg);
-        transform: rotate(0deg);
-        -webkit-transition: .25s ease-in-out;
-        -moz-transition: .25s ease-in-out;
-        -o-transition: .25s ease-in-out;
-        transition: .25s ease-in-out;
-        }
-
-        .icon-hamburger span:nth-child(1) {
-        top: 0px;
-        -webkit-transform-origin: left center;
-        -moz-transform-origin: left center;
-        -o-transform-origin: left center;
-        transform-origin: left center;
-        }
-
-        .icon-hamburger span:nth-child(2) {
-        top: 10px;
-        -webkit-transform-origin: left center;
-        -moz-transform-origin: left center;
-        -o-transform-origin: left center;
-        transform-origin: left center;
-        }
-
-        .icon-hamburger span:nth-child(3) {
-        top: 20px;
-        -webkit-transform-origin: left center;
-        -moz-transform-origin: left center;
-        -o-transform-origin: left center;
-        transform-origin: left center;
-        }
-
-        .icon-hamburger.magic span:nth-child(1) {
-        -webkit-transform: rotate(45deg);
-        -moz-transform: rotate(45deg);
-        -o-transform: rotate(45deg);
-        transform: rotate(45deg);
-        top: 0px;
-        left: 8px;
-        }
-
-        .icon-hamburger.magic span:nth-child(2) {
-        width: 0%;
-        opacity: 0;
-        }
-
-        .icon-hamburger.magic span:nth-child(3) {
-        -webkit-transform: rotate(-45deg);
-        -moz-transform: rotate(-45deg);
-        -o-transform: rotate(-45deg);
-        transform: rotate(-45deg);
-        top: 21px;
-        left: 8px;
-        }
-        .navbar-toggler-icon{
-            color: #FFF ;
-        }
-        .navbar-toggler{
-            background-color: rgba(0, 0, 0, 0);
-            border: rgba(0, 0, 0, 0);
-        }
-        .navbar-toggler div span{
-            background-color: #FFF;
-        }
-        .sample{
-            width: 30px;
-            height: 30px;
-            position: relative;
-            margin: 0px;
-            -webkit-transform: rotate(0deg);
-            -moz-transform: rotate(0deg);
-            -o-transform: rotate(0deg);
-            transform: rotate(0deg);
-            -webkit-transition: .5s ease-in-out;
-            -moz-transition: .5s ease-in-out;
-            -o-transition: .5s ease-in-out;
-            transition: .5s ease-in-out;
-            cursor: pointer;
-        }
-        .sample span{
-            display: block;
-            position: absolute;
-            height: 3px;
-            width: 100%;
-            border-radius: 9px;
-            opacity: 1;
-            left: 0;
-            -webkit-transform: rotate(0deg);
-            -moz-transform: rotate(0deg);
-            -o-transform: rotate(0deg);
-            transform: rotate(0deg);
-            -webkit-transition: .25s ease-in-out;
-            -moz-transition: .25s ease-in-out;
-            -o-transition: .25s ease-in-out;
-            transition: .25s ease-in-out;
-        }
-        
-        .sample span:nth-child(1) {
-            top: 0px;
-            -webkit-transform-origin: left center;
-            -moz-transform-origin: left center;
-            -o-transform-origin: left center;
-            transform-origin: left center;
-        }
-
-        .sample span:nth-child(2) {
-        top: 10px;
-        -webkit-transform-origin: left center;
-        -moz-transform-origin: left center;
-        -o-transform-origin: left center;
-        transform-origin: left center;
-        }
-
-        .sample span:nth-child(3) {
-        top: 20px;
-        -webkit-transform-origin: left center;
-        -moz-transform-origin: left center;
-        -o-transform-origin: left center;
-        transform-origin: left center;
-        }
-
-        .sample.show span:nth-child(1) {
-        -webkit-transform: rotate(45deg);
-        -moz-transform: rotate(45deg);
-        -o-transform: rotate(45deg);
-        transform: rotate(45deg);
-        top: 0px;
-        left: 8px;
-        }
-
-        .sample.show span:nth-child(2) {
-        width: 0%;
-        opacity: 0;
-        }
-
-        .sample.show span:nth-child(3) {
-        -webkit-transform: rotate(-45deg);
-        -moz-transform: rotate(-45deg);
-        -o-transform: rotate(-45deg);
-        transform: rotate(-45deg);
-        top: 21px;
-        left: 8px;
-        }
-    </style>
 </head>
 <body>
-    <main class="main">
         <nav class="navbar navbar-expand-md fixed-top" style="background-color: #274C77;">
             <div class="container-fluid p-0" >
-                <div class="d-flex flex-colum align-items-center"><button class="btn-hamburger" type="button" id="hamburger">
-                    <div class="icon-hamburger"><span></span><span></span><span></span></div>
-                </button><span class="text-white fs-3">&nbsp;|&nbsp;</span>
-                <img src="img/1565034397472.jfif" alt="logo" class="logo rounded-circle">
-                <a href="#" class="navbar-brand fs-6 fw-900 text-white">&nbsp;Quezon City University</a></div>
+                <div class="d-flex flex-colum align-items-center">
+                    <button class="btn-hamburger" type="button" id="hamburger">
+                        <div class="icon-hamburger"><span></span><span></span><span></span></div>
+                    </button><span class="text-white fs-3">&nbsp;|&nbsp;</span>
+                    <img src="img/1565034397472.jfif" alt="logo" class="logo rounded-circle">
+                    <a href="#" class="navbar-brand fs-6 fw-900 text-white">&nbsp;Quezon City University</a>
+                </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -506,7 +218,32 @@
                 </div>
             </section>
         </div>
-    </main>
+        <footer id="sticky-footer" class="flex-shrink-0 py-1 text-white align-content-center" style="background-color: #274C77;">
+            <div class="container">
+                <div class="row align-items-end">
+                    <div class="col-3">
+                        <span>VISIT AND CONTACT US ON:</span><br />
+                        <span><a href="https://www.facebook.com/qcu1994" class="text-decoration-none text-white"><i class="fa-brands fa-facebook"></i>&nbsp;https://www.facebook.com/qcu1994</a></span><br />
+                        <span><a href="https://qcu.edu.ph/" class="text-decoration-none text-white"><i class="fa-sharp fa-solid fa-earth-asia"></i>&nbsp;https://qcu.edu.ph/</a></span>
+                    </div>
+                    <div class="col-2">
+                        <span><i class="fa-solid fa-envelope"></i>&nbsp;registrar@qcu.edu.ph</span><br />
+                        <span><i class="fa-solid fa-mobile-screen-button"></i>&nbsp;288063470</span>
+                    </div>
+                    <div class="col-2 text-center">
+                        <img src="img/1565034397472.jfif" class="rounded-circle w-50" alt="">
+                    </div>
+                    <div class="col-3">
+                        <span>Terms and Conditions</span><br />
+                        <span>Frequently Asked Questions</span>
+                    </div>
+                    <div class="col-2 text-end">
+                        <span>Since 1994</span><br />
+                        <span>Copyright</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script>
         $(document).ready(function(){
@@ -515,5 +252,10 @@
             });
         });
     </script>
+    <script src="css/bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
+    <!--<script src="css/bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="css/bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>-->
+
 </body>
 </html>

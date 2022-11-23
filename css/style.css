@@ -122,15 +122,7 @@
   margin-top: 2em;
 }
 /*Pre loader*/
-.navbar-item .active{
-  background-color: #FFFFFF !important;
-  color: #274C77 !important;
-  filter: drop-shadow(0px 10px 0px #FFFFFF) drop-shadow(0px -10px 0px #FFFFFF);
-}
-.navbar{
-  margin: 0 !important;
-  padding: 5px !important;
-}
+
 
 section{
   margin-bottom: 4vh;
