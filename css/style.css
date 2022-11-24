@@ -147,6 +147,14 @@ h1{
   background-color: #13212B;
   color: #FFFFFF;
 }
+.btn-sub-2{
+  border-color: #274C77;
+  color: #13212B;
+}
+.btn-sub-2:hover{
+  background-color: #13212B;
+  color: #FFFFFF;
+}
 .flex-container {
   display: flex;
   flex-flow: row wrap;
@@ -189,4 +197,39 @@ h1{
   width: 9rem;
   display: flex;
   justify-self: center;
+}
+.login-container{
+  background-color: #274C77;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.login{
+  background-color: white;
+  width: 65%;
+  height: 75vh;
+  display: flex;
+  align-items: center;
+}
+.sign-in{
+  font-size: 2.7rem;
+}
+.welcome{
+  position: absolute;
+  color: white;
+  font-size: 3rem;
+  flex-wrap: wrap;;
+  font-weight: bolder;
+  width: 300px;
+  top: 5vh;
+  right: 2vw;
+}
+.student{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 30rem;
+}
+.btn-shadow{
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.52);
+  border-radius: 10px;
 }
