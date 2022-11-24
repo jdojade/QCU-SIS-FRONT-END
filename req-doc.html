@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap-5.2.2-dist/css/bootstrap.min.css">>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/fontawesome-free-6.2.1-web/css/all.css" type="text/css">
+    <link rel="stylesheet" href="css/style0.css">
+    <title>Request Document</title>
+</head>
+<div class="container-fluid">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+              <img src="src/QCU Logo.png" alt="QCU_Logo" width="60" height="60"> &nbsp;
+              QUEZON CITY UNIVERSITY
+            </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-0 mb-lg-0 ">
+            <li class="nav-item px-3 nav-active">
+              <a class="nav-link active" aria-current="page" href="#">HOME</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="#">ABOUT US</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="#">CONTACT</a>
+            </li>
+            <li class="nav-item dropdown px-3">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img class="profile" src="src/kt-concept.jpg" alt="profile">
+                
+              </a>
+              <ul class="dropdown-menu dropdown-menu-lg-end dd-cont" aria-labelledby="navbarDropdownMenuLink" id="dropdown-content" >
+                <li><a class="dropdown-item" href="#"><span class="icon px-2"><i class="fa-sharp fa-solid fa-user"></i></span></i> <span>Profile</span> </a></li>
+                <li><a class="dropdown-item" href="#"><span class="icon px-2"><i class="fa-sharp fa-solid fa-desktop"></i></span></i> <span>Dashboard</span></a></li>
+                <li><a class="dropdown-item" href="#"><span class="icon px-2"><i class="fa-sharp fa-solid fa-inbox"></i></span></i> <span>Inbox</span></a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#"><span class="icon px-2"><i class="fa-sharp fa-solid fa-arrow-right-from-bracket"></i></span></i> <span>Logout</span></a></li>
+              </ul>
+            </li>
+          
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+
+    <!-- start ng request doc page -->
+
+    <div class="container m-auto req">
+        <form action="#form2" class="request-form" id="form1">
+            <h1>REQUEST DOCUMENTS<i class="fa-solid fa-file-circle-check fa-2x"></i>   </h1>
+            <hr class="my-2">&nbsp;
+            
+                <p>Are you requesting for your specific documents? you can fill up this form to send a request. 
+                    This section asks for your to provide what kind of document you are requesting and other information about it. 
+                    Please answer accurately.</p>
+                    <br>
+                
+        <!-- start ng form -->
+                <div class="form-floating my-3">
+                    <input type="email" class="form-control" id="floatingEmail" placeholder="Email" required>
+                    <label for="floatingEmail">Email</label>
+                </div>
+
+                <div class="form-floating my-3">
+                    <input type="text" class="form-control" id="floatingDocument" placeholder="Document" required>
+                    <label for="floatingDocument">Document</label>
+                </div>
+
+                <div class="form-floating my-3">
+                    <input type="text" class="form-control" id="floatingPurpose" placeholder="Purpose" required>
+                    <label for="floatingPurpose">Purpose</label>
+                </div>
+
+                <div class="form-floating my-3">
+                    <input type="date" class="form-control" id="floatingDate" placeholder="Date Needed" required>
+                    <label for="floatingDate">Date Needed</label>
+                </div>
+
+                <div class="form-floating my-3">
+                    <input type="text" class="form-control" id="floatingAddress" placeholder="Address to (Put N/A if not applicable)" required>
+                    <label for="floatingAddress">Address to (Put N/A if not applicable)</label>
+                </div>
+
+                <button type="button" class="btn btn-primary px-5 my-5 ms-3" type="submit">SUBMIT</button>
+                <button type="button" class="btn btn-outline-primary px-5 my-5 me-3">CANCEL</button>
+                
+                    
+
+                    
+        </form>
+
+    </div>
+
+</div>
+<body>
+    
+</body>
+</html>
