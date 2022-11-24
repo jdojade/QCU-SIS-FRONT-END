@@ -1,0 +1,351 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Inbox</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="img/qcu-logo.png" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+ 
+
+    <!-- Template Main CSS File -->
+    <link href="css/inbox.css" rel="stylesheet">
+  </head>
+<body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+      <div class="d-flex align-items-center justify-content-between">
+        <i class="bi bi-list toggle-sidebar-btn"></i>
+          <a href="studentdashboard.html" class="logo d-inline-flex align-items-center">
+          <img src="img/qcu-logo.png" alt="">
+          <span class="d-none d-lg-block">Quezon City University</span>
+        </a>  
+      </div>
+    <!-- End Logo -->
+
+   <!---    End Search Bar -->
+
+      <nav class="header-nav ms-auto">
+        <ul class="collapse d-flex align-items-center ">
+            <li class="nav-item ">
+            <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Inbox</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">About QCU</a>
+            </li>
+            <li class="nav-item dropdown pe-3"> 
+            <a class="nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+            <img src="img/qcu-logo.png" alt="Profile" class="rounded-circle">&nbsp;
+            <span class="d-none d-md-block dropdown-toggle"></span>
+            </a>
+    <!-- End Profile Iamge Icon -->
+
+        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+          <li class="dropdown-header">
+              <h6>Kevin Anderson</h6>
+          </li>
+          <li>
+              <hr class="dropdown-divider">
+          </li>
+          <li>
+            <a class="dropdown-item d-flex align-items-center" href="">
+              <i class="bi bi-person"></i>
+              <span>Edit Profile</span>
+            </a>
+          </li>
+        <li>
+              <hr class="dropdown-divider">
+            </li>
+          <li>
+            <a class="dropdown-item d-flex align-items-center" href="">
+              <i class="bi bi-exclamation-circle"></i>
+              <span>Request Status</span>
+            </a>
+          </li>
+        <li>
+              <hr class="dropdown-divider">
+            </li>
+          <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li>
+              <a class="dropdown-item d-flex align-items-center text-danger" href="#">
+                <i class="bi bi-box-arrow-right"></i>
+                <span>Sign Out</span>
+              </a>
+            </li>
+            </ul><!-- End Profile Dropdown Items -->
+        </li><!-- End Profile Nav -->
+    </nav><!-- End Icons Navigation -->
+</header><!-- End Header -->
+
+    <!-- ======= Sidebar ======= -->
+    <aside id="sidebar" class="sidebar">
+        <ul class="sidebar-nav" id="sidebar-nav">
+        <li class="nav-item">
+        <a class="nav-link " href="">
+            <i class="bi bi-grid"></i>
+            <span>DASHBOARD</span>
+        </a>
+    </li><!-- End Dashboard Nav -->
+        <li class="nav-heading">Pages</li>
+        <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <i class="bi bi-person"></i>
+          <span>PROFILE</span>
+        </a>
+    </li><!-- End PROFILE Page Nav -->
+        <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+            <i class="bi bi-files"></i>
+            <span>REQUEST DOCUMENT</span>
+        </a>
+    </li><!-- End REQUEST DOCUMENT Page Nav -->
+        <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+            <i class="bi bi-file-earmark-text"></i>
+            <span>GRADESLIP</span>
+        </a>
+    </li><!-- End GRADESLIP Page Nav -->
+        <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#icons-nav" data-bs-toggle="collapse" href="#">
+            <i class="bi bi-pencil-square"></i><span>CURRICULUM</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="icons-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+        <li>
+            <a href="">
+            <i class="bi bi-circle"></i><span>VIEW</span>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <i class="bi bi-circle"></i><span>EVALUATE</span>
+            </a>
+        </li>
+        </ul>
+    </li><!-- End CURRICULUM Nav -->
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+            <i class="bi bi-box-arrow-in-right"></i>
+             <span>FACULTY EVALUATION</span>
+        </a>
+    </li><!-- End FACULTY EVALUATION Page Nav -->
+        <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+            <i class="bi bi-postcard"></i>
+            <span>VACCINATION</span>
+        </a>
+    </li><!-- End VACCINATION Page Nav -->
+        <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+            <i class="bi bi-calendar-event"></i>
+            <span>EVENTS</span>
+        </a>
+    </li><!-- End EVENTS Page Nav -->
+        <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+            <i class="bi bi-calendar-date"></i>
+            <span>UNIVERSITY CALENDAR</span>
+        </a>
+    </li><!-- End UNIVERSITY CALENDAR Page Nav -->
+        <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
+            <i class="bi bi-question-circle"></i><span>F.A.Q</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+            <li>
+            <a href="">
+                <i class="bi bi-circle"></i><span>Chart.js</span>
+            </a>
+            </li>
+            <li>
+            <a href="">
+              <i class="bi bi-circle"></i><span>ApexCharts</span>
+            </a>
+            </li>
+            </ul>
+        </li><!-- End FAQS Nav -->
+    </ul>
+</aside><!-- End Sidebar-->
+    <main id="main" class="main">
+      <div class="aside-header">
+        <span class="title">Mail Service</span>
+        <p class="description">amiahburton@gmail.com</p>
+      </div>
+      
+      <div class="search-bar">
+        <form class="search-form d-flex align-items-center " method="POST" action="#">
+        <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+        <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+        </form>
+        </div>
+        <div class="sender d-flex align-self-center">
+          <a href="#">John Doe</a> <span>to</span><a href="#">me</a>
+          <div class="actions dropdown">
+            <a class="icon" href="#" data-toggle="dropdown"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+            <div class="dropdown-menu" role="menu">
+              <a class="dropdown-item" href="#">Mark as read</a>
+              <a class="dropdown-item" href="#">Mark as unread</a>
+              <a class="dropdown-item" href="#">Spam</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-danger" href="#">Delete</a>
+            </div>
+          </div>
+        </div>
+      </div>
+          <div class="date">Nov 20, 11:20</div>
+        </div>
+        <div class="row">
+        <div class="list-group col-3" id="list-tab" role="tablist">
+            <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home"">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">QCU Admission</h5>
+                <small>3 days ago</small>
+              </div>
+              <p class="mb-1">Some placeholder content in a paragraph.</p>
+              <small>And some small print.</small>
+            </a>
+            <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">List group item heading</h5>
+                <small class="text-muted">3 days ago</small>
+              </div>
+              <p class="mb-1">Some placeholder content in a paragraph.</p>
+              <small class="text-muted">And some muted small print.</small>
+            </a>
+            <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">List group item heading</h5>
+                <small class="text-muted">3 days ago</small>
+              </div>
+              <p class="mb-1">Some placeholder content in a paragraph.</p>
+              <small class="text-muted">And some muted small print.</small>
+            </a>
+            <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">List group item heading</h5>
+                  <small class="text-muted">3 days ago</small>
+                </div>
+                <p class="mb-1">Some placeholder content in a paragraph.</p>
+                <small class="text-muted">And some muted small print.</small>
+              </a>
+          </div>
+          <div class="col-8">
+            
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                <p>Hello,</p>
+                <br>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                <br>
+                <p>Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.</p>
+                <br>
+                <p><strong>Regards</strong>,<br> John Doe</p>
+              </div>
+              <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                <p>Hello,</p>
+                <br>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                <br>
+                <p>Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.</p>
+                <br>
+                <p><strong>Regards</strong>,<br> John Doe</p>
+              </div>
+              <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                <p>Hello,</p>
+                <br>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                <br>
+                <p>Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.</p>
+                <br>
+                <p><strong>Regards</strong>,<br> John Doe</p>
+              </div>
+              <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+                <p>Hello,</p>
+                <br>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                <br>
+                <p>Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.</p>
+                <br>
+                <p><strong>Regards</strong>,<br> John Doe</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script>var triggerTabList = [].slice.call(document.querySelectorAll('#myTab a'))
+            triggerTabList.forEach(function (triggerEl) {
+              var tabTrigger = new bootstrap.Tab(triggerEl)
+            
+              triggerEl.addEventListener('click', function (event) {
+                event.preventDefault()
+                tabTrigger.show()
+              })
+            })</script>
+  </main><!-- End #main -->
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="sticky-footer" class="flex-shrink-0 py-1 text-white align-content-center" style="background-color: #274C77;">
+    <div class="row m-3 align-items-end">
+        <div class="col-3">
+            <span>VISIT AND CONTACT US ON:</span><br />
+            <span><a href="https://www.facebook.com/qcu1994" class="text-decoration-none text-white"><i class="fa-brands fa-facebook"></i>&nbsp;https://www.facebook.com/qcu1994</a></span><br />
+            <span><a href="https://qcu.edu.ph/" class="text-decoration-none text-white"><i class="fa-sharp fa-solid fa-earth-asia"></i>&nbsp;https://qcu.edu.ph/</a></span>
+        </div>
+        <div class="col-2">
+            <span><i class="fa-solid fa-envelope"></i>&nbsp;registrar@qcu.edu.ph</span><br />
+            <span><i class="fa-solid fa-mobile-screen-button"></i>&nbsp;288063470</span>
+        </div>
+        <div class="col-2 text-center">
+            <img src="img/1565034397472.jfif" class="rounded-circle w-25" alt="">
+        </div>
+        <div class="col-3">
+            <span>Terms and Conditions</span><br />
+            <span>Frequently Asked Questions</span>
+        </div>
+        <div class="col-2">
+            <span>Since 1994</span><br />
+            <span>Copyright</span>
+        </div>
+    </div>
+</footer>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.min.js"></script>
+
+
+  <!-- Template Main JS File -->
+  <script src="js/inbox.js"></script>
+</body>
+</html>
