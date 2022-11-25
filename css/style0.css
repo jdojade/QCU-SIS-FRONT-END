@@ -89,3 +89,11 @@ hr{
   width: 200px;
   height: 200px;
 } */
+
+
+/* footer */
+
+.footer-links a, p{
+  color: #fff !important;
+}
+
