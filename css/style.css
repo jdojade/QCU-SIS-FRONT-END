@@ -5,7 +5,20 @@
   padding: 0;
   font-family: 'Inter', sans-serif;
 }
+/*--------------------------------------------------------------
+# Main
+--------------------------------------------------------------*/
+#main {
+  margin-top: 60px;
+  padding: 10px 20px;
+  transition: all 0.3s;
+}
 
+@media (max-width: 1199px) {
+  #main {
+    padding: 20px;
+  }
+}
 /*Pre loader*/
 .glass_hour {
     position: absolute;
@@ -122,24 +135,17 @@
   margin-top: 2em;
 }
 /*Pre loader*/
-.navbar-item .active{
-  background-color: #FFFFFF !important;
-  color: #274C77 !important;
-  filter: drop-shadow(0px 10px 0px #FFFFFF) drop-shadow(0px -10px 0px #FFFFFF);
-}
-.navbar{
-  margin: 0 !important;
-  padding: 5px !important;
-}
+
 
 section{
   margin-bottom: 4vh;
 }
 hr{
   border: 1.5px solid #000;
+  background-color: #000;
 }
 h1{
-  font-size: clamp(1vw,150px,3vw);
+  
   font-weight: 700;
   color: #13212B;
 }
@@ -152,6 +158,14 @@ h1{
   color: #FFFFFF;
 }
 .btn-sub-1:hover{
+  background-color: #13212B;
+  color: #FFFFFF;
+}
+.btn-sub-2{
+  border-color: #274C77;
+  color: #13212B;
+}
+.btn-sub-2:hover{
   background-color: #13212B;
   color: #FFFFFF;
 }
@@ -169,7 +183,7 @@ h1{
   width: 15rem;
   height: 15rem;
   margin: 1rem;
-  line-height: 150px;
+  line-height: 30px;
   color: #13212B;
   font-weight: bold;
   font-size: 5em;
@@ -177,11 +191,16 @@ h1{
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   align-content: center;
   border-radius: .5rem;
   box-shadow: 4px 6px 4px rgba(0, 0, 0, 0.25);
+}
+.flex-item span{
+  color: #13212B;
+  font-weight: bold;
+  font-size: 30px;
 }
 .flex-item a:hover{
   background-color: #13212B;
@@ -197,4 +216,50 @@ h1{
   width: 9rem;
   display: flex;
   justify-self: center;
+}
+.login-container{
+  background-color: #274C77;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.login{
+  background-color: white;
+  width: 65%;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+}
+.sign-in{
+  font-size: 2.7rem;
+}
+.welcome{
+  position: absolute;
+  color: white;
+  font-size: 3rem;
+  flex-wrap: wrap;;
+  font-weight: bolder;
+  width: 300px;
+  top: 5vh;
+  right: 2vw;
+}
+.student{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 23vw;
+}
+.btn-shadow{
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.52);
+  border-radius: 10px;
+}
+.btn-cus{
+  width: 45%;
+}
+.announce{
+  width: 100vh;
+  border-radius: .5rem;
+}
+.announce.carousel-item.card{
+  height:400px;
+  border: 0px;
 }
