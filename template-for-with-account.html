@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/nav.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-md fixed-top" style="background-color: #274C77;">
+    <nav class="navbar navbar-expand-md sticky-md-top" style="background-color: #274C77;">
         <div class="container-fluid p-0" >
             <div class="d-flex flex-colum align-items-center">
                 <button class="btn-hamburger" type="button" id="hamburger">
@@ -50,7 +50,7 @@
     </nav>
     <div class="menu-container">
         <ul class="menu">
-            <li data-toggle="tooltip" data-bs-placement="right" title="PRE-ENROLLMENT"><a><i class="fa-sharp fa-solid fa-clipboard icon"></i>PRE-ENROLLMENT</a></li>
+            <li data-bs-toggle="tooltip" data-bs-placement="right" title="PRE-ENROLLMENT"><a><i class="fa-sharp fa-solid fa-clipboard icon"></i>PRE-ENROLLMENT</a></li>
             <li><a><i class="fa-solid fa-file-lines icon"></i>REQUEST DOCUMENT</a></li>
             <li><a><i class="fa-solid fa-table-list icon"></i>GRADESLIP</a></li>
             <li><a><i class="fa-solid fa-list icon"></i>CURRICULUM</a></li>
@@ -69,7 +69,20 @@
             <!--Content here #1 / CODE-->
 
             <!--Sample content-->
-            <div style="height:100vh; background-color: black;"></div>
+            <div style="height:100vh; background-color: black;">
+                <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
+                    Tooltip on top
+                  </button>
+                  <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" title="Tooltip on right">
+                    Tooltip on right
+                  </button>
+                  <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tooltip on bottom">
+                    Tooltip on bottom
+                  </button>
+                  <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                    Tooltip on left
+                  </button>
+            </div>
         
         </section>
         <section>
@@ -116,8 +129,11 @@
 <!------------END FOOTER------------>
 
 <!------------JS------------>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="css/bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"></script>
     <script src="css/bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/toggle.js"></script>
+    <script src="js/loading.js"></script>
 </body>
 </html>
