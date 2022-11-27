@@ -37,10 +37,12 @@
 .menu li:hover{
    background: #274C77;
    color: #FFF;
+   text-decoration: underline;
 }
 .menu li.active{
    background: #274C77;
    color: #FFF;
+   text-decoration: underline;
 }
 .menu li a{
    display: flex;
@@ -67,7 +69,6 @@
 .container-cus{
    /*border: 1px solid #000;*/
    position: relative;
-   padding-top: 58px;
    margin-left: 50px;
    transition: .50s ease-in-out;
 }
@@ -88,7 +89,7 @@
    overflow-y: auto;
    position: fixed;
    height: 100vh;
-   padding-top: 70px;
+
    z-index: 1000;
 }
 .menu-container.magic{
@@ -98,6 +99,11 @@
 .menu-container::-webkit-scrollbar {
    display: none;
 }
+.menu-container:hover{
+    position: absolute;
+    width: 260px;
+    grid-template-columns: 50px auto!important;
+ }
 /*THE MAGIC ENDS HERE*/
 
 /*****************************************/
