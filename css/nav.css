@@ -115,7 +115,8 @@
 .btn-hamburger div span{
    background-color: #FFF;
 }
-.icon-hamburger {
+.icon-hamburger,
+.icon-sample {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -133,7 +134,8 @@
     transition: .5s ease-in-out;
     cursor: pointer;
 }
-.icon-hamburger span {
+.icon-hamburger span,
+.icon-sample span {
     position: absolute;
     height: 3px;
     width: 100%;
@@ -149,27 +151,31 @@
     -o-transition: .25s ease-in-out;
     transition: .25s ease-in-out;
 }
-.icon-hamburger span:nth-child(1) {
+.icon-hamburger span:nth-child(1),
+.icon-sample span:nth-child(1){
     top: 0;
     -webkit-transform-origin: left center;
     -moz-transform-origin: left center;
     -o-transform-origin: left center;
     transform-origin: left center;
 }
-.icon-hamburger span:nth-child(2) {
+.icon-hamburger span:nth-child(2),
+.icon-sample span:nth-child(2) {
     -webkit-transform-origin: left center;
     -moz-transform-origin: left center;
     -o-transform-origin: left center;
     transform-origin: left center;
 }
-.icon-hamburger span:nth-child(3) {
+.icon-hamburger span:nth-child(3),
+.icon-sample span:nth-child(3) {
     bottom: 0;
     -webkit-transform-origin: left center;
     -moz-transform-origin: left center;
     -o-transform-origin: left center;
     transform-origin: left center;
 }
-.icon-hamburger.magic span:nth-child(1) {
+.icon-hamburger.magic span:nth-child(1),
+.icon-sample.show span:nth-child(1) {
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -o-transform: rotate(45deg);
@@ -177,11 +183,13 @@
     top: 0px;
     left: 8px;
 }
-.icon-hamburger.magic span:nth-child(2) {
+.icon-hamburger.magic span:nth-child(2),
+.icon-sample.show span:nth-child(2) {
     width: 0%;
     opacity: 0;
 }
-.icon-hamburger.magic span:nth-child(3) {
+.icon-hamburger.magic span:nth-child(3),
+.icon-sample.show span:nth-child(3) {
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
@@ -189,18 +197,18 @@
     top: 21px;
     left: 8px;
 }
-.navbar-toggler-icon{
-    color: #FFF ;
-}
 .navbar-toggler{
-    background-color: rgba(0, 0, 0, 0);
-    border: rgba(0, 0, 0, 0);
+    background-color: none;
+    border: 0;
+    color: rgba(0, 0, 0, 0);
 }
 .navbar-toggler div span{
     background-color: #FFF;
 }
-.nav-link{
+.nav-link, .navbar-item{
+    position: relative;
     color: #FFF;
+    background-color: #274C77;
 }
 .navbar-item .active{
     background-color: #FFFFFF !important;
@@ -209,11 +217,23 @@
     text-decoration: underline;
     
 }
+.nav-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .nav-link:hover {
     background-color: #FFFFFF !important;
     color: #274C77 !important;
     text-decoration: underline;
     
+}
+.navbar-cus,
+.navbar-cus *{
+    height: 50px;
+}
+.navbar-cus.show{
+    height: 150px;
 }
 .navbar{
     background-color: #274C77;
