@@ -311,3 +311,18 @@ h1{
  .search-form button i {
   color: #012970;
 }
+
+
+.list-group-item {
+  z-index: 2 !important;
+  color: #274C77 !important;
+  background-color: #fff;
+  border: rgba(0, 0, 0, 0);
+
+}
+.list-group-item.active {
+    z-index: 2 !important;
+    color: #fff !important;
+    background-color: #274C77 !important;
+    border: rgba(0, 0, 0, 0);
+}
