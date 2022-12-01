@@ -15,33 +15,59 @@
 </head>
 <body>
   
-<nav class="navbar navbar-expand-md sticky-top">
-  <div class="container-fluid">
-      <div class="d-flex flex-colum align-items-center">
-          <img src="img/1565034397472.jfif" alt="logo" class="logo rounded-circle">
-          <a href="#" class="navbar-brand fs-5 fw-bolder text-white">&nbsp;Quezon City University</a>
-      </div>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <!--<span class="navbar-toggler-icon"></span>-->
-          <div class="icon-sample"><span></span><span></span><span></span></div>
-      </button>
-      <div class="navbar-cus navbar-collapse collapse justify-content-end" id="navcol-1">
-          <ul class="navbar-nav text-center">
-              <li class="navbar-item">
-                  <a href="#" class="nav-link fs-6 fw-900 active">HOME</a>
-              </li>
-              <li class="navbar-item">
-                  <a href="#" class="nav-link text-white fs-6 fw-900">CONTACT</a>
-              </li>
-              <li class="navbar-item">
-                  <a href="#" class="nav-link text-white fs-6 fw-900">ABOUT QCU</a>
-              </li>
-          </ul>
-      </div>
-  </div>
+  <nav class="navbar navbar-expand-md sticky-md-top" style="background-color: #274C77;">
+    <div class="container-fluid p-0" >
+        <div class="d-flex flex-colum align-items-center">
+            <button class="btn-hamburger" type="button" id="hamburger">
+                <div class="icon-hamburger"><span></span><span></span><span></span></div>
+            </button><span class="text-white fs-3">&nbsp;|&nbsp;</span>
+            <img src="img/1565034397472.jfif" alt="logo" class="logo rounded-circle">
+            <a href="#" class="navbar-brand fs-6 fw-900 text-white">&nbsp;Quezon City University</a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <!--<span class="navbar-toggler-icon"></span>-->
+            <div class="icon-hamburger"><span></span><span></span><span></span></div>
+        </button>
+        <div class="navbar-collapse collapse justify-content-end" id="navcol-1">
+            <ul class="navbar nav p-0">
+                <li class="navbar-item">
+                    <a href="#" class="nav-link text-white fs-6 fw-900 active">HOME</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#" class="nav-link text-white fs-6 fw-900">CONTACT</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#" class="nav-link text-white fs-6 fw-900">ABOUT QCU</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button">
+                      <img src="img/1565034397472.jfif" class="logo rounded-circle">
+                    </a>
+                    <ul class="dropdown-menu-cus text-center" style="right: 0;">
+                      <li><a class="dropdown-item" href="#">EDIT PROFILE</a></li>
+                      <li><a class="dropdown-item" href="#">REQUEST STATUS</a></li>
+                      <li><a class="dropdown-item" href="#">LOGOUT</a></li>
+                    </ul>
+                  </li>
+            </ul>
+        </div>
+    </div>
 </nav>
-
-<div class="container-fluid p-0">
+<div class="menu-container">
+    <ul class="menu">
+        <li><a><i class="fa-sharp fa-solid fa-clipboard icon"></i>PRE-ENROLLMENT</a></li>
+        <li><a><i class="fa-solid fa-file-lines icon"></i>REQUEST DOCUMENT</a></li>
+        <li><a><i class="fa-solid fa-table-list icon"></i>GRADESLIP</a></li>
+        <li><a><i class="fa-solid fa-list icon"></i>CURRICULUM</a></li>
+        <li><a><i class="fa-solid fa-mobile-screen icon"></i>FACULTY EVALUATION</a></li>
+        <li><a><i class="fa-solid fa-credit-card icon"></i>VACCINATION</a></li>
+        <li><a><i class="fa-solid fa-tag icon"></i>EVENTS</a></li>
+        <li><a><i class="fa-solid fa-calendar-days icon"></i>UNIVERSITY CALENDAR</a></li>
+        <li><a><i class="fa-solid fa-info icon"></i>FAQS</a></li>
+    </ul>
+</div>
+  
+<div class="container-cus">
   
 
 
