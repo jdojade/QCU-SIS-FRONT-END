@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ======= Header ======= -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap-5.2.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome-free-6.2.1-web/css/all.min.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- ======= Navigation======== -->
+    <nav class="navbar navbar-expand-md fixed-top" style="background-color: #274C77;">
+        <div class="container-fluid p-2">
+            <img src="img/1565034397472.jfif" alt="logo" class="logo rounded-circle">
+            <a href="#" class="navbar-brand fs-5 fw-900 text-white">&nbsp;Quezon City University</a>
+            <button data-bs-toggle="collapse" class="navbar-toggle collapse" type="button" data-bs-target="#navcol-1" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="visually-hidden">Toggle navigation</span>
+                <span class="navbar-toggle-icon"></span>
+            </button>
+        <div class="navbar-collapse collapse justify-content-end" id="navcol-1">
+            <ul class="navbar nav">
+                <li class="navbar-item">
+                  <a href="student_dashboard.html" class="nav-link text-white fs-6 fw-900 active">HOME</a>
+                </li>
+                <li class="navbar-item">
+                  <a href="inbox.html" class="nav-link text-white fs-6 fw-900">CONTACT</a>
+                </li>
+                <li class="navbar-item">
+                  <a href="#" class="nav-link text-white fs-6 fw-900">ABOUT QCU</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    <!-- ======= Inbox ======== -->
+  <section>
+    <main id="main" class="main">
+      <div class="row">
+        <div class="border border-dark col-4">
+          <div class="d-flex justify-content-between p-2">
+              <h2 class="fs-16 fw-900">INBOX</h2>
+              <div class="d-flex">
+                <button class="btn me-md-3 text-white" style="background-color: #274C77;" type="button">Starred</button>
+                <button class="btn text-white" style="background-color: #274C77;" type="button">Trash</button>
+              </div>                
+          </div>
+          <hr class="my-2">
+          <div class="search-bar">
+            <form class="search-form d-flex" method="POST" action="#">
+                <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+                <button type="submit" title="Search"><i class="fas fa-search"></i></button>
+              </form>
+            </div>
+            <hr class="my-2">
+            <div class="list-group flex-column" id="list-tab" role="tablist">
+              <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">
+              <div class="d-flex mw-100 justify-content-between">
+                <img src="img/logo.png" width="50" height="50">
+                  <h5 class="mb-1">QCU REGISTRAR</h5>
+                    <small>3 days ago</small>
+                  </div>
+                  <p class="mb-1">Schedule for claiming claiming of statement account.</p>
+                  <small>And some small print.</small>
+                  </a>
+                  <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">
+              <div class="d-flex mw-100 justify-content-between">
+                <img src="img/logo.png" width="50" height="50">
+                  <h5 class="mb-1">QCYDO</h5>
+                    <small>3 days ago</small>
+                  </div>
+                  <p class="mb-1">Schedule for claiming claiming of statement account.</p>
+                    <small>And some small print.</small>
+                  </a>
+                  <a class="list-group-item list-group-item-action" id="list-message-list" data-bs-toggle="list" href="#list-message" role="tab" aria-controls="list-message">
+              <div class="d-flex mw-100 justify-content-between">
+                <img src="img/logo.png" width="50" height="50">
+                  <h5 class="mb-1">HELLO WORLD</h5>
+                    <small>3 days ago</small>
+                  </div>
+                  <p class="mb-1">Schedule for claiming claiming of statement account.</p>
+                    <small>And some small print.</small>
+                  </a>
+                  
+                </div>
+          </div>
+    <!-- ======= Email Body======== -->
+        <div class="border border-dark col-8 email-content">
+          <div class="row">
+          <div class="col d-flex p-3 email-head">
+            <button type="button" class="btn btn-lg btn-floating text-white" style="background-color: #274C77;">
+              <i class="fa-sharp fa-solid fa-arrow-left "></i>
+            </button>
+          <div class="col gap-3 d-md-flex justify-content-end" >
+            <a class="active" href="#"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star text-primary-muted"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></span></a>
+            <button type="button" class="btn btn-lg text-white" style="background-color: #274C77;">
+              <i class="fa-solid fa-trash"></i>
+            </button> 
+          </div>
+        </div>
+      </div>
+        <hr class="my-2">
+          <div class="tab-content card shadow-none mt-3 border border-light" id="nav-tabContent">
+            <div class="tab-pane card-body fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+               <div class="media mb-3 ">
+               
+                  <div class="media-body d-flex">
+                    <img src="img/logo.png" class="rounded-circle mr-3 mail-img shadow" alt="media image"  width="75" height="75">
+                      <div class="d-block w-100">
+                      <span class="float-end">08:22 AM</span>
+                      <h4 class="text-primary m-1">QCU REGISTRAR</h4>
+                      <small class="text-muted">From : info@example.com</small>
+                      </div>
+                    </div>
+                     <hr class="my-1">
+                     <h2 style="font-weight: 700;">Schedule for claiming claiming of statement account</h2>
+                     <hr class="my-1">
+ 
+               </div> <!-- media -->
+               <p><b>Hi Sir...</b></p>
+               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+               <p>Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar,</p>
+               <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.</p>
+               <hr>
+               <h4> <i class="fa-solid fa-paperclip"></i> Attachments <span>(1)</span> </h4>
+               <div class="row justify-content-center p-3">
+                   <div class="col-sm-4 col-md-3 rounded-4 p-2" style="background-color: #274C77;">
+                      <a href="javascript:void();"> <i class="fa-solid fa-file-pdf" alt="attachment" class="img-thumbnail rounded-4"></i>
+                        <span class="">Document.pdf</span> </a>
+                      </div>
+                    </div>
+              </div> <!-- first mail -->
+                <div class="tab-pane card-body " id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                  <div class="media mb-3">
+                     <div class="media-body">
+                      <img src="assets/img/logo.png" class="rounded-circle mr-3 mail-img float-start" alt="media image"  width="75" height="75">
+                        <span class="media-meta float-end">08:22 AM</span>
+                        <h4 class="text-primary m-1 ">QCU</h4>
+                        <small class="text-muted">From : tangina.com</small>
+                        <hr class="my-1">
+                        <h2 style="font-weight: 700;">Schedule for claiming claiming of statement account</h2>
+                        <hr class="my-1">
+                      </div>
+                  </div> <!-- media -->
+                  <p><b>Hi Sir...</b></p>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                  <p>Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar,</p>
+                  <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.</p>
+                  <hr>
+                  <h4><i class="fa-solid fa-paperclip"></i> Attachments <span>(1)</span> </h4>
+                    <div class="row justify-content-center p-3 ">
+                      <div class="col-sm-4 col-md-3 rounded-4 p-2 m-1" style="background-color: #274C77;">
+                        <a href="javascript:void();"> <i class="fa-solid fa-file-pdf" alt="attachment" class="img-thumbnail rounded-4"></i>
+                          <span class="">Document.pdf</span> </a>
+                      </div>
+                      <div class="col-sm-4 col-md-3 rounded-4 p-2 m-1" style="background-color: #274C77;">
+                        <a href="javascript:void();"> <i class="fa-solid fa-file-pdf" alt="attachment" class="img-thumbnail rounded-4"></i>
+                          <span class="">Document.pdf</span> </a>
+                      </div>
+                    </div>
+                </div><!-- second mail -->
+                <div class="tab-pane card-body " id="list-message" role="tabpanel" aria-labelledby="list-message-list">
+                  <div class="media mb-3">
+                   <img src="assets/img/logo.png" class="rounded-circle mr-3 mail-img shadow" alt="media image"  width="75" height="75">
+                     <div class="media-body">
+                        <span class="media-meta float-end">08:22 AM</span>
+                        <h4 class="text-primary m-1">jepoy dzon</h4>
+                        <small class="text-muted">From : tangina.com</small>
+                        <hr class="my-1">
+                        <h2 style="font-weight: 700;">Schedule for claiming claiming of statement account</h2>
+                        <hr class="my-1">
+                      </div>
+                  </div> <!-- media -->
+                  <p><b>Hi Sir...</b></p>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                  <p>Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar,</p>
+                  <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.</p>
+                  <hr>
+                  <h4> <i class="fa-solid fa-paperclip"></i> Attachments <span>(1)</span> </h4>
+                  <div class="row justify-content-center p-3">
+                    <div class="col-sm-4 col-md-3 rounded-4 p-2 m-1" style="background-color: #274C77;">
+                      <a href="javascript:void();"> <i class="fa-solid fa-file-pdf" alt="attachment"  class="img-thumbnail rounded-4"></i>
+                        <span class="">Document.pdf</span> </a>
+                    </div>
+                      <div class="col-sm-4 col-md-3 rounded-4 p-2 m-1" style="background-color: #274C77;">
+                        <a href="javascript:void();"><i class="fa-solid fa-file-pdf" alt="attachment"  class="img-thumbnail rounded-4"></i>
+                          <span class="">Document.pdf</span> </a>
+                    </div>
+                      <div class="col-sm-4 col-md-3 rounded-4 p-2 m-1" style="background-color: #274C77;">
+                        <a href="javascript:void();"> <i class="fa-solid fa-file-pdf" alt="attachment"  class="img-thumbnail rounded-4"></i>
+                          <span class="">Document.pdf</span> </a>
+                        </div>
+                   </div> 
+                </div><!-- third mail -->
+            </div> 
+          </main>
+        </section>
+<section>
+<!-- End #main -->
+
+
+
+
+            <!-- ======= Footer ======= -->
+    <footer id="sticky-footer" class="flex-shrink-0 py-1 text-white align-content-center" style="background-color: #274C77;">
+        <div class="container">
+            <div class="row align-items-end">
+                <div class="col-3">
+                    <span>VISIT AND CONTACT US ON:</span><br />
+                    <span><a href="https://www.facebook.com/qcu1994" class="text-decoration-none text-white"><i class="fa-brands fa-facebook"></i>&nbsp;https://www.facebook.com/qcu1994</a></span><br />
+                    <span><a href="https://qcu.edu.ph/" class="text-decoration-none text-white"><i class="fa-sharp fa-solid fa-earth-asia"></i>&nbsp;https://qcu.edu.ph/</a></span>
+                </div>
+                <div class="col-2">
+                    <span><i class="fa-solid fa-envelope"></i>&nbsp;registrar@qcu.edu.ph</span><br />
+                    <span><i class="fa-solid fa-mobile-screen-button"></i>&nbsp;288063470</span>
+                </div>
+                <div class="col-2 text-center">
+                    <img src="img/1565034397472.jfif" class="rounded-circle w-50" alt="">
+                </div>
+                <div class="col-3">
+                    <span>Terms and Conditions</span><br />
+                    <span>Frequently Asked Questions</span>
+                </div>
+                <div class="col-2 text-end">
+                    <span>Since 1994</span><br />
+                    <span>Copyright</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ======= Javascript ======= -->
+    <script src="css/bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
+    <script src="js/loading.js"></script>
+</body>
+</html>
