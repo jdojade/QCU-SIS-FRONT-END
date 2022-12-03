@@ -1,0 +1,45 @@
+* {
+  font: 'Inter', sans-serif !important;
+  margin: 0;
+}
+/*-----NAVBAR-----*/
+nav {
+  max-width: fit-content;
+  font: 400 16px 'Inter', sans-serif;
+  font-weight: bold;
+  max-width: 1300px;
+  padding: 0 10px;
+}
+.profile{
+  width: 40px;
+  height: 40px;
+  padding: 0%;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: auto;
+}
+/* -----SUCCESS----- */
+
+.last .success section {
+  margin: auto;
+  padding: 30px;
+  height: 80%;
+}
+.last .button{
+  text-decoration: none;
+  font: 400 18px 'Inter', sans-serif;
+  color: #fff;
+  float: right; 
+  padding: 10px 60px;
+  background-color: #274C77;
+  box-shadow: 4px 4px 4px #1e1e1e;
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+  align-items: center;
+}
+
+.confirm:hover {
+  background-color: #274C77;
+  color: #fff;
+}
