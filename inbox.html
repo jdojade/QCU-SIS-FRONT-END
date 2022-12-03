@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/nav.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-md sticky-md-top" style="background-color: #274C77;">
+    <nav class="navbar navbar-expand-md fixed-top" style="background-color: #274C77;">
         <div class="container-fluid p-0" >
             <div class="d-flex flex-colum align-items-center">
                 <button class="btn-hamburger" type="button" id="hamburger">
@@ -21,8 +21,7 @@
                 <a href="#" class="navbar-brand fs-6 fw-900 text-white">&nbsp;Quezon City University</a>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <!--<span class="navbar-toggler-icon"></span>-->
-                <div class="icon-hamburger"><span></span><span></span><span></span></div>
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="navbar-collapse collapse justify-content-end" id="navcol-1">
                 <ul class="navbar nav p-0">
@@ -39,7 +38,7 @@
                         <a class="nav-link dropdown-toggle" href="#" role="button">
                           <img src="img/1565034397472.jfif" class="logo rounded-circle">
                         </a>
-                        <ul class="dropdown-menu-cus text-center" style="right: 0;" data-bs-keyboard="true" tabindex="-1" aria-hidden="false">
+                        <ul class="dropdown-menu-cus text-center" style="right: 0;">
                           <li><a class="dropdown-item" href="#">EDIT PROFILE</a></li>
                           <li><a class="dropdown-item" href="#">REQUEST STATUS</a></li>
                           <li><a class="dropdown-item" href="#">LOGOUT</a></li>
@@ -51,7 +50,7 @@
     </nav>
     <div class="menu-container">
         <ul class="menu">
-            <li><a><i class="fa-sharp fa-solid fa-clipboard icon"></i>PRE-ENROLLMENT</a></li>
+            <li data-toggle="tooltip" data-bs-placement="right" title="PRE-ENROLLMENT"><a><i class="fa-sharp fa-solid fa-clipboard icon"></i>PRE-ENROLLMENT</a></li>
             <li><a><i class="fa-solid fa-file-lines icon"></i>REQUEST DOCUMENT</a></li>
             <li><a><i class="fa-solid fa-table-list icon"></i>GRADESLIP</a></li>
             <li><a><i class="fa-solid fa-list icon"></i>CURRICULUM</a></li>
