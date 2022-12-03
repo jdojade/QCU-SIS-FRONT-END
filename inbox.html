@@ -1,43 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- ======= Header ======= -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/fontawesome-free-6.2.1-web/css/all.min.css"/>
     <link rel="stylesheet" href="css/bootstrap-5.2.2-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/fontawesome-free-6.2.1-web/css/all.min.css">
-    <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
 </head>
 <body>
-    <!-- ======= Navigation======== -->
-    <nav class="navbar navbar-expand-md fixed-top" style="background-color: #274C77;">
-        <div class="container-fluid p-2">
-            <img src="img/1565034397472.jfif" alt="logo" class="logo rounded-circle">
-            <a href="#" class="navbar-brand fs-5 fw-900 text-white">&nbsp;Quezon City University</a>
-            <button data-bs-toggle="collapse" class="navbar-toggle collapse" type="button" data-bs-target="#navcol-1" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="visually-hidden">Toggle navigation</span>
-                <span class="navbar-toggle-icon"></span>
+    <nav class="navbar navbar-expand-md sticky-md-top" style="background-color: #274C77;">
+        <div class="container-fluid p-0" >
+            <div class="d-flex flex-colum align-items-center">
+                <button class="btn-hamburger" type="button" id="hamburger">
+                    <div class="icon-hamburger"><span></span><span></span><span></span></div>
+                </button><span class="text-white fs-3">&nbsp;|&nbsp;</span>
+                <img src="img/1565034397472.jfif" alt="logo" class="logo rounded-circle">
+                <a href="#" class="navbar-brand fs-6 fw-900 text-white">&nbsp;Quezon City University</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <!--<span class="navbar-toggler-icon"></span>-->
+                <div class="icon-hamburger"><span></span><span></span><span></span></div>
             </button>
-        <div class="navbar-collapse collapse justify-content-end" id="navcol-1">
-            <ul class="navbar nav">
-                <li class="navbar-item">
-                  <a href="student_dashboard.html" class="nav-link text-white fs-6 fw-900 active">HOME</a>
-                </li>
-                <li class="navbar-item">
-                  <a href="inbox.html" class="nav-link text-white fs-6 fw-900">CONTACT</a>
-                </li>
-                <li class="navbar-item">
-                  <a href="#" class="nav-link text-white fs-6 fw-900">ABOUT QCU</a>
-                </li>
-            </ul>
+            <div class="navbar-collapse collapse justify-content-end" id="navcol-1">
+                <ul class="navbar nav p-0">
+                    <li class="navbar-item">
+                        <a href="#" class="nav-link text-white fs-6 fw-900 active">HOME</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="nav-link text-white fs-6 fw-900">CONTACT</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="nav-link text-white fs-6 fw-900">ABOUT QCU</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button">
+                          <img src="img/1565034397472.jfif" class="logo rounded-circle">
+                        </a>
+                        <ul class="dropdown-menu-cus text-center" style="right: 0;" data-bs-keyboard="true" tabindex="-1" aria-hidden="false">
+                          <li><a class="dropdown-item" href="#">EDIT PROFILE</a></li>
+                          <li><a class="dropdown-item" href="#">REQUEST STATUS</a></li>
+                          <li><a class="dropdown-item" href="#">LOGOUT</a></li>
+                        </ul>
+                      </li>
+                </ul>
+            </div>
         </div>
+    </nav>
+    <div class="menu-container">
+        <ul class="menu">
+            <li><a><i class="fa-sharp fa-solid fa-clipboard icon"></i>PRE-ENROLLMENT</a></li>
+            <li><a><i class="fa-solid fa-file-lines icon"></i>REQUEST DOCUMENT</a></li>
+            <li><a><i class="fa-solid fa-table-list icon"></i>GRADESLIP</a></li>
+            <li><a><i class="fa-solid fa-list icon"></i>CURRICULUM</a></li>
+            <li><a><i class="fa-solid fa-mobile-screen icon"></i>FACULTY EVALUATION</a></li>
+            <li><a><i class="fa-solid fa-credit-card icon"></i>VACCINATION</a></li>
+            <li><a><i class="fa-solid fa-tag icon"></i>EVENTS</a></li>
+            <li><a><i class="fa-solid fa-calendar-days icon"></i>UNIVERSITY CALENDAR</a></li>
+            <li><a><i class="fa-solid fa-info icon"></i>FAQS</a></li>
+        </ul>
     </div>
-</nav>
-    <!-- ======= Inbox ======== -->
-  <section>
+<!------------START BODY------------>
+    <div class="container-cus">
+<!------------START CONTENT------------>
+ <!-- ======= Inbox ======== -->
+ <section>
     <main id="main" class="main">
       <div class="row">
         <div class="border border-dark col-4">
@@ -58,31 +87,36 @@
             <hr class="my-2">
             <div class="list-group flex-column" id="list-tab" role="tablist">
               <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">
-              <div class="d-flex mw-100 justify-content-between">
-                <img src="img/logo.png" width="50" height="50">
-                  <h5 class="mb-1">QCU REGISTRAR</h5>
-                    <small>3 days ago</small>
+                <img src="img/logo.png" class="rounded-circle mr-3 float-start" width="40" height="40">
+                  <div class=" d-block mw-100">
+                    <span class="float-end">08:22 AM</span>
+                    <h5 class="mb-1 bold">QCU REGISTRAR</h5>
                   </div>
-                  <p class="mb-1">Schedule for claiming claiming of statement account.</p>
-                  <small>And some small print.</small>
-                  </a>
-                  <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">
-              <div class="d-flex mw-100 justify-content-between">
-                <img src="img/logo.png" width="50" height="50">
-                  <h5 class="mb-1">QCYDO</h5>
-                    <small>3 days ago</small>
+                    <p class="d-inline-block mb-2">Schedule for claiming claiming of statement account.</p>
+                    <span class="d-inline-block  text-truncate" style="max-width: 380px;">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                    </span>
+                </a>
+              <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">
+                <img src="img/logo.png" class="rounded-circle mr-3 float-start" width="40" height="40">
+                <div class=" d-block mw-100">
+                  <span class="float-end">08:22 AM</span>
+                  <h5 class="mb-1 bold">QCU REGISTRAR</h5>
+                </div>
+                  <p class="d-inline-block mb-2">Schedule for claiming claiming of statement account.</p>
+                  <span class="d-inline-block  text-truncate" style="max-width: 380px;">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                  </span>
+                <a class="list-group-item list-group-item-action" id="list-message-list" data-bs-toggle="list" href="#list-message" role="tab" aria-controls="list-message">
+                  <img src="img/logo.png" class="rounded-circle mr-3 float-start" width="40" height="40">
+                  <div class=" d-block mw-100">
+                    <span class="float-end">08:22 AM</span>
+                    <h5 class="mb-1 bold">QCU REGISTRAR</h5>
                   </div>
-                  <p class="mb-1">Schedule for claiming claiming of statement account.</p>
-                    <small>And some small print.</small>
-                  </a>
-                  <a class="list-group-item list-group-item-action" id="list-message-list" data-bs-toggle="list" href="#list-message" role="tab" aria-controls="list-message">
-              <div class="d-flex mw-100 justify-content-between">
-                <img src="img/logo.png" width="50" height="50">
-                  <h5 class="mb-1">HELLO WORLD</h5>
-                    <small>3 days ago</small>
-                  </div>
-                  <p class="mb-1">Schedule for claiming claiming of statement account.</p>
-                    <small>And some small print.</small>
+                    <p class="d-inline-block mb-2">Schedule for claiming claiming of statement account.</p>
+                    <span class="d-inline-block  text-truncate" style="max-width: 380px;">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                    </span>
                   </a>
                   
                 </div>
@@ -108,7 +142,7 @@
                <div class="media mb-3 ">
                
                   <div class="media-body d-flex">
-                    <img src="img/logo.png" class="rounded-circle mr-3 mail-img shadow" alt="media image"  width="75" height="75">
+                    <img src="img/logo.png" class="rounded-circle mail-img shadow" alt="media image"  width="60" height="60">
                       <div class="d-block w-100">
                       <span class="float-end">08:22 AM</span>
                       <h4 class="text-primary m-1">QCU REGISTRAR</h4>
@@ -200,11 +234,11 @@
         </section>
 <section>
 <!-- End #main -->
+<!------------END CONTENT------------>        
+    </div>
+<!------------END BODY------------>
 
-
-
-
-            <!-- ======= Footer ======= -->
+<!------------STAR FOOTER------------>
     <footer id="sticky-footer" class="flex-shrink-0 py-1 text-white align-content-center" style="background-color: #274C77;">
         <div class="container">
             <div class="row align-items-end">
@@ -231,8 +265,14 @@
             </div>
         </div>
     </footer>
-    <!-- ======= Javascript ======= -->
+<!------------END FOOTER------------>
+
+<!------------JS------------>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="css/bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"></script>
     <script src="css/bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/toggle.js"></script>
     <script src="js/loading.js"></script>
 </body>
 </html>
