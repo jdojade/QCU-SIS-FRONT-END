@@ -1,0 +1,56 @@
+* {
+  font: 'Inter', sans-serif !important;
+  margin: 0;
+}
+/*-----NAVBAR-----*/
+nav {
+  font: 400 16px 'Inter', sans-serif;
+  font-weight: bold;
+}
+.profile{
+  width: 35px;
+  height: 35px;
+  padding: 0%;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: auto;
+}
+.main .button1{
+  text-decoration: none;
+  font: 400 18px 'Inter', sans-serif;
+  color: #fff;
+  float: right; 
+  padding: 10px 60px;
+  background-color: #274C77;
+  box-shadow: 4px 4px 4px #1e1e1e;
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+  align-items: center;
+}
+
+.download:hover {
+  background-color: #274C77;
+  color: #fff;
+}
+.main .button2{
+  text-decoration: none;
+  font: 400 18px 'Inter', sans-serif;
+  color: #fff;
+  float: right; 
+  padding: 10px 70px;
+  margin-right: 20px;
+  background-color: #274C77;
+  box-shadow: 5px 5px 5px #1e1e1e;
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+  align-items: center;
+}
+.cancel:hover {
+  background-color: #274C77;
+  color: #fff;
+}
+
+
+
