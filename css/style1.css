@@ -12,7 +12,7 @@ width: 1rem;
 height: 1rem;
 }
 .nav-active{
-background-color: #598dc9;
+  background-color: #598dc9;
 }
 .profile{
   width: 30px;
@@ -21,8 +21,8 @@ background-color: #598dc9;
 }
 
 .fa-sharp{
-width: 1rem;
-height: 1rem;
+  width: 1rem;
+  height: 1rem;
 }
 
 .nav-active{
@@ -55,18 +55,18 @@ hr{
   border-radius: 15px !important;
 }
 .selectWrapper{
-margin: auto;
-border-radius:15px;
-overflow:hidden;
-background:#cccccc;
-border:1px solid #000000;
+  margin: auto;
+  border-radius:15px;
+  overflow:hidden;
+  background:#cccccc;
+  border:1px solid #000000;
 }
 .selectBox{
-width:1090px;
-height:60px;
-border:0px;
-outline:none;
-padding-left: 25px;
+  width:1090px;
+  height:60px;
+  border:0px;
+  outline:none;
+  padding-left: 25px;
 }
 .btn-primary{
   background-color: #274C77;
