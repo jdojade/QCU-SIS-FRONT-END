@@ -145,10 +145,7 @@ hr{
   background-color: #000;
 }
 h1{
-<<<<<<< HEAD
-=======
   
->>>>>>> origin/Tarriela
   font-weight: 700;
   color: #13212B;
 }
@@ -233,11 +230,7 @@ h1{
 .login{
   background-color: white;
   width: 65%;
-<<<<<<< HEAD
-  height: 80vh;
-=======
   height: 85vh;
->>>>>>> origin/Tarriela
   display: flex;
   align-items: center;
   justify-content: center;
@@ -263,17 +256,14 @@ h1{
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.52);
   border-radius: 10px;
 }
-<<<<<<< HEAD
-.w-45{
-=======
+
 .btn-cus{
->>>>>>> origin/Tarriela
   width: 45%;
 }
 .announce{
   width: 100vh;
   border-radius: .5rem;
-<<<<<<< HEAD
+
   background-color: #13212B !important;
 }
 .announce.carousel-item{
@@ -332,7 +322,7 @@ h1{
 .eng{
   content: url(/img/Industiral\ eng.icon.svg);
   width: 120px !important;
-=======
+
 }
 .announce.carousel-item.card{
   height:400px;
@@ -400,5 +390,4 @@ h1{
     color: #fff !important;
     background-color: #274C77 !important;
     border: rgba(0, 0, 0, 0);
->>>>>>> origin/Tarriela
 }
