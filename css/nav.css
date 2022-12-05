@@ -26,6 +26,7 @@
    justify-content: flex-start;
    align-items: center;
 }
+
 .menu li{
    display: flex;
    width: inherit;
@@ -37,13 +38,13 @@
 }
 .menu li:hover{
    background: #274C77;
-   color: #FFF;
-   text-decoration: underline;
+   color: #FFF !important;
+   text-decoration: none;
 }
 .menu li.active{
-   background: #274C77;
-   color: #FFF;
-   text-decoration: underline;
+   background: #274C77 !important;
+   color: #FFF !important;
+   text-decoration: none;
 }
 .menu li a{
    display: flex;
@@ -51,6 +52,8 @@
    flex-flow: row;
    align-items: center;
    white-space: nowrap;
+   color: #FFF !important;
+   text-decoration: none;
 }
 .icon{
    display: flex;
@@ -104,6 +107,12 @@
     position: absolute;
     width: 260px;
     grid-template-columns: 50px auto!important;
+ }
+
+ .menu-container.active{
+    background: #274C77 !important;
+    color: #FFF !important;
+    text-decoration: none;
  }
 /*THE MAGIC ENDS HERE*/
 
@@ -214,7 +223,7 @@
     background-color: #FFFFFF !important;
     color: #274C77 !important;
     font-weight: 900;
-    text-decoration: underline;
+    text-decoration: none;
     
 }
 .nav-link{
@@ -225,7 +234,7 @@
 .nav-link:hover {
     background-color: #FFFFFF !important;
     color: #274C77 !important;
-    text-decoration: underline;
+    text-decoration: none;
     
 }
 .navbar-cus,
