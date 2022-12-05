@@ -78,10 +78,12 @@ hr{
   box-shadow: 4px 6px 4px rgba(0, 0, 0, 0.25);
 }
 
+
+
 /* request status */
 
 
-.stat, .req{
+.stat, .req, .grade{
   margin-top: 3rem !important;
 }
 
