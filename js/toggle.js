@@ -10,5 +10,6 @@ $(document).ready(function(){
     });
 });
 
-
-
+function myMoveFunction() {
+    $(".dropdown-menu-cus").removeClass('show');
+  }

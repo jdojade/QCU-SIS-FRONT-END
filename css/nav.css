@@ -214,8 +214,6 @@
     background-color: #FFFFFF !important;
     color: #274C77 !important;
     font-weight: 900;
-    text-decoration: underline;
-    
 }
 .nav-link{
     display: flex;
@@ -225,16 +223,18 @@
 .nav-link:hover {
     background-color: #FFFFFF !important;
     color: #274C77 !important;
-    text-decoration: underline;
-    
 }
 .navbar-cus,
-.navbar-cus *{
+.navbar-cus * .nav-link{
     height: 50px;
 }
-.navbar-cus.show{
-    height: 150px;
+@media (max-width: 575.98px) {
+    .navbar-cus.show{
+        height: 200px;
+    }
+    
 }
+
 .navbar{
     background-color: #274C77;
     padding: 0px 5px 0px 5px !important;
