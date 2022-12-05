@@ -50,13 +50,6 @@ nav {
   outline:none;
   padding-left: 25px;
 }
-  @media screen and (max-width: 640px){
-    .button1{
-            display: block;
-            position: relative;
-            left: 20%; transform: translateX(-50%);
-          }
-}
 .main .button1{
   text-decoration: none;
   font: 400 18px 'Inter', sans-serif;
