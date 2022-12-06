@@ -78,28 +78,20 @@
       <div class="mb-3 mt-3">
             <input type="text" class="form-field" id="name" placeholder="Full Name" name="name">
       </div>
-    <div class="mb-3 mt-3">
-        <div class="selectWrapper">
-            <select class="selectBox">
-        <option> COURSE</option>
-        <option> Bachelor of Science in Information Technology (BSIT) </option>
-        <option> Bachelor of Science in Accountancy (BSA) </option>
-        <option> Bachelor of Science in Entrepreneurship (BS Entrep) </option>
-        <option> Bachelor of Science in Industrial Engineering (IE) </option>
-        <option> Bachelor of Science in Electronics Engineering (BSECE) </option>
-        <option> Bachelor of Early Childhood Education (BECEd) </option>
-            </select>
-        </div>
-<br>
-        <div class="selectWrapper">
-            <select class="selectBox">
-        <option> CAMPUS</option>
-        <option> San Bartolome </option>
-        <option> Batasan </option>
-        <option> San Francisco </option>
-            </select>
-        </div>
-      </div>
+      <select class="form-select mt-3" aria-label="Default select example" required>
+        <option selected>Course</option>
+        <option value="1">Information Technology</option>
+        <option value="2">Industrial Engineering</option>
+        <option value="3">Electrical Engineering</option>
+        <option value="4">Accounting</option>
+        <option value="5">Entrepreneurship</option> 
+      </select>
+      <select class="form-select mt-3" aria-label="Default select example" required>
+        <option selected>Campus</option>
+        <option value="1">San Bartolome</option>
+        <option value="2">Batasan</option>
+        <option value="3">San Francisco</option>
+      </select>
     <div class="mb-3 mt-3">
       <input type="text" class="form-field" id="Contact" placeholder="Contact Number" name="Contact">
     </div>
