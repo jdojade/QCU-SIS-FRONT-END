@@ -41,12 +41,10 @@
 .menu li:hover{
    background: #274C77;
    color: #FFF;
-   text-decoration: underline;
 }
 .menu li.active{
    background: #274C77;
    color: #FFF;
-   text-decoration: underline;
 }
 .menu li a{
    display: flex;
@@ -269,7 +267,7 @@
 .navbar{
     background-color: #fff;
     padding: 3px 5px 3px 5px !important;
-    border-bottom: 2px solid #274C77;
+    border-bottom: 2px solid #9ea6b0;
 }
 .text-center {
     text-align: center!important;
@@ -328,4 +326,16 @@
     border-radius: 0.5rem;
     font-weight: 900;
     color: #ff0000 !important;
+}
+.headline{
+    position: relative;
+    width: 100%;
+    border-bottom: 2px solid #000;
+}
+.headline i{
+    position: absolute;
+    right: 0;
+    bottom: -25px;
+    font-size: 50px;
+
 }
