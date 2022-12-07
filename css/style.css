@@ -125,7 +125,7 @@
 
 
 section{
-  margin-bottom: 4vh;
+  padding-bottom: 4vh;
 }
 hr{
   border: 1.5px solid #000;
@@ -139,6 +139,17 @@ h1{
   font-size: clamp(2vw,400px,11vw);
   font-weight: 900;
 }
+.qoute span:nth-child(3),
+.qoute span:nth-child(5){
+  color: #CDCDCB;
+}
+.qoute span:nth-child(1),
+.qoute span:nth-child(2),
+.qoute span:nth-child(4),
+.qoute span:nth-child(6){
+  color: #FFF;
+}
+
 .btn-sub-1{
   background-color: #274C77;
   color: #FFFFFF;
@@ -295,7 +306,7 @@ h1{
 .course li a:hover span{
   background-color: #FFF;
 }
-.course li:nth-child(5) a:hover i {
+.course li a:hover .eng {
   filter: invert(100%) grayscale(100%);
 }
 .eng{
