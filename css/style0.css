@@ -96,14 +96,27 @@ hr{
   color: #13212B !important;
 }
 
+.req-link{
+  color: #002F49 !important;
 
+}
+
+
+.tab-content .active {
+  background-color: #F5F1F1;
+}
+
+.nav-tabs{
+  --bs-nav-tabs-link-active-bg: #F5F1F1;
+}
 
 .table-stat th, td {
+  background-color: #F5F1F1;
   padding: 1.5rem 2.5rem !important;
 }
 
-th {
-  background-color: #3e6796 !important;
-  color: #fff;
+th, td {
+  background-color: #F5F1F1 !important;
+  color: #002F49;
 }
 
