@@ -31,6 +31,14 @@
                     </li>
                     <li class="navbar-item">
                         <a href="#" class="nav-link text-white fs-6 fw-900">ABOUT QCU</a>
+                    </li> 
+                    <li class="navbar-item dropdown" onmouseleave="myMoveFunction()">
+                        <a href="#" class="nav-link text-white fs-6 fw-900 dropdown-toggle">LOGIN</a>
+                        <ul class="dropdown-menu-cus text-center" style="right: 0;" data-bs-keyboard="true" tabindex="-1" aria-hidden="false">
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#student_login">STUDENT</a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#moderator_login">MODERATOR</a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#superadmin_login">SUPER ADMIN</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
@@ -51,7 +59,12 @@
             <div class="bg-primary bg-opacity-50 w-100 h-100 d-flex align-items-center" style="position: absolute; top:0;">
                 <div class="container">
                     <p class="qoute">
-                        <span>#</span><span>1</span><span>Q</span><span>C</span><span>U</span><span>!</span>
+                        <span class="text-white">#</span>
+                        <span class="text-white">1</span>
+                        <span style="color: #CDCDCB;">Q</span>
+                        <span class="text-white">C</span>
+                        <span style="color: #CDCDCB;">U</span>
+                        <span class="text-white">!</span>
                     </p>
                     <h3 class="text-white w-75">Quezon City University (QCU), formerly known as Quezon City Polytechnic University (QCPU), is a city government-funded university in Quezon City, Philippines.</h3>
                     <br/>
@@ -210,9 +223,10 @@
             </div>
         </section>
     </div>
+
     <!-- Modal -->
     <!--Sart Sign in modal-->
-    <div class="modal fade" id="signIn" tabindex="-1" aria-labelledby="signIn" aria-hidden="true">
+    <div class="modal fade" id="student_login" tabindex="-1" aria-labelledby="student_login" aria-hidden="true">
         <div class="modal-dialog modal-xl modal-dialog-centered">
             <div class="modal-content login-container">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -263,11 +277,75 @@
         </div>
     </div>
     <!--End Request modal-->
+    <!--Start moderator modal-->
+    <div class="modal fade" id="moderator_login" tabindex="-1" aria-labelledby="moderator_login" aria-hidden="true">
+        <div class="modal-dialog modal-md modal-dialog-centered">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="moderator">
+                    <form action="" class="text-center justify-content-center">
+                        <div class="img-fluid">
+                            <img src="img/1565034397472.jfif" alt="" class="rounded-circle w-45">
+                        </div>
+                        <div class="mt-3">
+                            <h1>Login</h1>
+                        </div>
+                        <div class="mt-3">
+                            <input type="text" name="username" id="username" class="form-field form-control form-control-lg form-control-sm" placeholder="Username" required="true">
+                        </div>
+                        <div class="mt-3">
+                            <input type="password" name="password" id="password" class="form-field form-control form-control-lg form-control-sm" placeholder="Password" required="true">
+                            <a href="#" class="text-decoration-none float-end text-body fw-bolder">Forget password?</a>
+                        </div>
+                        <div class="mt-5 text-sm-start w-100 d-flex justify-content-between">
+                            <button class="btn btn-sub-2 btn-shadow w-45" data-bs-dismiss="modal" aria-label="Close"><strong>CANCEL</strong></button>
+                            <button type="submit" class="btn btn-sub-1 btn-shadow w-45" id="success"><strong>SIGN IN</strong></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End moderator modal-->
+    <!--Start superadmin modal-->
+    <div class="modal fade" id="superadmin_login" tabindex="-1" aria-labelledby="superadmin_login" aria-hidden="true">
+        <div class="modal-dialog modal-md modal-dialog-centered">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="superadmin">
+                    <form action="" class="text-center justify-content-center">
+                        <div class="img-fluid">
+                            <img src="img/1565034397472.jfif" alt="" class="rounded-circle w-45">
+                        </div>
+                        <div class="mt-3">
+                            <h1>Login</h1>
+                        </div>
+                        <div class="mt-3">
+                            <input type="text" name="username" id="username" class="form-field form-control form-control-lg form-control-sm" placeholder="Username" required="true">
+                        </div>
+                        <div class="mt-3">
+                            <input type="password" name="password" id="password" class="form-field form-control form-control-lg form-control-sm" placeholder="Password" required="true">
+                            <a href="#" class="text-decoration-none float-end text-body fw-bolder">Forget password?</a>
+                        </div>
+                        <div class="mt-5 text-sm-start w-100 d-flex justify-content-between">
+                            <button class="btn btn-sub-2 btn-shadow w-45" data-bs-dismiss="modal" aria-label="Close"><strong>CANCEL</strong></button>
+                            <button type="submit" class="btn btn-sub-1 btn-shadow w-45" id="success"><strong>SIGN IN</strong></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End superadmin modal-->
+
+
+
+
     <footer id="sticky-footer" class="flex-shrink-0 py-1 text-white align-content-center" style="background-color: #274C77;">
         <div class="container">
             <div class="row align-items-end">
                 <div class="col-md-5">
-                    <div class="row align-items-end">
+                    <div class="row">
                         <div class="col-md-6">
                             <span>VISIT AND CONTACT US ON:</span><br />
                             <span><a href="https://www.facebook.com/qcu1994" class="text-decoration-none text-white"><i class="fa-brands fa-facebook"></i>&nbsp;@qcu1994</a></span><br />
