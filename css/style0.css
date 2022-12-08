@@ -99,11 +99,12 @@ th, td {
 }
 
 .req-display {
-  width: 60%;
+  width: 80%;
 }
 
 .req-display td {
   padding-left: 7rem !important;
+  font-size: 22px;
 }
 
 .req-display tbody {
