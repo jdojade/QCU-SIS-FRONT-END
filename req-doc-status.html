@@ -25,7 +25,7 @@
                 <!--<span class="navbar-toggler-icon"></span>-->
                 <div class="icon-hamburger"><span></span><span></span><span></span></div>
             </button>
-            <div class="navbar-collapse collapse justify-content-end" id="navcol-1">
+            <div class="navbar-cus navbar-collapse collapse justify-content-end" id="navcol-1">
                 <ul class="navbar nav p-0">
                     <li class="navbar-item">
                         <a href="dash.html" class="nav-link text-white fs-6 fw-900 active text-decoration-none">HOME</a>
@@ -76,8 +76,8 @@
             
 
             <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item active" role="presentation">
-                  <button class="nav-link req-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all-tab-pane" type="button" role="tab" aria-controls="all-tab-pane" aria-selected="true">All</button>
+                <li class="nav-item active rounded-circle" role="presentation">
+                  <button class="nav-link req-link active rounded-circle" id="all-tab" data-bs-toggle="tab" data-bs-target="#all-tab-pane" type="button" role="tab" aria-controls="all-tab-pane" aria-selected="true">All</button>
                 </li>
                 <li class="nav-item" role="presentation">
                   <button class="nav-link req-link" id="pending-tab" data-bs-toggle="tab" data-bs-target="#pending-tab-pane" type="button" role="tab" aria-controls="pending-tab-pane" aria-selected="false">Pending</button>
@@ -90,7 +90,9 @@
                 </li>
               </ul>
 
-              <div class="tab-content" id="myTabContent">
+              <!-- ----------------ALL TAB------------------- -->
+
+              <div class="tab-content req-table" id="myTabContent">
                 <div class="tab-pane fade show active" id="all-tab-pane" role="tabpanel" aria-labelledby="all-tab" tabindex="0">
                           <!----------- START NG TABLE ---------->
                 <div class="container m-auto">
@@ -143,6 +145,7 @@
                     </div>
                 </div>
 
+                <!-- --------------------PENDING TAB-------------------- -->
 
                 <div class="tab-pane fade" id="pending-tab-pane" role="tabpanel" aria-labelledby="pending-tab" tabindex="0">
                     <!----------- START NG TABLE ---------->
@@ -197,6 +200,8 @@
                 </div>
 
 
+                <!-- -----------------APPROVED TAB-------------------- -->
+
                 <div class="tab-pane fade" id="approved-tab-pane" role="tabpanel" aria-labelledby="approved-tab" tabindex="0">
                     <!----------- START NG TABLE ---------->
                     <div class="container m-auto">
@@ -250,6 +255,8 @@
 
                 </div>
 
+
+                <!-- ---------------------FAILED TAB----------------------- -->
 
                 <div class="tab-pane fade" id="failed-tab-pane" role="tabpanel" aria-labelledby="failed-tab" tabindex="0">
                     <!----------- START NG TABLE ---------->
