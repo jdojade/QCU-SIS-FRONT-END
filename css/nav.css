@@ -26,6 +26,7 @@
    justify-content: flex-start;
    align-items: center;
 }
+
 .menu li{
    display: flex;
    width: inherit;
@@ -37,20 +38,23 @@
 }
 .menu li:hover{
    background: #274C77;
-   color: #FFF;
-   text-decoration: underline;
+   color: #FFF !important;
+   text-decoration: none;
 }
 .menu li.active{
-   background: #274C77;
-   color: #FFF;
-   text-decoration: underline;
+   background: #274C77 !important;
+   color: #FFF !important;
+   text-decoration: none;
 }
+
 .menu li a{
    display: flex;
    justify-content: center;
    flex-flow: row;
    align-items: center;
    white-space: nowrap;
+   color: #FFF !important;
+   text-decoration: none;
 }
 .icon{
    display: flex;
@@ -104,6 +108,13 @@
     width: 260px;
     grid-template-columns: 50px auto!important;
  }
+
+ .menu-container.active{
+    background: #274C77 !important;
+    color: #FFF !important;
+    text-decoration: none;
+ }
+
 /*THE MAGIC ENDS HERE*/
 
 /*****************************************/
