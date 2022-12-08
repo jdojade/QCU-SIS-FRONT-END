@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Request Document</title>
     <link rel="stylesheet" href="css/fontawesome-free-6.2.1-web/css/all.min.css"/>
     <link rel="stylesheet" href="css/bootstrap-5.2.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -129,7 +129,7 @@
 
                 <button class="btn btn-primary px-5 my-5 ms-3" id="next-two" data-bs-toggle="submit" data-bs-target="#pills-two" type="submit" role="button" aria-controls="pills-two" aria-selected="false">NEXT</button>
                 
-                <button type="button" class="btn btn-outline-primary px-5 my-5 me-3">CANCEL</button>
+                <button type="button" class="btn btn-outline-primary px-5 my-5 me-3" data-bs-toggle="modal" data-bs-target="#exit-req">CANCEL</button>
 
 
             </form>
@@ -175,7 +175,7 @@
                         
                         <button type="button" class="btn btn-primary px-5 my-5 me-3">EDIT</button>
 
-                        <button type="button" class="btn btn-outline-primary px-5 my-5 me-3">CANCEL</button>
+                        <button type="button" class="btn btn-outline-primary px-5 my-5 me-3" data-bs-toggle="modal" data-bs-target="#exit-req">CANCEL</button>
                     
                     </div>
                 </form>
@@ -196,11 +196,11 @@
                         <div class="success text-center">
                             
                             <img src="src/sUCCESS Icon.png" alt="Request Success" srcset="" class="rounded">
-                            
+                            S
                         </div>
         
-        
-                        <button type="button" class="btn btn-primary px-5 my-5 ms-3" type="submit">CONFIRM</button>
+                        <a href="req-doc-status.html" class="btn btn-primary px-5 my-5 ms-3">CONFIRM</a>
+                        <!-- <button type="button" class="btn btn-primary px-5 my-5 ms-3" type="submit">CONFIRM</button> -->
                         <!-- <button type="button" class="btn btn-outline-primary px-5 my-5 me-3">CANCEL</button> -->
                         
                             
@@ -213,6 +213,28 @@
         </div>
         <br><br><br><br><br><br><br>
         </section>
+
+<!-- Modal -->
+<div class="modal fade" id="exit-req" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exit-reqLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <!-- <h1 class="modal-title fs-5" id="exit-reqLabel">Modal title</h1> -->
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="fs-3 text-center">
+            Are you sure to cancel your request for documents?
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">CANCEL</button>
+          <button type="button" class="btn btn-success">YES</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 <!------------END CONTENT------------>        
     </div>
 <!------------END BODY------------>
