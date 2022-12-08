@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300');
+body{
+  font: 18px "Lato", sans-serif;
+  overflow-x: hidden;
+}
+
+
+.container{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 90px;
+}
+.overlay{
+  position: absolute;
+  display: none;
+  z-index: 1;
+  top: 70px;
+  width: 100%;
+  height: calc(100% - 70px);
+  left: 0;
+  background-color: rgba(0,0,0,.3);
+}
+
+.top-menu{
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #333;
+} 
+  .menu-button{
+    position: absolute;
+    left: 20px;
+    height: 7px;
+    width: 50px;
+    background: #fff;
+    /*Center according to top menu and height of middle bar*/
+    top: calc(70px / 2 - 5px); 
+    cursor: pointer;
+    transition: background ease .3s;
+  }
+    .menu-button:before{
+      content: '';
+      position: absolute;
+      left:0;
+      bottom: 13px;
+      height: 100%;
+      width: 100%;
+      background: #fff;
+      transition: all ease .3s;
+    }
+    .menu-button:after{
+      content: '';
+      position: absolute;
+      top: 13px;
+      left:0;
+      height: 100%;
+      width: 100%;
+      background: #fff;
+      transition: all ease .3s;
+    }
+    
+    .menu-button[data-menu="right"]{
+      right: 20px;
+      left: auto;
+    }
+  
+  .menu-button.is-clicked{
+    /*Set opacity of middle bar to 0*/
+    background: rgba(255,255,255,0);
+    transition: background ease .3s;
+  }
+    .menu-button.is-clicked:before{
+      background: #fff;
+      transform: rotate(45deg);
+      bottom: 0;
+      transition: all ease .3s;
+    }
+    .menu-button.is-clicked:after{
+      background: #fff;
+      transform: rotate(-45deg);
+      top: 0;
+      transition: all ease .3s;
+    }
+.menu-bar{
+  position: absolute;
+  z-index: 2;
+  top: 70px;
+  width: 300px;
+  /*Height of body - top menu*/
+  height: calc(100% - 70px); 
+  background: #555;
+  color: #fff;
+  transition: transform ease .3s;
+}
+.menu-bar.left{
+    left: 0;
+    transform: translateX(-300px);
+    box-shadow: 2px 0 5px rgba(0,0,0,.3);
+  }
+.menu-bar.right{
+    right: 0;
+    transform: translateX(300px);
+    box-shadow: -2px 0 5px rgba(0,0,0,.3);
+  }
+.menu-bar.is-active{
+    transform: translate(0);
+    transition: transform ease .3s;
+  }
+  
+.menu-heading{
+    width: 100%;
+    font-size: 2em;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+  
+.menu-body a{
+    text-decoration: none;
+    outline: 0;
+    color: #fff;
+    width: calc(100% - 20px);
+    display: inline-block;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    transition: background ease .3s;
+}
+.menu-body a:hover{
+    background: #333;
+    transition: background ease .3s;
+}
