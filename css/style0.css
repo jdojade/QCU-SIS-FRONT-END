@@ -150,3 +150,31 @@ th, td {
 }
 
 
+
+/* request status */
+
+
+.stat, .req, .grade{
+  margin-top: 3rem !important;
+}
+
+.stat h1{
+  color: #13212B;
+  font: 900 48px 'Inter', sans-serif;
+}
+
+.stat hr{
+  color: #13212B !important;
+}
+
+
+
+.table-stat th, td {
+  padding: 1.5rem 2.5rem !important;
+}
+
+th {
+  background-color: #3e6796 !important;
+  color: #fff;
+}
+
