@@ -36,26 +36,10 @@ nav {
     border: 1px solid #000000 !important;
     border-radius: 15px !important;
 }
-.selectWrapper{
-  margin: auto;
-  border-radius:15px;
-  overflow:hidden;
-  background:#cccccc;
-  border:1px solid #000000;
-}
-.selectBox{
-  width:1090px;
-  height:60px;
-  border:0px;
-  outline:none;
-  padding-left: 25px;
-}
-  @media screen and (max-width: 640px){
-    .button1{
-            display: block;
-            position: relative;
-            left: 20%; transform: translateX(-50%);
-          }
+.form-select, .form-control {
+  border: 2px solid #b8b8b8  !important;
+  font-size: 1rem  !important;
+  transition: 0.5s;
 }
 .main .button1{
   text-decoration: none;

@@ -1,56 +1,86 @@
-* {
+*{
   font: 'Inter', sans-serif !important;
   margin: 0;
+  box-sizing: border-box;
 }
 /*-----NAVBAR-----*/
-nav {
-  font: 400 16px 'Inter', sans-serif;
-  font-weight: bold;
+@media screen 
+and (min-width: 640px)
+and (max-width: 1024px)
+{
+  .main {
+  width: auto;
+  height: auto;
+  margin: auto;
+    
 }
 .profile{
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   padding: 0%;
-  border-radius: 50%;
-  cursor: pointer;
-  margin: auto;
-}
-.main .button1{
-  text-decoration: none;
-  font: 400 18px 'Inter', sans-serif;
-  color: #fff;
-  float: right; 
-  padding: 10px 60px;
-  background-color: #274C77;
-  box-shadow: 4px 4px 4px #1e1e1e;
-  border-radius: 10px;
-  border: none;
-  text-align: center;
-  align-items: center;
 }
 
-.download:hover {
-  background-color: #274C77;
-  color: #fff;
-}
-.main .button2{
-  text-decoration: none;
-  font: 400 18px 'Inter', sans-serif;
-  color: #fff;
-  float: right; 
-  padding: 10px 70px;
-  margin-right: 20px;
-  background-color: #274C77;
-  box-shadow: 5px 5px 5px #1e1e1e;
-  border-radius: 10px;
-  border: none;
-  text-align: center;
-  align-items: center;
-}
-.cancel:hover {
-  background-color: #274C77;
-  color: #fff;
+.fa-sharp{
+width: 1rem;
+height: 1rem;
 }
 
+.nav-active{
+background-color: #598dc9;
+}
+}
+  hr{
+    width: clamp(10%, 100vw, 90%) !important;
+    left: 0;
+  }
+  .fa-table-list{
+    float: right;
+  }
+  .course {
+    padding-top: 3rem;
+  }
+  .course h1{
+    color: #13212B;
+    font: 900 34px 'Inter', sans-serif;
+  }
+  .course hr, p{
+    color: #13212B !important;
+    font: 900 18px 'Inter', sans-serif;
+  }
+    .gradeslip p{
+      font: 600 24px 'Inter', sans-serif;
+      color: #13212B !important;
+    }
+    
+    .pdf {
+      width: 100%;
+      height: 70vw;
+      border: 2px solid #13212B;
+      box-shadow: 4px 6px 4px rgba(0, 0, 0, 0.25);
+    }
+    
+.btn-primary{
+  background-color: #274C77;
+  border: 2px solid #274C77;
+  font-weight: 800;
+  float: right;
+}
 
+.btn-outline-primary{
+  border: 2px solid #274C77;
+  color: #274C77;
+  font-weight: 800;
+  float: right;
+}
+
+.btn-primary:hover{
+  background-color: #13212B;
+  border: 2px solid #13212B;
+}
+
+.btn-outline-primary:hover{
+  background-color: #990000;
+  border: 2px solid #990000;
+  color: #fff;
+}
 
