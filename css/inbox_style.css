@@ -207,7 +207,7 @@ h1{
   font-size: 100px;
   transition-timing-function: linear;
   transition: font-size .2s;
-  background-color: #13212B;
+  background-color: #13212B !important;
   color: white !important;
 }
 
@@ -215,7 +215,7 @@ h1{
   font-size: 35px;
   transition-timing-function: linear;
   transition: font-size .2s;
-  color: #fff;
+  color: #fff !important;
   font-weight: bold;
   
 }

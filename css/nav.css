@@ -38,15 +38,6 @@
 }
 .menu li:hover{
    background: #274C77;
-
-   color: #FFF !important;
-   text-decoration: none;
-}
-.menu li.active{
-   background: #274C77 !important;
-   color: #FFF !important;
-   text-decoration: none;
-
    color: #FFF !important;
    text-decoration: none;
 }
@@ -55,6 +46,7 @@
    color: #FFF !important;
    text-decoration: none;
 }
+
 .menu li a{
    display: flex;
    justify-content: center;
@@ -112,7 +104,6 @@
 .menu-container::-webkit-scrollbar {
    display: none;
 }
-
 .menu-container:hover{
     position: absolute;
     width: 260px;
