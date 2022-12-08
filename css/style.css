@@ -145,7 +145,15 @@ hr{
   background-color: #000;
 }
 h1{
+<<<<<<< Updated upstream
   
+=======
+<<<<<<< Updated upstream
+  font-size: clamp(1vw,150px,3vw);
+=======
+  
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
   font-weight: 700;
   color: #13212B;
 }
@@ -211,6 +219,11 @@ h1{
   background-color: #13212B;
   color: white !important;
 }
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
 .flex-item span:hover{
   font-size: 35px;
   transition-timing-function: linear;
@@ -219,6 +232,10 @@ h1{
   font-weight: bold;
   
 }
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 .flex-item img:hover{
   filter: invert(100%) grayscale(100%);
 }
@@ -244,7 +261,15 @@ h1{
 .login{
   background-color: white;
   width: 65%;
+<<<<<<< Updated upstream
   height: 85vh;
+=======
+<<<<<<< Updated upstream
+  height: 75vh;
+=======
+  height: 85vh;
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
   display: flex;
   align-items: center;
   justify-content: center;
@@ -272,6 +297,12 @@ h1{
 .btn-shadow{
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.52);
   border-radius: 10px;
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+}
+=======
+>>>>>>> Stashed changes
 }
 
 .btn-cus{
@@ -429,3 +460,7 @@ h1{
 }
 
 
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes

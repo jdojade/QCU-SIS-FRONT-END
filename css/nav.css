@@ -38,6 +38,7 @@
 }
 .menu li:hover{
    background: #274C77;
+<<<<<<< Updated upstream
    color: #FFF !important;
    text-decoration: none;
 }
@@ -45,6 +46,23 @@
    background: #274C77 !important;
    color: #FFF !important;
    text-decoration: none;
+=======
+<<<<<<< Updated upstream
+   color: #FFF;
+}
+.menu li.active{
+   background: #274C77;
+   color: #FFF;
+=======
+   color: #FFF !important;
+   text-decoration: none;
+}
+.menu li.active{
+   background: #274C77 !important;
+   color: #FFF !important;
+   text-decoration: none;
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 }
 .menu li a{
    display: flex;
@@ -103,6 +121,11 @@
 .menu-container::-webkit-scrollbar {
    display: none;
 }
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
 .menu-container:hover{
     position: absolute;
     width: 260px;
@@ -114,6 +137,10 @@
     color: #FFF !important;
     text-decoration: none;
  }
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 /*THE MAGIC ENDS HERE*/
 
 /*****************************************/
