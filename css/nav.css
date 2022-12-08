@@ -1,5 +1,6 @@
 .logo{
-    width: 2.5rem;
+    width: 3rem;
+    padding: 5px;
 }
 .header-section{
    background: #333333;
@@ -37,10 +38,12 @@
 .menu li:hover{
    background: #274C77;
    color: #FFF;
+   text-decoration: underline;
 }
 .menu li.active{
    background: #274C77;
    color: #FFF;
+   text-decoration: underline;
 }
 .menu li a{
    display: flex;
@@ -67,7 +70,6 @@
 .container-cus{
    /*border: 1px solid #000;*/
    position: relative;
-   padding-top: 58px;
    margin-left: 50px;
    transition: .50s ease-in-out;
 }
@@ -88,7 +90,7 @@
    overflow-y: auto;
    position: fixed;
    height: 100vh;
-   padding-top: 70px;
+
    z-index: 1000;
 }
 .menu-container.magic{
@@ -98,6 +100,11 @@
 .menu-container::-webkit-scrollbar {
    display: none;
 }
+.menu-container:hover{
+    position: absolute;
+    width: 260px;
+    grid-template-columns: 50px auto!important;
+ }
 /*THE MAGIC ENDS HERE*/
 
 /*****************************************/
@@ -108,7 +115,8 @@
 .btn-hamburger div span{
    background-color: #FFF;
 }
-.icon-hamburger {
+.icon-hamburger,
+.icon-sample {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -126,7 +134,8 @@
     transition: .5s ease-in-out;
     cursor: pointer;
 }
-.icon-hamburger span {
+.icon-hamburger span,
+.icon-sample span {
     position: absolute;
     height: 3px;
     width: 100%;
@@ -142,27 +151,31 @@
     -o-transition: .25s ease-in-out;
     transition: .25s ease-in-out;
 }
-.icon-hamburger span:nth-child(1) {
+.icon-hamburger span:nth-child(1),
+.icon-sample span:nth-child(1){
     top: 0;
     -webkit-transform-origin: left center;
     -moz-transform-origin: left center;
     -o-transform-origin: left center;
     transform-origin: left center;
 }
-.icon-hamburger span:nth-child(2) {
+.icon-hamburger span:nth-child(2),
+.icon-sample span:nth-child(2) {
     -webkit-transform-origin: left center;
     -moz-transform-origin: left center;
     -o-transform-origin: left center;
     transform-origin: left center;
 }
-.icon-hamburger span:nth-child(3) {
+.icon-hamburger span:nth-child(3),
+.icon-sample span:nth-child(3) {
     bottom: 0;
     -webkit-transform-origin: left center;
     -moz-transform-origin: left center;
     -o-transform-origin: left center;
     transform-origin: left center;
 }
-.icon-hamburger.magic span:nth-child(1) {
+.icon-hamburger.magic span:nth-child(1),
+.icon-sample.show span:nth-child(1) {
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -o-transform: rotate(45deg);
@@ -170,11 +183,13 @@
     top: 0px;
     left: 8px;
 }
-.icon-hamburger.magic span:nth-child(2) {
+.icon-hamburger.magic span:nth-child(2),
+.icon-sample.show span:nth-child(2) {
     width: 0%;
     opacity: 0;
 }
-.icon-hamburger.magic span:nth-child(3) {
+.icon-hamburger.magic span:nth-child(3),
+.icon-sample.show span:nth-child(3) {
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
@@ -182,28 +197,48 @@
     top: 21px;
     left: 8px;
 }
-.navbar-toggler-icon{
-    color: #FFF ;
-}
 .navbar-toggler{
-    background-color: rgba(0, 0, 0, 0);
-    border: rgba(0, 0, 0, 0);
+    background-color: none;
+    border: 0;
+    color: rgba(0, 0, 0, 0);
 }
 .navbar-toggler div span{
     background-color: #FFF;
+}
+.nav-link, .navbar-item{
+    position: relative;
+    color: #FFF;
+    background-color: #274C77;
 }
 .navbar-item .active{
     background-color: #FFFFFF !important;
     color: #274C77 !important;
     font-weight: 900;
-    filter: drop-shadow(0px 8px 0px #FFFFFF) drop-shadow(0px -8px 0px #FFFFFF);
 }
-.navbar{
-    background-color: #274C77;
-    margin: 0 !important;
-    padding: 0px 5px 0px 5px !important;
+.nav-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-link:hover {
+    background-color: #FFFFFF !important;
+    color: #274C77 !important;
+}
+.navbar-cus,
+.navbar-cus * .nav-link{
+    height: 50px;
+}
+@media (max-width: 575.98px) {
+    .navbar-cus.show{
+        height: 200px;
+    }
+    
 }
 
+.navbar{
+    background-color: #274C77;
+    padding: 0px 5px 0px 5px !important;
+}
 .text-center {
     text-align: center!important;
 }
