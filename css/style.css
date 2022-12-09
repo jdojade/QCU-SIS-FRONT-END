@@ -138,7 +138,7 @@
 
 
 section{
-  padding-bottom: 4vh;
+  margin-bottom: 4vh;
 }
 hr{
   border: 1.5px solid #000;
@@ -163,6 +163,7 @@ h1{
   color: #FFF;
 }
 
+/*---------- BUTTONS -------------*/
 .btn-sub-1{
   background-color: #274C77;
   color: #FFFFFF;
@@ -178,6 +179,13 @@ h1{
 .btn-sub-2:hover{
   background-color: #13212B;
   color: #FFFFFF;
+}
+.btn-shadow{
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.52);
+  border-radius: 10px;
+}
+.btn-cus{
+  width: 45%;
 }
 /*---------- DASHBOARD ------------*/
 .flex-container {
@@ -281,14 +289,7 @@ h1{
   right: 0;
   width: 23vw;
 }
-.btn-shadow{
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.52);
-  border-radius: 10px;
-}
 
-.btn-cus{
-  width: 45%;
-}
 .announce{
   width: 100vh;
   border-radius: .5rem;
@@ -440,4 +441,26 @@ h1{
     transition: var(--bs-accordion-btn-icon-transition);
 }
 
+/*---------- ADMIN LOGIN ------------*/
 
+.admin{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.admin form{
+  box-shadow: 7px 8px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 14px;
+  padding: 50px;
+  background-color: #FFF;
+  height: 600px;
+  display: flex;
+  flex-flow: column;
+  position: relative;
+}
+.admin form div img{
+  height: 10em;
+  width: 10em;
+}
