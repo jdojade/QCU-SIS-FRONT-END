@@ -19,7 +19,7 @@ $('.menu li').each(function(i){
         $('.menu-container, .info').addClass('show');
     },
     function(){
-        $('.menu-container, .info').removeClass('show');
+        $('.menu-container, .info, .hamburger').removeClass('show');
     }
     );
 });
