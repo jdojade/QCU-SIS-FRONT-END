@@ -55,9 +55,9 @@ hr{
   padding: 20px;
   border: 1px solid #000000 !important;
   border-radius: 15px !important;
-}
+    }
+    
 .btn-primary{
-  max-width: 50%;
   background-color: #274C77;
   border: 2px solid #274C77;
   font-weight: 800;
@@ -72,8 +72,8 @@ hr{
 }
 
 .btn-primary:hover{
-  background-color: #0b1fce;
-  border: 2px solid #0b1fce;
+  background-color: #13212B;
+  border: 2px solid #13212B;
 }
 
 .btn-outline-primary:hover{
@@ -81,3 +81,4 @@ hr{
   border: 2px solid #990000;
   color: #fff;
 }
+

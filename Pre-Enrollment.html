@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pre-Enrollment</title>
+    <title> PRE-ENROLLMENT </title>
     <link rel="stylesheet" href="css/fontawesome-free-6.2.1-web/css/all.min.css"/>
     <link rel="stylesheet" href="css/bootstrap-5.2.2-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/Enrollment.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/enrollment.css">
     <link rel="stylesheet" href="css/nav.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-md fixed-top" style="background-color: #274C77;">
+    <nav class="navbar navbar-expand-md sticky-md-top" style="background-color: #274C77;">
         <div class="container-fluid p-0" >
             <div class="d-flex flex-colum align-items-center">
                 <button class="btn-hamburger" type="button" id="hamburger">
@@ -21,15 +22,16 @@
                 <a href="#" class="navbar-brand fs-6 fw-900 text-white">&nbsp;Quezon City University</a>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <!--<span class="navbar-toggler-icon"></span>-->
+                <div class="icon-hamburger"><span></span><span></span><span></span></div>
             </button>
-            <div class="navbar-collapse collapse justify-content-end" id="navcol-1">
+            <div class="nav-bar cus navbar-collapse collapse justify-content-end" id="navcol-1">
                 <ul class="navbar nav p-0">
                     <li class="navbar-item">
-                        <a href="#" class="nav-link text-white fs-6 fw-900 active">HOME</a>
+                        <a href="index.html" class="nav-link text-white fs-6 fw-900 active">HOME</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="#" class="nav-link text-white fs-6 fw-900">CONTACT</a>
+                        <a href="#" class="nav-link text-white fs-6 fw-900"> INBOX</a>
                     </li>
                     <li class="navbar-item">
                         <a href="#" class="nav-link text-white fs-6 fw-900">ABOUT QCU</a>
@@ -38,7 +40,7 @@
                         <a class="nav-link dropdown-toggle" href="#" role="button">
                           <img src="img/1565034397472.jfif" class="logo rounded-circle">
                         </a>
-                        <ul class="dropdown-menu-cus text-center" style="right: 0;">
+                        <ul class="dropdown-menu-cus text-center" style="right: 0;" data-bs-keyboard="true" tabindex="-1" aria-hidden="false">
                           <li><a class="dropdown-item" href="#">EDIT PROFILE</a></li>
                           <li><a class="dropdown-item" href="#">REQUEST STATUS</a></li>
                           <li><a class="dropdown-item" href="#">LOGOUT</a></li>
@@ -50,7 +52,7 @@
     </nav>
     <div class="menu-container">
         <ul class="menu">
-            <li data-toggle="tooltip" data-bs-placement="right" title="PRE-ENROLLMENT"><a><i class="fa-sharp fa-solid fa-clipboard icon"></i>PRE-ENROLLMENT</a></li>
+            <li><a href="Pre-Enrollment.html"><i class="fa-sharp fa-solid fa-clipboard icon"></i>PRE-ENROLLMENT</a></li>
             <li><a href="req-doc.html"><i class="fa-solid fa-file-lines icon"></i>REQUEST DOCUMENT</a></li>
             <li><a href="gradeslip.html"><i class="fa-solid fa-table-list icon"></i>GRADESLIP</a></li>
             <li><a href="Course Curriculum.html"><i class="fa-solid fa-list icon"></i>CURRICULUM</a></li>
@@ -61,7 +63,11 @@
             <li><a href="#"><i class="fa-solid fa-info icon"></i>FAQS</a></li>
         </ul>
     </div>
-<!------------START CONTENT------------>
+                
+    <div class="Container-cus">
+
+    <section>
+<!------------START BODY------------>
 <div class="container m-auto enrollment">
     <form action="#" class="enrollment" id="enrollment">
         <h1> PRE-ENROLLMENT <i class="fa-solid fa-table-list fa-2x"></i></h1>
@@ -103,18 +109,19 @@
         <a href="Success.html"><button type="button" class="btn btn-primary px-5 my-5 ms-3" type="submit">SUBMIT</button></a>
         <a href="landing.html"><button type="button" class="btn btn-outline-primary px-5 my-5 me-3">CANCEL</button></a>
     </div>
+    </form>
  <br>
  <br>
  <br>
  <br>
  <br>
  <br>
-
-</form> 
-</div>        
 </section>
+</form>
+</div> 
+</div>        
 </div>
-</div>
+</div>     
 <!------------END BODY------------>
 
 <!------------STAR FOOTER------------>
@@ -147,8 +154,11 @@
 <!------------END FOOTER------------>
 
 <!------------JS------------>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="css/bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"></script>
     <script src="css/bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/toggle.js"></script>
+    <script src="js/loading.js"></script>
 </body>
 </html>
