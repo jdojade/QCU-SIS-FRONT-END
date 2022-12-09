@@ -1,84 +1,69 @@
-*{
-  font: 'Inter', sans-serif !important;
-  margin: 0 !important;
-}
-.profile{
-  width: 30px;
-  height: 30px;
-  padding: 0%;
-}
-.fa-sharp{
-width: 1rem;
-height: 1rem;
-}
-.nav-active{
-  background-color: #598dc9;
-}
-
-.fa-sharp{
-  width: 1rem;
-  height: 1rem;
-}
-
-.nav-active{
-background-color: #598dc9;
-}
+ */                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
 hr{
-  width: clamp(10%, 100vw, 90%) !important;
-  left: 0;
+    width: clamp(10%, 100vw, 90%) !important;
+    left: 0;
 }
-.fa-table-list{
-  float: right;
+
+.enrollment{
+    margin-top: 3rem !important;  
 }
-.enrollment {
-  padding-top: 5rem;
+
+.nav-tabs{
+    --bs-nav-tabs-link-active-bg: #F5F1F1;
 }
-.enrollment h1{
+
+.req-display .top {
+    padding-top: 3rem !important;
+}
+
+.fa-file-circle-check, .fa-table-list{
+    float: right;
+}
+
+.Pre-Enrollment h1{
   color: #13212B;
-  font: 900 36px 'Inter', sans-serif;
+  font: 900 48px 'Inter', sans-serif;
 }
-.enrollment hr, p{
+
+.Pre-Enrollment hr, p{
   color: #13212B !important;
-  font: 900 18px 'Inter', sans-serif;
 }
-.form-field{
-  margin-bottom: 5px;
-  width: 100%;
-  height: 65px !important;
-  padding: 30px;
-  border: 1px solid #000000 !important;
-  border-radius: 15px !important;
+
+.enrollment p{
+    font-size: 24px;
+    color: #13212B !important;
 }
+
 .form-select{
-  width: 100%;
-  Height: 65px !important;
-  padding: 20px;
-  border: 1px solid #000000 !important;
-  border-radius: 15px !important;
-    }
-    
+    width: 100%;
+    height: 60px;
+}
 .btn-primary{
-  background-color: #274C77;
-  border: 2px solid #274C77;
-  font-weight: 800;
-  float: right;
+  background-color: #274C77 !important;
+  border: 2px solid #274C77 !important;
+  font-weight: 700 !important;
+  float: right !important;
 }
 
 .btn-outline-primary{
-  border: 2px solid #274C77;
-  color: #274C77;
-  font-weight: 800;
-  float: right;
+  border: 2px solid #274C77 !important;
+  color: #274C77 !important;
+  font-weight: 700 !important;
+  float: right !important;
 }
 
 .btn-primary:hover{
-  background-color: #13212B;
-  border: 2px solid #13212B;
+  background-color: #13212B !important;
+  border: 2px solid #13212B !important;
 }
 
 .btn-outline-primary:hover{
-  background-color: #990000;
-  border: 2px solid #990000;
-  color: #fff;
+  background-color: #990000 !important;
+  border: 2px solid #990000 !important;
+  color: #fff !important;
 }
+
+
+
+
 
