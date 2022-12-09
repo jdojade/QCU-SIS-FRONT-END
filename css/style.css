@@ -180,6 +180,14 @@ h1{
   background-color: #13212B;
   color: #FFFFFF;
 }
+.btn-sub-3{
+  background-color: #274C77;
+  color: #FFFFFF;
+}
+.btn-sub-3:hover{
+  background-color: #879DAC;
+  color: #FFFFFF;
+}
 .btn-shadow{
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.52);
   border-radius: 10px;
@@ -187,6 +195,10 @@ h1{
 .btn-cus{
   width: 45%;
 }
+.btn-start{
+  width: 30%;
+}
+
 /*---------- DASHBOARD ------------*/
 .flex-container {
   display: flex;
