@@ -14,11 +14,6 @@ height: 1rem;
 .nav-active{
   background-color: #598dc9;
 }
-.profile{
-  width: 30px;
-  height: 30px;
-  padding: 0%;
-}
 
 .fa-sharp{
   width: 1rem;
