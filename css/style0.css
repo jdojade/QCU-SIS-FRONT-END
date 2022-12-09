@@ -59,7 +59,7 @@ hr{
 
 
 
-.stat, .req, .grade{
+.stat, .req, .grade, .edit-prof{
   margin-top: 3rem !important;
 }
 
@@ -176,4 +176,7 @@ th, td {
 th {
   background-color: #F5F1F1 !important;
 }
+
+
+/* -----edit profile---- */
 
