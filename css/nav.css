@@ -309,6 +309,3 @@
     border-left: 1px solid transparent;
     transform: rotate(45deg);
 }
-.login-link::after{
-    border: 0;
-}
