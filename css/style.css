@@ -8,9 +8,19 @@
 /*--------------------------------------------------------------
 # Main
 --------------------------------------------------------------*/
+#inbox {
+  padding: 10px 20px;
+  transition: all 0.3s;
+}
+
+@media (max-width: 1199px) {
+  #inbox {
+    padding: 20px;
+  }
+}
 #main {
 
-  padding: 10px 20px;
+  padding: 20px 40px;
   transition: all 0.3s;
 }
 
@@ -204,20 +214,17 @@ h1{
   font-weight: bold;
   font-size: 30px;
 }
-.flex-item a:hover{
-  font-size: 100px;
+.flex-item:hover a{
   transition-timing-function: linear;
-  transition: font-size .2s;
+  transition: 0.2s;
   background-color: #13212B !important;
   color: white !important;
 }
-.flex-item span:hover{
-  font-size: 35px;
+.flex-item:hover span{
+  transition: 0.2s;
   transition-timing-function: linear;
-  transition: font-size .2s;
   color: #fff !important;
   font-weight: bold;
-  
 }
 .flex-item img:hover{
   filter: invert(100%) grayscale(100%);
