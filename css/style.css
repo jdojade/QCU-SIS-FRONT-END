@@ -5,6 +5,9 @@
   padding: 0;
   font-family: 'Inter', sans-serif;
 }
+hr{
+    margin: 50px 0px 50px 0px;
+}
 /*--------------------------------------------------------------
 # Main
 --------------------------------------------------------------*/
@@ -138,7 +141,7 @@
 
 
 section{
-  margin-bottom: 4vh;
+  margin-bottom: 60px;
 }
 hr{
   border: 1.5px solid #000;
@@ -251,10 +254,47 @@ h1{
   
 }
 
-.flex-item img:hover{
+.flex-item a:hover img{
   filter: invert(100%) grayscale(100%);
 }
 /*---------- Carousel ------------*/
+#landing-carousel{
+    position: relative;
+    height: 728px;
+    overflow: hidden;
+}
+.opacity{
+    background: rgba(39, 76, 119, 0.49);
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+}
+@media (max-width: 1460px) {
+    #landing-carousel{
+        height: auto;
+    }
+    .opacity * .btn-start{
+        width: 300px;
+    }
+    .opacity * h3{
+        width: 100% !important;
+    }
+}
+@media (max-width: 570px) {
+    #landing-carousel{
+        height: auto;
+    }
+    .opacity{
+        position: relative;
+        background: #13212B;
+        padding: 10px;
+    }
+    .opacity * .btn-start{
+        width: 250px;
+    }
+    
+}
 .carousel-control-next-icon, .carousel-control-prev-icon{
   filter: invert(100%);
 }
@@ -301,17 +341,18 @@ h1{
   right: 0;
   width: 23vw;
 }
-
+/*-------- Announcement ------------*/
 .announce{
-  width: 100vh;
+  width: 850px;
   border-radius: .5rem;
-
   background-color: #13212B !important;
 }
-.announce.carousel-item{
-  height:400px !important;
+.announce * .row{
+  height: 300px;
   border: 0px;
 }
+
+/*-------- Course ------------*/
 .course{
   display: flex;
   flex-flow: row wrap;
@@ -323,7 +364,7 @@ h1{
 .course li a{
   background: #FFFFFF;
   padding: 20px;
-  width: 60vh;
+  width: 30rem;
   height: 12rem;
   margin: 1rem;
   line-height: 150px;
@@ -338,6 +379,13 @@ h1{
   align-content: center;
   border-radius: .5rem;
   border: 3px solid #13212B;
+}
+@media (max-width: 570px) {
+    .course li a{
+        width: 400px;
+        height: 150px;
+    }
+    
 }
 .course li a:hover{
   background-color: #13212B;
@@ -362,9 +410,8 @@ h1{
   filter: invert(100%) grayscale(100%);
 }
 .eng{
-  content: url(/img/Industiral\ eng.icon.svg);
+  content: url(/img/Industiral\ eng.icon.png);
   width: 120px !important;
-
 }
 .announce.carousel-item.card{
   height:400px;
