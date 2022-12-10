@@ -16,8 +16,6 @@ hr{
     height: 5rem !important;
 }
 
-
-
 .request-form h1{
   color: #13212B;
   font: 900 48px 'Inter', sans-serif;
@@ -27,42 +25,115 @@ hr{
   color: #13212B !important;
 }
 
-.request-form p{
+.req p{
     font-size: 24px;
-    color: #13212B !important
+    color: #13212B !important;
 }
 
 .btn-primary{
-  background-color: #274C77;
-  border: 2px solid #274C77;
-  font-weight: 700;
-  float: right;
+  background-color: #274C77 !important;
+  border: 2px solid #274C77 !important;
+  font-weight: 700 !important;
+  float: right !important;
 }
 
 .btn-outline-primary{
-  border: 2px solid #274C77;
-  color: #274C77;
-  font-weight: 700;
-  float: right;
+  border: 2px solid #274C77 !important;
+  color: #274C77 !important;
+  font-weight: 700 !important;
+  float: right !important;
 }
 
 .btn-primary:hover{
-  background-color: #13212B;
-  border: 2px solid #13212B;
+  background-color: #13212B !important;
+  border: 2px solid #13212B !important;
 }
 
 .btn-outline-primary:hover{
-  background-color: #990000;
-  border: 2px solid #990000;
-  color: #fff;
+  background-color: #990000 !important;
+  border: 2px solid #990000 !important;
+  color: #fff !important;
 }
-/* 
-.success{
-  display: block;
-  width: 200px;
-  height: 200px;
+
+/* request status */
+
+
+
+.stat, .req, .grade, .edit-prof{
+  margin-top: 3rem !important;
+}
+
+.stat h1{
+  color: #13212B;
+  font: 900 48px 'Inter', sans-serif;
+}
+
+.stat hr{
+  color: #13212B !important;
+}
+
+.req-link{
+  color: #002F49 !important;
+
+}
+
+
+.req-table .active {
+  background-color: #F5F1F1 !important;
+}
+
+
+
+.nav-tabs{
+  --bs-nav-tabs-link-active-bg: #F5F1F1;
+}
+
+.table-stat th, td {
+  background-color: #F5F1F1;
+  padding: 1.5rem 2.5rem !important;
+}
+
+th, td {
+  background-color: #F5F1F1 !important;
+  color: #002F49;
+}
+
+.req-display {
+  width: 80%;
+}
+
+.req-display td {
+  padding-left: 7rem !important;
+  font-size: 22px;
+}
+
+.req-display tbody {
+  padding: 5rem !important;
+}
+
+.req-display .top {
+  padding-top: 3rem !important;
+}
+
+.req-display .bottom {
+  padding-bottom: 3rem !important;
+}
+
+/* .nav-pills .nav-item .nav-link {
+  color: #13212B;
 } */
 
+.nav-pills .nav-item .nav-link .active {
+  color: #fff !important;
+  background-color: #002F49;
+}
+
+.nav-pills{
+  --bs-nav-pills-link-active-color: #fff !important;
+  --bs-nav-pills-link-active-bg: #002F49 !important;
+  --bs-nav-pills-border-radius: 50px;
+  color: #13212B;
+}
 
 /* gradeslip */
 
@@ -103,7 +174,9 @@ hr{
 }
 
 th {
-  background-color: #3e6796 !important;
-  color: #fff;
+  background-color: #F5F1F1 !important;
 }
+
+
+/* -----edit profile---- */
 

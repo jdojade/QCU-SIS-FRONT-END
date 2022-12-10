@@ -1,0 +1,116 @@
+.navbar *{
+    color: #000 !important;
+}
+.menu li:hover{
+   border-radius: 0px .6rem .6rem 0px;
+}
+.menu li.active{
+   border-radius: 0px .6rem .6rem 0px;
+}
+
+/*THE MAGIC BEGINS HERE*/
+
+.menu-container{
+   flex-direction: column;
+   align-items: center;
+   width: 60px;
+   top: 0;
+   z-index: 100000;
+   padding-top: 20px ;
+}
+.info{
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    visibility: hidden;    
+}
+.info.magic,
+.info.show{
+    visibility: visible;
+    transition: visibility 0.75s cubic-bezier(0.25, 0.1, 0.25, 1.0);    
+}
+.menu-container.show{
+    width: 260px; 
+}
+.info img{
+    width: 5vw;
+}
+.info span{
+    width: 90%;
+    background-color: #FFF;
+    height: 2px;
+    border-radius: 2px;
+    margin: 10px;
+}
+.hamburger{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+}
+.nav-link, .navbar-item{
+    background-color: #fff;
+}
+.navbar-item .active{
+    color: #fff !important;
+    font-weight: 900;
+}
+.nav-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-link:hover {
+    background-color: #FFFFFF !important;
+    color: #274C77 !important;
+}
+.nav-admin{
+    background-color: #fff;
+    padding: 3px 5px 3px 5px !important;
+    border-bottom: 2px solid #9ea6b0;
+}
+
+.dropdown-menu-cus li a:hover{
+    color: #fff !important;
+}
+.dropdown-menu-cus li:nth-last-child(1) a:hover{
+    color: #ff0000 !important;
+}
+.dropdown-toggle::after{
+    padding: 3px;
+    border-top: 4px solid;
+    border-right: 4px solid;
+    border-bottom: 1px solid transparent;
+    border-left: 1px solid transparent;
+    transform: rotate(45deg);
+}
+.headline{
+    position: relative;
+    width: 100%;
+    border-bottom: 2px solid #000;
+}
+.headline i{
+    position: absolute;
+    right: -3px;
+    bottom: -25px;
+    background-color: #fff;
+}
+.table{
+    background-color: #F5F1F1;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+thead tr td{
+    width: 25%;
+    overflow-x:auto;
+    text-align: center;
+    font-weight: 800;
+}
+tbody tr td{
+    width: 25%;
+    overflow-x:auto;
+    text-align: center;
+}
+tbody tr td:nth-child(1){
+    font-weight: 800;
+}

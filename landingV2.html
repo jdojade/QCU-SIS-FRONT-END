@@ -18,27 +18,29 @@
                 <a href="#" class="navbar-brand fs-5 fw-bolder text-white">&nbsp;Quezon City University</a>
             </div>
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                <!--<span class="navbar-toggler-icon"></span>-->
                 <div class="icon-sample"><span></span><span></span><span></span></div>
             </button>
             <div class="navbar-cus navbar-collapse collapse justify-content-end" id="navcol-1">
-                <ul class="navbar-nav text-center">
+                <ul class="navbar-nav text-center text-white">
                     <li class="navbar-item">
                         <a href="#" class="nav-link fs-6 fw-900 active">HOME</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="#" class="nav-link text-white fs-6 fw-900">CONTACT</a>
+                        <a href="#" class="nav-link fs-6 fw-900">CONTACT</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="#" class="nav-link text-white fs-6 fw-900">ABOUT QCU</a>
+                        <a href="#" class="nav-link fs-6 fw-900">ABOUT QCU</a>
+                    </li> 
+                    <li class="navbar-item">
+                        <a href="#" class="nav-link fs-6 fw-900 dropdown-toggle login-link" data-bs-toggle="modal" data-bs-target="#student_login">LOGIN</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
     <div class="container-fluid p-0">
-        <section style="position: relative;">
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <section id="landing-carousel">
+            <div id="carouselExampleSlidesOnly" class="carousel slide landing-carousel" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="img/Carousel image 1.jpg" class="d-block w-100" alt="...">
@@ -48,14 +50,11 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-primary bg-opacity-50 w-100 h-100 d-flex align-items-center" style="position: absolute; top:0;">
+            <div class="opacity w-100 h-100">
                 <div class="container">
-                    <p class="qoute">
-                        <span>#</span><span>1</span><span>Q</span><span>C</span><span>U</span><span>!</span>
-                    </p>
+                    <p class="qoute"><span>#</span><span>1</span><span>Q</span><span>C</span><span>U</span><span>!</span></p>
                     <h3 class="text-white w-75">Quezon City University (QCU), formerly known as Quezon City Polytechnic University (QCPU), is a city government-funded university in Quezon City, Philippines.</h3>
-                    <br/>
-                    <button class="btn btn-sub-1 w-45" data-bs-toggle="modal" data-bs-target="#signIn">START YOUR JOURNEY</button>
+                    <button class="btn btn-sub-1 btn-start" data-bs-toggle="modal" data-bs-target="#signIn">START YOUR JOURNEY</button>
                 </div>          
             </div>
         </section>
@@ -75,7 +74,7 @@
                                         <h4>The QCU admission is will be open at November 11, 2022. Are you looking for university that has good quality education? Quezon University is now here for you!</h4>
                                         <br />
                                         <div class="w-100 d-flex justify-content-end">
-                                            <button class="btn btn-sub-1 w-50">DETAILS</button>
+                                            <button class="btn btn-sub-3 w-50">DETAILS</button>
                                         </div>
                                     </div>
                                 </div>
@@ -92,7 +91,7 @@
                                         <h4>The application for QCYP Pre-Session Activity will be extended up until November 26, 2022.</h4><br>
                                         <br />
                                         <div class="w-100 d-flex justify-content-end">
-                                            <button class="btn btn-sub-1 w-50">DETAILS</button>
+                                            <button class="btn btn-sub-3 w-50">DETAILS</button>
                                         </div>
                                     </div>
                                 </div>
@@ -189,19 +188,19 @@
                         <li class="flex-item">
                             <a href="admission.html" class="d-flex text-decoration-none">
                                 <img src="img/Admission Icon blue.png" alt="" class="img-icon">
-                                <h3>Admission</h4>
+                                <h3>Admission</h3>
                             </a>
                         </li>
                         <li class="flex-item">
                             <a href="request.html" class="d-flex text-decoration-none">
                                 <img src="img/Request icon.png" alt="" class="img-icon">
-                                <h3>Request</h4>
+                                <h3>Request</h3>
                             </a>
                         </li>
                         <li class="flex-item">
                             <a href="inquire.html" class="d-flex text-decoration-none">
                                 <img src="img/Inquire icon.png" alt="" class="img-icon">
-                                <h3>Inquire</h4>
+                                <h3>Inquire</h3>
                             </a>
                         </li>
                     </ul>
@@ -210,15 +209,16 @@
             </div>
         </section>
     </div>
-    <!-- Modal -->
+
+<!-- Modal -->
     <!--Sart Sign in modal-->
-    <div class="modal fade" id="signIn" tabindex="-1" aria-labelledby="signIn" aria-hidden="true">
+    <div class="modal fade" id="student_login" tabindex="-1" aria-labelledby="student_login" aria-hidden="true">
         <div class="modal-dialog modal-xl modal-dialog-centered">
             <div class="modal-content login-container">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 <p class="welcome text-center">Welcome back!</p>
                 <div class="login">
-                    <form action="" class="text-center justify-content-center">
+                    <form action="student_dashboard.html" class="text-center justify-content-center">
                         <div class="img-fluid">
                             <img src="img/1565034397472.jfif" alt="" class="rounded-circle w-45">
                         </div>
@@ -233,8 +233,8 @@
                             <a href="#" class="text-decoration-none float-end text-body fw-bolder">Forget password?</a>
                         </div>
                         <div class="mt-5 text-sm-start w-100 d-flex justify-content-between">
-                            <button class="btn btn-sub-2 btn-shadow w-45" data-bs-dismiss="modal" aria-label="Close"><strong>CANCEL</strong></button>
-                            <button type="submit" class="btn btn-sub-1 btn-shadow w-45" id="success" data-bs-toggle="modal" data-bs-target="#request"><strong>SIGN IN</strong></button>
+                            <button class="btn btn-sub-2 btn-shadow btn-cus" data-bs-dismiss="modal" aria-label="Close"><strong>CANCEL</strong></button>
+                            <button type="submit" class="btn btn-sub-1 btn-shadow btn-cus" id="success" data-bs-toggle="modal" data-bs-target="#request"><strong>SIGN IN</strong></button>
                         </div>
                     </form>
                 </div>
@@ -263,11 +263,16 @@
         </div>
     </div>
     <!--End Request modal-->
+<!--End Modal-->
+
+
+
+
     <footer id="sticky-footer" class="flex-shrink-0 py-1 text-white align-content-center" style="background-color: #274C77;">
         <div class="container">
             <div class="row align-items-end">
                 <div class="col-md-5">
-                    <div class="row align-items-end">
+                    <div class="row">
                         <div class="col-md-6">
                             <span>VISIT AND CONTACT US ON:</span><br />
                             <span><a href="https://www.facebook.com/qcu1994" class="text-decoration-none text-white"><i class="fa-brands fa-facebook"></i>&nbsp;@qcu1994</a></span><br />
