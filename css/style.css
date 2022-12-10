@@ -152,10 +152,6 @@ hr{
 section{
   margin-bottom: 60px;
 }
-hr{
-  border: 1.5px solid #000;
-  background-color: #000;
-}
 h1{
   font-weight: 700;
   color: #13212B;

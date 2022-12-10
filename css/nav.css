@@ -89,16 +89,17 @@
    justify-content: flex-start;
    align-items: flex-start;
    overflow: hidden;
-   width: 50px;
+   width: 60px;
    transition: width 0.75s cubic-bezier(0.25, 0.1, 0.25, 1.0);
    overflow-y: auto;
    position: fixed;
    height: 100vh;
    z-index: 100;
 }
-.menu-container.magic{
+.menu-container.magic,
+.menu-container.show{
    width: 260px;
-   grid-template-columns: 50px auto!important;
+   grid-template-columns: 60px auto!important;
 }
 .menu-container::-webkit-scrollbar {
    display: none;
