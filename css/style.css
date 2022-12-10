@@ -11,8 +11,17 @@ hr{
 /*--------------------------------------------------------------
 # Main
 --------------------------------------------------------------*/
-#main {
+#inbox {
+  padding: 10px 20px;
+  transition: all 0.3s;
+}
 
+@media (max-width: 1199px) {
+  #inbox {
+    padding: 20px;
+  }
+}
+#main {
   padding: 50px 20px;
   transition: all 0.3s;
 }
