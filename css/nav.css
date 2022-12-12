@@ -220,6 +220,7 @@
     background-color: #FFFFFF !important;
     color: #274C77 !important;
     font-weight: 900;
+    height: 50px;
 }
 .nav-link{
     display: flex;
@@ -231,16 +232,7 @@
     background-color: #FFFFFF !important;
     color: #274C77 !important;
 }
-.navbar-cus,
-.navbar-cus * .nav-link{
-    height: 60px;
-}
-@media (max-width: 575.98px) {
-    .navbar-cus.show{
-        height: 200px;
-    }
-    
-}
+
 .navbar{
     background-color: #274C77;
     padding: 0px 5px 0px 5px !important;

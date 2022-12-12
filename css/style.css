@@ -76,7 +76,6 @@ hr{
 
 .loader-container {
  display: flex;
- flex-direction: column;
  justify-content: center;
  align-items: center;
 }
@@ -151,6 +150,7 @@ hr{
 
 section{
     padding-bottom: 50px;
+    position: relative;
 }
 h1{
   font-weight: 700;
@@ -264,12 +264,19 @@ h1{
     height: 728px;
     overflow: hidden;
 }
+.carousel-cus,
+.carousel-inner{
+  height: -webkit-fill-available;
+}
 .opacity{
     background: rgba(39, 76, 119, 0.49);
     position: absolute;
     top: 0;
     display: flex;
     align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
 }
 @media (max-width: 1460px) {
     #landing-carousel{
@@ -351,6 +358,14 @@ h1{
 .announce * .row{
   height: 300px;
   border: 0px;
+}
+@media (max-width: 570px){
+  .announce{
+    width: 375px;
+  }
+  .announce * .row{
+    height: 659px;
+  }
 }
 
 /*-------- Course ------------*/
@@ -504,7 +519,7 @@ h1{
 /*---------- ADMIN LOGIN ------------*/
 
 .admin{
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   align-items: center;

@@ -56,7 +56,7 @@
                   '</div></div>'
 
               // Style
-              data.style = 'background-color: rgba(255, 255, 255, .98); display: flex; height: auto;  px; justify-content: center; max-height: 100% !important; max-width: 100% !important; min-height: 100vh; min-width: 100vh; position: fixed; top: 0; left: 0; transition: ' + loaderScreenTransition + 's ease-in-out; width: ' + innerWidth + 'px; z-index: 2147483647';
+              data.style = 'background-color: rgba(255, 255, 255, .98); display: flex; height: auto; justify-content: center; max-height: 100% !important; max-width: 100% !important; min-height: 100vh; min-width: 100vw; position: fixed; top: 0; left: 0; transition: ' + loaderScreenTransition + 's ease-in-out; width: ' + innerWidth + 'px; z-index: 2147483647';
 
           // Function
               // Alpha
