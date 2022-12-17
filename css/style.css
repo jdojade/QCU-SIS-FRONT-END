@@ -212,20 +212,19 @@ h1{
 /*---------- DASHBOARD ------------*/
 .flex-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
-.flex-container li {
-  list-style-type: none;
-}
-
 .flex-item a{
   background: #FFFFFF;
-  padding: px;
+  padding: 5px;
   width: 15rem;
   height: 15rem;
-  margin: 2rem;
-  line-height: 30px;
+  margin: 1rem;
+  line-height: 150px;
   color: #13212B;
   font-weight: bold;
   font-size: 5em;
@@ -233,25 +232,21 @@ h1{
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   align-content: center;
   border-radius: .5rem;
   box-shadow: 4px 6px 4px rgba(0, 0, 0, 0.25);
 }
-.flex-item span{
-  color: #13212B;
-  font-weight: bolder;
-  font-size: 30px;
-}
 .flex-item a:hover{
-  transition-timing-function: linear;
-  transition: 0.2s;
-  background-color: #13212B !important;
+  background-color: #13212B;
   color: white !important;
 }
 .flex-item a:hover img{
   filter: invert(100%) grayscale(100%);
+}
+.carousel-control-next-icon, .carousel-control-prev-icon{
+  filter: invert(100%);
 }
 
 /*---------- Carousel ------------*/
