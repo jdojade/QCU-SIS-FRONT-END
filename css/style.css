@@ -20,6 +20,12 @@ hr{
   #inbox {
     padding: 20px;
   }
+  #trash_btn{
+    margin: 5px;
+  }
+  #starred_btn{
+    margin: 5px;
+  }
 }
 #main {
   padding: 50px 20px;
@@ -29,6 +35,12 @@ hr{
 @media (max-width: 1199px) {
   #main {
     padding: 20px;
+  }
+  #trash_btn{
+    margin: 5px;
+  }
+  #starred_btn{
+    margin: 5px;
   }
 }
 /*Pre loader*/
