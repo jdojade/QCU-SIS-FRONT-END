@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Request Document</title>
+    <title>My Profile</title>
     <link rel="stylesheet" href="css/fontawesome-free-6.2.1-web/css/all.min.css"/>
     <link rel="stylesheet" href="css/bootstrap-5.2.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/style0.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
 </head>
 <body>
-    <nav class="navbar navbar-expand-md sticky-md-top">
+    <nav class="navbar navbar-expand-md sticky-top">
         <div class="container-fluid p-0" >
             <div class="d-flex flex-colum align-items-center">
                 <button class="btn-hamburger" type="button" id="hamburger">
@@ -41,7 +42,7 @@
                           <img src="img/1565034397472.jfif" class="logo rounded-circle">
                         </a>
                         <ul class="dropdown-menu-cus text-center" style="right: 0;" data-bs-keyboard="true" tabindex="-1" aria-hidden="false">
-                          <li><a class="dropdown-item" href="#">EDIT PROFILE</a></li>
+                          <li><a class="dropdown-item" href="edit-profile.html">EDIT PROFILE</a></li>
                           <li><a class="dropdown-item" href="#">REQUEST STATUS</a></li>
                           <li><a class="dropdown-item" href="#">LOGOUT</a></li>
                         </ul>
@@ -53,7 +54,7 @@
     <div class="menu-container">
         <ul class="menu">
             <li><a href="Pre-Enrollment.html"><i class="fa-sharp fa-solid fa-clipboard icon"></i>PRE-ENROLLMENT</a></li>
-            <li class="active"><a href="req-doc.html"><i class="fa-solid fa-file-lines icon"></i>REQUEST DOCUMENT</a></li>
+            <li><a href="req-doc.html"><i class="fa-solid fa-file-lines icon"></i>REQUEST DOCUMENT</a></li>
             <li><a href="gradeslip.html"><i class="fa-solid fa-table-list icon"></i>GRADESLIP</a></li>
             <li><a href="Course Curriculum.html"><i class="fa-solid fa-list icon "></i>CURRICULUM</a></li>
             <li><a href="#"><i class="fa-solid fa-mobile-screen icon"></i>FACULTY EVALUATION</a></li>
@@ -67,26 +68,81 @@
     <div class="container-cus">
 <!------------START CONTENT------------>
 
-    <section>
+    <section class="mb-5">
 
         <div class="container m-auto edit-prof">
             <div class="display-4 fw-bold pb-2 mb-1 border-bottom border-3 border-secondary mb-5">
-                EDIT PROFILE
+                MY PROFILE
               </div>
-            <form class="form-floating" action="">
-                <div class="row">
-                    <div class="col form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput">Email address</label>
+            <form class="form-floating mb-5" action="">
+                <div class="profile-pic  text-center">
+                    <img src="src/kt-concept.jpg" alt="profile-picture" srcset="" class="rounded-circle m-auto d-flex justify-content-center">
+                    <label class="fw-bold fs-1 pb-0">Juan Dela Cruz</label> <br>
+                    <label class="fw-bold fs-4 text-muted pt-0">22-1217</label>
+                </div>
+                <section>
+                    
+                </section>
+                <div class="row g-3">
+                    <div class="col-md-6 form-floating">
+                        <input type="text" class="form-control" id="floatingName" placeholder="Name" value="Juan Dela Cruz" disabled readonly>
+                        <label for="floatingName" class="ps-4">Name</label>
+                    </div> 
+                    <div class="col-md-6 form-floating">
+                        <input type="text" class="form-control" id="floatingStudNo" placeholder="Student Number" value="22-1217" disabled readonly>
+                        <label for="floatingStudNo" class="ps-4">Student Number</label>
                     </div>
-                    <div class="col form-floating mb-3">
-                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                        <label for="floatingPassword">Password</label>
+                    <div class="col-md-6 form-floating">
+                        <input type="text" class="form-control" id="floatingStudType" placeholder="Type Of Student" value="Regular Student" disabled readonly>
+                        <label for="floatingStudType" class="ps-4">Type Of Student</label>
+                    </div>
+                    <div class="col-md-6 form-floating">
+                        <input type="text" class="form-control" id="floatingYrSec" placeholder="Year and Section" value="SBIT4J" disabled readonly>
+                        <label for="floatingDocument" class="ps-4">Year and Section</label>
+                    </div>
+                    <div class="col-md-6 form-floating">
+                        <input type="text" class="form-control" id="floatingContact" placeholder="Contact Number" value="09123456789">
+                        <label for="floatingContact" class="ps-4">Contact Number</label>
+                    </div>
+                    <div class="col-md-6 form-floating">
+                        <input type="email" class="form-control" id="floatingEmail" placeholder="Email" value="juan.delacruz@gmail.com" disabled readonly>
+                        <label for="floatingEmail" class="ps-4">Email</label>
+                    </div>
+                    <div class="col-12 form-floating">
+                        <input type="text" class="form-control" id="floatingAddress" placeholder="Address" value="Blk 23 Lot 12 Sampaguita St. Barangay Pasong Tamo, Novaliches, Quezon City">
+                        <label for="floatingAddress" class="ps-4">Address</label>
                     </div>
                 </div>
+
+                <button class="btn btn-primary px-5 my-5 ms-3" id="editProfile" data-bs-toggle="submit" data-bs-target="#" type="submit" role="button" aria-controls="edit-prof" aria-selected="false">EDIT</button>
+                
+                <button type="button" class="btn btn-outline-primary px-5 my-5 me-3" data-bs-toggle="modal" data-bs-target="#save-change">SAVE CHANGES</button>
+
             </form>
         </div>
     </section>
+
+
+    <!-- Modal -->
+<div class="modal fade" id="save-change" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="save-changeLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0">
+        <div class="my-4">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body mx-3">
+          <p class="fs-3 text-center">
+            Do you want to save all changes in the information?
+          </p>
+        </div>
+        <div class="my-4 d-flex justify-content-between">
+          <button type="button" class="btn btn-danger px-4 mx-5 fw-bold" data-bs-dismiss="modal">CANCEL</button>
+          <button type="button" class="btn btn-success px-5 mx-5 fw-bold">YES</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    
 
 <!------------END CONTENT------------>        
     </div>
