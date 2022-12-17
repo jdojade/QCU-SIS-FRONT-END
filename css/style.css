@@ -5,6 +5,9 @@
   padding: 0;
   font-family: 'Inter', sans-serif;
 }
+hr{
+    margin: 50px 0px 50px 0px;
+}
 /*--------------------------------------------------------------
 # Main
 --------------------------------------------------------------*/
@@ -19,8 +22,7 @@
   }
 }
 #main {
-
-  padding: 20px 40px;
+  padding: 50px 20px;
   transition: all 0.3s;
 }
 
@@ -148,14 +150,13 @@
 
 
 section{
-  margin-bottom: 4vh;
+  margin-bottom: 60px;
 }
 hr{
   border: 1.5px solid #000;
   background-color: #000;
 }
 h1{
-  
   font-weight: 700;
   color: #13212B;
 }
@@ -163,6 +164,18 @@ h1{
   font-size: clamp(2vw,400px,11vw);
   font-weight: 900;
 }
+.qoute span:nth-child(3),
+.qoute span:nth-child(5){
+  color: #CDCDCB;
+}
+.qoute span:nth-child(1),
+.qoute span:nth-child(2),
+.qoute span:nth-child(4),
+.qoute span:nth-child(6){
+  color: #FFF;
+}
+
+/*---------- BUTTONS -------------*/
 .btn-sub-1{
   background-color: #274C77;
   color: #FFFFFF;
@@ -179,6 +192,25 @@ h1{
   background-color: #13212B;
   color: #FFFFFF;
 }
+.btn-sub-3{
+  background-color: #274C77;
+  color: #FFFFFF;
+}
+.btn-sub-3:hover{
+  background-color: #879DAC;
+  color: #FFFFFF;
+}
+.btn-shadow{
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.52);
+  border-radius: 10px;
+}
+.btn-cus{
+  width: 45%;
+}
+.btn-start{
+  width: 30%;
+}
+
 /*---------- DASHBOARD ------------*/
 .flex-container {
   display: flex;
@@ -226,10 +258,48 @@ h1{
   color: #fff !important;
   font-weight: bold;
 }
-.flex-item img:hover{
+
+.flex-item a:hover img{
   filter: invert(100%) grayscale(100%);
 }
 /*---------- Carousel ------------*/
+#landing-carousel{
+    position: relative;
+    height: 728px;
+    overflow: hidden;
+}
+.opacity{
+    background: rgba(39, 76, 119, 0.49);
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+}
+@media (max-width: 1460px) {
+    #landing-carousel{
+        height: auto;
+    }
+    .opacity * .btn-start{
+        width: 300px;
+    }
+    .opacity * h3{
+        width: 100% !important;
+    }
+}
+@media (max-width: 570px) {
+    #landing-carousel{
+        height: auto;
+    }
+    .opacity{
+        position: relative;
+        background: #13212B;
+        padding: 10px;
+    }
+    .opacity * .btn-start{
+        width: 250px;
+    }
+    
+}
 .carousel-control-next-icon, .carousel-control-prev-icon{
   filter: invert(100%);
 }
@@ -243,15 +313,22 @@ h1{
   border-radius: 1rem;
   overflow: hidden;
 }
+.btn-close{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
 .login{
   background-color: white;
   width: 65%;
   height: 85vh;
   display: flex;
   align-items: center;
+  justify-content: center;
+  vertical-align: middle;
 }
-.sign-in{
-  font-size: 2.7rem;
+.moderator, .superadmin{
+  padding:50px
 }
 .welcome{
   position: absolute;
@@ -269,16 +346,77 @@ h1{
   right: 0;
   width: 23vw;
 }
-.btn-shadow{
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.52);
-  border-radius: 10px;
-}
-.btn-cus{
-  width: 45%;
-}
+/*-------- Announcement ------------*/
 .announce{
-  width: 100vh;
+  width: 850px;
   border-radius: .5rem;
+  background-color: #13212B !important;
+}
+.announce * .row{
+  height: 300px;
+  border: 0px;
+}
+
+/*-------- Course ------------*/
+.course{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.course li a{
+  background: #FFFFFF;
+  padding: 20px;
+  width: 30rem;
+  height: 12rem;
+  margin: 1rem;
+  line-height: 150px;
+  color: #13212B;
+  font-weight: bold;
+  text-align: start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  border-radius: .5rem;
+  border: 3px solid #13212B;
+}
+@media (max-width: 570px) {
+    .course li a{
+        width: 400px;
+        height: 150px;
+    }
+    
+}
+.course li a:hover{
+  background-color: #13212B;
+  color: white !important;
+}
+.course li a i{
+  font-size: 5em;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+}
+.course li a span{
+  height: 90%;
+  width: 4px;
+  background-color: #13212B;
+  margin: 10px;
+}
+.course li a:hover span{
+  background-color: #FFF;
+}
+.course li a:hover .eng {
+  filter: invert(100%) grayscale(100%);
+}
+.eng{
+  content: url(/img/Industiral\ eng.icon.png);
+  width: 120px !important;
 }
 .announce.carousel-item.card{
   height:400px;
@@ -366,4 +504,26 @@ h1{
     transition: var(--bs-accordion-btn-icon-transition);
 }
 
+/*---------- ADMIN LOGIN ------------*/
 
+.admin{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.admin form{
+  box-shadow: 7px 8px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 14px;
+  padding: 50px;
+  background-color: #FFF;
+  height: 600px;
+  display: flex;
+  flex-flow: column;
+  position: relative;
+}
+.admin form div img{
+  height: 10em;
+  width: 10em;
+}
