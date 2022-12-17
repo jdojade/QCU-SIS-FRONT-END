@@ -323,6 +323,17 @@
     background-color: #274C77;
     position: relative;
 }
+@media (max-width:760px){
+    #sticky-footer img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        width: 200px;
+        z-index: -1;
+        filter: contrast(0.5) opacity(0.5);
+    }
+}
 .dropdown-toggle::after{
     padding: 3px;
     border-top: 4px solid;
