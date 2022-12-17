@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/fontawesome-free-6.2.1-web/css/all.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-5.2.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/sample.css">
+</head>
+<body>
+  <div class="top-menu">
+    <div class="menu-button" data-menu="left"></div>
+    <div class="menu-button" data-menu="right"></div>
+  </div>
+  
+  <div class="menu-bar left">
+    <div class="menu-heading">
+      Left Menu
+    </div>
+    <div class="menu-body">
+      <a href="https://codepen.io/jpaik">
+        Home
+      </a>
+      <a href="#">
+        Portfolio
+      </a>
+      <a href="#">
+        Some Link
+      </a>
+    </div>
+  </div>
+  
+  <div class="menu-bar right">
+    <div class="menu-heading">
+      Right Menu
+    </div>
+    <div class="menu-body">
+      <a href="https://codepen.io/jpaik/">
+        Home
+      </a>
+      <a href="#">
+        About
+      </a>
+      <a href="#">
+        Link
+      </a>
+    </div>
+  </div>
+  
+  <div class="overlay"></div>
+  <div class="container">
+    <h1>
+      Click on the left or right menu buttons to display the menus.
+    </h1>
+  </div>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+  'use strict';
+
+$(function(){
+  //If the overlay is clicked, then we close the menu bars.
+  $('.overlay').on('click', function(){
+    $(this).fadeOut(300);
+    $('.menu-bar').removeClass('is-active');
+    $('.menu-button').removeClass('is-clicked');
+  });
+  
+  $('.menu-button').on('click', function(){
+    var side = $(this).data('menu');
+    //If this has is-clicked, then we close the menu.
+    if($(this).hasClass('is-clicked')){
+      //Since we created the code for overlay already.
+      $('.overlay').click();
+    }
+    //Otherwise, we open it.
+    else{
+      $('.overlay').fadeIn(300);
+      $(this).addClass('is-clicked');
+      $('.menu-bar.'+side).addClass('is-active');
+    }
+  });
+});
+</script>
+</body>
+</html>
