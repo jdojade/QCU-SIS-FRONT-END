@@ -42,7 +42,7 @@
                           <img src="img/1565034397472.jfif" class="logo rounded-circle">
                         </a>
                         <ul class="dropdown-menu-cus text-center" style="right: 0;" data-bs-keyboard="true" tabindex="-1" aria-hidden="false">
-                          <li><a class="dropdown-item" href="#">EDIT PROFILE</a></li>
+                          <li><a class="dropdown-item" href="edit-profile.html">EDIT PROFILE</a></li>
                           <li><a class="dropdown-item" href="#">REQUEST STATUS</a></li>
                           <li><a class="dropdown-item" href="#">LOGOUT</a></li>
                         </ul>
@@ -128,7 +128,7 @@
                 </div>
 
 
-                <button class="btn btn-primary px-5 my-5 ms-3" id="next-two" data-bs-toggle="submit" data-bs-target="#pills-two" type="submit" role="button" aria-controls="pills-two" aria-selected="false" onClick="#pills-two">NEXT</button>
+                <button class="btn btn-primary px-5 my-5 ms-3" id="next-two" data-bs-toggle="submit" data-bs-target="#pills-two" type="submit" role="button" aria-controls="pills-two" aria-selected="false">NEXT</button>
                 
                 <button type="button" class="btn btn-outline-primary px-5 my-5 me-3" data-bs-toggle="modal" data-bs-target="#exit-req">CANCEL</button>
 
@@ -219,8 +219,7 @@
 <div class="modal fade" id="exit-req" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exit-reqLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
-        <div class="modal-header">
-          <!-- <h1 class="modal-title fs-5" id="exit-reqLabel">Modal title</h1> -->
+        <div class="my-4">
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -228,9 +227,9 @@
             Are you sure to cancel your request for documents?
           </p>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">CANCEL</button>
-          <button type="button" class="btn btn-success">YES</button>
+        <div class="my-4 d-flex justify-content-between">
+            <button type="button" class="btn btn-danger px-4 mx-5 fw-bold" data-bs-dismiss="modal">CANCEL</button>
+            <button type="button" class="btn btn-success px-5 mx-5 fw-bold">YES</button>
         </div>
       </div>
     </div>
