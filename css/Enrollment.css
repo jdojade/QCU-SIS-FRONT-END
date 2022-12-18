@@ -1,69 +1,135 @@
- */                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+/* form */
+
 hr{
-    width: clamp(10%, 100vw, 90%) !important;
-    left: 0;
-}
-
-.enrollment{
-    margin-top: 3rem !important;  
-}
-
-.nav-tabs{
-    --bs-nav-tabs-link-active-bg: #F5F1F1;
-}
-
-.req-display .top {
-    padding-top: 3rem !important;
+  width: clamp(10%, 100vw, 90%) !important;
+  left: 0;
 }
 
 .fa-file-circle-check, .fa-table-list{
-    float: right;
+  float: right;
+} */
+
+.doc{
+  width: 5rem !important;
+  height: 5rem !important;
 }
 
-.Pre-Enrollment h1{
-  color: #13212B;
-  font: 900 48px 'Inter', sans-serif;
+.enrollment-form h1{
+color: #13212B;
+font: 900 48px 'Inter', sans-serif;
 }
 
-.Pre-Enrollment hr, p{
-  color: #13212B !important;
-}
-
-.enrollment p{
-    font-size: 24px;
-    color: #13212B !important;
+.enrollment-form hr, p{
+color: #13212B !important;
 }
 
 .form-select{
-    width: 100%;
-    height: 60px;
+  width: 100%;
+  height: 60px;
+
+}  
+.enrollment p{
+  font-size: 24px;
+  color: #13212B !important;
 }
+
 .btn-primary{
-  background-color: #274C77 !important;
-  border: 2px solid #274C77 !important;
-  font-weight: 700 !important;
-  float: right !important;
+background-color: #274C77 !important;
+border: 2px solid #274C77 !important;
+font-weight: 700 !important;
+float: right !important;
 }
 
 .btn-outline-primary{
-  border: 2px solid #274C77 !important;
-  color: #274C77 !important;
-  font-weight: 700 !important;
-  float: right !important;
+border: 2px solid #274C77 !important;
+color: #274C77 !important;
+font-weight: 700 !important;
+float: right !important;
 }
 
 .btn-primary:hover{
-  background-color: #13212B !important;
-  border: 2px solid #13212B !important;
+background-color: #13212B !important;
+border: 2px solid #13212B !important;
 }
 
 .btn-outline-primary:hover{
-  background-color: #990000 !important;
-  border: 2px solid #990000 !important;
-  color: #fff !important;
+background-color: #990000 !important;
+border: 2px solid #990000 !important;
+color: #fff !important;
+}
+
+.enrollment{
+margin-top: 3rem !important;
+}
+
+.stat h1{
+color: #13212B;
+font: 900 48px 'Inter', sans-serif;
+}
+
+.stat hr{
+color: #13212B !important;
+}
+
+.enrollment-link{
+color: #002F49 !important;
+
 }
 
 
+.enrollment-table .active {
+background-color: #F5F1F1 !important;
+}
 
 
+.nav-tabs{
+--bs-nav-tabs-link-active-bg: #F5F1F1;
+}
+
+.table-stat th, td {
+background-color: #F5F1F1;
+padding: 1.5rem 2.5rem !important;
+}
+
+th, td {
+background-color: #F5F1F1 !important;
+color: #002F49;
+}
+
+.enrollment-display {
+width: 80%;
+}
+
+.enrollment-display td {
+padding-left: 7rem !important;
+font-size: 22px;
+}
+
+.enrollment-display tbody {
+padding: 5rem !important;
+}
+
+.enrollment-display .top {
+padding-top: 3rem !important;
+}
+
+.enrollment-display .bottom {
+padding-bottom: 3rem !important;
+}
+
+/* .nav-pills .nav-item .nav-link {
+color: #13212B;
+} */
+
+.nav-pills .nav-item .nav-link .active {
+color: #fff !important;
+background-color: #002F49;
+}
+
+.nav-pills{
+--bs-nav-pills-link-active-color: #fff !important;
+--bs-nav-pills-link-active-bg: #002F49 !important;
+--bs-nav-pills-border-radius: 50px;
+color: #13212B;
+}
 
