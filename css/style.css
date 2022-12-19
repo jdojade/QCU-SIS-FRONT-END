@@ -6,7 +6,9 @@
   font-family: 'Inter', sans-serif;
 }
 hr{
-    margin: 50px 0px 50px 0px;
+    margin-top: 50px;
+    border-top: 3px solid;
+    opacity: .50;
 }
 /*--------------------------------------------------------------
 # Main
@@ -88,7 +90,6 @@ hr{
 
 .loader-container {
  display: flex;
- flex-direction: column;
  justify-content: center;
  align-items: center;
 }
@@ -162,11 +163,8 @@ hr{
 
 
 section{
-  margin-bottom: 60px;
-}
-hr{
-  border: 1.5px solid #000;
-  background-color: #000;
+    padding-bottom: 50px;
+    position: relative;
 }
 h1{
   font-weight: 700;
@@ -226,20 +224,19 @@ h1{
 /*---------- DASHBOARD ------------*/
 .flex-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
-.flex-container li {
-  list-style-type: none;
-}
-
 .flex-item a{
   background: #FFFFFF;
-  padding: px;
+  padding: 5px;
   width: 15rem;
   height: 15rem;
-  margin: 2rem;
-  line-height: 30px;
+  margin: 1rem;
+  line-height: 150px;
   color: #13212B;
   font-weight: bold;
   font-size: 5em;
@@ -247,38 +244,32 @@ h1{
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   align-content: center;
   border-radius: .5rem;
   box-shadow: 4px 6px 4px rgba(0, 0, 0, 0.25);
 }
-.flex-item span{
-  color: #13212B;
-  font-weight: bold;
-  font-size: 30px;
-}
-.flex-item:hover a{
-  transition-timing-function: linear;
-  transition: 0.2s;
-  background-color: #13212B !important;
+.flex-item a:hover{
+  background-color: #13212B;
   color: white !important;
 }
-.flex-item:hover span{
-  transition: 0.2s;
-  transition-timing-function: linear;
-  color: #fff !important;
-  font-weight: bold;
-}
-
 .flex-item a:hover img{
   filter: invert(100%) grayscale(100%);
 }
+.carousel-control-next-icon, .carousel-control-prev-icon{
+  filter: invert(100%);
+}
+
 /*---------- Carousel ------------*/
 #landing-carousel{
     position: relative;
     height: 728px;
     overflow: hidden;
+}
+.carousel-cus,
+.carousel-inner{
+  height: -webkit-fill-available;
 }
 .opacity{
     background: rgba(39, 76, 119, 0.49);
@@ -286,6 +277,9 @@ h1{
     top: 0;
     display: flex;
     align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
 }
 @media (max-width: 1460px) {
     #landing-carousel{
@@ -320,10 +314,15 @@ h1{
   display: flex;
   justify-self: center;
 }
+/*------------- Login Form ---------------*/
+#student_login .modal-dialog{
+    --bs-modal-width: 900px;
+}
 .login-container{
   background-color: #274C77;
   border-radius: 1rem;
   overflow: hidden;
+  height: auto
 }
 .btn-close{
   position: absolute;
@@ -331,16 +330,21 @@ h1{
   right: 10px;
 }
 .login{
+  position: relative;
   background-color: white;
-  width: 65%;
-  height: 85vh;
+  width: 575px;
+  height: 580px;
+  padding: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   vertical-align: middle;
 }
-.moderator, .superadmin{
-  padding:50px
+.img img{
+    width: 140px;
+}
+.login form{
+    text-align: center;
 }
 .welcome{
   position: absolute;
@@ -349,14 +353,29 @@ h1{
   flex-wrap: wrap;;
   font-weight: bolder;
   width: 300px;
-  top: 5vh;
-  right: 2vw;
+  top: 15px;
+  right: 10px;
 }
 .student{
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 23vw;
+  width: 355px;
+}
+@media (max-width: 770px){
+    #student_login .modal-dialog{
+      --bs-modal-width: 600px;
+    }
+    .welcome{
+      display: none
+    }
+    .student{
+      display: none
+    }
+    .login{
+        width: inherit
+    }
+    
 }
 /*-------- Announcement ------------*/
 .announce{
@@ -367,6 +386,22 @@ h1{
 .announce * .row{
   height: 300px;
   border: 0px;
+}
+@media screen and (max-width: 480px) {
+  .announce{
+    width: 400px;
+  }
+  .announce * .row{
+    height: 659px;
+  }
+}
+@media screen and (max-width: 770px) {
+    .announce{
+        width: 375px;
+    }
+    .announce * .row{
+        height: 659px;
+    }
 }
 
 /*-------- Course ------------*/
@@ -397,12 +432,20 @@ h1{
   border-radius: .5rem;
   border: 3px solid #13212B;
 }
-@media (max-width: 570px) {
+@media screen and (max-width: 480px) {
     .course li a{
-        width: 400px;
+        width: 18rem !important;
+        height: 100px;
+    }
+    .course li a i{
+        font-size: 3rem !important;
+    }
+}
+@media screen and (max-width: 640px) {
+    .course li a{
+        width: 25rem;
         height: 150px;
     }
-    
 }
 .course li a:hover{
   background-color: #13212B;
@@ -519,7 +562,7 @@ h1{
 /*---------- ADMIN LOGIN ------------*/
 
 .admin{
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   align-items: center;
