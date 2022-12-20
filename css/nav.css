@@ -4,18 +4,13 @@
 }
 .navbar-brand{
     --bs-navbar-brand-font-size: 1.25rem;
-    --bs-navbar-brand-hover-color: rgba(0, 0, 0, 0.9);
+    --bs-navbar-brand-hover-color: rgba(255, 255, 255, 0.9);
     --bs-navbar-brand-color: rgba(255, 255, 255, 0.9);
     font-weight: bolder;
 }
 @media (max-width: 440px){
     .navbar-brand{
-        --bs-navbar-brand-font-size: 1.1rem;
-    }
-}
-@media (max-width: 360px){
-    .navbar-brand{
-        --bs-navbar-brand-font-size: .9rem;
+        display: none;
     }
 }
     
@@ -95,7 +90,7 @@
 .container-cus{
    /*border: 1px solid #000;*/
    position: relative;
-   margin-left: 60px;
+   margin-left: 55px;
    transition: margin-left 0.75s cubic-bezier(0.25, 0.1, 0.25, 1.0);
 }
 .container-cus.magic{
@@ -109,7 +104,7 @@
    justify-content: flex-start;
    align-items: flex-start;
    overflow: hidden;
-   width: 60px;
+   width: 55px;
    transition: width 0.75s cubic-bezier(0.25, 0.1, 0.25, 1.0);
    overflow-y: auto;
    position: fixed;
@@ -119,7 +114,6 @@
 .menu-container.magic,
 .menu-container.show{
    width: 260px;
-   grid-template-columns: 60px auto!important;
 }
 .menu-container::-webkit-scrollbar {
    display: none;
@@ -132,7 +126,7 @@
 @media (max-width: 780px){
     .menu-container.magic{
        width: 260px;
-       position: absolute
+       
     }
     .container-cus.magic{
        margin-left: 60px;
@@ -156,7 +150,7 @@
     flex-direction: column;
     justify-content: center;
     width: 30px;
-    height: 30px;
+    height: 20px;
     position: relative;
     margin: 0px;
     -webkit-transform: rotate(0deg);
@@ -243,7 +237,7 @@
 .nav-link, .navbar-item{
     position: relative;
     color: #FFF;
-    height: 64px;
+    height: 50px;
     background-color: #274C77;
 }
 .navbar-item .active{
@@ -255,8 +249,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
-    font-size: 1rem;
 }
 .nav-link:hover {
     background-color: #FFFFFF !important;
@@ -334,11 +326,4 @@
         filter: contrast(0.5) opacity(0.5);
     }
 }
-.dropdown-toggle::after{
-    padding: 3px;
-    border-top: 4px solid;
-    border-right: 4px solid;
-    border-bottom: 1px solid transparent;
-    border-left: 1px solid transparent;
-    transform: rotate(45deg);
-}
+.dropdown-toggle::after{display: none;}
