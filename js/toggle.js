@@ -10,7 +10,7 @@ $(document).ready(function(){
     });
 });
 
-function myMoveFunction() {
+function mouseLeave() {
     $(".dropdown-menu-cus").removeClass('show');
   }
 

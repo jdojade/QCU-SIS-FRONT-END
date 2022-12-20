@@ -10,6 +10,9 @@ hr{
     border-top: 3px solid;
     opacity: .50;
 }
+.container-fluid{
+  --bs-gutter-x: 0.5rem;
+}
 /*--------------------------------------------------------------
 # Main
 --------------------------------------------------------------*/
@@ -171,6 +174,9 @@ h1{
 .qoute span:nth-child(4),
 .qoute span:nth-child(6){
   color: #FFF;
+}
+.qoute p{
+
 }
 
 /*---------- BUTTONS -------------*/
@@ -420,10 +426,22 @@ h1{
   border-radius: .5rem;
   border: 3px solid #13212B;
 }
+.course-item{
+  width: 30rem;
+  padding: 10px;
+  border-left: 2px solid;
+  height: -webkit-fill-available;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
 @media screen and (max-width: 480px) {
     .course li a{
         width: 18rem !important;
         height: 100px;
+    }
+    .eng{
+      width: 60px !important;
     }
     .course li a i{
         font-size: 3rem !important;
@@ -433,6 +451,12 @@ h1{
     .course li a{
         width: 25rem;
         height: 150px;
+    }
+    .course-item{
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
     }
 }
 .course li a:hover{
@@ -444,22 +468,13 @@ h1{
   width: 200px;
   display: flex;
   justify-content: center;
-}
-.course li a span{
-  height: 90%;
-  width: 4px;
-  background-color: #13212B;
-  margin: 10px;
-}
-.course li a:hover span{
-  background-color: #FFF;
-}
+} 
 .course li a:hover .eng {
   filter: invert(100%) grayscale(100%);
 }
-.eng{
+.course li a .eng{
   content: url(/img/Industiral\ eng.icon.png);
-  width: 120px !important;
+  width: 120px;
 }
 .announce.carousel-item.card{
   height:400px;
