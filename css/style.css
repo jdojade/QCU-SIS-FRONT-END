@@ -307,22 +307,7 @@ h1{
   font-weight: bold;
 }
 /*---------- Carousel ------------*/
-@media (max-width: 480px) {
-  #events{
-    padding: 20px;
-  }
-  #events * .card-body{
-    height: auto;
-  }
-}
-@media (max-width: 770px) {
-    #events{
-        width: 375px;
-    }
-    #events * .row{
-        height: 659px;
-    }
-}
+
 /*---------- Carousel ------------*/
 #landing-carousel{
     position: relative;
