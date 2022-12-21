@@ -34,7 +34,7 @@
     width: 260px; 
 }
 .info img{
-    width: 5vw;
+    width: 45%;
 }
 .info span{
     width: 90%;
@@ -75,14 +75,6 @@
 }
 .dropdown-menu-cus li:nth-last-child(1) a:hover{
     color: #ff0000 !important;
-}
-.dropdown-toggle::after{
-    padding: 3px;
-    border-top: 4px solid;
-    border-right: 4px solid;
-    border-bottom: 1px solid transparent;
-    border-left: 1px solid transparent;
-    transform: rotate(45deg);
 }
 .headline{
     position: relative;
