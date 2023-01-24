@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="css/bootstrap-5.2.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/admin.css">
     <link rel="stylesheet" href="css/style0.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-md sticky-md-top">
+    <nav class="navbar navbar-expand-md sticky-top">
         <div class="container-fluid p-0" >
             <div class="d-flex flex-colum align-items-center">
                 <button class="btn-hamburger" type="button" id="hamburger">
@@ -24,22 +25,22 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span><i class="fa-solid fa-ellipsis-vertical text-white"></i></span>
             </button>
-            <div class="navbar-cus navbar-collapse collapse justify-content-end" id="navcol-1">
+            <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar nav p-0">
                     <li class="navbar-item">
-                        <a href="student_dashboard.html" class="nav-link text-white fs-6 fw-900 text-decoration-none">HOME</a>
+                        <a href="student_dashboard.html" class="nav-link">HOME</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="inbox.html" class="nav-link text-white fs-6 fw-900 text-decoration-none">INBOX</a>
+                        <a href="inbox.html" class="nav-link">INBOX</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="#" class="nav-link text-white fs-6 fw-900 text-decoration-none">ABOUT QCU</a>
+                        <a href="#" class="nav-link">ABOUT QCU</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button">
+                    <li class="nav-item dropdown" onmouseleave="mouseLeave()">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           <img src="img/1565034397472.jfif" class="logo rounded-circle">
                         </a>
-                        <ul class="dropdown-menu-cus text-center" style="right: 0;" data-bs-keyboard="true" tabindex="-1" aria-hidden="false">
+                        <ul class="dropdown-menu-cus text-center" style="right: 0;">
                           <li><a class="dropdown-item" href="#">EDIT PROFILE</a></li>
                           <li><a class="dropdown-item" href="#">REQUEST STATUS</a></li>
                           <li><a class="dropdown-item" href="#">LOGOUT</a></li>
@@ -65,38 +66,36 @@
 <!------------START BODY------------>
     <div class="container-cus">
 <!------------START CONTENT------------>
+        <section class="container py-5">
+            <div class="headline">
+                <h1>GRADESLIP VIEWING</h1>
+                <i class="fa-solid fa-table-list fa-3x"></i>
+            </div>
+        </section>
         <section>
 
-            <div class="container m-auto grade">
-        <form action="#" class="gradeslip" id="gradeslip">
-            <h1>GRADESLIP VIEWING<i class="fa-solid fa-table-list fa-2x"></i>   </h1>
-            <hr class="my-2">&nbsp;
+            <div class="container m-auto">
             
-                <p>This section provides e-copy of your gradeslip where you can also download it. 
+                <h5>This section provides e-copy of your gradeslip where you can also download it. 
                     Take note that this is not a certified true copy of your gradeslip. 
-                    You still need a request for that.</p>
+                    You still need a request for that.</h5>
                     <br>
                 
                     <!-- start ng preview ng pdf -->
                
-            <div class="container">
-                <embed class="border-0 rounded-1 pdf" src="pdf/Grade Slip Sample.pdf">
-            </div>
-                
+                <embed class="border-0 rounded-1 pdf" src="pdf/Grade Slip Sample.pdf">             
 
                     <!-- end of preview -->
-                    <div>
+                    <div class="text-end w-100 py-5">
                         <!-- <button type="button" class="btn btn-primary px-5 my-5 ms-3" type="submit">DOWNLOAD</button> -->
-                        <button class="btn btn-primary px-5 my-5 ms-3" onclick="window.open('pdf/Grade Slip Sample.pdf')" type="button">DOWNLOAD</button>
-                        <button type="button" class="btn btn-outline-primary px-5 my-5 me-3">BACK</button>
+                       <!--<button class="btn btn-primary px-5 my-5 ms-3" onclick="window.open('pdf/2019-BSIT-Curriculum.pdf')" type="button">DOWNLOAD</button>-->
+                        <a href="#" class="btn btn-sub-2 btn-shadow px-5 m-2 btn-sm"><b>BACK</b></a>
+                        <a href="pdf/Grade Slip Sample.pdf" download="Grade_Slip" class="btn btn-sub-1 btn-shadow px-5 m-2 btn-sm" onclick="window.open('pdf/Grade Slip Sample.pdf')" type="button"><b>DOWNLOAD</b></a>
 
                     </div>
                 
                 
-                  <br><br><br><br><br>  
-
-                    
-        </form>
+                  <br><br><br><br><br> 
 
       </div>
         
@@ -105,8 +104,9 @@
     </div>
 <!------------END BODY------------>
 
+    
 <!------------STAR FOOTER------------>
-    <footer id="sticky-footer" class="flex-shrink-0 py-1 text-white align-content-center" style="background-color: #274C77;">
+    <footer id="sticky-footer" class="flex-shrink-0 py-1 text-white align-content-center">
         <div class="container p-3">
             <div class="row align-items-end">
                 <div class="col-md-5">
@@ -141,11 +141,11 @@
         </div>
     </footer>
 <!------------END FOOTER------------>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="css/bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"></script>
     <script src="css/bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/toggle.js"></script>
+    <script src="js/calendar.js"></script>
     <script src="js/loading.js"></script>
 </body>
 </html>

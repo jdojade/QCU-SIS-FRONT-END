@@ -5,8 +5,17 @@ $(document).ready(function(){
     $(".dropdown-toggle").click(function(){
         $(".dropdown-menu-cus").toggleClass("show");
     });
+    
+  
     $(".navbar-toggler").click(function(){
-        $(".navbar-collapse, .icon-sample").toggleClass("show");
+        var width = window.innerWidth;
+        if (width < 600) {
+            $(".navbar-collapse").toggleClass("show");
+            
+          } else {
+            element.removeAttribute("show");
+          }
+        
     });
 });
 
