@@ -11,6 +11,7 @@
     --white: #fff;
     --black: #000;
     --primary: #13212B;
+    --gray: #F5F5F5;
     --shadow: 4px 6px 4px rgba(0, 0, 0, 0.25);
   }
 *{
@@ -205,15 +206,17 @@ h1{
 
 /*---------- BUTTONS -------------*/
 .btn-sub-1{
+  border: 2px solid #274C77;
   background-color: #274C77;
   color: #FFFFFF;
 }
 .btn-sub-1:hover{
+  border: 2px solid #13212B;
   background-color: #13212B;
   color: #FFFFFF;
 }
 .btn-sub-2{
-  border: 3px solid #274C77;
+  border: 2px solid #274C77;
   color: #274C77;
 }
 .btn-sub-2:hover{
@@ -940,3 +943,52 @@ h1{
       margin: 5px 0px;
     }
 }
+
+/*-----------Smart Form-----------*/
+.step {
+  display: none;
+}
+.step.active {
+  display: block;
+  animation: to-left 0.5s forwards;
+}
+.form-view{
+    width: 100%;
+    background: var(--gray);
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+    padding: 2rem
+}
+.form-success{
+    display: flex;
+    justify-content: center;
+    padding: 2rem
+}
+.form-footer{
+    justify-content: space-between;
+    display: flex;
+    padding: 1rem;
+}
+.form-page ul{
+    display: flex;
+    flex-basis: auto;
+}.form-page li{
+    position: relative;
+    font-size: 3rem;
+    padding-left: 2rem;
+    color: #AAA5A5;
+}.form-page li.current{
+    color: var(--light-btn);
+}
+.form-button{
+  display: flex;
+  float: right;
+  cursor: pointer;
+/* text-align: right; */
+  align-items: center;
+  flex-direction: row-reverse;
+}
+button.previous-btn {
+  float: left;
+}
+form input.invalid{border-color: red}
