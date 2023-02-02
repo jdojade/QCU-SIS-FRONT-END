@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/Borrowed-status.css">
+    <link rel="stylesheet" href="css/style1.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-md sticky-md-top">
@@ -71,7 +71,7 @@
 <section>
 
     <div class="container m-auto">
-        <form action="#" class="library-c" id="library">
+        <form action="#" class="library-1" id="library">
             <h1> BOOKS BORROWED ON QCU LIBRARY<i class="fa-solid fa-book-open fa-2x"></i></h1>
             <hr class="my-2">&nbsp;
             
@@ -82,65 +82,61 @@
                 <section>
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item active rounded-circle" role="presentation">
-                          <button class="nav-link req-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all-tab-pane" type="button" role="tab" aria-controls="all-tab-pane" aria-selected="true">All</button>
+                          <button class="nav-link req-link active" id="borrowed-tab" data-bs-toggle="tab" data-bs-target="#borrowed-tab-pane" type="button" role="tab" aria-controls="borrowed-tab-pane" aria-selected="true"> Borrowed</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                          <button class="nav-link req-link" id="borrowed-tab" data-bs-toggle="tab" data-bs-target="#borrowed-tab-pane" type="button" role="tab" aria-controls="borrowed-tab-pane" aria-selected="false"> Borrowed</button>
-                        </li>
-                        <li class="nav-item" role="presentation"><button class="nav-link req-link" id="penalty-tab" data-bs-toggle="tab" data-bs-target="#penalty-tab-pane" type="button" role="tab" aria-controls="penalty-tab-pane" aria-selected="false"> Penalty</button>
-                        </li>
+                          <button class="nav-link req-link" id="penalty-tab" data-bs-toggle="tab" data-bs-target="#penalty-tab-pane" type="button" role="tab" aria-controls="penalty-tab-pane" aria-selected="false"> Penalty</button>
                       </ul>
             
-                      <!-- ----------------ALL TAB------------------- -->
+                      <!-- ----------------BORROWED------------------- -->
             
                       <div class="tab-content req-table" id="myTabContent">
-                           <div class="tab-pane fade show active" id="all-tab-pane" role="tabpane" aria-labelledby="all-tab" tabindex="0">
-                                  <!----------- START NG TABLE ---------->
-                        <div class="container m-auto">
+                        <div class="tab-pane fade show active" id="borrowed-tab-pane" role="tabpane" aria-labelledby="borrowed-tab" tabindex="0">
+                          <div class="container m-auto">
                             <div class="table-border table-responsive-md m-0">
                                 <table class="table table-light table-hover table-fixed m-auto table-stat text-center rounded-2">
                                         <thead>
                                           <tr>
                                             <th class="date th-lg">Date Borrowed</th>
                                             <th class="docu th-lg">Book Title</th>
-                                            <th class="req-status th-lg">Serial Number</th>
-                                            <th class="approved-status th-lg">Amount</th>
-                                            <th class="claim th-lg">Reason</th>
-                                            <th class="status th-lg">Payment Status</th>
+                                            <th class="req-status th-lg">Author</th>
+                                            <th class="approved-status th-lg">Serial Number</th>
+                                            <th class="claim th-lg">Return Date</th>
+                                            <th class="status th-lg">Status</th>
                                           </tr>
                                         </thead>
                                         <tbody>
                                           <tr class="table-hover">
-                                            <td>01-05-2023</td>
+                                            <td>Jan 05, 2022</td>
                                             <td>Book title 1</td>
-                                            <td>QCU01</td>
-                                            <td>1000</td> 
-                                            <td>Lost</td>
-                                            <td class="text-success">Paid</td>
+                                            <td>Author01</td>
+                                            <td>QCU-001</td> 
+                                            <td>OCT 29, 2022</td>
+                                            <td class="text-danger">Borrowed</td>
                                           </tr>
                                           <tr class="table-hover">
-                                            <td>01-05-2023</td>
+                                            <td>Jan 05, 2022</td>
                                             <td>Book title 2</td>
-                                            <td>QCU02</td>
-                                            <td>2000</td>
-                                            <td>Lost</td>
-                                            <td class="text-danger">Unpaid</td>
+                                            <td>Author02</td>
+                                            <td>QCU-002</td>
+                                            <td>OCT 29, 2022</td>
+                                            <td class="text-success">Returned</td>
                                           </tr>
                                           <tr class="table-hover">
-                                            <td>01-05-2023</td>
+                                            <td>Jan 05, 2022</td>
                                             <td>Book Title 3</td>
-                                            <td>QCU03</td>
-                                            <td>3000</td>
-                                            <td>Lost</td>
-                                            <td class="text-success">Paid</td>
+                                            <td>Author03</td>
+                                            <td>QCU-003</td>
+                                            <td>OCT 29, 2022</td>
+                                            <td class="text-danger">Borrowed</td>
                                           </tr>
                                           <tr class="table-hover">
-                                            <td>01-05-2023</td>
+                                            <td>Jan 05, 2022</td>
                                             <td>Book Title 4</td>
-                                            <td>QCU04</td>
-                                            <td>4000</td>
-                                            <td>Lost</td>
-                                            <td class="text-danger">Unpaid</td>
+                                            <td>Author04</td>
+                                            <td>QCU-004</td>
+                                            <td>OCT 29, 2022</td>
+                                            <td class="text-success">Returned</td>
                                         </tr>
                                              
                                         </tbody>
@@ -152,7 +148,7 @@
             
                             <!-- --------------------PENDING TAB-------------------- -->
             
-                        <div class="tab-pane fade" id="borrowed-tab-pane" role="tabpane" aria-labelledby="borrowed-tab" tabindex="0">
+                        <div class="tab-pane fade" id="penalty-tab-pane" role="tabpane" aria-labelledby="penalty-tab" tabindex="0">
                             <!----------- START NG TABLE ---------->
                             <div class="container m-auto">
                                 <div class="table-border table-responsive-md">
@@ -164,127 +160,63 @@
                                                 <th class="req-status th-lg">Serial Number</th>
                                                 <th class="approved-status th-lg">Amount</th>
                                                 <th class="claim th-lg">Reason</th>
-                                                <th class="status th-lg"> Payment Status</th>
+                                                <th class="status th-lg"> Status</th>
                                               </tr>
                                             </thead>
                                             <tbody>
                                               <tr class="table-hover">
-                                                <td>01-05-2023</td>
+                                                <td>Jan 05, 2022</td>
                                                 <td>Book Title 5</td>
                                                 <td>QCU05</td>
-                                                <td>100</td> 
-                                                <td>None</td>
+                                                <td>₱1000</td> 
+                                                <td>Lost</td>
                                                 <td class="text-danger">Unpaid</td>
                                               </tr>
                                               <tr class="table-hover">
-                                                <td>01-05-2023</td>
+                                                <td>Jan 05, 2022</td>
                                                 <td>Book Title 6</td>
                                                 <td>QCU06</td>
-                                                <td>100</td>
-                                                <td>None</td>
+                                                <td>₱1000</td>
+                                                <td>Damaged</td>
                                                 <td class="text-success">Paid</td>
                                               </tr>
                                               <tr class="table-hover">
-                                                <td>01-05-2023</td>
+                                                <td>Jan 05,2022</td>
                                                 <td>Book Title 7</td>
                                                 <td>QCU07</td>
-                                                <td>Failed</td>
-                                                <td>Retry</td>
+                                                <td>₱200</td>
+                                                <td>Lost</td>
                                                 <td class="text-danger">Unpaid</td>
                                               </tr>
                                               <tr class="table-hover">
-                                                <td>01-05-2023</td>
+                                                <td>Jan 05, 2022</td>
                                                 <td>Book Title 8</td>
                                                 <td>QCU08</td>
-                                                <td>Failed</td>
-                                                <td>Lost</td>
+                                                <td>₱200</td>
+                                                <td>Damaged/Torn</td>
                                                 <td class="text-success">Paid</td>
-                                              </tr>
-                                                 
+                                              </tr>     
                                             </tbody>
-                                        </table>
-                                        
+                                          </table>
+                                        </div>
+                                      </div>
                                     </div>
-                                    
-                                    </div>
-                            </div>
-            
-            
-                            <!-- -----------------APPROVED TAB-------------------- -->
-            
-                            <div class="tab-pane fade" id="penalty-tab-pane" role="tabpane" aria-labelledby="penalty-tab" tabindex="0">
-                                <!----------- START NG TABLE ---------->
-                                <div class="container m-auto">
-                                    <div class="table-border table-responsive-md">
-                                        <table class="table table-light table-hover table-fixed m-auto table-stat text-center rounded-2">
-                                            <thead>
-                                              <tr>   
-                                                <th class="date th-lg">Date Borrowed</th>
-                                                <th class="book th-lg">Book Title</th>
-                                                <th class="req-status th-lg">Serial Number</th>
-                                                <th class="approved-status th-lg">Amount</th>
-                                                <th class="claim th-lg">Claiming Date</th>
-                                                <th class="status th-lg"> Payment Status </th>
-                                              </tr>
-                                            </thead>
-                                            <tbody>
-                                              <tr class="table-hover">
-                                                <td>01-05-2023</td>
-                                                <td>Book Title 9</td>
-                                                <td>QCU09</td>
-                                                <td>1000</td> 
-                                                <td>Lost</td>
-                                                <td class="text-danger">Unpaid</td>
-                                              </tr>
-                                              <tr class="table-hover">
-                                                <td>01-05-2023</td>
-                                                <td>Book Title 10</td>
-                                                <td>QCU10</td>
-                                                <td>2000</td>
-                                                <td>Lost</td>
-                                                <td class="text-success">Paid</td>
-                                              </tr>
-                                              <tr class="table-hover">
-                                                <td>01-05-2023</td>
-                                                <td>Book Title 11</td>
-                                                <td>QCU11</td>
-                                                <td>123</td>
-                                                <td>Lost</td>
-                                                <td class="text-danger">Unpaid</td>
-                                              </tr>
-                                              <tr class="table-hover">
-                                                <td>01-05-2023</td>
-                                                <td>Book Title 12</td>
-                                                <td>QCU12</td>
-                                                <td>123 php</td>
-                                                <td>Lost</td>
-                                                <td class="text-success">Paid</td>
-                                              </tr>
-                                                 
-                                            </tbody>
-                                        </table>
-                                        
-                                    </div>    
-                                </div>
-                            </div>
-            
-            
-                            <button type="button" class="btn btn-primary px-5 my-5 ms-3" type="submit"> PRINT </button>
-                          </div>
-                          <br><br><br><br><br><br><br>
-                        
-                    </section>
-            <!------------END CONTENT------------>        
-                </div>
-</section>
-                  <br><br><br><br><br>  
-      </div>
-        
-        </section>
-<!------------END CONTENT------------>        
-<!------------END BODY------------>
 
-    
+                    <button type="button" class="btn btn-primary px-5 my-5 ms-3" type="submit"> PRINT </button>
+                  </div>
+                </div>
+
+                        <br><br><br><br><br><br><br>
+                        
+                  </section>
+                </section>
+              </section>
+
+              <br><br><br><br><br>  
+
+              
+<!------------END CONTENT------------>        
+<!------------END BODY------------>  
 <!------------STAR FOOTER------------>
     <footer id="sticky-footer" class="flex-shrink-0 py-1 text-white align-content-center">
         <div class="container">
