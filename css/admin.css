@@ -1,4 +1,4 @@
-.navbar *{
+.nav-admin *{
     color: #000 !important;
 }
 .menu li:hover{
@@ -10,7 +10,7 @@
 
 /*THE MAGIC BEGINS HERE*/
 
-.menu-container{
+.menu-container.admin{
    flex-direction: column;
    align-items: center;
    width: 60px;
@@ -30,7 +30,8 @@
     visibility: visible;
     transition: visibility 0.75s cubic-bezier(0.25, 0.1, 0.25, 1.0);    
 }
-.menu-container.show{
+.menu-container.admin.show,
+.menu-container.admin.magic{
     width: 260px; 
 }
 .info img{
@@ -48,7 +49,8 @@
     top: 15px;
     right: 10px;
 }
-.nav-link, .navbar-item{
+.nav-admin .nav-link,
+.nav-admin .navbar-item{
     background-color: #fff;
 }
 .navbar-item .active{
@@ -83,17 +85,6 @@
     border-bottom: 1px solid transparent;
     border-left: 1px solid transparent;
     transform: rotate(45deg);
-}
-.headline{
-    position: relative;
-    width: 100%;
-    border-bottom: 2px solid #000;
-}
-.headline i{
-    position: absolute;
-    right: -3px;
-    bottom: -25px;
-    background-color: #fff;
 }
 .table{
     background-color: #F5F1F1;
