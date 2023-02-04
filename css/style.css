@@ -50,6 +50,12 @@ hr{
   #inbox {
     padding: 20px;
   }
+  #trash_btn{
+    margin: 5px;
+  }
+  #starred_btn{
+    margin: 5px;
+  }
 }
 #main {
   padding: 50px 20px;
@@ -59,6 +65,12 @@ hr{
 @media (max-width: 1199px) {
   #main {
     padding: 20px;
+  }
+  #trash_btn{
+    margin: 5px;
+  }
+  #starred_btn{
+    margin: 5px;
   }
 }
 /*Pre loader*/
@@ -281,6 +293,53 @@ h1{
 .carousel-control-next-icon, .carousel-control-prev-icon{
   filter: invert(100%);
 }
+/*---------- Carousel ------------*/
+#dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#dashboard li {
+  list-style-type: none;
+}
+#dashboard .flex-item a{
+  background: #FFFFFF;
+  padding: 5px;
+  width: 15rem;
+  height: 15rem;
+  margin: 2rem;
+  line-height: 30px;
+  color: #13212B;
+  font-weight: bold;
+  font-size: 5em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border-radius: .5rem;
+  box-shadow: 4px 6px 4px rgba(0, 0, 0, 0.25);
+}
+#dashboard .flex-item span{
+  color: #13212B;
+  font-weight: bold;
+  font-size: 30px;
+}
+#dashboard .flex-item:hover a{
+  transition-timing-function: linear;
+  transition: 0.2s;
+  background-color: #13212B !important;
+  color: white !important;
+}
+#dashboard .flex-item:hover span{
+  transition: 0.2s;
+  transition-timing-function: linear;
+  color: #fff !important;
+  font-weight: bold;
+}
+/*---------- Carousel ------------*/
 
 /*---------- Carousel ------------*/
 #landing-carousel{
