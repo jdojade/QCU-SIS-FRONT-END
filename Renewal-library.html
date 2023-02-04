@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> PRE-ENROLLMENT</title>
+    <title> Renewal Library Card </title>
     <link rel="stylesheet" href="css/fontawesome-free-6.2.1-web/css/all.min.css"/>
     <link rel="stylesheet" href="css/bootstrap-5.2.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/Enrollment.css">
+    <link rel="stylesheet" href="css/style1.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-md sticky-md-top" style="background-color: #274C77;">
@@ -67,157 +67,148 @@
     <div class="container-cus">
 <!------------START CONTENT------------>
 <section>
-
-    <div class="container m-auto enrollment">
+    <div class="container m-auto renewal">
         <div class="display-4 fw-bold pb-2 mb-1 border-bottom border-3 border-secondary mb-5">
-            PRE-ENROLLMENT
+            RENEWAL LIBRARY CARD
             <i class="fa-solid fa-file-circle-check fa-1x"></i>
-          </div>
-          
-          
+        </div>
+
     <ul class="nav nav-pills mb-3 " id="pills-tab" role="tablist">
+
         <li class="nav-item me-3" role="presentation">
-          <button class="nav-link active" id="pills-one-tab" data-bs-toggle="pill" data-bs-target="#pills-one" type="button" role="tab" aria-controls="pills-one" aria-selected="true">1</button>
+            <button class="nav-link active" id="pills-one-tab" data-bs-toggle="pill" data-bs-target="#pills-one" type="button" role="tab" aria-controls="pills-one" aria-selected="true">1</button>
         </li>
+
         <li class="nav-item mx-3" role="presentation">
           <button class="nav-link" id="pills-two-tab" data-bs-toggle="pill" data-bs-target="#pills-two" type="button" role="tab" aria-controls="pills-two" aria-selected="false">2</button>
         </li>
+
         <li class="nav-item mx-3" role="presentation">
           <button class="nav-link" id="pills-three-tab" data-bs-toggle="pill" data-bs-target="#pills-three" type="button" role="tab" aria-controls="pills-three" aria-selected="false">3</button>
         </li>
-      </ul>
+    </ul>
       
-      <!-- ---------------START OF PILL TAB CONTENT---------- -->
-      <div class="tab-content enrollment-form" id="pills-tabContent">
+      <!-----------------START OF PILL TAB CONTENT------------>
+    <div class="tab-content renewal-form" id="pills-tabContent">
 
-        <!-- --------STEP ONE---------- -->
+        <!----------STEP ONE------------>
         <div class="tab-pane fade show active " id="pills-one" role="tabpanel" aria-labelledby="pills-one-tab" tabindex="0">
-                    <!-- start ng request doc page -->
 
-    <p>Fill up this form to pre-enroll for the upcoming semester. 
-        Make sure to fill all the necessary informations to avoid errors upon submission.</p>
-        <br>
-<form action="#pills-two" class="enrollment-form" id="form1">         
-<!-- start ng form -->
-<div class="form-floating my-3">
-    <input type="name" class="form-control" id="floatingFull Name" placeholder="Name" required>
-    <label for="floatingName"> Full Name </label>
-</div>
+            <p>Kindly fill up this form.</p>
+            <br>
 
-<div class="form-floating my-3">
-    <input type="text" class="form-control" id="floatingContact Number" placeholder="Contact" required>
-    <label for="floatingContact">Contact Number</label>
-</div>
+        <form action="#pills-two" class="renewal-form" id="form1">         
 
-<select class="form-select my-3" id="floatingCourse" placeholder="Course" required>
-    <option selected>Course</option>
-    <option value="1">Information Technology</option>
-    <option value="2">Industrial Engineering</option>
-    <option value="3">Electrical Engineering</option>
-    <option value="4">Accounting</option>
-    <option value="5">Entrepreneurship</option> 
-    <label for="floatingCourse"> Course </label>
-  </select>
-  <select class="form-select my-3" aria-label="Default select example" required>
-    <option selected>Campus</option>
-    <option value="1">San Bartolome</option>
-    <option value="2">Batasan</option>
-    <option value="3">San Francisco</option>
-  </select>
+            <div class="form-floating my-3">
+                <input type="name" class="form-control" id="floatingFull Name" placeholder="Name" required>
+                <label for="floatingName"> Full Name </label>
+            </div>
 
-<div class="form-floating my-3">
-    <input type="text" class="form-control" id="floatingEmail Address" placeholder="Email" required>
-    <label for="floatingPurpose">Email Address</label>
-</div>
+            <div class="form-floating my-3">
+                <input type="text" class="form-control" id="floatingContact Number" placeholder="Student No." required>
+                <label for="floatingContact">Student No.</label>
+            </div>
 
+            <select class="form-select my-3" id="floatingCourse" placeholder="Course" required>
+                <option selected>Course</option>
+                    <option value="1">Information Technology</option>
+                    <option value="2">Industrial Engineering</option>
+                    <option value="3">Electrical Engineering</option>
+                    <option value="4">Accounting</option>
+                    <option value="5">Entrepreneurship</option> 
+                <label for="floatingCourse"> Course </label>
+            </select>
+            
+            <select class="form-select my-3" aria-label="Default select example" required>
+                <option selected>Campus</option>
+                    <option value="1">San Bartolome</option>
+                    <option value="2">Batasan</option>
+                    <option value="3">San Francisco</option>
+            </select>
 
-<a href="#"> <button class="btn btn-primary px-5 my-5 ms-3" id="next-two" data-bs-toggle="submit" data-bs-target="#pills-two" type="submit" role="button" aria-controls="pills-two" aria-selected="false"> NEXT</button></a>
+            <div class="form-floating my-3">
+                    <input type="text" class="form-control" id="floatingEmail Address" placeholder="School Year" required>
+                        <label for="floatingPurpose">School Year</label>
+            </div>
 
-<a href="#"> <button type="button" class="btn btn-outline-primary px-5 my-5 me-3" data-bs-toggle="modal" data-bs-target="#exit-enrollment"> CANCEL</button></a>
+                <a href="#"> <button class="btn btn-primary px-5 my-5 ms-3" id="next-two" data-bs-toggle="submit" data-bs-target="#pills-two" type="submit" role="button" aria-controls="pills-two" aria-selected="false"> NEXT</button></a>
 
-
-</form>
-</div>
-
+                <a href="#"> <button type="button" class="btn btn-outline-primary px-5 my-5 me-3" data-bs-toggle="modal" data-bs-target="#exit-renewal"> CANCEL</button></a>
+        
+            </form>
+        </div>
         <!-- -----------STEP TWO------------ -->
 
-            <div class="tab-pane fade" id="pills-two" role="tabpanel" aria-labelledby="pills-two-tab" tabindex="0">
-                <form action="#" id="form2">
+        <div class="tab-pane fade" id="pills-two" role="tabpanel" aria-labelledby="pills-two-tab" tabindex="0">
+            <form action="#" id="form2">
                 <div class="container m-auto rounded-2">
                     <p> Kindly check your information before submitting.</p>
                         <br>
                     <div class="table-borderless table-responsive-md m-0">
-                        <table class="table table-light table-fixed table-borderless m-auto text-start  rounded-2 enrollment-display">
+                        <table class="table table-light table-fixed table-borderless m-auto text-start  rounded-2 renewal-display">
                             <tbody>
                                 <tr class="tw-bold">
-                                    <td class="tw-bold top">Email:</td>
-                                    <td class="tw-bold top" id="#">sample1email@gmail.com</td>
+                                    <td class="tw-bold top">Full Name:</td>
+                                    <td class="tw-bold top" id="#">AR-LE DIDAL</td>
                                 </tr>
                                 <tr>
-                                    <td class="tw-bold">Document:</td>
-                                    <td class="tw-bold" id="#">Registration Form</td>
+                                    <td class="tw-bold">Student Number:</td>
+                                    <td class="tw-bold" id="#">12-1234</td>
                                 </tr>
                                 <tr>
-                                    <td class="tw-bold">Purpose:</td>
-                                    <td class="tw-bold" id="#">For Scholarship</td>
+                                    <td class="tw-bold">Course:</td>
+                                    <td class="tw-bold" id="#">Bachelor of Science in Information Technology</td>
                                 </tr>
                                 <tr>
-                                    <td class="tw-bold">Date Needed:</td>
-                                    <td class="tw-bold" id="#">01/24/2023</td>
+                                    <td class="tw-bold">Campus:</td>
+                                    <td class="tw-bold" id="#">San bartolome</td>
                                 </tr>
                                 <tr>
-                                    <td class="tw-bold bottom">Address:</td>
-                                    <td class="tw-bold bottom" id="#">N/A</td>
+                                    <td class="tw-bold bottom">School Year:</td>
+                                    <td class="tw-bold bottom" id="#">2022-2023</td>
                                 </tr>
-
                             </tbody>
                         </table>
                     </div>
 
-                    <button class="btn btn-primary px-5 my-5 ms-3" id="next-two" data-bs-toggle="button" data-bs-target="#pills-two" type="button" role="button" aria-controls="pills-two" aria-selected="false">NEXT</button>
-                    
-                    <button type="button" class="btn btn-primary px-5 my-5 me-3">EDIT</button>
+                    <button class="btn btn-primary px-5 my-5 ms-3" id="next-two" data-bs-toggle="button" data-bs-target="#pills-two" type="button" role="button" aria-controls="pills-two" aria-selected="false"> SUBMIT</button>
 
-                    <button type="button" class="btn btn-outline-primary px-5 my-5 me-3" data-bs-toggle="modal" data-bs-target="#exit-enrollment">CANCEL</button>
+                    <button type="button" class="btn btn-outline-primary px-5 my-5 me-3"> EDIT </button>
                 
                 </div>
             </form>
-            </div>
+        </div>
 
 
-            <!-- -----------STEP THREE------------- -->
+            <!-------------STEP THREE--------------->
 
-            <div class="tab-pane fade" id="pills-three" role="tabpanel" aria-labelledby="pills-three-tab" tabindex="0">
-                <form action="#" class="enrollment-form" id="form3">
+        <div class="tab-pane fade" id="pills-three" role="tabpanel" aria-labelledby="pills-three-tab" tabindex="0">
+            <form action="#" class="renewal-form" id="form3">
             
-                
-                    <p> Pre-Enrollment form has been submitted. Please wait for further instructions about the enrollment schedule.</p>
-                        <br>
+                <p> Renewal for library card has already been submitted.</p>
+                        
+                <br>
                     
-            <!-- start ng form -->
                     <div class="success text-center">
                         
-                        <img src="src/sUCCESS Icon.png" alt="Enrollment Success" srcset="" class="rounded">
+                        <img src="src/sUCCESS Icon.png" alt="Renewal Success" srcset="" class="rounded">
 
                     </div>
     
                     <a href="enrollment-doc-status.html" class="btn btn-primary px-5 my-5 ms-3">CONFIRM</a>
                     <!-- <button type="button" class="btn btn-primary px-5 my-5 ms-3" type="submit">CONFIRM</button> -->
                     <!-- <button type="button" class="btn btn-outline-primary px-5 my-5 me-3">CANCEL</button> -->
-                    
-                        
-    
-                        
-            </form>
+                </form>
             </div>
         </div>
-
     </div>
-<br><br><br><br><br><br><br>
+</div>
 </section>
+
+<br><br><br><br><br><br><br>
+
  
 <!------------END CONTENT------------>
-    </div>
 <!------------END BODY------------>
 <!------------STAR FOOTER------------>
     <footer id="sticky-footer" class="py-1 text-white align-content-center">

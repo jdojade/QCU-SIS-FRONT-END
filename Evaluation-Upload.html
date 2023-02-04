@@ -71,18 +71,35 @@
 
             <div class="container m-auto">
         <form action="#" class="f-evaluation" id="evaluation">
-            <h1> Faculty Evaluation <i class="fa-solid fa-table-list fa-2x"></i>   </h1>
+            <h1> Faculty Evaluation <i class="fa-solid fa-table-list fa-2x"></i> </h1>
             <hr class="my-2">&nbsp;
-            
+
+        
+                <br>
                 <p>This section is the faculty evaluation that you as a student is responsible to answer.
                     You will see the preview of the document here. </p>
                     <br>
+                <form action="/action_page.php">
+                    <input type="file" id="myfile" name="myfile" multiple><br><br>
+ 
+
+                    <br>
+                    <br>
+                    <br>
                 
-                    <!-- Preview pdf -->
-               
-            <div class="container">
-                <embed class="border-0 rounded-1 pdf" src="pdf/Evaluation sample.pdf">
-            </div>
+                <p> Please send it back after you answered it. Just click the upload.</p>
+                    <br>
+                <form action="/action_page.php">
+                  <input type="file" id="myfile" name="myfile" multiple><br><br>
+                
+                
+                
+                
+                </form>
+            </form>       
+                    <!-- Preview file -->
+               <br>
+               <br>
                 
 
                     <!-- end of preview -->
@@ -93,7 +110,37 @@
 
                     </div>
                 
-                
+    <!----modal-->
+    <div class="modal fade" id="student_login" tabindex="-1" aria-labelledby="student_login" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content login-container">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <p class="welcome text-center">Welcome back!</p>
+                <div class="login">
+                    <form action="" class="text-center justify-content-center">
+                        <div class="img-fluid">
+                            <img src="img/1565034397472.jfif" alt="" class="rounded-circle w-45">
+                        </div>
+                        <div class="mt-3">
+                            <h1>Sign in to Account</h1>
+                        </div>
+                        <div class="mt-3">
+                            <input type="text" name="stud-id" id="stud-id" class="form-field form-control form-control-lg form-control-sm" placeholder="Student Number" required="true">
+                        </div>
+                        <div class="mt-3">
+                            <input type="password" name="stud-pass" id="stud-pass" class="form-field form-control form-control-lg form-control-sm" placeholder="Password" required="true">
+                            <a href="#" class="text-decoration-none float-end text-body fw-bolder">Forget password?</a>
+                        </div>
+                        <div class="mt-5 text-sm-start w-100 d-flex justify-content-between">
+                            <button class="btn btn-sub-2 btn-shadow w-45" data-bs-dismiss="modal" aria-label="Close"><strong>CANCEL</strong></button>
+                            <button type="submit" class="btn btn-sub-1 btn-shadow w-45" id="success" data-bs-toggle="modal" data-bs-target="#request"><strong>SIGN IN</strong></button>
+                        </div>
+                    </form>
+                </div>
+                <img src="https://i.ibb.co/FYz2tkc/Untitled-design-1-1.png" alt="Student" class="student">
+            </div>
+        </div>
+    </div>
                   <br><br><br><br><br>  
 
                     
