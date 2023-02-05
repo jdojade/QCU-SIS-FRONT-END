@@ -348,7 +348,7 @@ th, td {
   position:relative;
 }
 
-.pen-rec td,th{
+.pen-rec td, th{
   color: var(--light-btn);
   height: 70px;
   text-align: center;
