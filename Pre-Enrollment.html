@@ -83,42 +83,119 @@
                     <label for="floatingEmail"> FULL NAME </label>
                 </div>
 
-                <div class="form-floating my-3">
-                    <input type="text" class="form-control" id="floatingContact Number" placeholder="Contact" required>
-                    <label for="floatingContact">CONTACT NUMBER</label>
-                </div>
+<div class="form-floating my-3">
+    <input type="text" class="form-control" id="floatingContact Number" placeholder="Contact" required>
+    <label for="floatingContact">Contact Number</label>
+</div>
 
-                <select class="form-select my-3" id="floatingCourse" placeholder="Course" required>
-                    <option selected>Course</option>
-                    <option value="1">Information Technology</option>
-                    <option value="2">Industrial Engineering</option>
-                    <option value="3">Electrical Engineering</option>
-                    <option value="4">Accounting</option>
-                    <option value="5">Entrepreneurship</option> 
-                    <label for="floatingCourse"> Course </label>
-                  </select>
-                  <select class="form-select my-3" aria-label="Default select example" required>
-                    <option selected>Campus</option>
-                    <option value="1">San Bartolome</option>
-                    <option value="2">Batasan</option>
-                    <option value="3">San Francisco</option>
-                  </select>
+<select class="form-select my-3" id="floatingCourse" placeholder="Course" required>
+    <option selected>Course</option>
+    <option value="1">Information Technology</option>
+    <option value="2">Industrial Engineering</option>
+    <option value="3">Electrical Engineering</option>
+    <option value="4">Accounting</option>
+    <option value="5">Entrepreneurship</option> 
+    <label for="floatingCourse"> Course </label>
+  </select>
+  <select class="form-select my-3" aria-label="Default select example" required>
+    <option selected>Campus</option>
+    <option value="1">San Bartolome</option>
+    <option value="2">Batasan</option>
+    <option value="3">San Francisco</option>
+  </select>
+
+<div class="form-floating my-3">
+    <input type="text" class="form-control" id="floatingEmail Address" placeholder="Email" required>
+    <label for="floatingPurpose">Email Address</label>
+</div>
+
+
+<a href="#"> <button class="btn btn-primary px-5 my-5 ms-3" id="next-two" data-bs-toggle="submit" data-bs-target="#pills-two" type="submit" role="button" aria-controls="pills-two" aria-selected="false"> NEXT</button></a>
+
+<a href="#"> <button type="button" class="btn btn-outline-primary px-5 my-5 me-3" data-bs-toggle="modal" data-bs-target="#exit-enrollment"> CANCEL</button></a>
+
+
+</form>
+</div>
+
+        <!-- -----------STEP TWO------------ -->
+
+            <div class="tab-pane fade" id="pills-two" role="tabpanel" aria-labelledby="pills-two-tab" tabindex="0">
+                <form action="#" id="form2">
+                <div class="container m-auto rounded-2">
+                    <p> Kindly check your information before submitting.</p>
+                        <br>
+                    <div class="table-borderless table-responsive-md m-0">
+                        <table class="table table-light table-fixed table-borderless m-auto text-start  rounded-2 enrollment-display">
+                            <tbody>
+                                <tr class="tw-bold">
+                                    <td class="tw-bold top">Email:</td>
+                                    <td class="tw-bold top" id="#">sample1email@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td class="tw-bold">Document:</td>
+                                    <td class="tw-bold" id="#">Registration Form</td>
+                                </tr>
+                                <tr>
+                                    <td class="tw-bold">Purpose:</td>
+                                    <td class="tw-bold" id="#">For Scholarship</td>
+                                </tr>
+                                <tr>
+                                    <td class="tw-bold">Date Needed:</td>
+                                    <td class="tw-bold" id="#">01/24/2023</td>
+                                </tr>
+                                <tr>
+                                    <td class="tw-bold bottom">Address:</td>
+                                    <td class="tw-bold bottom" id="#">N/A</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <button class="btn btn-primary px-5 my-5 ms-3" id="next-two" data-bs-toggle="button" data-bs-target="#pills-two" type="button" role="button" aria-controls="pills-two" aria-selected="false">NEXT</button>
+                    
+                    <button type="button" class="btn btn-primary px-5 my-5 me-3">EDIT</button>
+
+                    <button type="button" class="btn btn-outline-primary px-5 my-5 me-3" data-bs-toggle="modal" data-bs-target="#exit-enrollment">CANCEL</button>
                 
-                <div class="form-floating my-3">
-                    <input type="text" class="form-control" id="floatingEmail Address" placeholder="Email" required>
-                    <label for="floatingPurpose">Email Address</label>
                 </div>
-
-
-            <a href="#"> <button class="btn btn-primary px-5 my-5 ms-3" id="next-two" data-bs-toggle="submit" data-bs-target="#pills-two" type="submit" role="button" aria-controls="pills-two" aria-selected="false"> NEXT</button></a>
-                
-            <a href="#"> <button type="button" class="btn btn-outline-primary px-5 my-5 me-3" data-bs-toggle="modal" data-bs-target="#exit-req"> CANCEL</button></a>
-
-
             </form>
-        </div>
-        <br><br><br><br><br><br><br>
+            </div>
 
+
+            <!-- -----------STEP THREE------------- -->
+
+            <div class="tab-pane fade" id="pills-three" role="tabpanel" aria-labelledby="pills-three-tab" tabindex="0">
+                <form action="#" class="enrollment-form" id="form3">
+            
+                
+                    <p> Pre-Enrollment form has been submitted. Please wait for further instructions about the enrollment schedule.</p>
+                        <br>
+                    
+            <!-- start ng form -->
+                    <div class="success text-center">
+                        
+                        <img src="src/sUCCESS Icon.png" alt="Enrollment Success" srcset="" class="rounded">
+
+                    </div>
+    
+                    <a href="enrollment-doc-status.html" class="btn btn-primary px-5 my-5 ms-3">CONFIRM</a>
+                    <!-- <button type="button" class="btn btn-primary px-5 my-5 ms-3" type="submit">CONFIRM</button> -->
+                    <!-- <button type="button" class="btn btn-outline-primary px-5 my-5 me-3">CANCEL</button> -->
+                    
+                        
+    
+                        
+            </form>
+            </div>
+        </div>
+
+    </div>
+<br><br><br><br><br><br><br>
+<!-- </section> -->
+ 
+<!------------END CONTENT------------>
         </section>
 <!------------END CONTENT------------>        
     </div>

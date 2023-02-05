@@ -1,0 +1,26 @@
+.profile{
+    margin-top: 3rem !important;
+    }
+
+.btn-primary{
+    background-color: #274C77 !important;
+    border: 2px solid #274C77 !important;
+    font-weight: 700 !important;
+}
+  
+.btn-outline-primary{
+    border: 2px solid #274C77 !important;
+    color: #274C77 !important;
+    font-weight: 700 !important;
+}
+  
+.btn-primary:hover{
+    background-color: #13212B !important;
+    border: 2px solid #13212B !important;
+}
+  
+.btn-outline-primary:hover{
+    background-color: #990000 !important;
+    border: 2px solid #990000 !important;
+    color: #fff !important;
+}

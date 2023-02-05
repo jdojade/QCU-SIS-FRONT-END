@@ -1,24 +1,21 @@
-.course-curr{
+.f-evaluation{
     margin-top: 3rem !important;
 }
 .hr{
     width: clamp(10%, 100vw, 90%) !important;
     left: 0;
 }
-
 .fa-file-circle-check, .fa-table-list{
     float: right;
 } */
-
-/*---COURSE---*/
-.course-curr{
+.f-evaluation{
     margin-top: 3rem !important;
 } 
-.course-curr h1{
+.f-evaluation h1{
     color: #13212B;
     font: 900 48px 'Inter', sans-serif;
 }
-.course-curr p{
+.f-evaluation p{
     font: 600 24px 'Inter', sans-serif;
     color: #13212B !important;
 
