@@ -330,6 +330,11 @@
     display: block;
     position: relative
 }
+@media (min-width: 770px){
+    .navbar-collapse.show > ul {
+        display: flex;
+    }
+}
 .navbar-collapse.show .dropdown-menu-cus.show{
     position: relative ;
 }
