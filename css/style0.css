@@ -312,6 +312,28 @@ th {
   left: 0;
 }
 
-.fa-file-circle-check, .fa-book-open, .fa-table-list{
+.fa-file-circle-check, .fa-book-open, .fa-table-list, .fa-memo-circle-check{
   float: right;
 }
+
+.gtab {
+  color: #002F49;
+  background-color: none;
+}
+
+.gtab:hover{
+  color: #002F49 !important;
+  background-color: #F5F1F1 !important;
+
+}
+
+.gtab .active {
+  color: #fff !important;
+  background-color: #002F49 !important;
+}
+
+.tab-pane .card .flex-item a:hover{
+  background-color:  white !important;
+  color: #13212B !important;
+}
+
