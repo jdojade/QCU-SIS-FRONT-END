@@ -92,12 +92,13 @@
     overflow: hidden;
 }
 thead tr td{
+    margin:auto;
     overflow-x:auto;
     text-align: center;
     font-weight: 800;
 }
 tbody tr td{
-
+    margin:auto;
     overflow-x:auto;
     text-align: center;
 }
