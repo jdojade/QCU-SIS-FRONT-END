@@ -68,8 +68,8 @@ const isLeapYear = (year) => {
   
   /* Example  event */    
   let event = {
-    title: "Start of Second Sem",
-    date: new Date("2023-01-16"),
+    title: "Araw ng puso",
+    date: new Date("2023-02-14"),
   };
       
   for (let i = 0; i <= days_of_month[month] + first_day.getDay() - 1; i++) {
