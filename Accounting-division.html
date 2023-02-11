@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gradeslip</title>
+    <title> Faculty Evaluation </title>
     <link rel="stylesheet" href="css/fontawesome-free-6.2.1-web/css/all.min.css"/>
     <link rel="stylesheet" href="css/bootstrap-5.2.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nav.css">
-    <link rel="shortcut icon" href="src/QCU logo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/admin.css">
-    <link rel="stylesheet" href="css/style0.css">
+    <link rel="stylesheet" href="css/guidance-medical.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/evaluation.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-md sticky-top">
@@ -55,7 +56,7 @@
         <ul class="menu">
             <li><a href="Pre-Enrollment.html"><i class="fa-sharp fa-solid fa-clipboard icon"></i>PRE-ENROLLMENT</a></li>
             <li><a href="req-doc.html"><i class="fa-solid fa-file-lines icon"></i>REQUEST DOCUMENT</a></li>
-            <li class="active"><a href="gradeslip.html"><i class="fa-solid fa-table-list icon"></i>GRADESLIP</a></li>
+            <li><a href="gradeslip.html"><i class="fa-solid fa-table-list icon"></i>GRADESLIP</a></li>
             <li><a href="Course Curriculum.html"><i class="fa-solid fa-list icon "></i>CURRICULUM</a></li>
             <li><a href="Evaluation.html"><i class="fa-solid fa-mobile-screen icon"></i>FACULTY EVALUATION</a></li>
             <li><a href="vaccination.html"><i class="fa-solid fa-credit-card icon"></i>VACCINATION</a></li>
@@ -67,86 +68,42 @@
 <!------------START BODY------------>
     <div class="container-cus">
 <!------------START CONTENT------------>
-        <section class="container py-5">
+        <section class="container py-2">
             <div class="headline">
-                <h1>GRADESLIP VIEWING</h1>
-                <i class="fa-solid fa-table-list fa-3x"></i>
+                <h1>MEDICAL RECORDS</h1>
+                <i class="fa-solid fa-clipboard-list-check fa-3x"></i>
             </div>
-        </section>
-        <section>
-
-            <div class="container m-auto">
+        <div class="container m-auto">
+            <div class="d-flex justify-content-between">
+                <div class="d-flex py-2">
+                    <h5 class="fw-bold">STUDENT NAME:</h5>
+                    <a href="edit-profile.html" class="text-decoration-none link-secondary">
+                        <h5 class="font-weight-bold m-0">&nbsp; Example name</h5></a>
+                        <br>
+                    </div>
+                <div class="d-flex py-2" >
+                    <h5 class="fw-bold">STUDENT NAME:</h5>
+                    <a href="edit-profile.html" class="text-decoration-none link-secondary">
+                        <h5 class="font-weight-bold m-0">&nbsp; Example name</h5></a>
+                        <br>
+                    </div>
+                </div>
+            </div>
+                
             
-                <h5>This section provides e-copy of your gradeslip where you can also download it. 
-                    Take note that this is not a certified true copy of your gradeslip. 
-                    You still need a request for that.</h5>
-                    <br>
-                
-                    <!-- start ng preview ng pdf -->
-               
-                <embed class="border-0 rounded-1 pdf" src="pdf/Grade Slip Sample.pdf">             
-
-                    <!-- end of preview -->
-                    <div class="text-end w-100 py-5">
-                        <!-- <button type="button" class="btn btn-primary px-5 my-5 ms-3" type="submit">DOWNLOAD</button> -->
-                       <!--<button class="btn btn-primary px-5 my-5 ms-3" onclick="window.open('pdf/2019-BSIT-Curriculum.pdf')" type="button">DOWNLOAD</button>-->
-                        <a href="#" class="btn btn-sub-2 btn-shadow px-5 m-2 btn-sm"><b>BACK</b></a>
-                        <a href="pdf/Grade Slip Sample.pdf" download="Grade_Slip" class="btn btn-sub-1 btn-shadow px-5 m-2 btn-sm" onclick="window.open('pdf/Grade Slip Sample.pdf')" type="button"><b>DOWNLOAD</b></a>
-
-                    </div>
-                
-                
-                  <br><br><br><br><br> 
-
-      </div>
         
-        </section>
-<!------------END CONTENT------------>        
-    </div>
-<!------------END BODY------------>
 
-    
-<!------------STAR FOOTER------------>
-    <footer id="sticky-footer" class="flex-shrink-0 py-1 text-white align-content-center">
-        <div class="container p-3">
-            <div class="row align-items-end">
-                <div class="col-md-5">
-                    <div class="row align-items-end">
-                        <div class="col-md-6">
-                            <span>VISIT AND CONTACT US ON:</span><br />
-                            <span><a href="https://www.facebook.com/qcu1994" class="text-decoration-none text-white"><i class="fa-brands fa-facebook"></i>&nbsp;@qcu1994</a></span><br />
-                            <span><a href="https://qcu.edu.ph/" class="text-decoration-none text-white"><i class="fa-sharp fa-solid fa-earth-asia"></i>&nbsp;https://qcu.edu.ph/</a></span>
-                        </div>
-                        <div class="col-md-6">
-                            <span><i class="fa-solid fa-envelope"></i>&nbsp;registrar@qcu.edu.ph</span><br />
-                            <span><i class="fa-solid fa-mobile-screen-button"></i>&nbsp;288063470</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2 text-center">
-                    <img src="img/1565034397472.jfif" class="rounded-circle footer-brand" alt="Logo">
-                </div>
-                <div class="col-md-5">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <span>Terms and Conditions</span><br />
-                            <span>Frequently Asked Questions</span>
-                        </div>
-                        <div class="col-md-6">
-                            <span>Since 1994</span><br />
-                            <span>Copyright</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
-    </footer>
-<!------------END FOOTER------------>
+        
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="css/bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"></script>
     <script src="css/bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/toggle.js"></script>
-    <script src="js/calendar.js"></script>
     <script src="js/loading.js"></script>
 </body>
 </html>
