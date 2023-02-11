@@ -107,13 +107,15 @@ thead tr td{
     padding: 10px 50px !important;
 }
 tbody tr:hover{
-    background-color: var(--light-btn);
+    background-color: var(--bs-gray);
     color: var(--white);
 }
 tbody tr td{
     margin:auto;
     overflow-x:auto;
     text-align: center;
+}tbody tr:hover td{
+    color: var(--white)
 }
 tbody tr td:nth-child(1){
     font-weight: 800;

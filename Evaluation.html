@@ -76,27 +76,37 @@
         <section>
 
             <div class="container m-auto">
-        <form action="#" class="f-evaluation" id="evaluation">
-                <h5>This section is the faculty evaluation that you as a student is responsible to answer.
-                    You will see the preview of the document here.</h5>
-                    <br>
-                    <!-- Preview pdf -->
-                <embed class="border-0 rounded-1 pdf" src="pdf/2019-BSIT-Curriculum.pdf">
-                    <!-- end of preview -->
-                    <div class="text-end w-100 py-5">
-                        <!-- <button type="button" class="btn btn-primary px-5 my-5 ms-3" type="submit">DOWNLOAD</button> -->
-                       <!--<button class="btn btn-primary px-5 my-5 ms-3" onclick="window.open('pdf/2019-BSIT-Curriculum.pdf')" type="button">DOWNLOAD</button>-->
-                        <a href="#" class="btn btn-sub-2 btn-shadow px-5 m-2 btn-sm"><b>BACK</b></a>
-                        <a href="pdf/2019-BSIT-Curriculum.pdf" download="Curriculum" class="btn btn-sub-1 btn-shadow px-5 m-2 btn-sm" onclick="window.open('pdf/2019-BSIT-Curriculum.pdf')" type="button"><b>DOWNLOAD</b></a>
-
+                <h5>This section ask you to evaluate all the Professors for your enrolled subjects. Please fill up and answer all the questions.</h5>
+                <form>
+                    <h3 class="fw-bold">PART I.</h3>
+                    <div class="sample">
+                        <div class="form-floating my-3">
+                            <input type="email" class="form-control" id="studEmail" name="studEmail" placeholder="Name">
+                            <label for="studEmail"> Email </label>
+                            <span id="emailError"></span>
+                        </div>
+                        <div class="form-floating my-3">
+                            <input type="text" class="form-control" id="studNo" name="studNo" placeholder="Name">
+                            <label for="studNo"> Student Number </label>
+                            <span id="studNoError"></span>
+                        </div>
+                        <div class="form-floating my-3">
+                            <div class="form-control" id="studName" name="studName" placeholder="Name">
+                            <text class="form-radio"> Student Name </text>
+                            <label>Yes
+                                <input type="radio" checked="checked" name="radio" value="Yes">
+                                <span class="checkmark"></span>    
+                            </label>
+                            <label>No
+                                <input type="radio" checked="checked" name="radio" value="No">
+                                <span class="checkmark"></span>    
+                            </label>
+                            
+                            </div>
+                        </div>
                     </div>
-                
-                
-                  <br><br><br><br><br>  
-
-      </div>
-
-        
+                </form>
+            </div>
         </section>
 <!------------END CONTENT------------>        
     </div>
