@@ -12,6 +12,7 @@
     --black: #000;
     --primary: #13212B;
     --gray: #F5F5F5;
+    --dark-gray: #AAA5A5;
     --shadow: 4px 6px 4px rgba(0, 0, 0, 0.25);
   }
 *{
@@ -34,6 +35,11 @@ hr{
     right: -3px;
     bottom: -25px;
     background-color: var(--white);
+}
+@media (max-width: 640px ){
+  .headline i{
+    display: none;
+  }
 }
 .container-fluid{
   --bs-gutter-x: 0.5rem;
@@ -1009,12 +1015,37 @@ h1{
   display: block;
   animation: to-left 0.5s forwards;
 }
+.form-floating span{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translatey(-50%);
+    color: crimson;
+}
+.form-floating span i {
+    color:seagreen;
+}
+#submitError{
+  display: block;
+  direction: rtl;
+  color: crimson;
+
+}
+.form-control,.form-select{
+    border: 1px solid #274C77;
+    border-radius: 15px;
+}
 .form-view{
-    width: 100%;
     background: var(--gray);
     border-radius: 14px;
     box-shadow: var(--shadow);
-    padding: 2rem
+    padding: 2rem;
+    padding-bottom: 0;
+}.form-view h5{
+    margin-bottom: 2rem;
+}.form-view h5 strong{
+    width: 50%;
+    word-break: break-all;
 }
 .form-success{
     display: flex;
@@ -1023,29 +1054,50 @@ h1{
 }
 .form-footer{
     justify-content: space-between;
-    display: flex;
+    display: block;
     padding: 1rem;
+    margin-top: 20px;
 }
-.form-page ul{
+.form-page{
     display: flex;
     flex-basis: auto;
-}.form-page li{
-    position: relative;
-    font-size: 3rem;
-    padding-left: 2rem;
-    color: #AAA5A5;
-}.form-page li.current{
-    color: var(--light-btn);
+    width: 8rem;
+    justify-content: space-between;
+    align-items: center;
+}.form-page span{
+    width: 1.3rem;
+    height: 1.3rem;
+    border-radius: 50%;
+    background-color: var(--dark-gray);
+}.form-page span.current{
+    background-color: var(--light-btn);
 }
 .form-button{
   display: flex;
   float: right;
   cursor: pointer;
-/* text-align: right; */
   align-items: center;
   flex-direction: row-reverse;
 }
-button.previous-btn {
-  float: left;
+@media (min-width:770px) {
+  .form-footer{
+    display: flex;
+  }
+  .form-page li{
+    position: relative;
+    font-size: 3rem;
+    padding-left: 2rem;
+    color: #AAA5A5;
+  }
 }
-form input.invalid{border-color: red}
+form input.invalid{border-color: crimson}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

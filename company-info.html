@@ -75,86 +75,136 @@
         </section>
         <section>
             <div class="container">
-                <form action="#">
+                <form action="#" method="get">
                     <div class="step step-1 active">
-                        <div style="top: -38px;
-    position: absolute;"><h6><b>Kindly fill up the form.</b></h6></div>
+                        <div style="top: -38px; position: absolute;">
+                            <h6><b>Kindly fill up the form.</b></h6>
+                        </div>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-floating my-3">
-                                    <input type="text" class="form-control" id="studentName" placeholder="Name" required>
+                                    <input type="text" class="form-control" id="studentName" name="Student Full Name" placeholder="Name">
                                     <label for="studentName"> Student Full Name </label>
+                                    <span id="nameError"></span>
+                                    
                                 </div>
                                 <div class="form-floating my-3">
-                                    <input type="number" class="form-control" id="studentId" placeholder="Name" required>
+                                    <input type="number" class="form-control" id="studentId" name="Student Number" placeholder="Name">
                                     <label for="studentId"> Student Number </label>
+                                    <span id="studNoError"></span>
                                 </div>
                                 <div class="form-floating my-3">
-                                    <input type="text" class="form-control" id="studentSection" placeholder="Name" required>
+                                    <input type="text" class="form-control" id="studentSection" name="Section" placeholder="Name">
                                     <label for="studentSection"> Section </label>
+                                    <span id="studSecError"></span>
                                 </div>
                                 <div class="form-floating my-3">
-                                    <input type="text" class="form-control" id="superiorName" placeholder="Name" required>
-                                    <label for="superiorName"> Immediate Superior </label>
+                                    <input type="text" class="form-control" id="superiorName" name="Immediate Superior" placeholder="Name">
+                                    <label for="superiorName"> Immediate Superior  </label>
+                                    <span id="supNameError"></span>
                                 </div>
                                 <div class="form-floating my-3">
-                                    <input type="text" class="form-control" id="superiorPosition" placeholder="Name" required>
+                                    <input type="text" class="form-control" id="superiorPosition" name="Immediate Superior Position" placeholder="Name">
                                     <label for="superiorPosition"> Immediate Superior Position </label>
+                                    <span id="supPosError"></span>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating my-3">
-                                    <input type="text" class="form-control" id="department" placeholder="Name" required>
+                                    <input type="text" class="form-control" id="department" name="Department" placeholder="Name">
                                     <label for="department"> Department </label>
+                                    <span id="deptError"></span>
                                 </div>
                                 <div class="form-floating my-3">
-                                    <input type="text" class="form-control" id="companyName" placeholder="Name" required>
+                                    <input type="text" class="form-control" id="companyName" name="Company Name" placeholder="Name">
                                     <label for="companyName"> Company Name </label>
+                                    <span id="comNameError"></span>
                                 </div>
                                 <div class="form-floating my-3">
-                                    <input type="text" class="form-control" id="companyAdd" placeholder="Name" required>
+                                    <input type="text" class="form-control" id="companyAdd" name="Company Address" placeholder="Name">
                                     <label for="companyAdd"> Company Address </label>
+                                    <span id="comAddError"></span>
                                 </div>
                                 <div class="form-floating my-3">
-                                    <input type="number" class="form-control" id="companyNumber" placeholder="Name" required>
+                                    <input type="number" class="form-control" id="companyNumber" name="Company Phone Number" placeholder="Name">
                                     <label for="companyNumber"> Company Phone Number </label>
+                                    <span id="comNoError"></span>
                                 </div>
                                 <div class="form-floating my-3">
-                                    <input type="email" class="form-control" id="superiorEmail" placeholder="Name" required>
+                                    <input type="email" class="form-control" id="superiorEmail" name="Email Address Superior" placeholder="Name">
                                     <label for="superiorEmail"> Email Address Superior </label>
+                                    <span id="supEmailError"></span>
                                 </div>
                             </div>
                         </div>
                         <div class="form-footer">
                             <div class="form-page">
-                                <ul>
-                                    <li class="current"></li>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
+                                <span class="current"></span>
+                                <span></span>
+                                <span></span>
                             </div>
                             <div class="form-button">
-                                <button type="button" class="next-btn btn btn-sm btn-sub-1 btn-shadow px-5">NEXT</button>
+                                <button type="button" class="btn btn-sm btn-sub-1 btn-shadow px-5" id="first_btn">NEXT</button>
                                 <button type="button" class="btn btn-sm btn-sub-2 btn-shadow px-5 me-4">CANCEL</button>
                             </div>
                         </div>
+                        <span id="submitError"></span>
                     </div>
                     <div class="step step-2">
-                        <div style="top: -38px;
-    position: absolute;"><h6><b>Kindly check the your information before submitting.</b></h6></div>
+                        <div style="top: -38px;position: absolute;">
+                            <h6><b>Kindly check the your information before submitting.</b></h6>
+                        </div>
                         <div class="row form-view">
                             <div class="col-md-6">
-                                
-                                testing 2
+                                <h5>
+                                    <strong>Student Full Name</strong>
+                                    <span id="info_1"></span>
+                                </h5>
+                                <h5>
+                                    <strong>Student Number</strong>
+                                    <span id="info_2"></span>
+                                </h5>
+                                <h5>
+                                    <strong>Section</strong>
+                                    <span id="info_3"></span>
+                                </h5>
+                                <h5>
+                                    <strong>Inmediate Superior</strong>
+                                    <span id="info_4"></span>
+                                </h5>
+                                <h5>
+                                    <strong>Inmediate Superior Position</strong>
+                                    <span id="info_5"></span>
+                                </h5>
+                            </div>
+                            <div class="col-md-6">
+                                <h5>
+                                    <strong>Department</strong>
+                                    <span id="info_6"></span>
+                                </h5>
+                                <h5>
+                                    <strong>Company Name</strong>
+                                    <span id="info_7"></span>
+                                </h5>
+                                <h5>
+                                    <strong>Company Address</strong>
+                                    <span id="info_8"></span>
+                                </h5>
+                                <h5>
+                                    <strong>Company Phone Number</strong>
+                                    <span id="info_9"></span>
+                                </h5>
+                                <h5>
+                                    <strong>Email Address Superior</strong>
+                                    <span id="info_10"></span>
+                                </h5>
                             </div>
                         </div>
                         <div class="form-footer">
                             <div class="form-page">
-                                <ul>
-                                    <li></li>
-                                    <li class="current"></li>
-                                    <li></li>
-                                </ul>
+                                <span></span>
+                                <span class="current"></span>
+                                <span></span>
                             </div>
                             <div class="form-button">
                                 <button type="button" class="next-btn btn btn-sm btn-sub-1 btn-shadow px-5">NEXT</button>
@@ -163,18 +213,17 @@
                         </div>
                     </div>
                     <div class="step step-3">
-                        <div style="top: -38px;
-    position: absolute;"><h6><b>Company information has been successfully submitted</b></h6></div>
+                        <div style="top: -38px; position: absolute;">
+                            <h6><b>Company information has been successfully submitted</b></h6>
+                        </div>
                         <div class="form-success">
                             <img src="img/Success.png" alt="Success">
                         </div>
                         <div class="form-footer">
                             <div class="form-page">
-                                <ul>
-                                    <li></li>
-                                    <li></li>
-                                    <li class="current"></li>
-                                </ul>
+                                <span></span>
+                                <span></span>
+                                <span class="current"></span>
                             </div>
                             <div class="form-button">
                                 <button type="submit" class="submit-btn btn btn-sm btn-sub-1 btn-shadow px-5">CONFIRM</button>
