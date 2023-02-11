@@ -39,6 +39,7 @@ const nextBtn = document.querySelectorAll("form .next-btn");
 const prevBtn = document.querySelectorAll("form .previous-btn");
 const form = document.querySelector("form");
 const firstBtn = document.getElementById("first_btn");
+const nextreqBtn = document.getElementById("nextReq");
 
 
 /* inputs for company information */
@@ -197,3 +198,39 @@ function changeStep(btn) {
   }
   steps[i].classList.add("active");
 }
+
+
+/* inputs for request documents */
+
+var emailReq =  document.getElementById('emailReq'); 
+var docuReq =   document.getElementById('docuReq'); 
+var purReq =    document.getElementById('purReq'); 
+var dateReq =   document.getElementById('dateReq'); 
+
+nextreqBtn.addEventListener("click", () => {
+  let vali =[
+    validateEmail(),
+    validateDocu(),
+    validatePurpose(),
+    validateDate()
+  ]
+
+  if (vali.every(Boolean)){
+      document.getElementById("submitError").style.display='none';
+      changeStep("next");
+      var vals = [
+        document.getElementById('emailAdd').value,
+        document.getElementById('docuType').value, 
+        document.getElementById('purposeDocu').value,
+        document.getElementById('dateNeed').value
+      ]
+      for (let i=1; i-1 <= vals.length; i++){
+        let info = document.getElementById("info_"+i);
+        info.innerHTML = ': ' + vals[i-1];
+      };
+  }else{
+    let step1 = document.getElementById("submitError");
+    step1.innerHTML = "Need to be fill up all field";
+  }
+  
+});
