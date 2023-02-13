@@ -2,6 +2,21 @@
     width: 3rem;
     padding: 5px;
 }
+.navbar-brand{
+    --bs-navbar-brand-font-size: 1.25rem;
+    --bs-navbar-brand-hover-color: rgba(255, 255, 255, 0.9);
+    --bs-navbar-brand-color: rgba(255, 255, 255, 0.9);
+    font-weight: bolder;
+}
+@media (max-width: 440px){
+    .navbar-brand{
+        display: none;
+    }
+}
+    
+.footer-brand{
+    width: 5rem;
+}
 .header-section{
    background: #333333;
    color: #FFF;
@@ -34,13 +49,20 @@
    align-items: center;
    white-space: nowrap;
    cursor: pointer;
-   padding: 10px;
+   padding: 7px;
 }
 .menu li:hover{
-   background: #13212B;
-   color: #FFF !important;
    text-decoration: none;
+    animation: highlight .2s linear forwards;
 }
+
+@keyframes highlight{
+    to{
+        width: 100%;
+        background: #13212B;
+    }
+}
+
 .menu li.active{
    background: #13212B !important;
    color: #FFF !important;
@@ -63,7 +85,6 @@
    align-items: center;
    text-align: center;
    line-height: 50px;
-   /* background: #d9d9d9; */
    height: 40px;
    width: 40px;
    font-size: 25px;
@@ -75,7 +96,7 @@
 .container-cus{
    /*border: 1px solid #000;*/
    position: relative;
-   margin-left: 60px;
+   margin-left: 55px;
    transition: margin-left 0.75s cubic-bezier(0.25, 0.1, 0.25, 1.0);
 }
 .container-cus.magic{
@@ -89,7 +110,7 @@
    justify-content: flex-start;
    align-items: flex-start;
    overflow: hidden;
-   width: 60px;
+   width: 55px;
    transition: width 0.75s cubic-bezier(0.25, 0.1, 0.25, 1.0);
    overflow-y: auto;
    position: fixed;
@@ -99,7 +120,6 @@
 .menu-container.magic,
 .menu-container.show{
    width: 260px;
-   grid-template-columns: 60px auto!important;
 }
 .menu-container::-webkit-scrollbar {
    display: none;
@@ -109,6 +129,20 @@
     color: #FFF !important;
     text-decoration: none;
  }
+@media (max-width: 780px){
+    .menu-container.magic{
+       width: 260px;
+    }
+    .menu-container{
+        width: 0;
+    }
+    .container-cus.magic{
+       margin-left: 0;
+    }
+    .container-cus{
+        margin-left: 0;
+    }
+}
 
 /*THE MAGIC ENDS HERE*/
 
@@ -127,7 +161,7 @@
     flex-direction: column;
     justify-content: center;
     width: 30px;
-    height: 30px;
+    height: 20px;
     position: relative;
     margin: 0px;
     -webkit-transform: rotate(0deg);
@@ -203,6 +237,9 @@
     top: 21px;
     left: 8px;
 }
+.navbar-collapse{
+   justify-content: flex-end;
+}
 .navbar-toggler{
     background-color: none;
     border: 0;
@@ -214,19 +251,17 @@
 .nav-link, .navbar-item{
     position: relative;
     color: #FFF;
-    background-color: #274C77;
+    height: 50px;
 }
 .navbar-item .active{
     background-color: #FFFFFF !important;
     color: #274C77 !important;
     font-weight: 900;
-    height: 50px;
 }
 .nav-link{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
 }
 .nav-link:hover {
     background-color: #FFFFFF !important;
@@ -236,6 +271,7 @@
 .navbar{
     background-color: #274C77;
     padding: 0px 5px 0px 5px !important;
+    
 }
 .text-center {
     text-align: center!important;
@@ -284,20 +320,38 @@
 }
 .dropdown-menu-cus.show {
     display: block;
+
 }
 .dropdown-menu-cus li a:hover{
     border-radius: 0.5rem;
 }
+.dropdown-toggle::after{display: none;}
+.navbar-collapse.show > ul{
+    display: block;
+    position: relative
+}
+@media (min-width: 770px){
+    .navbar-collapse.show > ul {
+        display: flex;
+    }
+}
+.navbar-collapse.show .dropdown-menu-cus.show{
+    position: relative ;
+}
+
 #sticky-footer{
-    z-index: 200;
+    z-index: 10;
     background-color: #274C77;
     position: relative;
 }
-.dropdown-toggle::after{
-    padding: 3px;
-    border-top: 4px solid;
-    border-right: 4px solid;
-    border-bottom: 1px solid transparent;
-    border-left: 1px solid transparent;
-    transform: rotate(45deg);
+@media (max-width:760px){
+    #sticky-footer img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        width: 200px;
+        z-index: -1;
+        filter: contrast(0.5) opacity(0.5);
+    }
 }
