@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Pre-Enrollment</title>
+    <title> Request Documents </title>
     <link rel="stylesheet" href="css/fontawesome-free-6.2.1-web/css/all.min.css"/>
     <link rel="stylesheet" href="css/bootstrap-5.2.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -69,7 +69,7 @@
 <!------------START CONTENT------------>
         <section class="container py-5">
             <div class="headline">
-                <h1> Pre-Enrollment </h1>
+                <h1>REQUEST DOCUMENTS</h1>
                 <i class="fa-solid fa-address-book fa-3x"></i>
             </div>
         </section>
@@ -81,40 +81,46 @@
                             <h6><b>Kindly fill up the form.</b></h6>
                         </div>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-6">
                                 <div class="form-floating my-3">
                                     <input type="text" class="form-control" id="studentName" name="Student Full Name" placeholder="Name">
                                     <label for="studentName"> Student Full Name </label>
                                     <span id="nameError"></span>       
                                 </div>
                                 <div class="form-floating my-3">
-                                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                                        <option selected hidden >Choose your Course </option>
-                                        <option value="1">Bachelor of Science in Information Technology</option>
-                                        <option value="2">Bachelor of Science in Industial Engineering</option>
-                                        <option value="3">Bachelor of Science in Accountancy</option>
-                                    </select>
-                                    <label for="floatingSelect"> Course </label>
+                                    <input type="text" class="form-control" id="studentSection" name="Section" placeholder="Name">
+                                    <label for="studentSection"> Section </label>
+                                    <span id="studSecError"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating my-3">
+                                    <input type="number" class="form-control" id="studentId" name="Student Number" placeholder="Name">
+                                    <label for="studentId"> Student Number </label>
+                                    <span id="studNoError"></span>
                                 </div>
                                 <div class="form-floating my-3">
-                                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                                        <option selected hidden>Choose your Campus </option>
-                                        <option value="1">San Bartolome</option>
-                                        <option value="2">Batasan</option>
-                                        <option value="3">San Francisco</option>
-                                    </select>
-                                    <label for="floatingSelect"> Campus </label>
+                                    <input type="text" class="form-control" id="department" name="Department" placeholder="Name">
+                                    <label for="department"> Course </label>
+                                    <span id="deptError"></span>
                                 </div>
-                                <div class="form-floating my-3">
-                                    <input type="number" class="form-control" id="contactno" name="Student Number" placeholder="Name">
-                                    <label for="contactno"> Contact Number </label>
-                                    <span id="conNoError"></span>
-                                </div>
-                                <div class="form-floating my-3">
-                                    <input type="text" class="form-control" id="EmailAdd" name="EmailAdd" placeholder="Name">
-                                    <label for="EmailAdd"> Email Address </label>
-                                    <span id="eAddError"></span>
-                                </div>
+                            </div>
+                            <div class="col-md-12">
+                            <div class="form-floating my-3">
+                                <input type="text" class="form-control" id="companyAdd" name="Company Address" placeholder="Name">
+                                <label for="companyAdd"> Address </label>
+                                <span id="comAddError"></span>
+                            </div>
+                            </div>
+                            <div class="col-md-11 form-floating my-3">
+                                <input type="text" class="form-control" id="companyName" name="Company Name" placeholder="Name">
+                                <label for="companyName"> </label>
+                                <span id="comNameError"></span>
+                            </div>
+                            <div class="col-md-1 form-floating my-3">
+                                <input type="number" class="form-control" id="studentId" name="Student Number" placeholder="Name">
+                                <label for="studentId"> Qty. </label>
+                                <span id="studNoError"></span>
                             </div>
                         </div>
                         <div class="form-footer">
@@ -135,26 +141,28 @@
                             <h6><b>Kindly check the your information before submitting.</b></h6>
                         </div>
                         <div class="row form-view">
-                            <div class="col-md-12">
+                            <div class="col-md-6">
                                 <h5>
-                                    <strong>Full Name</strong>
+                                    <strong>Student Full Name</strong>
                                     <span id="info_1"></span>
                                 </h5>
                                 <h5>
-                                    <strong>Contact</strong>
+                                    <strong>Student Number</strong>
                                     <span id="info_2"></span>
                                 </h5>
                                 <h5>
-                                    <strong>Course</strong>
+                                    <strong>Section</strong>
                                     <span id="info_3"></span>
                                 </h5>
+                            </div>
+                            <div class="col-md-6">
                                 <h5>
-                                    <strong>Campus</strong>
-                                    <span id="info_4"></span>
+                                    <strong>Company Name</strong>
+                                    <span id="info_7"></span>
                                 </h5>
                                 <h5>
-                                    <strong>Email Address</strong>
-                                    <span id="info_5"></span>
+                                    <strong>Company Address</strong>
+                                    <span id="info_8"></span>
                                 </h5>
                             </div>
                         </div>
@@ -239,7 +247,7 @@
     <script src="css/bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"></script>
     <script src="css/bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
     <script src="js/jquery.min.js"></script>
-    <script src="js/Enrollment.js"></script>
+    <script src="js/toggle.js"></script>
     <script src="js/calendar.js"></script>
     <script src="js/loading.js"></script>
 </body>
