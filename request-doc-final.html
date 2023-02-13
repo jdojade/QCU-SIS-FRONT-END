@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Request Documents </title>
+    <link rel="stylesheet" href="css/fontawesome-free-6.2.1-web/css/all.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-5.2.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/evaluation.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md sticky-top">
+        <div class="container-fluid p-0" >
+            <div class="d-flex flex-colum align-items-center">
+                <button class="btn-hamburger" type="button" id="hamburger">
+                    <div class="icon-hamburger"><span></span><span></span><span></span></div>
+                </button><span class="text-white fs-3">|</span>
+                <img src="img/1565034397472.jfif" alt="logo" class="logo rounded-circle">
+                <a href="student_dashboard.html" class="navbar-brand">&nbsp;Quezon City University</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i class="fa-solid fa-ellipsis-vertical text-white"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar nav p-0">
+                    <li class="navbar-item">
+                        <a href="student_dashboard.html" class="nav-link">HOME</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="inbox.html" class="nav-link">INBOX</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="nav-link">ABOUT QCU</a>
+                    </li>
+                    <li class="nav-item dropdown" onmouseleave="mouseLeave()">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="img/1565034397472.jfif" class="logo rounded-circle">
+                        </a>
+                        <ul class="dropdown-menu-cus text-center" style="right: 0;">
+                          <li><a class="dropdown-item" href="edit-profile.html">EDIT PROFILE</a></li>
+                          <li><a class="dropdown-item" href="#">REQUEST STATUS</a></li>
+                          <li><a class="dropdown-item" href="#">LOGOUT</a></li>
+                        </ul>
+                      </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="menu-container">
+        <ul class="menu">
+            <li><a href="Pre-Enrollment.html"><i class="fa-sharp fa-solid fa-clipboard icon"></i>PRE-ENROLLMENT</a></li>
+            <li><a href="req-doc.html"><i class="fa-solid fa-file-lines icon"></i>REQUEST DOCUMENT</a></li>
+            <li><a href="gradeslip.html"><i class="fa-solid fa-table-list icon"></i>GRADESLIP</a></li>
+            <li><a href="Course Curriculum.html"><i class="fa-solid fa-list icon "></i>CURRICULUM</a></li>
+            <li><a href="Evaluation.html"><i class="fa-solid fa-mobile-screen icon"></i>FACULTY EVALUATION</a></li>
+            <li><a href="vaccination.html"><i class="fa-solid fa-credit-card icon"></i>VACCINATION</a></li>
+            <li><a href="event.html"><i class="fa-solid fa-tag icon"></i>EVENTS</a></li>
+            <li><a href="Calendar.html"><i class="fa-solid fa-calendar-days icon"></i>UNIVERSITY CALENDAR</a></li>
+            <li><a href="faqs.html"><i class="fa-solid fa-info icon"></i>FAQS</a></li>
+        </ul>
+    </div>
+<!------------START BODY------------>
+    <div class="container-cus">
+<!------------START CONTENT------------>
+        <section class="container py-5">
+            <div class="headline">
+                <h1>REQUEST DOCUMENT</h1>
+                <i class="fa-solid fa-address-book fa-3x"></i>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <form action="#" method="get">
+                    <div class="step step-1 active">
+                        <div style="top: -38px; position: absolute;">
+                            <h6><b>Are you requesting for your your specific document? You can fill up this form to send request. 
+                                <br>
+                                This section ask you to provide your what kind of document you requesting and other information 
+                                about it. Please answer it accurately.</b></h6>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-floating my-3">
+                                    <input type="email" class="form-control" id="emailAdd" name="Email Address" placeholder="Name">
+                                    <label for="emailAdd"> Email Address </label>
+                                    <span id="emailReq"></span>
+                                </div>
+
+                                <div class="form-floating my-3">
+                                    <select class="form-select" id="docuType" aria-label="Document Type" value="">
+                                      <option selected class="text-muted">--Select the document--</option>
+                                      <option value="1">Transcript of Record (TOR)</option>
+                                      <option value="2">Diploma</option>
+                                      <option value="3">Honorable Dismissal</option>
+                                      <option value="4">Certificate of Authenticity and Verification (CAV)</option>
+                                      <option value="5">Good Moral Certificate</option>
+                                    </select>
+                                    <label for="docuType"> Document </label>
+                                    <span id="docuReq"></span>
+                                  </div>
+
+                                <div class="form-floating my-3">
+                                    <input type="text" class="form-control" id="purposeDocu" name="Purpose" placeholder="Name">
+                                    <label for="purposeDocu"> Purpose </label>
+                                    <span id="purReq"></span>
+                                </div>
+
+                                <div class="form-floating my-3">
+                                    <input type="date" class="form-control" id="dateNeed" placeholder="Date Needed" required>
+                                    <label for="dateNeed"> Date Needed </label>
+                                    <span id="dateReq"></span>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+
+                        <div class="form-footer">
+                            <div class="form-page">
+                                <span class="current"></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="form-button">
+                                <button type="button" class="btn btn-sm btn-sub-1 btn-shadow px-5" id="nextReq">NEXT</button>
+                                <button type="button" class="btn btn-sm btn-sub-2 btn-shadow px-5 me-4">CANCEL</button>
+                            </div>
+                        </div>
+                        <span id="submitError"></span>
+                    </div>
+                    <div class="step step-2">
+                        <div style="top: -38px;position: absolute;">
+                            <h6><b>Please review all the information you&#39;ve entered before submitting the form. 
+                                <br>
+                                You can click “EDIT” to edit.</b></h6>
+                        </div>
+                        <div class="row form-view">
+                            <div>
+                                <h5>
+                                    <strong>Email Address</strong>
+                                    <span id="info_1"></span>
+                                </h5>
+                                <h5>
+                                    <strong>Document</strong>
+                                    <span id="info_2"></span>
+                                </h5>
+                                <h5>
+                                    <strong>Purpose</strong>
+                                    <span id="info_3"></span>
+                                </h5>
+                                <h5>
+                                    <strong>Date Needed</strong>
+                                    <span id="info_4"></span>
+                                </h5>
+                                
+                            </div>
+                            
+                        </div>
+                        <div class="form-footer">
+                            <div class="form-page">
+                                <span></span>
+                                <span class="current"></span>
+                                <span></span>
+                            </div>
+                            <div class="form-button">
+                                <button type="button" class="next-btn btn btn-sm btn-sub-1 btn-shadow px-5">NEXT</button>
+                                <button type="button" class="previous-btn btn btn-sm btn-sub-2 btn-shadow px-5 me-4">EDIT</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step step-3">
+                        <div style="top: -38px; position: absolute;">
+                            <h6><b>Company information has been successfully submitted</b></h6>
+                        </div>
+                        <div class="form-success">
+                            <img src="img/Success.png" alt="Success">
+                        </div>
+                        <div class="form-footer">
+                            <div class="form-page">
+                                <span></span>
+                                <span></span>
+                                <span class="current"></span>
+                            </div>
+                            <div class="form-button">
+                                <button type="submit" class="submit-btn btn btn-sm btn-sub-1 btn-shadow px-5">CONFIRM</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+<!------------END CONTENT------------>        
+</div>
+<!------------END BODY------------>
+
+    
+<!------------STAR FOOTER------------>
+    <footer id="sticky-footer" class="flex-shrink-0 py-1 text-white align-content-center">
+        <div class="container p-3">
+            <div class="row align-items-end">
+                <div class="col-md-5">
+                    <div class="row align-items-end">
+                        <div class="col-md-6">
+                            <span>VISIT AND CONTACT US ON:</span><br />
+                            <span><a href="https://www.facebook.com/qcu1994" class="text-decoration-none text-white"><i class="fa-brands fa-facebook"></i>&nbsp;@qcu1994</a></span><br />
+                            <span><a href="https://qcu.edu.ph/" class="text-decoration-none text-white"><i class="fa-sharp fa-solid fa-earth-asia"></i>&nbsp;https://qcu.edu.ph/</a></span>
+                        </div>
+                        <div class="col-md-6">
+                            <span><i class="fa-solid fa-envelope"></i>&nbsp;registrar@qcu.edu.ph</span><br />
+                            <span><i class="fa-solid fa-mobile-screen-button"></i>&nbsp;288063470</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 text-center">
+                    <img src="img/1565034397472.jfif" class="rounded-circle footer-brand" alt="Logo">
+                </div>
+                <div class="col-md-5">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <span>Terms and Conditions</span><br />
+                            <span>Frequently Asked Questions</span>
+                        </div>
+                        <div class="col-md-6">
+                            <span>Since 1994</span><br />
+                            <span>Copyright</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!------------END FOOTER------------>
+    <script>
+        
+
+    </script>
+    <script src="css/bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="css/bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/toggle.js"></script>
+    <script src="js/calendar.js"></script>
+    <script src="js/loading.js"></script>
+</body>
+</html>

@@ -155,7 +155,7 @@ th, td {
   padding: 1.5rem 2.5rem !important;
 }
 
-th {
+.table-stat th {
   background-color: #F5F1F1 !important;
 }
 
@@ -250,4 +250,115 @@ th {
   .section-head-text {
     text-align: center;
   }
+}
+
+/*------------gcu contact--------------*/
+
+.gcu-contact ul{
+  list-style: none;
+  margin: 0 2rem 0 2rem;
+}
+
+.gcu-contact li {
+  padding: .5rem;
+}
+
+.gcu-contact ul li p {
+  color: #fff !important;
+}
+
+.gcu-contact {
+  background-color: #274C77;
+}
+
+.hr {
+  opacity: 100% !important;
+}
+
+.gcu-contact i {
+  width: 2rem;
+  height: 2rem;
+}
+
+.gcu-contact span {
+  padding: 0 1rem 0 1rem;
+}
+
+.cno li{
+  padding: 0 !important;
+  line-height: 1.5rem !important;
+}
+
+.cno span{
+  padding: 0 3rem 0 1rem !important;
+}
+
+
+.main-heading{
+  margin-top: 3rem !important;
+}
+
+.main-heading h1{
+  color: #13212B;
+  font: 900 48px 'Inter', sans-serif;
+
+}
+.main-heading p{
+  font: 600 24px 'Inter', sans-serif;
+
+}
+.hr{
+  width: clamp(10%, 100vw, 90%) !important;
+  left: 0;
+}
+
+.fa-file-circle-check, .fa-book-open, .fa-table-list, .fa-memo-circle-check{
+  float: right;
+}
+
+.gtab {
+  color: #002F49;
+  background-color: none;
+}
+
+.gtab:hover{
+  color: #002F49 !important;
+  background-color: #F5F1F1 !important;
+
+}
+
+.gtab .active {
+  color: #fff !important;
+  background-color: #002F49 !important;
+}
+
+.tab-pane .card .flex-item a:hover{
+  background-color:  white !important;
+  color: #13212B !important;
+}
+
+.table-info{
+  border-spacing: 2; 
+  border-collapse: collapse; 
+  background:var(--light-body);
+  border-radius: 10px;
+  overflow:hidden;
+  width:100%;
+  margin: 25px auto;
+  position:relative;
+}
+
+.pen-rec td, th{
+  color: var(--light-btn);
+  height: 70px;
+  text-align: center;
+}
+.pen-rec thead th { 
+  height:80px;
+  background-color: #274C77 !important;
+  font-size:16px;
+}
+.pen-rec tbody tr {
+  height:48px;
+  border-bottom: 1px solid #E3F1D5 ;
 }
