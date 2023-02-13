@@ -41,8 +41,54 @@ const form = document.querySelector("form");
 const firstBtn = document.getElementById("first_btn");
 const nextreqBtn = document.getElementById("nextReq");
 
+/* inputs for request documents
 
-/* inputs for company information */
+var emailReq =  document.getElementById('emailReq'); 
+var docuReq =   document.getElementById('docuReq'); 
+var purReq =    document.getElementById('purReq'); 
+var dateReq =   document.getElementById('dateReq'); 
+
+nextreqBtn.addEventListener("click", () => {
+  let vali =[
+    validate1()
+  ];
+  if (vali.every(Boolean)){
+      document.getElementById("submitError").style.display='none';
+      changeStep("next");
+      var vals = [
+        document.getElementById('emailAdd').value,
+        document.getElementById('docuType').value, 
+        document.getElementById('purposeDocu').value,
+      ];
+      for (let i=1; i-1 <= vals.length; i++){
+        let info = document.getElementById("info_"+i);
+        info.innerHTML = ': ' + vals[i-1];
+      };
+  }else{
+    let step1 = document.getElementById("submitError");
+    step1.innerHTML = "Need to be fill up all field";
+  }
+});
+
+function validate1(){
+  var isValue = document.getElementById('emailAdd');
+  if (!isValue.value){
+      emailReq.innerHTML = "Email is required";
+      isValue.classList.add('invalid');
+      return false;
+  }
+  if(!isValue.value.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)){
+      emailReq.innerHTML = "Write Fullname";
+      isValue.classList.add('invalid');
+      return false;
+  }
+  emailReq.innerHTML = '<i class="fa-sharp fa-solid fa-circle-check"></i>';
+  isValue.classList.remove('invalid');
+  return true;
+}
+
+
+/* inputs for company information
 var nameError =    document.getElementById('nameError'); 
 var studNoError =  document.getElementById('studNoError'); 
 var studSecError = document.getElementById('studSecError'); 
@@ -186,6 +232,8 @@ form.addEventListener("submit", (e) => {
   form.reset();
 });
 
+document.querySelector('body').moda
+
 function changeStep(btn) {
   let i = 0;
   const active = document.querySelector(".active");
@@ -200,37 +248,3 @@ function changeStep(btn) {
 }
 
 
-/* inputs for request documents */
-
-var emailReq =  document.getElementById('emailReq'); 
-var docuReq =   document.getElementById('docuReq'); 
-var purReq =    document.getElementById('purReq'); 
-var dateReq =   document.getElementById('dateReq'); 
-
-nextreqBtn.addEventListener("click", () => {
-  let vali =[
-    validateEmail(),
-    validateDocu(),
-    validatePurpose(),
-    validateDate()
-  ]
-
-  if (vali.every(Boolean)){
-      document.getElementById("submitError").style.display='none';
-      changeStep("next");
-      var vals = [
-        document.getElementById('emailAdd').value,
-        document.getElementById('docuType').value, 
-        document.getElementById('purposeDocu').value,
-        document.getElementById('dateNeed').value
-      ]
-      for (let i=1; i-1 <= vals.length; i++){
-        let info = document.getElementById("info_"+i);
-        info.innerHTML = ': ' + vals[i-1];
-      };
-  }else{
-    let step1 = document.getElementById("submitError");
-    step1.innerHTML = "Need to be fill up all field";
-  }
-  
-});

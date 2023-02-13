@@ -1212,13 +1212,109 @@ input[type=number] {
 }
 
 .item{
-    padding
+    padding:;
 }
+
 .rating{
-    position: relative;
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none;
-    font-weight: bold;
-    margin-top: 50px
+  position: relative;
+  display: flex ;
+  justify-content: space-evenly;
+  list-style: none;
+  font-weight: bold;
+  margin-top: 50px;
 }
+
+/*Gradeslip*/
+.year-level{
+  list-style: none;
+  width: 100%;
+  position: relative;
+  display: flex;
+  background-color: var(--light-btn);
+  padding: 0;
+  margin-bottom: 2rem;
+  justify-content: space-around;
+}.year-level li{
+  width: 100%;
+  height: 4.5rem;
+}.year-level li a{
+  width: inherit;
+  height: inherit;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}.year-level li a:hover,
+.year-level li.active{
+  background-color: var(--primary);
+}
+
+.grade-slip{
+  display: block;
+}.grade-slip > span{
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #3B90F2;
+}.grade-slip > h4{
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 4rem;
+  font-weight: 700;
+}.grade-slip{
+  background-color: white;
+}
+
+
+.grade-info{
+  margin-bottom: 3rem;
+  border: solid .8px #000;
+}.grade-info thead th{
+  background-color: var(--primary) !important;
+  color:white;
+}.grade-info tbody td{
+  background-color: white !important;
+  border: solid .8px #000;
+}.grade-info tbody tr:hover td{
+  background-color: #D9D9D9 !important;
+  color: var(--primary);
+}.grade-info tbody tr:last-child td{
+  background-color: #D9D9D9 !important;
+  border: 0;
+}
+
+.sem{
+  display: flex;
+  margin-bottom: 3rem;
+}.sem > h4{
+  margin: 0;
+  padding: .7rem;
+  background-color: var(--primary);
+  color: white;
+  font-weight: 500;
+  border-radius: 5px;
+}.sem-select{
+  padding: 0 .5rem;
+  font-size: 1.5rem;
+  border-left: 0px;
+}
+
+.s-info h4{
+  display: flex;
+  justify-content: space-between;
+  padding: .6rem;
+  border: solid .8px var(--primary);
+  margin: 0;
+  font-weight: 700;
+}.s-info h4:first-child{
+  background-color: var(--primary);
+  color: white;
+}
+
+
+
