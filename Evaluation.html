@@ -74,37 +74,43 @@
             </div>
         </section>
         <section>
-
             <div class="container m-auto">
                 <h5>This section ask you to evaluate all the Professors for your enrolled subjects. Please fill up and answer all the questions.</h5>
-                <form>
-                    <h3 class="fw-bold">PART I.</h3>
-                    <div class="sample">
-                        <div class="form-floating my-3">
-                            <input type="email" class="form-control" id="studEmail" name="studEmail" placeholder="Name">
-                            <label for="studEmail"> Email </label>
-                            <span id="emailError"></span>
+                <ul class="rating">
+                    <li>5 - Excellent</li>
+                    <li>4 - Good</li>
+                    <li>3 - Satisfactory</li>
+                    <li>2 - Fair</li>
+                    <li>1 - Poor</li>
+                </ul>
+                <form action="#" method="get">
+                    <div class="row mb-2">
+                        <div class="col-md-2">
+                            <span class="fs-5 fw-700">Professor:</span>
                         </div>
-                        <div class="form-floating my-3">
-                            <input type="text" class="form-control" id="studNo" name="studNo" placeholder="Name">
-                            <label for="studNo"> Student Number </label>
-                            <span id="studNoError"></span>
-                        </div>
-                        <div class="form-floating my-3">
-                            <div class="form-control" id="studName" name="studName" placeholder="Name">
-                            <text class="form-radio"> Student Name </text>
-                            <label>Yes
-                                <input type="radio" checked="checked" name="radio" value="Yes">
-                                <span class="checkmark"></span>    
-                            </label>
-                            <label>No
-                                <input type="radio" checked="checked" name="radio" value="No">
-                                <span class="checkmark"></span>    
-                            </label>
-                            
-                            </div>
+                        <div class="col-md-10">
+                            <select class="form-select">
+                                <option>SANTOS, Richard Morris A.</option>
+                                <option>TANJENTE, Rose Anne A.</option>
+                                <option>IMPANG, Maria Aura C.</option>
+                                <option>TANO, Isagani M.</option>
+                            </select>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <span class="fs-5 fw-700">Subject:</span>
+                        </div>
+                        <div class="col-md-10">
+                            <select class="form-select">
+                                <option>SANTOS, Richard Morris A.</option>
+                                <option>TANJENTE, Rose Anne A.</option>
+                                <option>IMPANG, Maria Aura C.</option>
+                                <option>TANO, Isagani M.</option>
+                            </select>
+                        </div>
+                    </div>
+                    
                 </form>
             </div>
         </section>

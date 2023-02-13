@@ -852,12 +852,13 @@ h1{
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     font-weight: 600;
-    cursor: pointer;
+    cursor: default;
     color:rgb(104, 104, 104);
 }
 .calendar-week-days span:hover {
     color:black;
     transition: all .2s ease-in-out;
+    cursor: default;
 }
 .calendar-week-days span {
     display: grid;
@@ -881,7 +882,7 @@ h1{
     justify-content: center;
     padding: 5px;
     position: relative;
-    cursor: pointer;
+    cursor: default;
     animation: to-top 1s forwards;
 }
 .month-picker {
@@ -920,7 +921,7 @@ h1{
     background: #F8F8F8;
     border-radius: 25px;
     font-weight: 600;
-    cursor: pointer;
+    cursor: default;
     margin-top: 50px;
     margin-bottom: 50px;
     box-shadow: var(--shadow);
@@ -1132,11 +1133,11 @@ h1{
   direction: rtl;
   color: crimson;
 }
-.form-radio{
-    position: absolute;
-    top: 6px;
-    font-size: 14px;
-    color: #6c757d;
+.form-sda{
+    position: relative;
+    display: flex;
+    font-size: 1.3rem;
+    margin-right: 1rem
 }
 
 .form-control,.form-select{
@@ -1212,4 +1213,12 @@ input[type=number] {
 
 .item{
     padding
+}
+.rating{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    font-weight: bold;
+    margin-top: 50px
 }
