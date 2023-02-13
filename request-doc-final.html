@@ -54,7 +54,7 @@
     <div class="menu-container">
         <ul class="menu">
             <li><a href="Pre-Enrollment.html"><i class="fa-sharp fa-solid fa-clipboard icon"></i>PRE-ENROLLMENT</a></li>
-            <li><a href="req-doc.html"><i class="fa-solid fa-file-lines icon"></i>REQUEST DOCUMENT</a></li>
+            <li class="active"><a href="request-doc-final.html"><i class="fa-solid fa-file-lines icon"></i>REQUEST DOCUMENT</a></li>
             <li><a href="gradeslip.html"><i class="fa-solid fa-table-list icon"></i>GRADESLIP</a></li>
             <li><a href="Course Curriculum.html"><i class="fa-solid fa-list icon "></i>CURRICULUM</a></li>
             <li><a href="Evaluation.html"><i class="fa-solid fa-mobile-screen icon"></i>FACULTY EVALUATION</a></li>
@@ -67,17 +67,17 @@
 <!------------START BODY------------>
     <div class="container-cus">
 <!------------START CONTENT------------>
-        <section class="container py-5">
+        <section class="container py-5 mb-5">
             <div class="headline">
                 <h1>REQUEST DOCUMENT</h1>
                 <i class="fa-solid fa-address-book fa-3x"></i>
             </div>
         </section>
-        <section>
+        <section class="mb-5">
             <div class="container">
-                <form action="#" method="get">
+                <form action="request-doc-status.html" method="get">
                     <div class="step step-1 active">
-                        <div style="top: -38px; position: absolute;">
+                        <div style="top: -40px; position: absolute;">
                             <h6><b>Are you requesting for your your specific document? You can fill up this form to send request. 
                                 <br>
                                 This section ask you to provide your what kind of document you requesting and other information 
@@ -86,11 +86,20 @@
                         <div class="row">
                             <div class="col">
                                 <div class="form-floating my-3">
+                                    <input type="text" class="form-control" id="name" name="Name" placeholder="Name">
+                                    <label for="name"> Name </label>
+                                    <span id="emailReq"></span>
+                                </div>
+                                <div class="form-floating my-3">
+                                    <input type="text" class="form-control" id="studNo" name="studNo" placeholder="Name">
+                                    <label for="studNo"> Student No. </label>
+                                    <span id="emailReq"></span>
+                                </div>
+                                <div class="form-floating my-3">
                                     <input type="email" class="form-control" id="emailAdd" name="Email Address" placeholder="Name">
                                     <label for="emailAdd"> Email Address </label>
                                     <span id="emailReq"></span>
                                 </div>
-
                                 <div class="form-floating my-3">
                                     <select class="form-select" id="docuType" aria-label="Document Type" value="">
                                       <option selected class="text-muted">--Select the document--</option>
@@ -103,23 +112,13 @@
                                     <label for="docuType"> Document </label>
                                     <span id="docuReq"></span>
                                   </div>
-
                                 <div class="form-floating my-3">
                                     <input type="text" class="form-control" id="purposeDocu" name="Purpose" placeholder="Name">
                                     <label for="purposeDocu"> Purpose </label>
                                     <span id="purReq"></span>
-                                </div>
-
-                                <div class="form-floating my-3">
-                                    <input type="date" class="form-control" id="dateNeed" placeholder="Date Needed" required>
-                                    <label for="dateNeed"> Date Needed </label>
-                                    <span id="dateReq"></span>
-                                </div>
-
-                                
+                                </div>                                
                             </div>
                         </div>
-
                         <div class="form-footer">
                             <div class="form-page">
                                 <span class="current"></span>
@@ -127,14 +126,14 @@
                                 <span></span>
                             </div>
                             <div class="form-button">
-                                <button type="button" class="btn btn-sm btn-sub-1 btn-shadow px-5" id="nextReq">NEXT</button>
+                                <button type="button" class="next-btn btn btn-sm btn-sub-1 btn-shadow px-5">NEXT</button>
                                 <button type="button" class="btn btn-sm btn-sub-2 btn-shadow px-5 me-4">CANCEL</button>
                             </div>
                         </div>
                         <span id="submitError"></span>
                     </div>
                     <div class="step step-2">
-                        <div style="top: -38px;position: absolute;">
+                        <div style="top: -40px;position: absolute;">
                             <h6><b>Please review all the information you&#39;ve entered before submitting the form. 
                                 <br>
                                 You can click “EDIT” to edit.</b></h6>
@@ -142,22 +141,17 @@
                         <div class="row form-view">
                             <div>
                                 <h5>
-                                    <strong>Email Address</strong>
+                                    <strong>Email Address:</strong>
                                     <span id="info_1"></span>
                                 </h5>
                                 <h5>
-                                    <strong>Document</strong>
+                                    <strong>Document:</strong>
                                     <span id="info_2"></span>
                                 </h5>
                                 <h5>
-                                    <strong>Purpose</strong>
+                                    <strong>Purpose:</strong>
                                     <span id="info_3"></span>
-                                </h5>
-                                <h5>
-                                    <strong>Date Needed</strong>
-                                    <span id="info_4"></span>
-                                </h5>
-                                
+                                </h5>                                
                             </div>
                             
                         </div>
@@ -174,7 +168,7 @@
                         </div>
                     </div>
                     <div class="step step-3">
-                        <div style="top: -38px; position: absolute;">
+                        <div style="top: -40px; position: absolute;">
                             <h6><b>Company information has been successfully submitted</b></h6>
                         </div>
                         <div class="form-success">
@@ -235,10 +229,6 @@
         </div>
     </footer>
 <!------------END FOOTER------------>
-    <script>
-        
-
-    </script>
     <script src="css/bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"></script>
     <script src="css/bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
     <script src="js/jquery.min.js"></script>
