@@ -355,6 +355,8 @@ tbody tr td:nth-child(1){
   position:relative;
 }
 
+
+
 .pen-rec td, th{
   color: var(--light-btn);
   height: 70px;
@@ -387,6 +389,8 @@ tbody tr td:nth-child(1){
   .gadmin li a{
     width: 20rem !important;
     height: 20rem !important;
+    /* padding: 10rem !important; */
+    margin: 1rem !important;
   }
 
 .ad-guide a{
@@ -413,4 +417,9 @@ tbody tr td:nth-child(1){
 .ad-guide a:hover{
     background-color: #13212B !important;
     color: white !important;
+  }
+
+  .pen-rec tr:hover{
+    color: #FFFFFF !important;
+    background-color: #002F49 !important;
   }
