@@ -1315,6 +1315,37 @@ input[type=number] {
   background-color: var(--primary);
   color: white;
 }
+/* Counseling Service*/
+.counseling{
+  position: relative;
+  display: flex;
+  width: 45rem;
+  background-color: var(--white);
+  border: .2rem solid #274C77;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+.counseling form{
+  width: 25rem;
+  text-align: center;
+  justify-content: center;
+  padding: 2rem;
+  margin-right: 2rem
+}
+.counseling .side{
+  width: 25rem;
+  background-color: var(--light-btn);
+}
+.counseling .side h1{
+  display: block;
+  text-align: center;
+  color: var(--white);
+  margin-top: 1rem;
+}
+.counseling .side img{
+  margin-top: 3rem;
+  width: 10rem;
 
-
+}
 
