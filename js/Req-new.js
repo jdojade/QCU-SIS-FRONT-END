@@ -29,8 +29,7 @@ $(document).ready(function(){
 
 function mouseLeave() {
     $(".dropdown-menu-cus").removeClass('show');
-  }
-
+}
 
 
 /* inputs */
@@ -41,17 +40,11 @@ const form = document.querySelector("form");
 const firstBtn = document.getElementById("first_btn");
 
 
-/* inputs for company information */
+/* inputs for information */
 var nameError =    document.getElementById('nameError'); 
-var studNoError =  document.getElementById('studNoError'); 
-var studSecError = document.getElementById('studSecError'); 
-var supNameError = document.getElementById('supNameError'); 
-var supPosError =  document.getElementById('supPosError'); 
-var deptError =    document.getElementById('deptError');
-var comNameError = document.getElementById('comNameError'); 
-var comAddError =  document.getElementById('comAddError'); 
-var comNoError =   document.getElementById('comNoError'); 
-var supEmailError =document.getElementById('supEmailError');
+var studNoError =  document.getElementById('studNoError');
+var CampusError = document.getElementById('CampusError');
+var conNoError = document.getElementById('conNoError');
 
 firstBtn.addEventListener("click", () => {
     let vali =[
@@ -65,15 +58,11 @@ firstBtn.addEventListener("click", () => {
         changeStep("next");
         var vals = [
           document.getElementById('studentName').value,
-          document.getElementById('studentId').value, 
-          document.getElementById('studentSection').value,
-          document.getElementById('superiorName').value,
-          document.getElementById('superiorPosition').value,
-          document.getElementById('department').value,
-          document.getElementById('companyName').value,
-          document.getElementById('companyAdd').value,
-          document.getElementById('companyNumber').value,
-          document.getElementById('superiorEmail').value
+          document.getElementById('studentId').value,
+          document.getElementById('floatingSelect2').value,
+          document.getElementById('contactno').value,
+
+
         ]
         for (let i=1; i-1 <= vals.length; i++){
           let info = document.getElementById("info_"+i);
@@ -89,7 +78,7 @@ firstBtn.addEventListener("click", () => {
 function validateName(){
   var isValue = document.getElementById('studentName');
   if (!isValue.value){
-      nameError.innerHTML = "Student Name is required";
+      nameError.innerHTML = "Student Full Name is required";
       isValue.classList.add('invalid');
       return false;
   }

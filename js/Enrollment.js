@@ -73,7 +73,7 @@ firstBtn.addEventListener("click", () => {
 function validateName(){
   var isValue = document.getElementById('studentName');
   if (!isValue.value){
-      nameError.innerHTML = "Student Name is required";
+      nameError.innerHTML = "Student Full Name is required";
       isValue.classList.add('invalid');
       return false;
   }
