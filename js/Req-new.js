@@ -29,8 +29,7 @@ $(document).ready(function(){
 
 function mouseLeave() {
     $(".dropdown-menu-cus").removeClass('show');
-  }
-
+}
 
 
 /* inputs */
@@ -41,7 +40,7 @@ const form = document.querySelector("form");
 const firstBtn = document.getElementById("first_btn");
 
 
-/* inputs for company information */
+/* inputs for information */
 var nameError =    document.getElementById('nameError'); 
 var studNoError =  document.getElementById('studNoError');
 var courseError = document.getElementById('courseError');
@@ -49,6 +48,7 @@ var campusError = document.getElementById('campusError');
 var addressError = document.getElementById('addressError'); 
 var conNoError = document.getElementById('conNoError');
 var schoolyError = document.getElementById('schoolyError');
+var conNoError = document.getElementById('conNoError');
 
 firstBtn.addEventListener("click", () => {
     let vali =[
@@ -68,6 +68,11 @@ firstBtn.addEventListener("click", () => {
           document.getElementById('address').value,
           document.getElementById('contactno').value,
           document.getElementById('schooly').value,
+          document.getElementById('studentId').value,
+          document.getElementById('floatingSelect2').value,
+          document.getElementById('contactno').value,
+
+
         ]
         for (let i=1; i-1 <= vals.length; i++){
           let info = document.getElementById("info_"+i);
@@ -83,7 +88,7 @@ firstBtn.addEventListener("click", () => {
 function validateName(){
   var isValue = document.getElementById('studentName');
   if (!isValue.value){
-      nameError.innerHTML = "Student Name is required";
+      nameError.innerHTML = "Student Full Name is required";
       isValue.classList.add('invalid');
       return false;
   }
