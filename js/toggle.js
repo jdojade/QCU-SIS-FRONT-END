@@ -30,8 +30,14 @@ $(document).ready(function(){
 function mouseLeave() {
     $(".dropdown-menu-cus").removeClass('show');
   }
+/* FAQS */
+  const toggleBtn = document.querySelectorAll('.toggle-btn');
 
-
+  toggleBtn.forEach(btn => {
+      btn.addEventListener('click', () => {
+          btn.parentNode.classList.toggle('active')  //only toggles the parent node which is the '.faq-card' here
+      })
+  })
 
 /* inputs */
 const steps = Array.from(document.querySelectorAll("form .step"));
