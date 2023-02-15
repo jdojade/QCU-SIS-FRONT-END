@@ -42,9 +42,11 @@ const firstBtn = document.getElementById("first_btn");
 
 
 /* inputs for information */
-var nameError =    document.getElementById('nameError'); 
+var nameError = document.getElementById('nameError');
+var courseError = document.getElementById('ourseError');
+var campusError = document.getElementById('campusError'); 
 var conNoError =  document.getElementById('conNoError'); 
-var eAddError =    document.getElementById('eAddError');
+var eAddError = document.getElementById('eAddError');
 
 firstBtn.addEventListener("click", () => {
     let vali =[
@@ -57,7 +59,10 @@ firstBtn.addEventListener("click", () => {
         changeStep("next");
         var vals = [
           document.getElementById('studentName').value,
-          document.getElementById('contactno').value, 
+          document.getElementById('floatingSelect1').value,
+          document.getElementById('floatingSelect2').value,
+          document.getElementById('contactno').value,
+          document.getElementById('EmailAdd').value, 
         ]
         for (let i=1; i-1 <= vals.length; i++){
           let info = document.getElementById("info_"+i);
