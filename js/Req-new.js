@@ -130,7 +130,7 @@ function validateconNo(){
         return false;
     }
     if (isValue.value.length !== 11){
-        conNoError.innerHTML = "Student No. should be 11 characters";
+        conNoError.innerHTML = "Contact No. should be 11 characters";
         isValue.classList.add('invalid');
         return false;
     }
