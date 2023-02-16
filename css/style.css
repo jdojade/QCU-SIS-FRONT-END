@@ -1159,6 +1159,9 @@ h1{
     font-size: 1.2rem;
     display: flex;
     align-items: center;
+}.eval-form tr:hover td{
+    color: black;
+    background-color: lightgray
 }
 .form-check-input:checked  {
     background-color: var(--primary);
