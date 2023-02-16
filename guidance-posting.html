@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guidance and Counseling Dashboard</title>
+    <link rel="stylesheet" href="css/bootstrap-5.2.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome-free-6.2.1-web/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="css/style0.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md sticky-top nav-admin">
+        <div class="container-cus d-flex w-100" >
+            <div class="d-flex flex-colum align-items-center">
+                <img src="img/1565034397472.jfif" alt="logo" class="logo rounded-circle">
+                <a href="#" class="navbar-brand fs-5 fw-bolder text-white">&nbsp;Quezon City University</a>
+            </div>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="icon-sample"><span></span><span></span><span></span></div>
+            </button>
+            <div class="navbar-cus navbar-collapse collapse justify-content-end" id="navcol-1">
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item dropdown" onmouseleave="mouseLeave()">
+                        <a class="nav-link dropdown-toggle" href="#" role="button">
+                            <img src="img/1565034397472.jfif" class="logo rounded-circle">
+                        </a>
+                        <ul class="dropdown-menu-cus text-center" style="right: 0;" data-bs-keyboard="true" tabindex="-1" aria-hidden="false">
+                            <li><a class="dropdown-item" href="#">ADMIN PROFILE</a></li>
+                            <li><a class="dropdown-item" href="index.html">LOGOUT</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="menu-container admin">
+        <div class="hamburger">
+            <button class="btn-hamburger" type="button" id="hamburger">
+                <div class="icon-hamburger"><span></span><span></span><span></span></div>
+            </button>
+        </div>     
+        <div class="info">
+            <img src="img/1565034397472.jfif" alt="logo" class=" rounded-circle">
+            <h3>Guidance Panel</h3>
+            <span></span>
+        </div>
+        <ul class="menu"> 
+            <li><a href="guidance-index.html"><i class="fa-solid fa-house icon"></i>Home</a></li>
+            <li class="active"><a href="guidance-posting.html"><i class="fa-solid fa-list-check icon"></i>Manage Posts</a></li>
+            <li><a href="admin-counsel.html"><i class="fa-sharp fa-solid fa-comments icon"></i>Counseling Services</a></li>
+            <li><a href="admin-gmoral.html"><i class="fa-solid fa-file-lines icon"></i>Request Good Moral</a></li>
+            <li><a href="admin-gtest.html"><i class="fa-solid fa-file-pen icon"></i>Testing Services</a></li>
+            <li><a href="admin-career.html"><i class="fa-solid fa-star icon"></i>Career Guidance</a></li>
+            <li><a><i class="fa-solid fa-right-from-bracket icon"></i>Logout</a></li>
+            
+
+        </ul>
+    </div>
+    <div class="container-cus">
+
+        <section class="p-5">
+            <div class="headline">
+                <h1>MANAGE POSTS</h1>
+                <i class="fa-solid fa-file-circle-check fa-3x"></i>
+            </div>
+        </section>
+
+
+        <section class="px-5">
+            <ul class="nav nav-pills nav-fill mb-3 " id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link gtab fs-5 fw-semibold px-5 active" id="pills-allPost-tab" data-bs-toggle="pill" data-bs-target="#pills-allPost" type="button" role="tab" aria-controls="pills-allPost" aria-selected="true">
+                    All
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link gtab fs-5 fw-semibold px-5" id="pills-pubPost-tab" data-bs-toggle="pill" data-bs-target="#pills-pubPost" type="button" role="tab" aria-controls="pills-pubPost" aria-selected="false">
+                    Published
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link gtab fs-5 fw-semibold px-5" id="pills-archPost-tab" data-bs-toggle="pill" data-bs-target="#pills-archPost" type="button" role="tab" aria-controls="pills-archPost" aria-selected="false">
+                    Archived
+                  </button>
+                </li>
+                
+            </ul>
+
+            <div class="d-flex justify-content-between my-3">
+                <div class="totalPost">
+                    Total Post: 5
+                </div>
+                <div class="d-flex justify-content-end">
+                    <button class="btn btn-dark px-5 align-self-center rounded-1">ADD NEW</button>
+                </div>
+            </div>
+
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-allPost" role="tabpanel" aria-labelledby="pills-allPost-tab" tabindex="0">
+                    <div class="m-auto table-border table-responsive">
+                        <table class="table table-hover align-middle tblGuidance">
+                            <thead>
+                              <tr>
+                                  <th scope="col" class="th-lg text-white">Title</th>
+                                  <th scope="col" class="th-lg text-white w-50">Description</th>
+                                  <th scope="col" class="th-lg text-white">Status</th>
+                                  <th scope="col" class="th-lg text-white">Image</th>
+                                  <th scope="col" class="th-lg text-white w-25">Action</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                    <td>What is Counseling</td>
+                                    <td>Guidance and counseling aims to guide students and their holistic development to establish academic goals, 
+                                        career path and personal adjustment.</td>
+                                    <td>
+                                        <span class="publishedStatus fw-bold">Published</span>
+                                    </td>
+                                    <td>
+                                        <div class="imgPost">
+                                            <img src="img/Carousel image 2.jpg" alt="">
+                                        </div>
+                                    </td>
+                                    <td class="tbl-action">
+                                        <div class="d-grid gap-2 d-md-block">
+                                            <button class="btn btn-warning align-self-center rounded-1">EDIT</button>
+                                            <button class="btn btn-danger align-self-center rounded-1">DELETE</button>
+                                        </div>
+                                    </td>
+                              </tr>
+                                 <tr>
+                                    <td>What is Counseling</td>
+                                    <td>Guidance and counseling aims to guide students and their holistic development to establish academic goals, 
+                                        career path and personal adjustment.</td>
+                                        <td>
+                                            <span class="publishedStatus fw-bold">Published</span>
+                                        </td>
+                                    <td>
+                                        <div class="imgPost">
+                                            <img src="img/Carousel image 2.jpg" alt="">
+                                        </div>
+                                    </td>
+                                    <td class="tbl-action">
+                                        <div class="d-grid gap-2 d-md-block">
+                                            <button class="btn btn-warning align-self-center rounded-1">EDIT</button>
+                                            <button class="btn btn-danger align-self-center rounded-1">DELETE</button>
+                                        </div>
+                                    </td>
+                              </tr>
+                                 <tr>
+                                    <td>What is Counseling</td>
+                                    <td>Guidance and counseling aims to guide students and their holistic development to establish academic goals, 
+                                        career path and personal adjustment.</td>
+                                        <td>
+                                            <span class="archivedStatus fw-bold">Archived</span>
+                                        </td>
+                                    <td>
+                                        <div class="imgPost">
+                                            <img src="img/Carousel image 2.jpg" alt="">
+                                        </div>
+                                    </td>
+                                    <td class="tbl-action">
+                                        <div class="d-grid gap-2 d-md-block">
+                                            <button class="btn btn-warning align-self-center rounded-1">EDIT</button>
+                                            <button class="btn btn-danger align-self-center rounded-1">DELETE</button>
+                                        </div>
+                                    </td>
+                                    
+                              </tr>
+                                 <tr>
+                                    <td>What is Counseling</td>
+                                    <td>Guidance and counseling aims to guide students and their holistic development to establish academic goals, 
+                                        career path and personal adjustment.</td>
+                                        <td>
+                                            <span class="publishedStatus fw-bold">Published</span>
+                                        </td>
+                                    <td>
+                                        <div class="imgPost">
+                                            <img src="img/Carousel image 2.jpg" alt="">
+                                        </div>
+                                    </td>
+                                    <td class="tbl-action">
+                                        <div class="d-grid gap-2 d-md-block">
+                                            <button class="btn btn-warning align-self-center rounded-1">EDIT</button>
+                                            <button class="btn btn-danger align-self-center rounded-1">DELETE</button>
+                                        </div>
+                                    </td>
+                              </tr>
+                              <tr>
+                                <td>What is Counseling</td>
+                                <td>Guidance and counseling aims to guide students and their holistic development to establish academic goals, 
+                                    career path and personal adjustment.</td>
+                                    <td>
+                                        <span class="archivedStatus fw-bold">Archived</span>
+                                    </td>
+                                <td>
+                                    <div class="imgPost">
+                                        <img src="img/Carousel image 2.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td class="tbl-action">
+                                    <div class="d-grid gap-2 d-md-block">
+                                        <button class="btn btn-warning align-self-center rounded-1">EDIT</button>
+                                        <button class="btn btn-danger align-self-center rounded-1">DELETE</button>
+                                    </div>
+                                </td>
+                          </tr>
+ 
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="pills-pubPost" role="tabpanel" aria-labelledby="pills-pubPost-tab" tabindex="0">
+                    <div class="m-auto table-border table-responsive">
+                        <table class="table table-hover align-middle tblGuidance">
+                            <thead>
+                              <tr>
+                                  <th scope="col" class="th-lg text-white">Title</th>
+                                  <th scope="col" class="th-lg text-white w-50">Description</th>
+                                  <th scope="col" class="th-lg text-white">Status</th>
+                                  <th scope="col" class="th-lg text-white">Image</th>
+                                  <th scope="col" class="th-lg text-white w-25">Action</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                    <td>What is Counseling</td>
+                                    <td>Guidance and counseling aims to guide students and their holistic development to establish academic goals, 
+                                        career path and personal adjustment.</td>
+                                    <td>
+                                        <span class="publishedStatus fw-bold">Published</span>
+                                    </td>
+                                    <td>
+                                        <div class="imgPost">
+                                            <img src="img/Carousel image 2.jpg" alt="">
+                                        </div>
+                                    </td>
+                                    <td class="tbl-action">
+                                        <div class="d-grid gap-2 d-md-block">
+                                            <button class="btn btn-warning align-self-center rounded-1">EDIT</button>
+                                            <button class="btn btn-danger align-self-center rounded-1">DELETE</button>
+                                        </div>
+                                    </td>
+                              </tr>
+                                 <tr>
+                                    <td>What is Counseling</td>
+                                    <td>Guidance and counseling aims to guide students and their holistic development to establish academic goals, 
+                                        career path and personal adjustment.</td>
+                                        <td>
+                                            <span class="publishedStatus fw-bold">Published</span>
+                                        </td>
+                                    <td>
+                                        <div class="imgPost">
+                                            <img src="img/Carousel image 2.jpg" alt="">
+                                        </div>
+                                    </td>
+                                    <td class="tbl-action">
+                                        <div class="d-grid gap-2 d-md-block">
+                                            <button class="btn btn-warning align-self-center rounded-1">EDIT</button>
+                                            <button class="btn btn-danger align-self-center rounded-1">DELETE</button>
+                                        </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>What is Counseling</td>
+                                    <td>Guidance and counseling aims to guide students and their holistic development to establish academic goals, 
+                                        career path and personal adjustment.</td>
+                                        <td>
+                                            <span class="publishedStatus fw-bold">Published</span>
+                                        </td>
+                                    <td>
+                                        <div class="imgPost">
+                                            <img src="img/Carousel image 2.jpg" alt="">
+                                        </div>
+                                    </td>
+                                    <td class="tbl-action">
+                                        <div class="d-grid gap-2 d-md-block">
+                                            <button class="btn btn-warning align-self-center rounded-1">EDIT</button>
+                                            <button class="btn btn-danger align-self-center rounded-1">DELETE</button>
+                                        </div>
+                                    </td>
+                                 </tr>
+ 
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="pills-archPost" role="tabpanel" aria-labelledby="pills-archPost-tab" tabindex="0">
+                    <div class="m-auto table-border table-responsive">
+                        <table class="table table-hover align-middle tblGuidance">
+                            <thead>
+                              <tr>
+                                  <th scope="col" class="th-lg text-white">Title</th>
+                                  <th scope="col" class="th-lg text-white w-50">Description</th>
+                                  <th scope="col" class="th-lg text-white">Status</th>
+                                  <th scope="col" class="th-lg text-white">Image</th>
+                                  <th scope="col" class="th-lg text-white w-25">Action</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>What is Counseling</td>
+                                    <td>Guidance and counseling aims to guide students and their holistic development to establish academic goals, 
+                                        career path and personal adjustment.</td>
+                                        <td>
+                                            <span class="archivedStatus fw-bold">Archived</span>
+                                        </td>
+                                    <td>
+                                        <div class="imgPost">
+                                            <img src="img/Carousel image 2.jpg" alt="">
+                                        </div>
+                                    </td>
+                                    <td class="tbl-action">
+                                        <div class="d-grid gap-2 d-md-block">
+                                            <button class="btn btn-warning align-self-center rounded-1">EDIT</button>
+                                            <button class="btn btn-danger align-self-center rounded-1">DELETE</button>
+                                        </div>
+                                    </td>
+                                    
+                              </tr>
+                              <tr>
+                                <td>What is Counseling</td>
+                                <td>Guidance and counseling aims to guide students and their holistic development to establish academic goals, 
+                                    career path and personal adjustment.</td>
+                                    <td>
+                                        <span class="archivedStatus fw-bold">Archived</span>
+                                    </td>
+                                <td>
+                                    <div class="imgPost">
+                                        <img src="img/Carousel image 2.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td class="tbl-action">
+                                    <div class="d-grid gap-2 d-md-block">
+                                        <button class="btn btn-warning align-self-center rounded-1">EDIT</button>
+                                        <button class="btn btn-danger align-self-center rounded-1">DELETE</button>
+                                    </div>
+                                </td>
+                                
+                          </tr>
+                          <tr>
+                            <td>What is Counseling</td>
+                            <td>Guidance and counseling aims to guide students and their holistic development to establish academic goals, 
+                                career path and personal adjustment.</td>
+                                <td>
+                                    <span class="archivedStatus fw-bold">Archived</span>
+                                </td>
+                            <td>
+                                <div class="imgPost">
+                                    <img src="img/Carousel image 2.jpg" alt="">
+                                </div>
+                            </td>
+                            <td class="tbl-action">
+                                <div class="d-grid gap-2 d-md-block">
+                                    <button class="btn btn-warning align-self-center rounded-1">EDIT</button>
+                                    <button class="btn btn-danger align-self-center rounded-1">DELETE</button>
+                                </div>
+                            </td>
+                            
+                      </tr>
+                      <tr>
+                        <td>What is Counseling</td>
+                        <td>Guidance and counseling aims to guide students and their holistic development to establish academic goals, 
+                            career path and personal adjustment.</td>
+                            <td>
+                                <span class="archivedStatus fw-bold">Archived</span>
+                            </td>
+                        <td>
+                            <div class="imgPost">
+                                <img src="img/Carousel image 2.jpg" alt="">
+                            </div>
+                        </td>
+                        <td class="tbl-action">
+                            <div class="d-grid gap-2 d-md-block">
+                                <button class="btn btn-warning align-self-center rounded-1">EDIT</button>
+                                <button class="btn btn-danger align-self-center rounded-1">DELETE</button>
+                            </div>
+                        </td>
+                        
+                  </tr>
+ 
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+               
+                </div>
+                
+              
+        </section>
+    </div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="css/bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="css/bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/toggle.js"></script>
+    <script src="js/loading.js"></script>
+</body>
+</html>
