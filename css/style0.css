@@ -362,3 +362,11 @@ th, td {
   height:48px;
   border-bottom: 1px solid #E3F1D5 ;
 }
+/* job fair dashboard */
+.job-fair {
+  background-color: var(--primary);
+}
+
+.hr {
+  opacity: 100% !important;
+}
