@@ -1,3 +1,4 @@
+// FOR SCHEDULING
 // redirect from gmoral to schedule pickup (Good Moral)
 function gmoralRedirect() {
     window.location.assign('admin-gpup.html');
@@ -17,4 +18,22 @@ function counselRedirect() {
   // redirect from schedule counseling to counsel (Counselling)
 function schedCounselRedirect() {
     window.location.assign('admin-counsel.html');
+ }
+
+
+
+// FOR POSTING
+// manage posts to add post
+function addRedirect() {
+    window.location.assign('guidance-addPost.html');
+ }
+
+// manage post to edit post
+function editRedirect() {
+    window.location.assign('guidance-editPost.html');
+ }
+
+ // back to manage post
+ function manageRedirect() {
+    window.location.assign('guidance-posting.html');
  }

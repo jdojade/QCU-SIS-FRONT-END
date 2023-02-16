@@ -69,11 +69,16 @@
             </div>
         </section>
 
-        <section class="p-5">
+        <section class="px-5">
             <div class="container">
-                <span class="addLbl fs-3 fw-bold">
-                    Add New Post
-                </span>
+                <div class="addpostheader rounded-1 p-2 mb-3 text-bg-dark">
+                    <span class="addLbl fs-3 fw-bold align-middle">
+                        Add New Post
+                        <button type="button" class="btn-close btn-close-white mx-5 px-3" onclick="manageRedirect()" aria-label="Close"></button>
+                    </span>
+                    
+                    
+                </div>
 
                 <form action="">
 
@@ -105,7 +110,7 @@
 
 
                   <div class="d-grid gap-2 d-md-flex justify-content-md-start my-4">
-                    <button class="btn btn-sub-1 px-5" data-bs-toggle="modal" data-bs-target="#sched-set">SAVE</button>
+                    <button class="btn btn-sub-1 px-5" onclick="manageRedirect()">SAVE</button>
                       </div>
                   </form>
                 </form>
@@ -126,5 +131,7 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/toggle.js"></script>
     <script src="js/loading.js"></script>
+    <script src="js/new-page.js"></script>
+    
 </body>
 </html>
