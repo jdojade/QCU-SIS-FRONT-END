@@ -427,8 +427,28 @@ tbody tr td:nth-child(1){
     background-color: #002F49 !important;
   }
 
-/* ---------------sched pick up for good moral------------------*/
+/* ---------------guidance mode manage posts------------------*/
 
-.sched-pu {
-  
+.imgPost img {
+  width: 10rem !important;
+  height: 5.5rem !important;
+}
+
+.btn-warning {
+  color: #FFFFFF !important;
+}
+
+.publishedStatus {
+  background-color: #002F49 !important;
+  color: #FFFFFF !important;
+  padding: 0.5rem 1.5rem !important;
+  border-radius: .5rem !important;
+}
+
+.archivedStatus {
+  background-color: #8A8A8A !important;
+  color: #F5F1F1 !important;
+  padding: 0.5rem 1.5rem !important;
+  border-radius: .5rem !important;
+
 }
