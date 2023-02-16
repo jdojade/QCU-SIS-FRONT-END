@@ -355,23 +355,28 @@ tbody tr td:nth-child(1){
   position:relative;
 }
 
-.pen-rec td, th{
+.tblGuidance {
+  box-shadow: none !important;
+}
+
+.tblGuidance td, th{
   color: var(--light-btn);
   height: 70px;
   text-align: center;
 }
-.pen-rec thead th { 
+.tblGuidance thead th { 
   height:80px;
   background-color: #274C77 !important;
   font-size:16px;
+  
 }
-.pen-rec tbody tr {
+.tblGuidance tbody tr {
   height:48px;
   border-bottom: 1px solid #E3F1D5 ;
 }
 
 .tbl-action {
-    width: 9rem !important;
+    width: 10rem !important;
 }
 
 .gadmin {
@@ -387,6 +392,8 @@ tbody tr td:nth-child(1){
   .gadmin li a{
     width: 20rem !important;
     height: 20rem !important;
+    /* padding: 10rem !important; */
+    margin: 1rem !important;
   }
 
 .ad-guide a{
@@ -414,3 +421,14 @@ tbody tr td:nth-child(1){
     background-color: #13212B !important;
     color: white !important;
   }
+
+  .table-hover:hover{
+    color: #FFFFFF !important;
+    background-color: #002F49 !important;
+  }
+
+/* ---------------sched pick up for good moral------------------*/
+
+.sched-pu {
+  
+}

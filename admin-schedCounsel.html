@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guidance and Counseling Dashboard</title>
+    <link rel="stylesheet" href="css/bootstrap-5.2.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome-free-6.2.1-web/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="css/evaluation.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md sticky-top nav-admin">
+        <div class="container-cus d-flex w-100" >
+            <div class="d-flex flex-colum align-items-center">
+                <img src="img/1565034397472.jfif" alt="logo" class="logo rounded-circle">
+                <a href="#" class="navbar-brand fs-5 fw-bolder text-white">&nbsp;Quezon City University</a>
+            </div>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="icon-sample"><span></span><span></span><span></span></div>
+            </button>
+            <div class="navbar-cus navbar-collapse collapse justify-content-end" id="navcol-1">
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item dropdown" onmouseleave="mouseLeave()">
+                        <a class="nav-link dropdown-toggle" href="#" role="button">
+                            <img src="img/1565034397472.jfif" class="logo rounded-circle">
+                        </a>
+                        <ul class="dropdown-menu-cus text-center" style="right: 0;" data-bs-keyboard="true" tabindex="-1" aria-hidden="false">
+                            <li><a class="dropdown-item" href="#">ADMIN PROFILE</a></li>
+                            <li><a class="dropdown-item" href="index.html">LOGOUT</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="menu-container admin">
+        <div class="hamburger">
+            <button class="btn-hamburger" type="button" id="hamburger">
+                <div class="icon-hamburger"><span></span><span></span><span></span></div>
+            </button>
+        </div>     
+        <div class="info">
+            <img src="img/1565034397472.jfif" alt="logo" class=" rounded-circle">
+            <h3>Guidance Panel</h3>
+            <span></span>
+        </div>
+        <ul class="menu"> 
+            <li><a href="guidance-index.html"><i class="fa-solid fa-house icon"></i>Home</a></li>
+            <li class="active"><a href="admin-counsel.html"><i class="fa-sharp fa-solid fa-comments icon"></i>Counseling Services</a></li>
+            <li><a href="admin-gmoral.html"><i class="fa-solid fa-file-lines icon"></i>Request Good Moral</a></li>
+            <li><a href="admin-gtest.html"><i class="fa-solid fa-file-pen icon"></i>Testing Services</a></li>
+            <li><a href="admin-career.html"><i class="fa-solid fa-star icon"></i>Career Guidance</a></li>
+            <li><a><i class="fa-solid fa-right-from-bracket icon"></i>Logout</a></li>
+        </ul>
+    </div>
+    <div class="container-cus">
+
+        <section class="p-5">
+            <div class="headline">
+                <h1>SCHEDULE COUNSELING</h1>
+                <i class="fa-solid fa-file-circle-check fa-3x"></i>
+            </div>
+        </section>
+        <section class="px-5">
+            <div class="container-fluid">
+                <div class="bg-dark bg-opacity-10 border-0 rounded-2 p-4 my-1 mx-auto">
+                    <form action="">
+                        <div class="col-md-5 form-floating my-3">
+                          <input type="number" class="form-control" id="studNo" placeholder="First name" aria-label="First name">
+                          <label for="studNo">Student Number</label>
+                        </div>
+                        <div class="col-md-5 form-floating my-3">
+                          <input type="text" class="form-control" id="studName" placeholder="Last name" aria-label="Last name">
+                          <label for="studName">Name</label>
+                        </div>
+
+    
+                        <div class="col-md-5 form-floating my-3">
+                          <input type="date" class="form-control" id="studNo" placeholder="First name" aria-label="First name">
+                          <label for="studNo">Date</label>
+                        </div>
+                        <div class="col-md-5 form-floating my-3">
+                          <input type="time" class="form-control" id="studName" placeholder="Last name" aria-label="Last name">
+                          <label for="studName">Time</label>
+                        </div>
+
+                <div class="row">
+                <div class="calendar col-md-5">
+                    <div class="calendar-header">
+                        <div class="month">
+                            <h2 class="month-picker" id="month-picker"> May </h2>
+                            <h2 id="year">2020 </h2>
+                        </div>
+                      <div class="month-btn">
+                        <span id="pre-month">
+                          <i class="fa-solid fa-chevron-left"></i>
+                        </span>
+                        <span id="next-month">
+                          <i class="fa-solid fa-chevron-right"></i>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="calendar-body">
+                      <div class="calendar-week-days">
+                        <span>Sun</span>
+                        <span>Mon</span>
+                        <span>Tue</span>
+                        <span>Wed</span>
+                        <span>Thu</span>
+                        <span>Fri</span>
+                        <span>Sat</span>
+                      </div>
+                      <div class="calendar-days">
+                      </div>
+                    </div>
+
+                    <div class="month-list"></div> 
+              </div>
+                
+            </div>
+
+              <div class="d-grid gap-2 d-md-flex justify-content-md-end my-4">
+                <button class="btn btn-sub-1 px-5" data-bs-toggle="modal" data-bs-target="#sched-set">CONFIRM</button>
+                  </div>
+              </form>     
+          </div>
+        </section>
+
+      </div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="sched-set" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="ans-reqLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body text-center">
+          <p class="fs-3 fw-bold text-center">
+            Schedule Set!
+          </p>
+          <img src="img/Success.png" alt="success!" class="w-50 h-50 m-auto">
+        </div>
+        <div class="my-4 d-flex justify-content-between">
+            <button type="button" class="btn btn-sub-1 px-5 mx-auto fw-bold" data-bs-dismiss="modal">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+    <script src="css/bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="css/bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/toggle.js"></script>
+    <script src="js/calendar.js"></script>
+    <script src="js/loading.js"></script>
+</body>
+</html>
