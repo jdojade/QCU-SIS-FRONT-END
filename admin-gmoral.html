@@ -52,6 +52,8 @@
             <li><a href="guidance-index.html"><i class="fa-solid fa-house icon"></i>Home</a></li>
             <li><a href="admin-counsel.html"><i class="fa-sharp fa-solid fa-comments icon"></i>Counseling Services</a></li>
             <li class="active"><a href="admin-gmoral.html"><i class="fa-solid fa-file-lines icon"></i>Request Good Moral</a></li>
+            <li><a href="admin-gtest.html"><i class="fa-solid fa-file-pen icon"></i>Testing Services</a></li>
+            <li><a href="admin-career.html"><i class="fa-solid fa-star icon"></i>Career Guidance</a></li>
             <li><a><i class="fa-solid fa-right-from-bracket icon"></i>Logout</a></li>
 
 
@@ -90,15 +92,15 @@
 
               <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-allGM" role="tabpanel" aria-labelledby="pills-allGM-tab" tabindex="0">
-                    <div class="m-auto">
-                        <table class="table-info pen-rec">
+                    <div class="m-auto table-border table-responsive">
+                        <table class="table table-hover align-middle tblGuidance">
                             <thead>
                                 <tr>
                                     <th scope="col" class="th-lg text-white">Student Number</th>
                                     <th scope="col" class="th-lg text-white">Name</th>
                                     <th scope="col" class="th-lg text-white">Status</th>
                                     <th scope="col" class="th-lg text-white">Approved Date</th>
-                                    
+                                    <th scope="col" class="th-lg text-white tbl-action">Action</th>
                                 </tr>
                               </thead>
                               <tbody>
@@ -107,28 +109,28 @@
                                       <td>SAMPLE NAME</td>
                                       <td class="text-danger">Unclaimed</td>
                                       <td class="text-danger">09-12-2023</td>
-                                      
+                                      <td class="tbl-action"><button class="btn btn-sub-1 px-5 align-self-center w-100">RESCHEDULE</button></td>
                                 </tr>
                                    <tr>
                                       <td>19-0000</td>
                                       <td>SAMPLE NAME</td>
                                       <td class="text-success">Claimed</td>
                                       <td>09-10-2023</td>
-                                      
+                                      <td class="tbl-action"><button class="btn btn-sub-1 px-5 align-self-center w-100" disabled>SET</button></td>
                                 </tr>
                                    <tr>
                                       <td>19-0000</td>
                                       <td>SAMPLE NAME</td>
                                       <td>Pending</td>
                                       <td>--</td>
-                                      
+                                      <td class="tbl-action"><button class="btn btn-sub-1 px-5 align-self-center w-100">SET</button></td>
                                 </tr>
                                    <tr>
                                       <td></td>
                                       <td></td>
                                       <td></td>
                                       <td></td>
-                                      
+                                      <td class="tbl-action"></td>
                                 </tr>
  
                             </tbody>
@@ -137,15 +139,15 @@
                 </div>
 
                 <div class="tab-pane fade" id="pills-claimedGM" role="tabpanel" aria-labelledby="pills-claimedGM-tab" tabindex="0">
-                    <div class="table-border table-responsive penalty-rec">    
-                        <table class="table-info pen-rec">
+                    <div class="m-auto table-border table-responsive">
+                        <table class="table table-hover align-middle tblGuidance">
                             <thead>
                                 <tr>
                                     <th scope="col" class="th-lg text-white">Student Number</th>
                                     <th scope="col" class="th-lg text-white">Name</th>
                                     <th scope="col" class="th-lg text-white">Status</th>
                                     <th scope="col" class="th-lg text-white">Approved Date</th>
-                                    
+                                    <th scope="col" class="th-lg text-white tbl-action">Action</th>
                                 </tr>
                               </thead>
                               <tbody>
@@ -154,28 +156,28 @@
                                     <td>SAMPLE NAME</td>
                                     <td class="text-success">Claimed</td>
                                     <td>09-10-2023</td>
-                                    
+                                    <td class="tbl-action"><button class="btn btn-sub-1 px-5 align-self-center w-100" disabled>SET</button></td>
                                 </tr>
                                    <tr>
                                     <td></td>
                                     <td></td>
                                     <td></td>
                                     <td></td>
-                                    
+                                    <td class="tbl-action"></td>
                                 </tr>
                                    <tr>
                                     <td></td>
                                     <td></td>
                                     <td></td>
                                     <td></td>
-                                    
+                                    <td class="tbl-action"></td>
                                 </tr>
                                    <tr>
                                       <td></td>
                                       <td></td>
                                       <td></td>
                                       <td></td>
-                                      
+                                      <td class="tbl-action"></td>
                                 </tr>
 
                             </tbody>
@@ -184,15 +186,15 @@
                 </div>
 
                 <div class="tab-pane fade" id="pills-unclaimedGM" role="tabpanel" aria-labelledby="pills-unclaimedGM-tab" tabindex="0">
-                    <div class="table-border table-responsive penalty-rec">    
-                        <table class="table-info pen-rec">
+                    <div class="m-auto table-border table-responsive">
+                        <table class="table table-hover align-middle tblGuidance">
                             <thead>
                               <tr>
                                     <th scope="col" class="th-lg text-white">Student Number</th>
                                     <th scope="col" class="th-lg text-white">Name</th>
                                     <th scope="col" class="th-lg text-white">Status</th>
                                     <th scope="col" class="th-lg text-white">Approved Date</th>
-                                    
+                                    <th scope="col" class="th-lg text-white tbl-action">Action</th>
                                 </tr>
                               </thead>
                               <tbody>
@@ -201,28 +203,28 @@
                                       <td>SAMPLE NAME</td>
                                       <td class="text-danger">Unclaimed</td>
                                       <td class="text-danger">09-12-2023</td>
-                                      
+                                      <td class="tbl-action"><button class="btn btn-sub-1 px-5 align-self-center w-100">RESCHEDULE</button></td>
                                 </tr>
                                    <tr>
                                     <td></td>
                                     <td></td>
                                     <td></td>
                                     <td></td>
-                                    
+                                    <td class="tbl-action"></td>
                                 </tr>
                                    <tr>
                                     <td></td>
                                     <td></td>
                                     <td></td>
                                     <td></td>
-                                    
+                                    <td class="tbl-action"></td>
                                 </tr>
                                    <tr>
                                       <td></td>
                                       <td></td>
                                       <td></td>
                                       <td></td>
-                                      
+                                      <td class="tbl-action"></td>
                                 </tr>
  
                             </tbody>
@@ -231,15 +233,15 @@
                 </div>
 
                 <div class="tab-pane fade" id="pills-penGM" role="tabpanel" aria-labelledby="pills-penGM-tab" tabindex="0">
-                    <div class="table-border table-responsive penalty-rec">    
-                        <table class="table-info pen-rec">
+                    <div class="m-auto table-border table-responsive">
+                        <table class="table table-hover align-middle tblGuidance">
                             <thead>
                                 <tr>
                                     <th scope="col" class="th-lg text-white">Student Number</th>
                                     <th scope="col" class="th-lg text-white">Name</th>
                                     <th scope="col" class="th-lg text-white">Status</th>
                                     <th scope="col" class="th-lg text-white">Approved Date</th>
-                                    
+                                    <th scope="col" class="th-lg text-white tbl-action">Action</th>
                                 </tr>
                               </thead>
                               <tbody>
@@ -248,28 +250,28 @@
                                     <td>SAMPLE NAME</td>
                                     <td>Pending</td>
                                     <td>--</td>
-                                    
+                                    <td class="tbl-action"><button class="btn btn-sub-1 px-5 align-self-center w-100">SET</button></td>
                                 </tr>
                                 <tr>
                                     <td></td>
                                     <td></td>
                                     <td></td>
                                     <td></td>
-                                    
+                                    <td class="tbl-action"></td>
                                 </tr>
                                 <tr>
                                     <td></td>
                                     <td></td>
                                     <td></td>
                                     <td></td>
-                                    
+                                    <td class="tbl-action"></td>
                                 </tr>
                                    <tr>
                                       <td></td>
                                       <td></td>
                                       <td></td>
                                       <td></td>
-                                      
+                                      <td class="tbl-action"></td>
                                 </tr>
  
                             </tbody>
