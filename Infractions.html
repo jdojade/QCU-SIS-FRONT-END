@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> REGISTRAR </title>
+    <title> Infractions </title>
     <link rel="stylesheet" href="css/fontawesome-free-6.2.1-web/css/all.min.css"/>
     <link rel="stylesheet" href="css/bootstrap-5.2.2-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nav.css">
+    <!-- <link rel="stylesheet" href="css/admin.css"> -->
+    <link rel="stylesheet" href="css/guidance-medical.css">
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/SASD1.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-md sticky-md-top">
+    <nav class="navbar navbar-expand-md sticky-top">
         <div class="container-fluid p-0" >
             <div class="d-flex flex-colum align-items-center">
                 <button class="btn-hamburger" type="button" id="hamburger">
@@ -26,22 +27,22 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span><i class="fa-solid fa-ellipsis-vertical text-white"></i></span>
             </button>
-            <div class="navbar-cus navbar-collapse collapse justify-content-end" id="navcol-1">
+            <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar nav p-0">
                     <li class="navbar-item">
-                        <a href="student_dashboard.html" class="nav-link text-white fs-6 fw-900 text-decoration-none">HOME</a>
+                        <a href="student_dashboard.html" class="nav-link">HOME</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="inbox.html" class="nav-link text-white fs-6 fw-900 text-decoration-none">INBOX</a>
+                        <a href="inbox.html" class="nav-link">INBOX</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="#" class="nav-link text-white fs-6 fw-900 text-decoration-none">ABOUT QCU</a>
+                        <a href="#" class="nav-link">ABOUT QCU</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button">
+                    <li class="nav-item dropdown" onmouseleave="mouseLeave()">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           <img src="img/1565034397472.jfif" class="logo rounded-circle">
                         </a>
-                        <ul class="dropdown-menu-cus text-center" style="right: 0;" data-bs-keyboard="true" tabindex="-1" aria-hidden="false">
+                        <ul class="dropdown-menu-cus text-center" style="right: 0;">
                           <li><a class="dropdown-item" href="edit-profile.html">EDIT PROFILE</a></li>
                           <li><a class="dropdown-item" href="#">REQUEST STATUS</a></li>
                           <li><a class="dropdown-item" href="#">LOGOUT</a></li>
@@ -66,55 +67,90 @@
     </div>
 <!------------START BODY------------>
     <div class="container-cus">
-<!------------START CONTENT------------>    
+<!------------START CONTENT------------>
 <section>
-
     <div class="container m-auto">
-        <form action="#" class="library-1" id="registrar">
-            <h1> REGISTRAR <i class="fa-solid fa-book-open fa-1x mt-5"></i></h1>
-            <hr class="my-3">&nbsp;
-            
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-                    
-<section>
-    <div class="container">
-        <ul class="course">
+        <section class="container py-5">
+            <div class="headline">
+              <h1>INFRACTIONS</h1>
+              <i class="fa-solid fa-list fa-3x"></i>
+            </div>
+          </section>
+                    <button type="button" class="btn btn-f btn-sub-1 btn-shadow px-5">FRACTION RECORDS</button>
+                    <button type="button" class="btn btn-f btn-sub-1 btn-shadow px-5">FOR EVALUATION</button>
+                <br>
+                <br>
+                <br>
+                <div class="d-flex">
+                    <h5 class="m-1">Uncleared fractions:</h5>
+                    <nav aria-label="...">
+                        <ul class="pagination pagination-sm">
+                          <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="2">1</a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                <div class="table-border table-responsive">    
+                        <table class="table-info">
+                            <thead>
+                              <tr>
+                                <th class="th-lg text-white">Fraction</th>
+                                <th class="th-lg text-white">Date comitted</th>
+                                <th class="th-lg text-white">Level of Offense</th>
+                                <th class="th-lg text-white">Penalty</th>
+                                <th class="th-lg text-white">Status</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Fraction 1</td>
+                                <td>11-29-22</td>
+                                <td>Minor</td>
+                                <td>Penalty</td>
+                                <td class="text-danger">Uncleared</td>
+                              </tr>
+                                <tr>
+                                <td>Fraction 2</td>
+                                <td>11-29-22</td>
+                                <td>Minor</td>
+                                <td>Penalty</td>
+                                <td class="text-danger">Cleared</td>
+                              </tr>
+                                <td>Fraction 3</td>
+                                <td>11-29-22</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                                <td>For Evaluation</td>
+                            </tbody>
+                        </table>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <a href="Univ-Guidelines.html">
+                    <button type="button" class="btn btn-1 btn-sub-1 btn-shadow px-5">VIEW UNIVERSITY GUIDELINES</button></a>
 
-            <li>
-                <a href="Doc-Submitted.html" class="d-flex text-decoration-none">
-                    <i class="fa-sharp fa-solid fa-desktop"></i>
-                    <span></span>
-                    <h3> DOCUMENTS SUBMITTED</h3>
-                </a>
-            </li>
+                
+                  <br><br><br><br><br>  
 
-            <li>
-                <a href="Registrar-req.html" class="d-flex text-decoration-none">
-                    <i class="fa-sharp fa-solid fa-school"></i>
-                    <span></span>
-                    <h3> REQUEST DOCUMENTS </h3>
-                </a>
-            </li>
-            
-            <li>
-                <a href="Request-doc-status.html" class="d-flex text-decoration-none">
-                    <i class="fa-sharp fa-solid fa-book"></i>
-                    <span></span>
-                    <h3> REQUESTED DOCUMENT STATUS</h3> 
-                </a>
-            </li>
-        </div>
-    </section>
-</section>
+      </div>
 
-<br><br><br><br><br><br><br><br> 
-
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        </section>
 <!------------END CONTENT------------>        
+    </div>
 <!------------END BODY------------>
+
+    
 <!------------STAR FOOTER------------>
     <footer id="sticky-footer" class="flex-shrink-0 py-1 text-white align-content-center">
-        <div class="container">
+        <div class="container p-3">
             <div class="row align-items-end">
                 <div class="col-md-5">
                     <div class="row align-items-end">
@@ -154,6 +190,5 @@
     <script src="js/toggle.js"></script>
     <script src="js/calendar.js"></script>
     <script src="js/loading.js"></script>
-    
 </body>
 </html>

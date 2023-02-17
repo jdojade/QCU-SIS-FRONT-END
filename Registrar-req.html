@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Request Documents </title>
+    <title> Request Documents | Registrar </title>
     <link rel="stylesheet" href="css/fontawesome-free-6.2.1-web/css/all.min.css"/>
     <link rel="stylesheet" href="css/bootstrap-5.2.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -78,8 +78,13 @@
                 <form action="#" method="get">
                     <div class="step step-1 active">
                         <div style="top: -38px; position: absolute;">
-                            <h6><b>Kindly fill up the form.</b></h6>
+                            <h6><b>Please make sure that you do have submitted all the documents needed by the registrar before requesting..</b></h6>
                         </div>
+                        <ul>
+                            <li><strong>NO PENDING / INCOMPLETE REQUIREMENTS</strong></li>
+                            <li><strong>EXISTING BALANCE</strong></li>
+                            <li><strong>NO FRACTIONS</strong></li>
+                          </ul> 
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-floating my-3">
@@ -88,11 +93,19 @@
                                     <span id="nameError"></span>       
                                 </div>
                                 <div class="form-floating my-3">
-                                    <input type="text" class="form-control" id="studentSection" name="Section" placeholder="Name">
-                                    <label for="studentSection"> Section </label>
-                                    <span id="studSecError"></span>
+                                    <select class="form-select" id="floatingSelect1" aria-label="Floating label select example">
+                                        <option selected hidden> Choose your Section </option>
+                                        <option value="SBIT-4A">SBIT-4A</option>
+                                        <option value="SBIT-4B">SBIT-4B</option>
+                                        <option value="SBIT-4C">SBIT-4C</option>
+                                        <option value="SBIT-4D">SBIT-4D</option>
+                                        <option value="SBIT-4E">SBIT-4E</option>
+                                        <option value="SBIT-4F">SBIT-4F</option>
+                                    </select>
+                                <label for="floatingSelect1"> Section </label>
+                                <span id="sectionError"></span>
                                 </div>
-                            </div>
+                            </div>    
                             <div class="col-md-6">
                                 <div class="form-floating my-3">
                                     <input type="number" class="form-control" id="studentId" name="Student Number" placeholder="Name">
@@ -100,7 +113,7 @@
                                     <span id="studNoError"></span>
                                 </div>
                                 <div class="form-floating my-3">
-                                    <select class="form-select" id="floatingSelect1" aria-label="Floating label select example">
+                                    <select class="form-select" id="floatingSelect2" aria-label="Floating label select example">
                                       <option selected hidden >Choose your Course </option>
                                       <option value="Bachelor of Science in Information Technology">Bachelor of Science in Information Technology</option>
                                       <option value="Bachelor of Science in Industial Engineering">Bachelor of Science in Industial Engineering</option>
@@ -108,27 +121,36 @@
                                       <option value="Bachelor of Science in Entrepreneurship">Bachelor of Science in Entrepreneurship</option>
                                       <option value="Bachelor of Electronics Engineering">Bachelor of Science in Electronics Engineering</option>
                                     </select>
-                                    <label for="floatingSelect"> Course </label>
+                                    <label for="floatingSelect2"> Course </label>
                                     <span id="courseError"></span>
                                 </div>
                             </div>
                             <div class="col-md-12">
-                            <div class="form-floating my-3">
-                                <input type="text" class="form-control" id="companyAdd" name="Company Address" placeholder="Name">
-                                <label for="companyAdd"> Address </label>
-                                <span id="comAddError"></span>
+                                <div class="form-floating my-3">
+                                    <input type="text" class="form-control" id="companyAdd" name="Company Address" placeholder="Name">
+                                    <label for="companyAdd"> Address </label>
+                                    <span id="comAddError"></span>
+                                </div>
                             </div>
+                            <div class="row">
+                            <div class="col-md-11">
+                                <div class="form-floating my-3">
+                                    <select class="form-select" id="docuType" aria-label="Document Type" value="">
+                                        <option selected class="text-muted">--Select the document--</option>
+                                        <option value="1">Registration form</option>
+                                        <option value="2">Certified True Copy of Gradeslip</option>
+                                        <option value="3">Sample</option>
+                                    </select>
+                                    <label for="docuType"> Document </label>
+                                    <span id="docuReq"></span>
+                                </div>
                             </div>
-                            <div class="col-md-11 form-floating my-3">
-                                <input type="text" class="form-control" id="companyName" name="Company Name" placeholder="Name">
-                                <label for="companyName"> </label>
-                                <span id="comNameError"></span>
-                            </div>
-                            <div class="col-md-1 form-floating my-3">
-                                <input type="number" class="form-control" id="studentId" name="Student Number" placeholder="Name">
-                                <label for="studentId"> Qty. </label>
-                                <span id="studNoError"></span>
-                            </div>
+                            <div class="col-md-1">   
+                                <div class="form-floating my-3">
+                                    <input type="number" class="form-control" id="Quantity" name="Quantity" min="1" max="5">
+                                    <label for="Quantity"> Qty. </label>
+                                    <span id="Quantity"></span>
+                                </div>  
                         </div>
                         <div class="form-footer">
                             <div class="form-page">

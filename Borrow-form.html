@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Request Documents </title>
+    <title> Borrow Form </title>
     <link rel="stylesheet" href="css/fontawesome-free-6.2.1-web/css/all.min.css"/>
     <link rel="stylesheet" href="css/bootstrap-5.2.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/admin.css">
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/evaluation.css">
+    <link rel="stylesheet" href="css/style1.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-md sticky-top">
@@ -54,7 +55,7 @@
     <div class="menu-container">
         <ul class="menu">
             <li><a href="Pre-Enrollment.html"><i class="fa-sharp fa-solid fa-clipboard icon"></i>PRE-ENROLLMENT</a></li>
-            <li class="active"><a href="request-doc-final.html"><i class="fa-solid fa-file-lines icon"></i>REQUEST DOCUMENT</a></li>
+            <li><a href="req-doc.html"><i class="fa-solid fa-file-lines icon"></i>REQUEST DOCUMENT</a></li>
             <li><a href="gradeslip.html"><i class="fa-solid fa-table-list icon"></i>GRADESLIP</a></li>
             <li><a href="Course Curriculum.html"><i class="fa-solid fa-list icon "></i>CURRICULUM</a></li>
             <li><a href="Evaluation.html"><i class="fa-solid fa-mobile-screen icon"></i>FACULTY EVALUATION</a></li>
@@ -67,58 +68,95 @@
 <!------------START BODY------------>
     <div class="container-cus">
 <!------------START CONTENT------------>
-        <section class="container py-5 mb-5">
+        <section class="container py-5">
             <div class="headline">
-                <h1>REQUEST DOCUMENT</h1>
+                <h1>BORROW FORM</h1>
                 <i class="fa-solid fa-address-book fa-3x"></i>
             </div>
         </section>
-        <section class="mb-5">
+        <section>
             <div class="container">
-                <form action="request-doc-status.html" method="get">
+                <form action="#" method="get">
                     <div class="step step-1 active">
-                        <div style="top: -40px; position: absolute;">
-                            <h6><b>Are you requesting for your your specific document? You can fill up this form to send request. 
-                                <br>
-                                This section ask you to provide your what kind of document you requesting and other information 
-                                about it. Please answer it accurately.</b></h6>
+                        <div style="top: -38px; position: absolute;">
+                            <h6><b>Kindly fill up the form.</b></h6>
                         </div>
                         <div class="row">
-                            <div class="col">
+                            <div class="col-md-6">
                                 <div class="form-floating my-3">
-                                    <input type="email" class="form-control" id="emailAdd" name="Email Address" placeholder="Name">
-                                    <label for="emailAdd"> Email Address </label>
-                                    <span id="emailReq"></span>
+                                    <input type="text" class="form-control" id="studentName" name="Student Full Name" placeholder="Name" disabled value="ARLE DIDAL">
+                                    <label for="studentName"> Name </label>
                                 </div>
                                 <div class="form-floating my-3">
-                                    <select class="form-select" id="docuType" aria-label="Document Type" value="">
-                                      <option selected class="text-muted">--Select the document--</option>
-                                      <option value="1">Transcript of Record (TOR)</option>
-                                      <option value="2">Diploma</option>
-                                      <option value="3">Honorable Dismissal</option>
-                                      <option value="4">Certificate of Authenticity and Verification (CAV)</option>
-                                      <option value="5">Good Moral Certificate</option>
+                                    <select class="form-select" id="floatingSelect2" aria-label="Floating label select example">
+                                        <option selected hidden > Section </option>
+                                        <option value="SBIT-4A">SBIT-4A</option>
+                                        <option value="SBIT-4B">SBIT-4B</option>
+                                        <option value="SBIT-4C">SBIT-4C</option>
+                                        <option value="SBIT-4D">SBIT-4D</option>
+                                        <option value="SBIT-4E">SBIT-4E</option>
+                                        <option value="SBIT-4F">SBIT-4F</option>
                                     </select>
-                                    <label for="docuType"> Document </label>
-                                    <span id="docuReq"></span>
-                                  </div>
-                                  <div class="form-floating my-3">
-                                    <input type="text" class="form-control" id="purposeDocu" name="Purpose" placeholder="Name">
-                                    <label for="purposeDocu"> Purpose </label>
-                                    <span id="purReq"></span>
-                                </div> 
+                                    <label for="floatingSelect"> Section </label>
+                                    <span id="CourseError"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
                                 <div class="form-floating my-3">
-                                    <input type="date" class="form-control" id="floatingDate" placeholder="Date Needed" required>
-                                    <label for="floatingDate">Date Needed</label>
-                                    <span id="date"></span>
+                                    <input type="number" class="form-control" id="studentId" name="Student Number" placeholder="Name" disabled value="171234">
+                                    <label for="studentId"> Student Number </label>
                                 </div>
                                 <div class="form-floating my-3">
-                                    <input type="text" class="form-control" id="address" name="address" placeholder="Name">
-                                    <label for="address"> Address to (Put N/A if not applicable)</label>
-                                    <span id="addressError"></span>
-                                </div>                             
+                                    <select class="form-select" id="floatingSelect1" aria-label="Floating label select example">
+                                        <option selected hidden >Choose your Course </option>
+                                        <option value="Bachelor of Science in Information Technology">Bachelor of Science in Information Technology</option>
+                                        <option value="Bachelor of Science in Industrial Engineering">Bachelor of Science in Industial Engineering</option>
+                                        <option value="Bachelor of Science in Accountancy">Bachelor of Science in Accountancy</option>
+                                        <option value="Bachelor of Science in Entrepreneur">Bachelor of Science in Entrepreneur</option>
+                                    </select>
+                                    <label for="floatingSelect"> Course </label>
+                                    <span id="CourseError"></span>
+                                </div>
                             </div>
-                        </div>
+                        </div>    
+                            <div class="col-md-12">
+                                <div class="form-floating my-3">
+                                    <select class="form-select" id="floatingSelect3" aria-label="Floating label select example">
+                                        <option selected hidden > --Select the item-- </option>
+                                        <option value="1">Pocket Wifi</option>
+                                        <option value="2">Laptop</option>
+                                    </select>
+                                    <label for="floatingSelect"> Item </label>
+                                    <span id="ItemError"></span>
+                                </div>
+                            </div>
+                        <section>
+                            <div class="container py-3" py-3>   
+                                <h6><b>Please upload the following requirements in .jpeg/.png format</b></h6>
+                            </div>    
+                            <div class="col-md-12">
+                                <div class="form-floating mb-3">
+                                    <input type="file" class="form-upload" id="req1" placeholder="Upload req1" name="photo">
+                                    <label for="photo"> </label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="file" class="form-upload" id="req2" placeholder="Upload req2" name="photo">
+                                    <label for="photo"> </label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="file" class="form-upload" id="req3" placeholder="Upload req3" name="photo">
+                                    <label for="photo"> </label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="file" class="form-upload" id="req4" placeholder="Upload req4" name="photo">
+                                    <label for="photo"> </label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="file" class="form-upload" id="req5" placeholder="Upload req5" name="photo">
+                                    <label for="photo"> </label>
+                                </div>
+                            </div>
+                        </section>
                         <div class="form-footer">
                             <div class="form-page">
                                 <span class="current"></span>
@@ -126,42 +164,81 @@
                                 <span></span>
                             </div>
                             <div class="form-button">
-                                <button type="button" class="next-btn btn btn-sm btn-sub-1 btn-shadow px-5">NEXT</button>
+                                <button type="button" class="next-btn btn btn-sm btn-sub-1 btn-shadow px-5" id="first_btn">NEXT</button>
                                 <button type="button" class="btn btn-sm btn-sub-2 btn-shadow px-5 me-4">CANCEL</button>
                             </div>
                         </div>
                         <span id="submitError"></span>
                     </div>
                     <div class="step step-2">
-                        <div style="top: -40px;position: absolute;">
-                            <h6><b>Please review all the information you&#39;ve entered before submitting the form. 
-                                <br>
-                                You can click “EDIT” to edit.</b></h6>
+                        <div style="top: -38px;position: absolute;">
+                            <h6><b>Please review all the information you've entered before submitting the form. You can click "EDIT" to EDIT</b></h6>
                         </div>
                         <div class="row form-view">
-                            <div>
+                            <div class="col-md-6">
                                 <h5>
-                                    <strong>Email Address:</strong>
-                                    <span id="info_1"></span>
+                                    <strong>Name:</strong>
                                 </h5>
                                 <h5>
-                                    <strong>Document:</strong>
-                                    <span id="info_2"></span>
+                                    <strong>Student Number:</strong>
                                 </h5>
                                 <h5>
-                                    <strong>Purpose:</strong>
-                                    <span id="info_3"></span>
+                                    <strong>Section:</strong>
                                 </h5>
                                 <h5>
-                                    <strong>Date Needed:</strong>
-                                    <span id="info_4"></span>
+                                    <strong>Course:</strong>
                                 </h5>
                                 <h5>
-                                    <strong>Address</strong>
-                                    <span id="info_5"></span>
-                                </h5>                                
+                                    <strong>Item:</strong>
+                                </h5>
+                                <h5>
+                                    <strong>Requirement 1:</strong>
+                                </h5>
+                                <h5>
+                                    <strong>Requirement 2:</strong>
+                                </h5>
+                                <h5>
+                                    <strong>Requirement 3:</strong>
+                                </h5>
+                                <h5>
+                                    <strong>Requirement 4:</strong>
+                                </h5>
+                                <h5>
+                                    <strong>Requirement 5:</strong>
+                                </h5>
                             </div>
-                            
+                            <div class="col-md-6">
+                                <h5>
+                                    <strong>ARLE DIDAL</strong>
+                                </h5>
+                                <h5>
+                                    <strong>17-1234</strong>
+                                </h5>
+                                <h5>
+                                    <strong>SBIT-4F</strong>
+                                </h5>
+                                <h5>
+                                    <strong>BSIT</strong>
+                                </h5>
+                                <h5>
+                                    <strong>Pocket Wifi</strong>
+                                </h5>
+                                <h5>
+                                    <strong>requirement1.jpeg</strong>
+                                </h5>
+                                <h5>
+                                    <strong>requirement2.jpeg</strong>
+                                </h5>
+                                <h5>
+                                    <strong>requirement3.jpeg</strong>
+                                </h5>
+                                <h5>
+                                    <strong>requirement4.jpeg</strong>
+                                </h5>
+                                <h5>
+                                    <strong>requirement5.jpeg</strong>
+                                </h5>
+                            </div>
                         </div>
                         <div class="form-footer">
                             <div class="form-page">
@@ -176,8 +253,8 @@
                         </div>
                     </div>
                     <div class="step step-3">
-                        <div style="top: -40px; position: absolute;">
-                            <h6><b>Company information has been successfully submitted</b></h6>
+                        <div style="top: -38px; position: absolute;">
+                            <h6><b>Success!</b></h6>
                         </div>
                         <div class="form-success">
                             <img src="img/Success.png" alt="Success">

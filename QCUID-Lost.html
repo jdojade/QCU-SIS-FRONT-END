@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> QCU ID | LOST </title>
+    <link rel="stylesheet" href="css/fontawesome-free-6.2.1-web/css/all.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-5.2.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/evaluation.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md sticky-top">
+        <div class="container-fluid p-0" >
+            <div class="d-flex flex-colum align-items-center">
+                <button class="btn-hamburger" type="button" id="hamburger">
+                    <div class="icon-hamburger"><span></span><span></span><span></span></div>
+                </button><span class="text-white fs-3">|</span>
+                <img src="img/1565034397472.jfif" alt="logo" class="logo rounded-circle">
+                <a href="student_dashboard.html" class="navbar-brand">&nbsp;Quezon City University</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i class="fa-solid fa-ellipsis-vertical text-white"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar nav p-0">
+                    <li class="navbar-item">
+                        <a href="student_dashboard.html" class="nav-link">HOME</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="inbox.html" class="nav-link">INBOX</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="nav-link">ABOUT QCU</a>
+                    </li>
+                    <li class="nav-item dropdown" onmouseleave="mouseLeave()">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="img/1565034397472.jfif" class="logo rounded-circle">
+                        </a>
+                        <ul class="dropdown-menu-cus text-center" style="right: 0;">
+                          <li><a class="dropdown-item" href="edit-profile.html">EDIT PROFILE</a></li>
+                          <li><a class="dropdown-item" href="#">REQUEST STATUS</a></li>
+                          <li><a class="dropdown-item" href="#">LOGOUT</a></li>
+                        </ul>
+                      </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="menu-container">
+        <ul class="menu">
+            <li><a href="Pre-Enrollment.html"><i class="fa-sharp fa-solid fa-clipboard icon"></i>PRE-ENROLLMENT</a></li>
+            <li><a href="req-doc.html"><i class="fa-solid fa-file-lines icon"></i>REQUEST DOCUMENT</a></li>
+            <li><a href="gradeslip.html"><i class="fa-solid fa-table-list icon"></i>GRADESLIP</a></li>
+            <li><a href="Course Curriculum.html"><i class="fa-solid fa-list icon "></i>CURRICULUM</a></li>
+            <li><a href="Evaluation.html"><i class="fa-solid fa-mobile-screen icon"></i>FACULTY EVALUATION</a></li>
+            <li><a href="vaccination.html"><i class="fa-solid fa-credit-card icon"></i>VACCINATION</a></li>
+            <li><a href="event.html"><i class="fa-solid fa-tag icon"></i>EVENTS</a></li>
+            <li><a href="Calendar.html"><i class="fa-solid fa-calendar-days icon"></i>UNIVERSITY CALENDAR</a></li>
+            <li><a href="faqs.html"><i class="fa-solid fa-info icon"></i>FAQS</a></li>
+        </ul>
+    </div>
+<!------------START BODY------------>
+    <div class="container-cus">
+<!------------START CONTENT------------>
+        <section class="container py-5">
+            <div class="headline">
+                <h1>QCU I.D (LOST) APPLICATION</h1>
+                <i class="fa-solid fa-address-book fa-3x"></i>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <form action="#" method="get">
+                    <div class="step step-1 active">
+                        <div style="top: -10px; position: absolute;">
+                            <h6><b>To request the new QCU I.D, please fill up the form correctly.</b></h6>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-floating my-3">
+                                    <input type="text" class="form-control" id="studentName" name="Student Full Name" placeholder="Name">
+                                    <label for="studentName"> Email Address</label>
+                                    <span id="nameError"></span>       
+                                </div>
+                            </div>
+                            <br>
+                            <div class="d-flex py-3">
+                                <h3><strong>DATA PRIVACY STATEMENT</strong></h3>
+                            </div>    
+                                <p class="paragraph">
+                                    This Privacy Statement aims to inform you of the rights and obligations under Republic Act No. 10173 or The Data Privacy Act of 2012.
+                                        <br><br>
+                                    The Quezon City University (QCU) recognizes its responsibility in protecting personal and sensitive information. 
+                                    As a duly recognized higher educational institution under the local government of the Quezon City, we are committed in complying with the Philippines Data Privacy Act of 2012 also known as RA 10173. 
+                                    This notice shall explain the purpose and legal bases for the processing of common personal and sensitive data that Quezon City University collects and generates from data subjects.
+                                    <br><br>
+                                    The University ensures that only individuals that met the requirements shall be accepted. In compliance with the law, and other issuance of the National Privacy Commission, 
+                                    the University declares that it will collect and generate from you personal and sensitive information starting from your application and admission up to the data generated during your stay in the University.                                        <br><br>
+                                    The University will ask for a consent of the data subject to collect and generate personal and sensitive information to be processed by the University Data Privacy Officer (DPO).
+                                    <br><Br>
+                                    The data collected shall be processed in compliance with the Republic Act No. 10173 or The Data Privacy Act of 2012 and its implementing rules and regulations.
+                                    <br><br>
+                                    Personal and sensitive information will be used in processing application, admission, and transaction with the University.
+                                    <br><br>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                        <strong>I AGREE</strong>
+                                        </label>
+                                    </div>        
+                        </div>
+                        <div class="form-footer">
+                            <div class="form-page">
+                                <span class="current"></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="form-button">
+                                <button type="button" class="next-btn btn btn-sm btn-sub-1 btn-shadow px-5" id="first_btn">NEXT</button>
+                                <a href="QCUID.html"><button type="button" class="btn btn-sm btn-sub-2 btn-shadow px-5 me-4">CANCEL</button></a>
+                            </div>
+                        </div>
+                        <span id="submitError"></span>
+                    </div>
+                    <div class="step step-2">
+                        <div class="my-8 position: absolute;">
+                            <h3><b>Student Information Section</b></h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-floating my-3">
+                                    <input type="text" class="form-control" id="studentName" name="Student Full Name" placeholder="Name">
+                                    <label for="studentName"> Last Name </label>
+                                    <span id="nameError"></span>       
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating my-3">
+                                    <input type="text" class="form-control" id="studentName" name="Student Full Name" placeholder="Name">
+                                    <label for="studentName"> First Name </label>
+                                    <span id="nameError"></span>       
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-floating my-3">
+                                    <select class="form-select" id="floatingSelect1" aria-label="Floating label select example">
+                                        <option selected hidden >Choose your Course </option>
+                                        <option value="1">Bachelor of Science in Information Technology</option>
+                                        <option value="2">Bachelor of Science in Industial Engineering</option>
+                                        <option value="3">Bachelor of Science in Accountancy</option>
+                                        <option value="4">Bachelor of Science in Entrepreneur</option>
+                                    </select>
+                                    <label for="floatingSelect"> Course </label>
+                                    <span id="CourseError"></span>
+                                </div>
+                                <div class="form-floating my-4">
+                                    <input type="text" class="form-control" id="studentName" name="Student Full Name" placeholder="Name">
+                                    <label for="studentName"> Year Level </label>
+                                    <span id="nameError"></span>       
+                                </div>
+                                <div class="form-check form-check-inline my-3">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">SAN BARTOLOME</label>
+                                </div>
+                                <div class="form-check form-check-inline my-3">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">SAN FRANCISCO</label>
+                                </div>
+                                <div class="form-check form-check-inline my-3">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                    <label class="form-check-label" for="inlineRadio3">BATASAN</label>
+                                </div>
+                                <div class="form-floating my-3">
+                                    <input type="date" class="form-control" id="floatingDate" placeholder="Date Needed" required>
+                                    <label for="floatingDate">Date of Birth</label>
+                                    <span id="date"></span>
+                                </div>
+                            </div>   
+                        <hr></hr>   
+                        <div class="d-flex mt-3">
+                            <h3><b><i>In case of emergency information</i></b></h3>
+                        </div>
+                        <div class="col-md-12">
+                                <div class="form-floating my-4">
+                                    <input type="text" class="form-control" id="guardianName" name="Name of Guardian" placeholder="Name">
+                                    <label for="guardianName"> Name of Guardian </label>
+                                    <span id="gnameError"></span>       
+                                </div>
+                                <div class="form-floating my-4">
+                                    <input type="number" class="form-control" id="contactno" name="Contact Number" placeholder="Number">
+                                    <label for="contactno"> Contact Number of Guardian </label>
+                                    <span id="conNoError"></span>       
+                                </div>
+                                <div class="d-flex">
+                                    <h3><b>Please upload a copy of your notarize affidavit of loss.</b></h3>
+                                    </div>   
+                                        <div class="form-floating my-3">
+                                        <input type="file" class="form-control" id="file" placeholder="Upload your Affidavit of loss" name="file">
+                                        <label type="file"> Affidavit of loss </label>
+                                    </div>
+                                </div>
+                            </div>    
+                        <div class="form-footer">
+                            <div class="form-page">
+                                <span></span>
+                                <span class="current"></span>
+                                <span></span>
+                            </div>
+                            <div class="form-button">
+                                <button type="button" class="next-btn btn btn-sm btn-sub-1 btn-shadow px-5" id="first_btn">NEXT</button>
+                                <button type="button" class="btn btn-sm btn-sub-2 btn-shadow px-5 me-4">CANCEL</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step step-3">
+                            <div class="my-8 position: absolute;">
+                                <h1><b>PICTURE AND SIGNATURE SECTION</b></h1>
+                            </div>
+                        <section>
+                            <br>
+                        <h3 class="text-primary"><strong>REMINDERS</strong></h3>
+                        </secction>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul>
+                                <div>
+                                    <h3><b><i>Student Picture</i></b></h3>
+                                </div>
+                                <br>
+                                <h5>
+                                    <li><strong>File name of your picture should be your student No.Size 2'x2'</strong></li>
+                                </h5>
+                                <br>
+                                <h5>
+                                    <li><strong>Head size and position: Look directly into the camera at a straight angle, with your face in the center of the image.</strong></li>
+                                </h5>
+                                <br>
+                                <h5>
+                                    <li><strong>Clothes: Must have Collar</strong></li>
+                                </h5>
+                                <br>
+                                <h5>
+                                    <li><strong>Background: White</strong></li>
+                                </h5>
+                                <br>
+                                <h5>
+                                    <li><strong>Smile: Neutral, mouth closed</strong></li>
+                                </h5>
+                                <br>
+                                <div>
+                                    <h3><b><i>Student Signature</i></b></h3>
+                                </div>
+                                <br>
+                                <h5>
+                                    <li><strong>File name of your signature should be Student No.</strong></li>
+                                </h5>
+                                <br>
+                                <h5>
+                                    <li><strong>Background: White</strong></li>
+                                </h5>
+                                <br>
+                                <h5>
+                                    <li><strong>Signature: Black</strong></li>
+                                </h5>
+                            </div>
+                            <div class="col-md-6">
+                                <h5>
+                                    <li><strong>Eyes: Visible and Open</strong></li>
+                                </h5>
+                                <br>
+                                <h5>
+                                    <li><strong>Eye Glass: No</strong></li>
+                                </h5>
+                                <br>
+                                <h5>
+                                    <li><strong>Ears: Visible</strong></li>
+                                </h5>
+                                <br>
+                                <h5>
+                                    <li><strong>Hair: Black or Brown</strong></li>
+                                </h5>
+                                <br>
+                                <h5>
+                                    <li><strong>Headgear: No, Except religious headgear</strong></li>
+                                </h5>
+                            </div>
+                            <hr></hr>
+                            <div>
+                                <h5><b>The photo must have been taken in the past 3 months. The file should be .jpeg. Failure to follow, your ID will not be printed.</b></h5>
+                            </div>
+                         </div>
+                        <div class="form-footer">
+                            <div class="form-page">
+                                <span></span>
+                                <span></span>
+                                <span class="current"></span>
+                            </div>
+                            <div class="form-button">
+                                <button type="button" class="next-btn btn btn-sm btn-sub-1 btn-shadow px-5" id="first_btn">NEXT</button>
+                                <button type="button" class="btn btn-sm btn-sub-2 btn-shadow px-5 me-4">CANCEL</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step step-4">
+                        <div class="my-8 position: absolute;">
+                            <h3><b>NOTICE</b></h3>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <ul>
+                                    <h5>
+                                        <li><strong>We will validate the information you submitted.</strong></li>
+                                    </h5>
+                                        <br>
+                                    <h5>
+                                        <li><strong>We will verify that your photo and signature</strong></li>
+                                    </h5>
+                                        <br>
+                                    <h5>
+                                        <li><strong>If everything is correct we will begin printing your I.D</strong></li>
+                                    </h5>
+                                        <br>
+                                    <h5>
+                                        <li><strong>If your from QCU Batasan or QCU San Francisco Campus, You can claim your I.D through your campus coordinator</strong></li>
+                                    </h5>
+                                        <br>
+                                    <h5>
+                                        <li><strong>If your from QCU San Bartolome Campus you can claim your I.D at Student Affairs</strong></li>
+                                    </h5>
+                                        <br>
+                                </div>
+                            <hr></hr>
+                            <div>
+                                <h5><b>The photo must have been taken in the past 3 months. The file should be .jpeg. Failure to follow, your ID will not be printed.</b></h5>
+                            </div>
+                         </div>
+                        <div class="form-footer">
+                            <div class="form-page">
+                                <span></span>
+                                <span></span>
+                                <span class="current"></span>
+                            </div>
+                            <div class="form-button">
+                                <button type="button" class="next-btn btn btn-sm btn-sub-1 btn-shadow px-5" id="first_btn">NEXT</button>
+                                <button type="button" class="btn btn-sm btn-sub-2 btn-shadow px-5 me-4">CANCEL</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step step-5">
+                        <div class="my-8 position: absolute;">
+                            <h3><b>Review Information</b></h3>
+                        </div>
+                        <div class="row form-view">
+                            <div class="col-md-6">
+                                <h5>
+                                    <strong>Name:</strong>
+                                </h5>
+                                <h5>
+                                    <strong>Course:</strong>
+                                </h5>
+                                <h5>
+                                    <strong>Year Level:</strong>
+                                </h5>
+                                <h5>
+                                    <strong>Campus:</strong>
+                                </h5>
+                                <h5>
+                                    <strong>Date of Birth:</strong>
+                                </h5>
+                                <br>
+                                <h5>
+                                    <strong>Address:</strong>
+                                </h5>
+                                <h5>
+                                    <strong>Name Of Guardian:</strong>
+                                </h5>
+                                <h5>
+                                    <strong>Contact Number:</strong>
+                                </h5>
+                                <h5>
+                                    <strong>Student Picture:</strong>
+                                </h5>
+                                <h5>
+                                    <strong>Signature:</strong>
+                                </h5>
+                            </div>
+                            <div class="col-md-6">
+                                <h5>
+                                    <strong>DIDAL, ARLE S.</strong>
+                                </h5>
+                                <h5>
+                                    <strong>BSIT</strong>
+                                </h5>
+                                <h5>
+                                    <strong>4TH Year</strong>
+                                </h5>
+                                <h5>
+                                    <strong>San Bartolome</strong>
+                                </h5>
+                                <h5>
+                                    <strong>September 3, 2022</strong>
+                                </h5>
+                                <h5>
+                                    <strong>Blk 23 Lot 12 Sampaguita St., Barangay Pasong Tamo Novaliches, Quezon City</strong>
+                                </h5>
+                                <h5>
+                                    <strong>Arlene Didal</strong>
+                                </h5>
+                                <h5>
+                                    <strong>09123456789</strong>
+                                </h5>
+                                <h5>
+                                    <strong>Stud.jeg</strong>
+                                </h5>
+                                <h5>
+                                    <strong>stud.jpeg</strong>
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="form-footer">
+                            <div class="form-page">
+                                <span></span>
+                                <span></span>
+                                <span class="current"></span>
+                            </div>
+                            <div class="form-button">
+                                <button type="button" class="next-btn btn btn-sm btn-sub-1 btn-shadow px-5" id="first_btn">NEXT</button>
+                                <button type="button" class="btn btn-sm btn-sub-2 btn-shadow px-5 me-4">CANCEL</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step step-5">
+                        <div style="top: -38px; position: absolute;">
+                            <br>
+                        </div>
+                        <div class="form-success">
+                            <img src="img/Success.png" alt="Success">
+                        </div>
+                        <div>
+                            <h1 class="text-center"><b>SUCCESS !</b></h1>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <div class="form-footer">
+                            <div class="form-page">
+                                <span></span>
+                                <span></span>
+                                <span class="current"></span>
+                            </div>
+                            <div class="form-button">
+                                <a href="QCUID.html">
+                                <button type="submit" class="submit-btn btn btn-sm btn-sub-1 btn-shadow px-5">CONFIRM</button></a>
+                            </div>
+                        </div>
+                    </div>  
+                </form>
+            </div>  
+        </section>
+        <section>
+<!------------END CONTENT------------>        
+</div>
+<!------------END BODY------------>
+
+    
+<!------------STAR FOOTER------------>
+    <footer id="sticky-footer" class="flex-shrink-0 py-1 text-white align-content-center">
+        <div class="container p-3">
+            <div class="row align-items-end">
+                <div class="col-md-5">
+                    <div class="row align-items-end">
+                        <div class="col-md-6">
+                            <span>VISIT AND CONTACT US ON:</span><br />
+                            <span><a href="https://www.facebook.com/qcu1994" class="text-decoration-none text-white"><i class="fa-brands fa-facebook"></i>&nbsp;@qcu1994</a></span><br />
+                            <span><a href="https://qcu.edu.ph/" class="text-decoration-none text-white"><i class="fa-sharp fa-solid fa-earth-asia"></i>&nbsp;https://qcu.edu.ph/</a></span>
+                        </div>
+                        <div class="col-md-6">
+                            <span><i class="fa-solid fa-envelope"></i>&nbsp;registrar@qcu.edu.ph</span><br />
+                            <span><i class="fa-solid fa-mobile-screen-button"></i>&nbsp;288063470</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 text-center">
+                    <img src="img/1565034397472.jfif" class="rounded-circle footer-brand" alt="Logo">
+                </div>
+                <div class="col-md-5">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <span>Terms and Conditions</span><br />
+                            <span>Frequently Asked Questions</span>
+                        </div>
+                        <div class="col-md-6">
+                            <span>Since 1994</span><br />
+                            <span>Copyright</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!------------END FOOTER------------>
+    <script src="css/bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="css/bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/toggle.js"></script>
+    <script src="js/calendar.js"></script>
+    <script src="js/loading.js"></script>
+</body>
+</html>

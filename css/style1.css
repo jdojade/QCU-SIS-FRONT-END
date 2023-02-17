@@ -204,13 +204,13 @@
 }
 .registrar-req hr, p{
     color: #13212B !important;
-    
-} 
+}
+
 
 .step {
     display: none;
-  }
-  .step.active {
+}
+.step.active {
     display: block;
     animation: to-left 0.5s forwards;
   }
