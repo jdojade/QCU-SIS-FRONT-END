@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/admin.css">
+
+    
 </head>
 <body>
     <nav class="navbar navbar-expand-md sticky-top nav-admin">
@@ -56,68 +58,243 @@
         </ul>
     </div>
     <div class="container-cus">
-        <section class="p-5">
+        <section class="px-5">
             <div class="headline">
                 <h1>APPOINTMENTS FOR DOCUMENT PICKUPS</h1>
                 <i class="fa-solid fa-file-circle-check fa-3x"></i>
             </div>
-        </section>
-        <section class="px-5">
-            <div class="tabs w-100">
-                <ul>
-                    <li class="active">all</li>
-                    <li>claimed</li>
-                    <li>unclaimed</li>
-                    <li>pending</li>
+            <div class="table-nav py-2">
+                <ul id="pills-tab" role="tablist">
+                    <li>
+                        <a class="btn fs-5 active " id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all" role="tab" aria-controls="pills-all" aria-selected="true">
+                        All
+                        </a>
+                    </li>
+                    <li>
+                        <a class="btn fs-5" id="pills-claimed-tab" data-bs-toggle="pill" data-bs-target="#pills-claimed" role="tab" aria-controls="pills-claimed" aria-selected="false">
+                        Claimed
+                        </a>
+                    </li>
+                    <li>
+                        <a class="btn fs-5" id="pills-unclaimed-tab" data-bs-toggle="pill" data-bs-target="#pills-unclaimed" role="tab" aria-controls="pills-unclaimed" aria-selected="false">
+                        Unclaimed
+                        </a>
+                    </li>
+                    <li>
+                        <a class="btn fs-5" id="pills-pending-tab" data-bs-toggle="pill" data-bs-target="#pills-pending" role="tab" aria-controls="pills-pending" aria-selected="false">
+                        Pending
+                        </a>
+                    </li>
                 </ul>
             </div>
-            <table class="table">
-                <thead class="table-dark">
-                    <tr>
-                        <td>Student Number</td>
-                        <td>Name</td>
-                        <td>Document</td>
-                        <td>Status</td>
-                        <td>Date</td>
-                        <td>Action</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>19-00000</td>
-                        <td>Test name</td>
-                        <td>CTC</td>
-                        <td>Unclaimed</td>
-                        <td>00-00-0000</td>
-                        <td><a href="reschedule.html" class="btn-res"><i class="fa-solid fa-pencil"></a></td>
-                    </tr>
-                    <tr>
-                        <td>19-00000</td>
-                        <td>Test name</td>
-                        <td>CTC</td>
-                        <td>Unclaimed</td>
-                        <td>00-00-0000</td>
-                        <td><a href="reschedule.html" class="btn-res"><i class="fa-solid fa-pencil"></a></td>
-                    </tr>
-                    <tr>
-                        <td>19-00000</td>
-                        <td>Test name</td>
-                        <td>CTC</td>
-                        <td>Unclaimed</td>
-                        <td>00-00-0000</td>
-                        <td><a href="reschedule.html" class="btn-res"><i class="fa-solid fa-pencil"></a></td>
-                    </tr>
-                    <tr>
-                        <td>19-00000</td>
-                        <td>Test name</td>
-                        <td>CTC</td>
-                        <td>Unclaimed</td>
-                        <td>00-00-0000</td>
-                        <td><a href="reschedule.html" class="btn-res"><i class="fa-solid fa-pencil"></a></td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+            </section>
+            <section class="px-5">
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab" tabindex="0">
+                    <div class="table-responsive">
+                        <table class="custom-table">
+                            <thead>
+                                <tr>
+                                <th scope="col">Student Number</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Document</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Date</th>
+                                <th scope="col">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <td>17-1034</td>
+                                <td>Jade Oloroso</td>
+                                <td>CTC</td>
+                                <td class="text-danger">unclaimed</td>
+                                <td class="text-danger">11-29-23</td>
+                                <td><button type="button" class="btn btn-sub-1 btn-shadow btn-sm px-3 py-1" id="success"> RESCHEDULE </button></td>
+                                </tr>
+                                <tr>
+                                <td>17-1034</td>
+                                <td>Jade Oloroso</td>
+                                <td>CTC</td>
+                                <td class="text-danger">unclaimed</td>
+                                <td class="text-danger">11-29-23</td>
+                                <td><button type="button" class="btn btn-sub-1 btn-shadow btn-sm px-3 py-1" id="success"> RESCHEDULE </button></td>
+                                </tr>
+                                <tr>
+                                <td>17-1034</td>
+                                <td>Jade Oloroso</td>
+                                <td>CTC</td>
+                                <td class="text-danger">unclaimed</td>
+                                <td class="text-danger">11-29-23</td>
+                                <td><button type="button" class="btn btn-sub-1 btn-shadow btn-sm px-3 py-1" id="success"> RESCHEDULE </button></td>
+                                </tr>
+                                <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="text-danger"></td>
+                                <td class="text-danger"></td>
+                                <td></button></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-claimed" role="tabpanel" aria-labelledby="pills-claimed-tab" tabindex="0">
+                    <div class="table-responsive">    
+                        <table class="custom-table">
+                            <thead>
+                                <tr>
+                                <th scope="col">Student Number</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Document</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Date</th>
+                                <th scope="col">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <td>17-1034</td>
+                                <td>Jade Oloroso</td>
+                                <td>CTC</td>
+                                <td class="text-danger">unclaimed</td>
+                                <td class="text-danger">11-29-23</td>
+                                <td><button type="button" class="btn btn-sub-1 btn-shadow btn-sm px-3 py-1" id="success"> RESCHEDULE </button></td>
+                                </tr>
+                                <tr>
+                                <td>17-1034</td>
+                                <td>Jade Oloroso</td>
+                                <td>CTC</td>
+                                <td class="text-danger">unclaimed</td>
+                                <td class="text-danger">11-29-23</td>
+                                <td><button type="button" class="btn btn-sub-1 btn-shadow btn-sm px-3 py-1" id="success"> RESCHEDULE </button></td>
+                                </tr>
+                                <tr>
+                                <td>17-1034</td>
+                                <td>Jade Oloroso</td>
+                                <td>CTC</td>
+                                <td class="text-danger">unclaimed</td>
+                                <td class="text-danger">11-29-23</td>
+                                <td><button type="button" class="btn btn-sub-1 btn-shadow btn-sm px-3 py-1" id="success"> RESCHEDULE </button></td>
+                                </tr>
+                                <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="text-danger"></td>
+                                <td class="text-danger"></td>
+                                <td></button></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                    </div>
+                    </div>
+                
+                    <div class="tab-pane fade" id="pills-unclaimed" role="tabpanel" aria-labelledby="pills-unclaimed-tab" tabindex="0">
+                    <div class="table-responsive">    
+                        <table class="custom-table">
+                            <thead>
+                                <tr>
+                                <th scope="col">Student Number</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Document</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Date</th>
+                                <th scope="col">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <td>17-1034</td>
+                                <td>Jade Oloroso</td>
+                                <td>CTC</td>
+                                <td class="text-danger">unclaimed</td>
+                                <td class="text-danger">11-29-23</td>
+                                <td><button type="button" class="btn btn-sub-1 btn-shadow btn-sm px-3 py-1" id="success"> RESCHEDULE </button></td>
+                                </tr>
+                                <tr>
+                                <td>17-1034</td>
+                                <td>Jade Oloroso</td>
+                                <td>CTC</td>
+                                <td class="text-danger">unclaimed</td>
+                                <td class="text-danger">11-29-23</td>
+                                <td><button type="button" class="btn btn-sub-1 btn-shadow btn-sm px-3 py-1" id="success"> RESCHEDULE </button></td>
+                                </tr>
+                                <tr>
+                                <td>17-1034</td>
+                                <td>Jade Oloroso</td>
+                                <td>CTC</td>
+                                <td class="text-danger">unclaimed</td>
+                                <td class="text-danger">11-29-23</td>
+                                <td><button type="button" class="btn btn-sub-1 btn-shadow btn-sm px-3 py-1" id="success"> RESCHEDULE </button></td>
+                                </tr>
+                                <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="text-danger"></td>
+                                <td class="text-danger"></td>
+                                <td></button></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                    </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-pending" role="tabpanel" aria-labelledby="pills-pending-tab" tabindex="0">
+                    <div class="table-responsive">    
+                        <table class="custom-table">
+                            <thead>
+                                <tr>
+                                <th scope="col">Student Number</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Document</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Date</th>
+                                <th scope="col">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <td>17-1034</td>
+                                <td>Jade Oloroso</td>
+                                <td>CTC</td>
+                                <td class="text-danger">unclaimed</td>
+                                <td class="text-danger">11-29-23</td>
+                                <td><button type="button" class="btn btn-sub-1 btn-shadow btn-sm px-3 py-1" id="success"> RESCHEDULE </button></td>
+                                </tr>
+                                <tr>
+                                <td>17-1034</td>
+                                <td>Jade Oloroso</td>
+                                <td>CTC</td>
+                                <td class="text-danger">unclaimed</td>
+                                <td class="text-danger">11-29-23</td>
+                                <td><button type="button" class="btn btn-sub-1 btn-shadow btn-sm px-3 py-1" id="success"> RESCHEDULE </button></td>
+                                </tr>
+                                <tr>
+                                <td>17-1034</td>
+                                <td>Jade Oloroso</td>
+                                <td>CTC</td>
+                                <td class="text-danger">unclaimed</td>
+                                <td class="text-danger">11-29-23</td>
+                                <td><button type="button" class="btn btn-sub-1 btn-shadow btn-sm px-3 py-1" id="success"> RESCHEDULE </button></td>
+                                </tr>
+                                <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="text-danger"></td>
+                                <td class="text-danger"></td>
+                                <td></button></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                    </div>
+                    </div> 
+                </div>           
+            </section>
     </div>
 
 
