@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/admin.css">
     <link rel="stylesheet" href="css/style0.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
 </head>
 <body>
     <nav class="navbar navbar-expand-md sticky-top nav-admin">
@@ -109,21 +110,21 @@
                                       <td>SAMPLE NAME</td>
                                       <td class="text-danger">Unclaimed</td>
                                       <td class="text-danger">09-12-2023</td>
-                                      <td class="tbl-action"><button class="btn btn-sub-1 px-5 align-self-center w-100">RESCHEDULE</button></td>
+                                      <td class="tbl-action"><button class="btn btn-sub-1 px-5 align-self-center w-100" onclick="gmoralRedirect()">RESCHEDULE</button></td>
                                 </tr>
                                    <tr>
                                       <td>19-0000</td>
                                       <td>SAMPLE NAME</td>
                                       <td class="text-success">Claimed</td>
                                       <td>09-10-2023</td>
-                                      <td class="tbl-action"><button class="btn btn-sub-1 px-5 align-self-center w-100" disabled>SET</button></td>
+                                      <td class="tbl-action"><button class="btn btn-sub-1 px-5 align-self-center w-100" onclick="gmoralRedirect()" disabled>SET</button></td>
                                 </tr>
                                    <tr>
                                       <td>19-0000</td>
                                       <td>SAMPLE NAME</td>
                                       <td>Pending</td>
                                       <td>--</td>
-                                      <td class="tbl-action"><button class="btn btn-sub-1 px-5 align-self-center w-100">SET</button></td>
+                                      <td class="tbl-action"><button class="btn btn-sub-1 px-5 align-self-center w-100" onclick="gmoralRedirect()" >SET</button></td>
                                 </tr>
                                    <tr>
                                       <td></td>
@@ -156,7 +157,7 @@
                                     <td>SAMPLE NAME</td>
                                     <td class="text-success">Claimed</td>
                                     <td>09-10-2023</td>
-                                    <td class="tbl-action"><button class="btn btn-sub-1 px-5 align-self-center w-100" disabled>SET</button></td>
+                                    <td class="tbl-action"><button class="btn btn-sub-1 px-5 align-self-center w-100" onclick="gmoralRedirect()" disabled>SET</button></td>
                                 </tr>
                                    <tr>
                                     <td></td>
@@ -203,7 +204,7 @@
                                       <td>SAMPLE NAME</td>
                                       <td class="text-danger">Unclaimed</td>
                                       <td class="text-danger">09-12-2023</td>
-                                      <td class="tbl-action"><button class="btn btn-sub-1 px-5 align-self-center w-100">RESCHEDULE</button></td>
+                                      <td class="tbl-action"><button class="btn btn-sub-1 px-5 align-self-center w-100" onclick="gmoralRedirect()" >RESCHEDULE</button></td>
                                 </tr>
                                    <tr>
                                     <td></td>
@@ -250,7 +251,7 @@
                                     <td>SAMPLE NAME</td>
                                     <td>Pending</td>
                                     <td>--</td>
-                                    <td class="tbl-action"><button class="btn btn-sub-1 px-5 align-self-center w-100">SET</button></td>
+                                    <td class="tbl-action"><button class="btn btn-sub-1 px-5 align-self-center w-100" onclick="gmoralRedirect()" >SET</button></td>
                                 </tr>
                                 <tr>
                                     <td></td>
@@ -285,7 +286,7 @@
 
 
 
-
+    
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="css/bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"></script>
@@ -293,5 +294,9 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/toggle.js"></script>
     <script src="js/loading.js"></script>
+    <script src="js/new-page.js"></script>
+
+
+
 </body>
 </html>

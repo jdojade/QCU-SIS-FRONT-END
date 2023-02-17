@@ -25,6 +25,7 @@ $(document).ready(function(){
             $('.menu-container, .info').removeClass('show');
         });
     });
+    $('table.custom-table').DataTable();
 });
 
 function mouseLeave() {
