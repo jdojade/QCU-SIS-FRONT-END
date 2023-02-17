@@ -523,3 +523,71 @@ tbody tr td:nth-child(1){
     border-bottom-right-radius: 10px !important;
 }
 
+/* ---------------ACCOUNTING STYLE------------------*/
+
+.acc-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}.acc-nav ul{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}.acc-nav li{
+    margin-right: 10px;
+}.acc-nav a{
+    padding: .9rem 1.7rem;
+    font-weight: 800;
+    color: var(--primary);
+    border: 0
+}.acc-nav a:hover,
+.acc-nav a.active{
+    color: #F5F1F1;
+    background-color: var(--primary);
+    border: 0
+}
+
+
+/*-------- Table style --------*/
+
+.accounting-table{
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}.accounting-table thead{
+    background-color: var(--primary);
+    color: white;
+    text-align: center;
+    border: 19px solid var(--primary);
+    border-bottom: 15px solid white;
+    border-top: 0;
+}.accounting-table *{
+    padding: .7rem;
+    overflow: hidden;
+}.accounting-table tbody{
+    background-color: white;
+    border-top: 10px solid white;
+    border: 20px solid #F5F1F1;
+}.accounting-table tbody tr{
+    border-bottom: 10px solid #F5F1F1;
+    border-radius: 10px !important;
+    overflow: hidden;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+}.accounting-table tbody tr td:first-child {
+    border-top-left-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
+}.accounting-table tbody tr td:last-child {
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+}
+.accounting-table .total{
+    color:#FFF;
+    background-color: #274C77;
+
+}
