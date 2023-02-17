@@ -543,10 +543,10 @@ h1{
   right: 10px;
 }
 .student{
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 355px;
+    position: absolute;
+    bottom: -240px;
+    right: -50px;
+    width: 340px;
 }
 @media (max-width: 770px){
     #student_login .modal-dialog{
@@ -1142,6 +1142,34 @@ h1{
     }
 }
 
+
+/*----------evaluation form----------*/
+.eval-form{
+    --bs-table-bg: white;
+    overflow: hidden;
+    overflow-x: scroll;
+}.eval-form thead th,
+.eval-form tbody td{
+    font-size: 1.2rem;
+    align-self: center;
+    padding: 15px;
+}.eval-form thead th:first-child,
+.eval-form tbody td:first-child{
+    text-align: start;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}.eval-form tr:hover td{
+    color: black;
+    background-color: lightgray
+}
+.form-check-input:checked  {
+    background-color: var(--primary);
+    border-color: var(--light-btn);
+}
+
+
+
 /*-----------Smart Form-----------*/
 .step {
   display: none;
@@ -1253,7 +1281,7 @@ input[type=number] {
   justify-content: space-evenly;
   list-style: none;
   font-weight: bold;
-  margin-top: 50px;
+  margin: 1rem 0;
 }
 
 /*Gradeslip*/

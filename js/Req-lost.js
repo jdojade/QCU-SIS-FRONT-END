@@ -42,16 +42,14 @@ const firstBtn = document.getElementById("first_btn");
 
 
 /* inputs for company information */
-var nameError =    document.getElementById('nameError'); 
-var studNoError =  document.getElementById('studNoError'); 
-var studSecError = document.getElementById('studSecError'); 
-var supNameError = document.getElementById('supNameError'); 
-var supPosError =  document.getElementById('supPosError'); 
-var deptError =    document.getElementById('deptError');
-var comNameError = document.getElementById('comNameError'); 
-var comAddError =  document.getElementById('comAddError'); 
-var comNoError =   document.getElementById('comNoError'); 
-var supEmailError =document.getElementById('supEmailError');
+var nameError = document.getElementById('nameError');
+var studNoError = document.getElementById('studNoError'); 
+var studNoError = document.getElementById('studNoError'); 
+var courseError = document.getElementById('courseError'); 
+var campusError = document.getElementById('campusError'); 
+var addressError = document.getElementById('addressError');
+var conNoError =  document.getElementById('conNoError'); 
+var schoolyError = document.getElementById('schoolyError'); 
 
 firstBtn.addEventListener("click", () => {
     let vali =[
@@ -66,14 +64,11 @@ firstBtn.addEventListener("click", () => {
         var vals = [
           document.getElementById('studentName').value,
           document.getElementById('studentId').value, 
-          document.getElementById('studentSection').value,
-          document.getElementById('superiorName').value,
-          document.getElementById('superiorPosition').value,
-          document.getElementById('department').value,
-          document.getElementById('companyName').value,
-          document.getElementById('companyAdd').value,
-          document.getElementById('companyNumber').value,
-          document.getElementById('superiorEmail').value
+          document.getElementById('floatingSelect1').value,
+          document.getElementById('floatingSelect2').value,
+          document.getElementById('address').value,
+          document.getElementById('contactno').value,
+          document.getElementById('schooly').value,
         ]
         for (let i=1; i-1 <= vals.length; i++){
           let info = document.getElementById("info_"+i);

@@ -43,7 +43,11 @@ const firstBtn = document.getElementById("first_btn");
 /* inputs for information */
 var nameError =    document.getElementById('nameError'); 
 var studNoError =  document.getElementById('studNoError');
-var CampusError = document.getElementById('CampusError');
+var courseError = document.getElementById('courseError');
+var campusError = document.getElementById('campusError');
+var addressError = document.getElementById('addressError'); 
+var conNoError = document.getElementById('conNoError');
+var schoolyError = document.getElementById('schoolyError');
 var conNoError = document.getElementById('conNoError');
 
 firstBtn.addEventListener("click", () => {
@@ -58,6 +62,12 @@ firstBtn.addEventListener("click", () => {
         changeStep("next");
         var vals = [
           document.getElementById('studentName').value,
+          document.getElementById('studentId').value, 
+          document.getElementById('floatingSelect1').value,
+          document.getElementById('floatingSelect2').value,
+          document.getElementById('address').value,
+          document.getElementById('contactno').value,
+          document.getElementById('schooly').value,
           document.getElementById('studentId').value,
           document.getElementById('floatingSelect2').value,
           document.getElementById('contactno').value,
@@ -120,7 +130,7 @@ function validateconNo(){
         return false;
     }
     if (isValue.value.length !== 11){
-        conNoError.innerHTML = "Student No. should be 11 characters";
+        conNoError.innerHTML = "Contact No. should be 11 characters";
         isValue.classList.add('invalid');
         return false;
     }
