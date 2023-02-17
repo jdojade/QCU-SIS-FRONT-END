@@ -342,20 +342,6 @@ tbody tr td:nth-child(1){
   color: #13212B !important;
 }
 
-.table-info{
-  border-spacing: 2; 
-  border-collapse: collapse; 
-  background:var(--light-body);
-  border-radius: 10px;
-  overflow:hidden;
-  width:100%;
-  margin: 25px auto;
-  position:relative;
-}
-
-.tblGuidance {
-  box-shadow: none !important;
-}
 
 .tblGuidance td th{
   color: var(--light-btn);

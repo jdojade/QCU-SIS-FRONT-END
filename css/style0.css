@@ -75,7 +75,7 @@
   padding: 1.5rem 2.5rem !important;
 }
 
-th, td {
+.thead tr, th, td {
   background-color: #F5F1F1 !important;
   color: #002F49;
 }
