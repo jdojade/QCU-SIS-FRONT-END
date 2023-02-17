@@ -461,12 +461,11 @@ tbody tr td:nth-child(1){
 
 .search-container{
     float: right;
-}.search-container form{
     position: relative;
     display: flex;
     align-items: baseline;
     flex-direction: row;
-}.search-container form input{
+}.search-container input{
     padding: .4rem;
     border: solid .5px #274C77;
     border-radius: 8px;
@@ -522,6 +521,9 @@ tbody tr td:nth-child(1){
     border-top-right-radius: 10px !important;
     border-bottom-right-radius: 10px !important;
 }
+::-webkit-scrollbar {
+    display: none;
+}
 /*-------- Status --------*/
 .custom-table tbody td[status]::after{
     background-color: var(--bg-status);
@@ -561,7 +563,42 @@ tbody tr td:nth-child(1){
     padding-right: 1rem;
 }
 
-
-
-
-
+.dataTables_length label,
+.dataTables_filter label{
+    display: inline-flex;
+    align-items: baseline;
+}
+.dataTables_length select,
+.dataTables_filter input{
+    margin: 1rem .3rem;
+}
+.dataTables_filter,
+.dataTables_paginate{
+    display: flex !important;
+    justify-content: flex-end !important;
+}
+.pagination {
+    --bs-pagination-padding-x: 0.75rem;
+    --bs-pagination-padding-y: 0.375rem;
+    --bs-pagination-font-size: 1rem;
+    --bs-pagination-color: var(--primary);
+    --bs-pagination-bg: #fff;
+    --bs-pagination-border-width: 1px;
+    --bs-pagination-border-color: #dee2e6;
+    --bs-pagination-border-radius: 0.375rem;
+    --bs-pagination-hover-color: var(--bs-link-hover-color);
+    --bs-pagination-hover-bg: #e9ecef;
+    --bs-pagination-hover-border-color: #dee2e6;
+    --bs-pagination-focus-color: var(--bs-link-hover-color);
+    --bs-pagination-focus-bg: #e9ecef;
+    --bs-pagination-focus-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    --bs-pagination-active-color: #fff;
+    --bs-pagination-active-bg: var(--primary);
+    --bs-pagination-active-border-color: var(--light-btn);
+    --bs-pagination-disabled-color: #6c757d;
+    --bs-pagination-disabled-bg: #fff;
+    --bs-pagination-disabled-border-color: #dee2e6;
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+}
