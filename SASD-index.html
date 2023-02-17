@@ -50,9 +50,11 @@
             <span></span>
         </div>
         <ul class="menu"> 
-            <li class="active"><a href="SASD-index.html"><i class="fa-solid fa-house icon"></i>Home</a></li>
-            <li><a href="SASD.html"><i class="fa-solid fa-list-check icon"></i>Borrow Form</a></li>
-            <li><a><i class="fa-solid fa-right-from-bracket icon"></i>Logout</a></li>
+          <li class="active"><a href="SASD-index.html"><i class="fa-solid fa-house icon"></i>Home</a></li>
+          <li><a href="sasd-borrowed.html"><i class="fa-solid fa-file-export icon"></i>Borrowed</a></li>
+          <li><a href="sasd-fraction.html"><i class="fa-solid fa-comment icon"></i>Fraction</a></li>
+          <li><a href="sasd-balance.html"><i class="fa-solid fa-money-check-dollar icon"></i>Balance</a></li>
+          <li><a href="index.html"><i class="fa-solid fa-right-from-bracket icon"></i>Logout</a></li>
         </ul>
     </div>
 
@@ -126,10 +128,10 @@
         
         <div class="d-flex justify-content-between my-2">
           <div>
-            <h4 class="fw-bold">Borrow Forms</h4>
+            <h4 class="fw-bold">Borrowed Items</h4>
           </div>
           <div class="p-0">
-              <a href="SASD.html" class="text-decoration-none link-dark fw-semibold px-5">View All...</a>
+              <a href="sasd-borrowed.html" class="text-decoration-none link-dark fw-semibold px-5">View All...</a>
           </div>
       </div>
         <div class="d-flex justify-content-evenly analyticsTbl table-responsive">
@@ -137,44 +139,44 @@
             <table class="table table-hover">
                 <thead class="table-dark">
                     <tr>
-                        <th class="th-lg text-white">Item</th>
-                        <th class="th-lg text-white">Borrwed Date</th>
-                        <th class="th-lg text-white">Condition</th>
-                        <th class="th-lg text-white">Status</th>
-                        <th class="th-lg text-white">Date of Returning</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Laptop</td>
-                        <td>11-29-22</td>
-                        <td>Good</td>
-                        <td><button type="button" class="btn btn-1 btn-shadow btn-md" id="success"> Not Returned </button></td>
-                        <td>11-29-23</td>
-                      </tr>
-                         <tr>
-                        <td>Laptop</td>
-                        <td>11-29-22</td>
-                        <td>Repaired</td>
-                        <td><button type="button" class="btn btn-1 btn-shadow btn-md" id="success"> Not Returned </button></td>
-                        <td>11-29-23</td>
-                      </tr>
-                         <tr>
-                        <td>Pocket Wifi</td>
-                        <td>11-29-22</td>
-                        <td>Good</td>
-                        <td><button type="button" class="btn btn-1 btn-shadow btn-md" id="success"> Pending </button></td>
-                        <td>11-29-23</td>
-                      </tr>
-                         <tr>
-                        <td>Pocket Wifi</td>
-                        <td>11-29-22</td>
-                        <td>Repaired</td>
-                        <td><button type="button" class="btn btn-1 btn-shadow btn-md" id="success"> Pending </button></td>
-                        <td>11-29-23</td>
-                      </tr>
+                      <th scope="col">Item</th>
+                      <th scope="col">Borrwed Date</th>
+                      <th scope="col">Condition</th>
+                      <th scope="col">Status</th>
+                      <th scope="col">Date of Returning</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Laptop</td>
+                      <td>11-29-22</td>
+                      <td>Good</td>
+                      <td><a href="sasd-borrowed.html" class="btn btn-danger">Not Returned</a></td>
+                      <td>11-29-23</td>
+                    </tr>
+                    <tr>
+                      <td>Laptop</td>
+                      <td>11-29-22</td>
+                      <td>Repaired</td>
+                      <td><a href="sasd-borrowed.html" class="btn btn-success">Returned</a></td>
+                      <td>11-29-23</td>
+                    </tr>
+                       <tr>
+                      <td>Pocket Wifi</td>
+                      <td>11-29-22</td>
+                      <td>Good</td>
+                      <td><a href="sasd-borrowed.html" class="btn btn-danger">Not Returned</a></td>
+                      <td>11-29-23</td>
+                    </tr>
+                       <tr>
+                      <td>Pocket Wifi</td>
+                      <td>11-29-22</td>
+                      <td>Repaired</td>
+                      <td><a href="sasd-borrowed.html" class="btn btn-success">Returned</a></td>
+                      <td>11-29-23</td>
+                    </tr>
 
-                    </tbody>
+                  </tbody>
             </table>
       </div>
     </section>
@@ -183,12 +185,15 @@
 
 
 
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/jquery.dataTables.min.js"></script>
+  <script src="js/dataTables.bootstrap5.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
   <script src="css/bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"></script>
   <script src="css/bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
-  <script src="js/jquery.min.js"></script>
-  <script src="js/calendar.js"></script>
   <script src="js/toggle.js"></script>
   <script src="js/loading.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.bundle.js"></script>
+
 </body>
 </html> 
