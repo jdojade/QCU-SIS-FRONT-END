@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Borrow Form </title>
+    <link rel="stylesheet" href="css/fontawesome-free-6.2.1-web/css/all.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-5.2.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/evaluation.css">
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md sticky-top">
+        <div class="container-fluid p-0" >
+            <div class="d-flex flex-colum align-items-center">
+                <button class="btn-hamburger" type="button" id="hamburger">
+                    <div class="icon-hamburger"><span></span><span></span><span></span></div>
+                </button><span class="text-white fs-3">|</span>
+                <img src="img/1565034397472.jfif" alt="logo" class="logo rounded-circle">
+                <a href="student_dashboard.html" class="navbar-brand">&nbsp;Quezon City University</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i class="fa-solid fa-ellipsis-vertical text-white"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar nav p-0">
+                    <li class="navbar-item">
+                        <a href="student_dashboard.html" class="nav-link">HOME</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="inbox.html" class="nav-link">INBOX</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="nav-link">ABOUT QCU</a>
+                    </li>
+                    <li class="nav-item dropdown" onmouseleave="mouseLeave()">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="img/1565034397472.jfif" class="logo rounded-circle">
+                        </a>
+                        <ul class="dropdown-menu-cus text-center" style="right: 0;">
+                          <li><a class="dropdown-item" href="edit-profile.html">EDIT PROFILE</a></li>
+                          <li><a class="dropdown-item" href="#">REQUEST STATUS</a></li>
+                          <li><a class="dropdown-item" href="#">LOGOUT</a></li>
+                        </ul>
+                      </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="menu-container">
+        <ul class="menu">
+            <li><a href="Pre-Enrollment.html"><i class="fa-sharp fa-solid fa-clipboard icon"></i>PRE-ENROLLMENT</a></li>
+            <li><a href="req-doc.html"><i class="fa-solid fa-file-lines icon"></i>REQUEST DOCUMENT</a></li>
+            <li><a href="gradeslip.html"><i class="fa-solid fa-table-list icon"></i>GRADESLIP</a></li>
+            <li><a href="Course Curriculum.html"><i class="fa-solid fa-list icon "></i>CURRICULUM</a></li>
+            <li><a href="Evaluation.html"><i class="fa-solid fa-mobile-screen icon"></i>FACULTY EVALUATION</a></li>
+            <li><a href="vaccination.html"><i class="fa-solid fa-credit-card icon"></i>VACCINATION</a></li>
+            <li><a href="event.html"><i class="fa-solid fa-tag icon"></i>EVENTS</a></li>
+            <li><a href="Calendar.html"><i class="fa-solid fa-calendar-days icon"></i>UNIVERSITY CALENDAR</a></li>
+            <li><a href="faqs.html"><i class="fa-solid fa-info icon"></i>FAQS</a></li>
+        </ul>
+    </div>
+<!------------START BODY------------>
+    <div class="container-cus">
+<!------------START CONTENT------------>
+        <section class="container py-5">
+            <div class="headline">
+                <h1>BORROW FORM</h1>
+                <i class="fa-solid fa-address-book fa-3x"></i>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <form action="#" method="get">
+                    <div class="step step-1 active">
+                        <div style="top: -38px; position: absolute;">
+                            <h6><b>Kindly fill up the form.</b></h6>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-floating my-3">
+                                    <input type="text" class="form-control" id="studentName" name="Student Full Name" placeholder="Name" disabled value="ARLE DIDAL">
+                                    <label for="studentName"> Name </label>
+                                </div>
+                                <div class="form-floating my-3">
+                                    <select class="form-select" id="floatingSelect2" aria-label="Floating label select example">
+                                        <option selected hidden > Section </option>
+                                        <option value="SBIT-4A">SBIT-4A</option>
+                                        <option value="SBIT-4B">SBIT-4B</option>
+                                        <option value="SBIT-4C">SBIT-4C</option>
+                                        <option value="SBIT-4D">SBIT-4D</option>
+                                        <option value="SBIT-4E">SBIT-4E</option>
+                                        <option value="SBIT-4F">SBIT-4F</option>
+                                    </select>
+                                    <label for="floatingSelect"> Section </label>
+                                    <span id="CourseError"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating my-3">
+                                    <input type="number" class="form-control" id="studentId" name="Student Number" placeholder="Name" disabled value="171234">
+                                    <label for="studentId"> Student Number </label>
+                                </div>
+                                <div class="form-floating my-3">
+                                    <select class="form-select" id="floatingSelect1" aria-label="Floating label select example">
+                                        <option selected hidden >Choose your Course </option>
+                                        <option value="Bachelor of Science in Information Technology">Bachelor of Science in Information Technology</option>
+                                        <option value="Bachelor of Science in Industrial Engineering">Bachelor of Science in Industial Engineering</option>
+                                        <option value="Bachelor of Science in Accountancy">Bachelor of Science in Accountancy</option>
+                                        <option value="Bachelor of Science in Entrepreneur">Bachelor of Science in Entrepreneur</option>
+                                    </select>
+                                    <label for="floatingSelect"> Course </label>
+                                    <span id="CourseError"></span>
+                                </div>
+                            </div>
+                        </div>    
+                            <div class="col-md-12">
+                                <div class="form-floating my-3">
+                                    <select class="form-select" id="floatingSelect3" aria-label="Floating label select example">
+                                        <option selected hidden > --Select the item-- </option>
+                                        <option value="1">Pocket Wifi</option>
+                                        <option value="2">Laptop</option>
+                                    </select>
+                                    <label for="floatingSelect"> Item </label>
+                                    <span id="ItemError"></span>
+                                </div>
+                            </div>
+                        <section>
+                            <div class="container py-3" py-3>   
+                                <h6><b>Please upload the following requirements in .jpeg/.png format</b></h6>
+                            </div>    
+                            <div class="col-md-12">
+                                <div class="form-floating mb-3">
+                                    <input type="file" class="form-upload" id="req1" placeholder="Upload req1" name="photo">
+                                    <label for="photo"> </label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="file" class="form-upload" id="req2" placeholder="Upload req2" name="photo">
+                                    <label for="photo"> </label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="file" class="form-upload" id="req3" placeholder="Upload req3" name="photo">
+                                    <label for="photo"> </label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="file" class="form-upload" id="req4" placeholder="Upload req4" name="photo">
+                                    <label for="photo"> </label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="file" class="form-upload" id="req5" placeholder="Upload req5" name="photo">
+                                    <label for="photo"> </label>
+                                </div>
+                            </div>
+                        </section>
+                        <div class="form-footer">
+                            <div class="form-page">
+                                <span class="current"></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="form-button">
+                                <button type="button" class="next-btn btn btn-sm btn-sub-1 btn-shadow px-5" id="first_btn">NEXT</button>
+                                <button type="button" class="btn btn-sm btn-sub-2 btn-shadow px-5 me-4">CANCEL</button>
+                            </div>
+                        </div>
+                        <span id="submitError"></span>
+                    </div>
+                    <div class="step step-2">
+                        <div style="top: -38px;position: absolute;">
+                            <h6><b>Please review all the information you've entered before submitting the form. You can click "EDIT" to EDIT</b></h6>
+                        </div>
+                        <div class="row form-view">
+                            <div class="col-md-6">
+                                <h5>
+                                    <strong>Name:</strong>
+                                </h5>
+                                <h5>
+                                    <strong>Student Number:</strong>
+                                </h5>
+                                <h5>
+                                    <strong>Section:</strong>
+                                </h5>
+                                <h5>
+                                    <strong>Course:</strong>
+                                </h5>
+                                <h5>
+                                    <strong>Item:</strong>
+                                </h5>
+                                <h5>
+                                    <strong>Requirement 1:</strong>
+                                </h5>
+                                <h5>
+                                    <strong>Requirement 2:</strong>
+                                </h5>
+                                <h5>
+                                    <strong>Requirement 3:</strong>
+                                </h5>
+                                <h5>
+                                    <strong>Requirement 4:</strong>
+                                </h5>
+                                <h5>
+                                    <strong>Requirement 5:</strong>
+                                </h5>
+                            </div>
+                            <div class="col-md-6">
+                                <h5>
+                                    <strong>ARLE DIDAL</strong>
+                                </h5>
+                                <h5>
+                                    <strong>17-1234</strong>
+                                </h5>
+                                <h5>
+                                    <strong>SBIT-4F</strong>
+                                </h5>
+                                <h5>
+                                    <strong>BSIT</strong>
+                                </h5>
+                                <h5>
+                                    <strong>Pocket Wifi</strong>
+                                </h5>
+                                <h5>
+                                    <strong>requirement1.jpeg</strong>
+                                </h5>
+                                <h5>
+                                    <strong>requirement2.jpeg</strong>
+                                </h5>
+                                <h5>
+                                    <strong>requirement3.jpeg</strong>
+                                </h5>
+                                <h5>
+                                    <strong>requirement4.jpeg</strong>
+                                </h5>
+                                <h5>
+                                    <strong>requirement5.jpeg</strong>
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="form-footer">
+                            <div class="form-page">
+                                <span></span>
+                                <span class="current"></span>
+                                <span></span>
+                            </div>
+                            <div class="form-button">
+                                <button type="button" class="next-btn btn btn-sm btn-sub-1 btn-shadow px-5">NEXT</button>
+                                <button type="button" class="previous-btn btn btn-sm btn-sub-2 btn-shadow px-5 me-4">EDIT</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step step-3">
+                        <div style="top: -38px; position: absolute;">
+                            <h6><b>Success!</b></h6>
+                        </div>
+                        <div class="form-success">
+                            <img src="img/Success.png" alt="Success">
+                        </div>
+                        <div class="form-footer">
+                            <div class="form-page">
+                                <span></span>
+                                <span></span>
+                                <span class="current"></span>
+                            </div>
+                            <div class="form-button">
+                                <button type="submit" class="submit-btn btn btn-sm btn-sub-1 btn-shadow px-5">CONFIRM</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+<!------------END CONTENT------------>        
+</div>
+<!------------END BODY------------>
+
+    
+<!------------STAR FOOTER------------>
+    <footer id="sticky-footer" class="flex-shrink-0 py-1 text-white align-content-center">
+        <div class="container p-3">
+            <div class="row align-items-end">
+                <div class="col-md-5">
+                    <div class="row align-items-end">
+                        <div class="col-md-6">
+                            <span>VISIT AND CONTACT US ON:</span><br />
+                            <span><a href="https://www.facebook.com/qcu1994" class="text-decoration-none text-white"><i class="fa-brands fa-facebook"></i>&nbsp;@qcu1994</a></span><br />
+                            <span><a href="https://qcu.edu.ph/" class="text-decoration-none text-white"><i class="fa-sharp fa-solid fa-earth-asia"></i>&nbsp;https://qcu.edu.ph/</a></span>
+                        </div>
+                        <div class="col-md-6">
+                            <span><i class="fa-solid fa-envelope"></i>&nbsp;registrar@qcu.edu.ph</span><br />
+                            <span><i class="fa-solid fa-mobile-screen-button"></i>&nbsp;288063470</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 text-center">
+                    <img src="img/1565034397472.jfif" class="rounded-circle footer-brand" alt="Logo">
+                </div>
+                <div class="col-md-5">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <span>Terms and Conditions</span><br />
+                            <span>Frequently Asked Questions</span>
+                        </div>
+                        <div class="col-md-6">
+                            <span>Since 1994</span><br />
+                            <span>Copyright</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!------------END FOOTER------------>
+    <script src="css/bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="css/bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/toggle.js"></script>
+    <script src="js/calendar.js"></script>
+    <script src="js/loading.js"></script>
+</body>
+</html>
