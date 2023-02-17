@@ -453,12 +453,17 @@ tbody tr td:nth-child(1){
 
 /*----------------guidance analytics------------------- */
 
-.anaTbl1 {
-  width: 40% !important;
-  overflow-x: scroll;
+.analyticsTbl .table {
+  background-color: none !important;
 }
 
-.anaTbl2 {
-  width: 55% !important;
-  overflow-x: scroll;
+.analyticsTbl .table th {
+  background-color: #000000 !important;
+  color: #FFFFFF !important;
+  align-items: center;
+  text-align: center;
+}
+
+.link-dark {
+  color: #274C77 !important;
 }
