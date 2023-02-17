@@ -578,6 +578,112 @@ tbody tr td:nth-child(1){
     padding-right: 1rem;
 }
 
+}
+
+.search-container{
+    float: right;
+    position: relative;
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+}.search-container input{
+    padding: .4rem;
+    border: solid .5px #274C77;
+    border-radius: 8px;
+}.search-container button{
+    position: absolute;
+    top: 4px;
+    right: 2px;
+    border: 0;
+    padding: 5px;
+    background: transparent;
+}
+
+/*-------- count --------*/
+.count{
+    background-color: #F5F1F1;
+    padding: .5rem;
+    border-radius: .4rem;
+}
+
+/*-------- Table style --------*/
+
+.custom-table{
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}.custom-table thead{
+    background-color: var(--light-btn);
+    color: white;
+    text-align: center;
+    border: 19px solid var(--light-btn);
+    border-bottom: 15px solid white;
+    border-top: 0;
+}.custom-table *{
+    padding: .7rem;
+    overflow: hidden;
+}.custom-table tbody{
+    background-color: white;
+    border-top: 10px solid white;
+    border: 20px solid #F5F1F1;
+}.custom-table tbody tr{
+    border-bottom: 10px solid #F5F1F1;
+    border-radius: 10px !important;
+    overflow: hidden;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+}.custom-table tbody tr td:first-child {
+    border-top-left-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
+}.custom-table tbody tr td:last-child {
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+/*-------- Status --------*/
+.custom-table tbody td[status]::after{
+    background-color: var(--bg-status);
+    padding: 3px;
+    border-radius: 5px;
+    color: white;
+}
+
+.custom-table tbody td[status='_isNotReturned']::after{
+    --bg-status:red;
+    content: 'Not Returned';
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.custom-table tbody td[status='_isReturned']::after{
+    --bg-status: green;
+    content: 'Returned';
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.custom-table tbody td[status='_isUncleared']::after{
+     --bg-status:red;
+    content: 'Uncleared';
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.custom-table tbody td[status='_isCleared']::after{
+    --bg-status: green;
+    content: 'Cleared';
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+.custom-table tbody td[status='_isForEval']::after{
+    --bg-status: gray;
+    content: 'For Evaluation';
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
 .dataTables_length label,
 .dataTables_filter label{
     display: inline-flex;
