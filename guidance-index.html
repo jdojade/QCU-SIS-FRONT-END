@@ -126,128 +126,52 @@
 
 
 
-      <section class="p-2">
+      <section class="px-5">
+        <h4 class="fw-bold">Good Moral Requests</h4>
         <div class="d-flex justify-content-evenly">
-          <div class="d-flex flex-column table-responsive border-dark anaTbl1">
-            <div class="p-1 border-dark table-responsive ">
-              <h4>Good Moral Requests</h4>
-              <a href="admin-gmoral.html">View All</a>
-        <table class="table table-hover align-middle tblGuidance border-dark">
-            <thead class="table-dark">
-              <tr>
-                <th scope="col" class="th-lg text-white">Student Number</th>
-                <th scope="col" class="th-lg text-white">Name</th>
-                <th scope="col" class="th-lg text-white">Status</th>
+          
+            <table class="table table-hover">
+                <thead class="table-dark">
+                  <tr class="table-dark">
+                    <th>Student Number</th>
+                    <th scope="col" class="th-lg text-white">Name</th>
+                    <th scope="col" class="th-lg text-white">Status</th>
+                    <th scope="col" class="th-lg text-white">Approved Date</th>
+                    <th scope="col" class="th-lg text-white tbl-action">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                      <td>19-0000</td>
+                      <td>SAMPLE NAME</td>
+                      <td class="text-danger">Unclaimed</td>
+                      <td class="text-danger">09-12-2023</td>
+                      <td class="tbl-action"><button class="btn btn-sub-1 px-5 align-self-center w-100" onclick="gmoralRedirect()">RESCHEDULE</button></td>
+                </tr>
+                   <tr>
+                      <td>19-0000</td>
+                      <td>SAMPLE NAME</td>
+                      <td class="text-success">Claimed</td>
+                      <td>09-10-2023</td>
+                      <td class="tbl-action"><button class="btn btn-sub-1 px-5 align-self-center w-100" onclick="gmoralRedirect()" disabled>SET</button></td>
+                </tr>
+                   <tr>
+                      <td>19-0000</td>
+                      <td>SAMPLE NAME</td>
+                      <td>Pending</td>
+                      <td>--</td>
+                      <td class="tbl-action"><button class="btn btn-sub-1 px-5 align-self-center w-100" onclick="gmoralRedirect()" >SET</button></td>
+                </tr>
+                   <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td class="tbl-action"></td>
+                </tr>
 
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-                  <td>19-0000</td>
-                  <td>SAMPLE NAME</td>
-                  <td class="text-danger">Unclaimed</td>
-
-            </tr>
-               <tr>
-                  <td>19-0000</td>
-                  <td>SAMPLE NAME</td>
-                  <td class="text-success">Claimed</td>
-                  
-            </tr>
-               <tr>
-                  <td>19-0000</td>
-                  <td>SAMPLE NAME</td>
-                  <td>Pending</td>
-                  
-            </tr>
-               <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  
-            </tr>
-
-        </tbody>
-        </table>
-      </div>
-      <div class="p-1 border-1 table-responsive">
-        <h4>Counseling Requests</h4>
-        <a href="admin-counsel.html">View All</a>
-        <table class="table table-hover align-middle tblGuidance">
-            <thead class="table-dark">
-              <tr>
-                <th scope="col" class="th-lg text-white">Student Number</th>
-                <th scope="col" class="th-lg text-white w-25">Name</th>
-                <th scope="col" class="th-lg text-white">Status</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-                  <td>19-0000</td>
-                  <td>SAMPLE NAME</td>
-                  <td class="text-danger">Rescheduled</td>
-
-            </tr>
-               <tr>
-                  <td>19-0000</td>
-                  <td>SAMPLE NAME</td>
-                  <td class="text-success">Approved</td>
-
-            </tr>
-               <tr>
-                  <td>19-0000</td>
-                  <td>SAMPLE NAME</td>
-                  <td>Pending</td>
-
-                  
-            </tr>
-               <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-            </tr>
-
-          </tbody>
-        </table>
-      </div>
-      </div>
-
-      <div class="p-1 anaTbl2 border-1">
-        <h4>Scheduled Appointments</h4>
-        <a href="#">View All</a>
-        <div class="calendar">
-          <div class="calendar-header">
-              <div class="month">
-                  <h2 class="month-picker" id="month-picker"> May </h2>
-                  <h2 id="year">2020 </h2>
-              </div>
-            <div class="month-btn">
-              <span id="pre-month">
-                <i class="fa-solid fa-chevron-left"></i>
-              </span>
-              <span id="next-month">
-                <i class="fa-solid fa-chevron-right"></i>
-              </span>
-            </div>
-          </div>
-          <div class="calendar-body">
-            <div class="calendar-week-days">
-              <span>Sun</span>
-              <span>Mon</span>
-              <span>Tue</span>
-              <span>Wed</span>
-              <span>Thu</span>
-              <span>Fri</span>
-              <span>Sat</span>
-            </div>
-            <div class="calendar-days">
-            </div>
-          </div>
-
-          <div class="month-list"></div> 
-    </div>
-      </div>
-
+            </tbody>
+            </table>
       </div>
     </section>
     </div>
