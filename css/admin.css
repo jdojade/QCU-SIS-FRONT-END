@@ -495,10 +495,10 @@ tbody tr td:nth-child(1){
     border-radius: 10px;
     overflow: hidden;
 }.custom-table thead{
-    background-color: var(--primary);
+    background-color: var(--light-btn);
     color: white;
     text-align: center;
-    border: 19px solid var(--primary);
+    border: 19px solid var(--light-btn);
     border-bottom: 15px solid white;
     border-top: 0;
 }.custom-table *{
@@ -522,4 +522,46 @@ tbody tr td:nth-child(1){
     border-top-right-radius: 10px !important;
     border-bottom-right-radius: 10px !important;
 }
+/*-------- Status --------*/
+.custom-table tbody td[status]::after{
+    background-color: var(--bg-status);
+    padding: 3px;
+    border-radius: 5px;
+    color: white;
+}
+
+.custom-table tbody td[status='_isNotReturned']::after{
+    --bg-status:red;
+    content: 'Not Returned';
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.custom-table tbody td[status='_isReturned']::after{
+    --bg-status: green;
+    content: 'Returned';
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.custom-table tbody td[status='_isUncleared']::after{
+     --bg-status:red;
+    content: 'Uncleared';
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.custom-table tbody td[status='_isCleared']::after{
+    --bg-status: green;
+    content: 'Cleared';
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+.custom-table tbody td[status='_isForEval']::after{
+    --bg-status: gray;
+    content: 'For Evaluation';
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+
+
 
