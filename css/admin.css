@@ -87,11 +87,9 @@
     transform: rotate(45deg);
 }
 .dash{
-    padding: 1rem;
     background-color: var(--gray);
     border-radius: .5rem;
     overflow-x: scroll;
-    overflow-y: hidden;
 }
 .table{
     background-color: #F5F1F1;
@@ -451,4 +449,16 @@ tbody tr td:nth-child(1){
   padding: 0.5rem 1.5rem !important;
   border-radius: .5rem !important;
 
+}
+
+/*----------------guidance analytics------------------- */
+
+.anaTbl1 {
+  width: 40% !important;
+  overflow-x: scroll;
+}
+
+.anaTbl2 {
+  width: 55% !important;
+  overflow-x: scroll;
 }
