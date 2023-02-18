@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>QCU-SIS</title>
     <link rel="stylesheet" href="css/fontawesome-free-6.2.1-web/css/all.min.css"/>
     <link rel="stylesheet" href="css/bootstrap-5.2.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -16,38 +16,32 @@
         <div class="container-fluid" >
             <div class="d-flex flex-colum align-items-center">
                 <img src="img/1565034397472.jfif" alt="logo" class="logo rounded-circle">
-                <a href="#" class="navbar-brand fs-5 fw-bolder text-white">&nbsp;Quezon City University</a>
+                <a href="index.html" class="navbar-brand">&nbsp;Quezon City University</a>
             </div>
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                <!--<span class="navbar-toggler-icon"></span>-->
-                <div class="icon-sample"><span></span><span></span><span></span></div>
+                <span><i class="fa-solid fa-ellipsis-vertical text-white"></i></span>
             </button>
             <div class="navbar-cus navbar-collapse collapse justify-content-end" id="navcol-1">
-                <ul class="navbar-nav text-center">
+                <ul class="navbar-nav">
                     <li class="navbar-item">
-                        <a href="#" class="nav-link fs-6 fw-900 active">HOME</a>
+                        <a href="#" class="nav-link active">HOME</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="#" class="nav-link text-white fs-6 fw-900">CONTACT</a>
+                        <a href="#" class="nav-link">CONTACT</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="#" class="nav-link text-white fs-6 fw-900">ABOUT QCU</a>
+                        <a href="#" class="nav-link">ABOUT QCU</a>
                     </li> 
-                    <li class="navbar-item dropdown" onmouseleave="myMoveFunction()">
-                        <a href="#" class="nav-link text-white fs-6 fw-900 dropdown-toggle">LOGIN</a>
-                        <ul class="dropdown-menu-cus text-center" style="right: 0;" data-bs-keyboard="true" tabindex="-1" aria-hidden="false">
-                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#student_login">STUDENT</a></li>
-                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#moderator_login">MODERATOR</a></li>
-                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#superadmin_login">SUPER ADMIN</a></li>
-                        </ul>
+                    <li class="navbar-item">
+                        <a href="login.html" class="nav-link">LOGIN</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
     <div class="container-fluid p-0">
-        <section style="position: relative;">
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <section id="landing-carousel">
+            <div id="carouselExampleFade" class="carousel slide carousel-cus carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="img/Carousel image 1.jpg" class="d-block w-100" alt="...">
@@ -56,22 +50,19 @@
                         <img src="img/Carousel image 2.jpg" class="d-block w-100" alt="...">
                     </div>
                 </div>
+                <div class="opacity">
+                    <div class="container">
+                        <div class="qoute">
+                            <span>#</span><span>1</span><span>Q</span><span>C</span><span>U</span><span>!</span>
+                        </div>
+                        <p class="text-white fs-4 w-75">Quezon City University (QCU), formerly known as Quezon City Polytechnic University (QCPU), is a city government-funded university in Quezon City, Philippines.</p>
+                        <button class="btn btn-sub-1 btn-start" data-bs-toggle="modal" data-bs-target="#signIn">START YOUR JOURNEY</button>
+                    </div>
+                </div>
             </div>
-            <div class="bg-primary bg-opacity-50 w-100 h-100 d-flex align-items-center" style="position: absolute; top:0;">
-                <div class="container">
-                    <p class="qoute">
-                        <span class="text-white">#</span>
-                        <span class="text-white">1</span>
-                        <span style="color: #CDCDCB;">Q</span>
-                        <span class="text-white">C</span>
-                        <span style="color: #CDCDCB;">U</span>
-                        <span class="text-white">!</span>
-                    </p>
-                    <h3 class="text-white w-75">Quezon City University (QCU), formerly known as Quezon City Polytechnic University (QCPU), is a city government-funded university in Quezon City, Philippines.</h3>
-                    <br/>
-                    <button class="btn btn-sub-1 w-45" data-bs-toggle="modal" data-bs-target="#signIn">START YOUR JOURNEY</button>
-                </div>          
-            </div>
+
+                          
+
         </section>
         <section>
             <div class="container text-center">
@@ -89,7 +80,7 @@
                                         <h4>The QCU admission is will be open at November 11, 2022. Are you looking for university that has good quality education? Quezon University is now here for you!</h4>
                                         <br />
                                         <div class="w-100 d-flex justify-content-end">
-                                            <button class="btn btn-sub-1 w-50">DETAILS</button>
+                                            <button class="btn btn-sub-3 w-50">DETAILS</button>
                                         </div>
                                     </div>
                                 </div>
@@ -106,7 +97,7 @@
                                         <h4>The application for QCYP Pre-Session Activity will be extended up until November 26, 2022.</h4><br>
                                         <br />
                                         <div class="w-100 d-flex justify-content-end">
-                                            <button class="btn btn-sub-1 w-50">DETAILS</button>
+                                            <button class="btn btn-sub-3 w-50">DETAILS</button>
                                         </div>
                                     </div>
                                 </div>
@@ -132,43 +123,49 @@
                     <li>
                         <a href="#" class="d-flex text-decoration-none">
                             <i class="fa-sharp fa-solid fa-desktop"></i>
-                            <span></span>
-                            <h2>Bachelor of Science in Information Technology</h2>
+                            <div class="course-item">
+                                <h3>Bachelor of Science in Information Technology</h3>
+                            </div>
                         </a>
                     </li>
                     <li>
                         <a href="#" class="d-flex text-decoration-none">
                             <i class="fa-solid fa-code-branch"></i>
-                            <span></span>
-                            <h2>Bachelor of Science in Electrical Engineering</h2>
+                            <div class="course-item">
+                                <h3>Bachelor of Science in Electrical Engineering</h3>
+                            </div>
                         </a>
                     </li>
                     <li>
                         <a href="#" class="d-flex text-decoration-none">
                             <i class="fa-sharp fa-solid fa-calculator"></i>
-                            <span></span>
-                            <h2>Bachelor of Science in Accoutancy</h2>
+                            <div class="course-item">
+                                <h3>Bachelor of Science in Accoutancy</h3>
+                            </div>
                         </a>
                     </li>
                     <li>
                         <a href="#" class="d-flex text-decoration-none">
                             <i class="fa-sharp fa-solid fa-briefcase"></i>
-                            <span></span>
-                            <h2>Bachelor of Science in Entrepreneurship</h2>
+                            <div class="course-item">
+                                <h3>Bachelor of Science in Entrepreneurship</h3>
+                            </div>
                         </a>
                     </li>
                     <li>
                         <a href="#" class="d-flex text-decoration-none">
-                            <i class="eng"></i>
-                            <span></span>
-                            <h2>Bachelor of Science in Industrial Engineering</h2>
+                            <i class="fa-solid fa-gears"></i>
+                            <div class="course-item">
+                                <h3>Bachelor of Science in Industrial Engineering</h3>
+                            </div>
                         </a>
                     </li>
                     <li>
                         <a href="#" class="d-flex text-decoration-none">
                             <i class="fa-solid fa-puzzle-piece"></i>
-                            <span></span>
-                            <h2>Bachelor of Early Childhood Education</h2>
+                            <div class="course-item">
+                                <h3>Bachelor of Early Childhood Education</h3>
+                            </div>
                         </a>
                     </li>
                 </ul>
@@ -186,7 +183,7 @@
                             <li>Batasan Campus</li>
                             <li>San Francisco Campus</li>
                         </ul>
-                        <button class="btn btn-sub-1 btn-sm w-50">KNOW MORE</button>
+                        <button class="btn btn-sub-1 px-5">KNOW MORE</button>
                     </div>
                     <div class="col-md-5">
                         <img src="img/image 1.png" alt="" class="img-thumbnail border-0">
@@ -203,150 +200,75 @@
                         <li class="flex-item">
                             <a href="admission.html" class="d-flex text-decoration-none">
                                 <img src="img/Admission Icon blue.png" alt="" class="img-icon">
-                                <h3>Admission</h4>
+                                <h3>Admission</h3>
                             </a>
                         </li>
                         <li class="flex-item">
                             <a href="request.html" class="d-flex text-decoration-none">
                                 <img src="img/Request icon.png" alt="" class="img-icon">
-                                <h3>Request</h4>
+                                <h3>Request</h3>
                             </a>
                         </li>
                         <li class="flex-item">
                             <a href="inquire.html" class="d-flex text-decoration-none">
                                 <img src="img/Inquire icon.png" alt="" class="img-icon">
-                                <h3>Inquire</h4>
+                                <h3>Inquire</h3>
                             </a>
                         </li>
                     </ul>
-                    <button class="btn btn-sub-1 btn-sm w-25 align-self-center">ASK MORE</button>
+                    <button class="btn btn-sub-1 btn-sm px-5 align-self-center">ASK MORE</button>
                 </div>
             </div>
         </section>
     </div>
 
-    <!-- Modal -->
-    <!--Sart Sign in modal-->
+<!-- Modal -->
+    <!--Sart Sign in modal
     <div class="modal fade" id="student_login" tabindex="-1" aria-labelledby="student_login" aria-hidden="true">
-        <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content login-container">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                <p class="welcome text-center">Welcome back!</p>
                 <div class="login">
-                    <form action="" class="text-center justify-content-center">
-                        <div class="img-fluid">
-                            <img src="img/1565034397472.jfif" alt="" class="rounded-circle w-45">
+                    <form action="student_dashboard.html">
+                        <div class="img">
+                            <img src="img/1565034397472.jfif" alt="" class="rounded-circle">
                         </div>
                         <div class="mt-3">
                             <h1>Sign in to Account</h1>
                         </div>
                         <div class="mt-3">
                             <input type="text" name="stud-id" id="stud-id" class="form-field form-control form-control-lg form-control-sm" placeholder="Student Number" required="true">
+                            <span>sample Error message </span>
                         </div>
                         <div class="mt-3">
                             <input type="password" name="stud-pass" id="stud-pass" class="form-field form-control form-control-lg form-control-sm" placeholder="Password" required="true">
-                            <a href="#" class="text-decoration-none float-end text-body fw-bolder">Forget password?</a>
                         </div>
+                        <a href="#" class="text-decoration-none float-end text-body fw-bolder">Forget password?</a>
                         <div class="mt-5 text-sm-start w-100 d-flex justify-content-between">
-                            <button class="btn btn-sub-2 btn-shadow w-45" data-bs-dismiss="modal" aria-label="Close"><strong>CANCEL</strong></button>
-                            <button type="submit" class="btn btn-sub-1 btn-shadow w-45" id="success" data-bs-toggle="modal" data-bs-target="#request"><strong>SIGN IN</strong></button>
+                            <button class="btn btn-sub-2 btn-shadow btn-cus" data-bs-dismiss="modal" aria-label="Close"><strong>CANCEL</strong></button>
+                            <button type="submit" class="btn btn-sub-1 btn-shadow btn-cus" id="success"><strong>SIGN IN</strong></button>
                         </div>
                     </form>
                 </div>
-                <img src="https://i.ibb.co/FYz2tkc/Untitled-design-1-1.png" alt="Student" class="student">
+                <div>
+                    <p class="welcome text-center">Welcome back!</p>
+                    <img src="https://i.ibb.co/FYz2tkc/Untitled-design-1-1.png" alt="Student" class="student">
+                </div>
+                
             </div>
         </div>
     </div>
-    <!--End Sign in modal-->
-    <!--Start Request modal-->
-    <div class="modal fade" id="request" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="request" aria-hidden="true">
-        <div class="modal-dialog modal-md modal-dialog-centered">
-            <div class="modal-content p-5">
-                <div class="row">
-                    <div class="col-md-3">
-                        <i class="fas fa-warning fa-5x text-warning"></i>
-                    </div>
-                    <div class="col-md-9">
-                        <span clas>Your account is NOT ACTIVATED YET. Click the button below to request for account activation.</span>
-                    </div>
-                </div>
-                <div class="mt-5 text-sm-start w-100 d-flex justify-content-between">
-                    <button class="btn btn-sub-2 btn-shadow w-45" data-bs-dismiss="modal" aria-label="Close"><strong>CANCEL</strong></button>
-                    <button type="submit" class="btn btn-sub-1 btn-shadow w-45" id="request"><strong>REQUEST</strong></button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--End Request modal-->
-    <!--Start moderator modal-->
-    <div class="modal fade" id="moderator_login" tabindex="-1" aria-labelledby="moderator_login" aria-hidden="true">
-        <div class="modal-dialog modal-md modal-dialog-centered">
-            <div class="modal-content">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                <div class="moderator">
-                    <form action="" class="text-center justify-content-center">
-                        <div class="img-fluid">
-                            <img src="img/1565034397472.jfif" alt="" class="rounded-circle w-45">
-                        </div>
-                        <div class="mt-3">
-                            <h1>Login</h1>
-                        </div>
-                        <div class="mt-3">
-                            <input type="text" name="username" id="username" class="form-field form-control form-control-lg form-control-sm" placeholder="Username" required="true">
-                        </div>
-                        <div class="mt-3">
-                            <input type="password" name="password" id="password" class="form-field form-control form-control-lg form-control-sm" placeholder="Password" required="true">
-                            <a href="#" class="text-decoration-none float-end text-body fw-bolder">Forget password?</a>
-                        </div>
-                        <div class="mt-5 text-sm-start w-100 d-flex justify-content-between">
-                            <button class="btn btn-sub-2 btn-shadow w-45" data-bs-dismiss="modal" aria-label="Close"><strong>CANCEL</strong></button>
-                            <button type="submit" class="btn btn-sub-1 btn-shadow w-45" id="success"><strong>SIGN IN</strong></button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--End moderator modal-->
-    <!--Start superadmin modal-->
-    <div class="modal fade" id="superadmin_login" tabindex="-1" aria-labelledby="superadmin_login" aria-hidden="true">
-        <div class="modal-dialog modal-md modal-dialog-centered">
-            <div class="modal-content">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                <div class="superadmin">
-                    <form action="" class="text-center justify-content-center">
-                        <div class="img-fluid">
-                            <img src="img/1565034397472.jfif" alt="" class="rounded-circle w-45">
-                        </div>
-                        <div class="mt-3">
-                            <h1>Login</h1>
-                        </div>
-                        <div class="mt-3">
-                            <input type="text" name="username" id="username" class="form-field form-control form-control-lg form-control-sm" placeholder="Username" required="true">
-                        </div>
-                        <div class="mt-3">
-                            <input type="password" name="password" id="password" class="form-field form-control form-control-lg form-control-sm" placeholder="Password" required="true">
-                            <a href="#" class="text-decoration-none float-end text-body fw-bolder">Forget password?</a>
-                        </div>
-                        <div class="mt-5 text-sm-start w-100 d-flex justify-content-between">
-                            <button class="btn btn-sub-2 btn-shadow w-45" data-bs-dismiss="modal" aria-label="Close"><strong>CANCEL</strong></button>
-                            <button type="submit" class="btn btn-sub-1 btn-shadow w-45" id="success"><strong>SIGN IN</strong></button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--End superadmin modal-->
+    End Sign in modal-->
+<!--End Modal-->
 
 
-
-
-    <footer id="sticky-footer" class="flex-shrink-0 py-1 text-white align-content-center" style="background-color: #274C77;">
-        <div class="container">
+    
+<!------------STAR FOOTER------------>
+    <footer id="sticky-footer" class="flex-shrink-0 py-1 text-white align-content-center">
+        <div class="container p-3">
             <div class="row align-items-end">
                 <div class="col-md-5">
-                    <div class="row">
+                    <div class="row align-items-end">
                         <div class="col-md-6">
                             <span>VISIT AND CONTACT US ON:</span><br />
                             <span><a href="https://www.facebook.com/qcu1994" class="text-decoration-none text-white"><i class="fa-brands fa-facebook"></i>&nbsp;@qcu1994</a></span><br />
@@ -359,7 +281,7 @@
                     </div>
                 </div>
                 <div class="col-md-2 text-center">
-                    <img src="img/1565034397472.jfif" class="rounded-circle w-25" alt="Logo">
+                    <img src="img/1565034397472.jfif" class="rounded-circle footer-brand" alt="Logo">
                 </div>
                 <div class="col-md-5">
                     <div class="row">
@@ -376,11 +298,12 @@
             </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<!------------END FOOTER------------>
     <script src="css/bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"></script>
     <script src="css/bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/toggle.js"></script>
+    <script src="js/calendar.js"></script>
     <script src="js/loading.js"></script>
 </body>
 </html>

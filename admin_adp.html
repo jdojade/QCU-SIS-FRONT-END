@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment for Documents</title>
+    <link rel="stylesheet" href="css/bootstrap-5.2.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome-free-6.2.1-web/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/admin.css">
+
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-md sticky-top nav-admin">
+        <div class="container-cus d-flex w-100" >
+            <div class="d-flex flex-colum align-items-center">
+                <img src="img/1565034397472.jfif" alt="logo" class="logo rounded-circle">
+                <a href="#" class="navbar-brand fs-5 fw-bolder text-white">&nbsp;Quezon City University</a>
+            </div>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="icon-sample"><span></span><span></span><span></span></div>
+            </button>
+            <div class="navbar-cus navbar-collapse collapse justify-content-end" id="navcol-1">
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item dropdown" onmouseleave="mouseLeave()">
+                        <a class="nav-link dropdown-toggle" href="#" role="button">
+                            <img src="img/1565034397472.jfif" class="logo rounded-circle">
+                        </a>
+                        <ul class="dropdown-menu-cus text-center" style="right: 0;" data-bs-keyboard="true" tabindex="-1" aria-hidden="false">
+                            <li><a class="dropdown-item" href="#">ADMIN PROFILE</a></li>
+                            <li><a class="dropdown-item" href="index.html">LOGOUT</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="menu-container admin">
+        <div class="hamburger">
+            <button class="btn-hamburger" type="button" id="hamburger">
+                <div class="icon-hamburger"><span></span><span></span><span></span></div>
+            </button>
+        </div>     
+        <div class="info">
+            <img src="img/1565034397472.jfif" alt="logo" class=" rounded-circle">
+            <h3>Registrar Panel</h3>
+            <span></span>
+        </div>
+        <ul class="menu"> 
+            <li><a href="registrar-index.html"><i class="fa-solid fa-house icon"></i>Home</a></li>
+            <li><a href="admin-ad.html"><i class="fa-solid fa-file-import icon"></i>Submitted Document</a></li>
+            <li><a href="admin-sr.html"><i class="fa-solid fa-file-export icon"></i>Student Request</a></li>
+            <li class="active"><a href="admin_adp.html"><i class="fa-solid fa-calendar-check icon"></i>Appointments</a></li>
+            <li><a><i class="fa-solid fa-right-from-bracket icon"></i>Logout</a></li>
+        </ul>
+    </div>
+    <div class="container-cus">
+        <section class="px-5">
+            <div class="headline">
+                <h1>APPOINTMENTS FOR DOCUMENT PICKUPS</h1>
+                <i class="fa-solid fa-file-circle-check fa-3x"></i>
+            </div>
+            <div class="table-nav py-2">
+                <ul id="pills-tab" role="tablist">
+                    <li>
+                        <a class="btn fs-5 active " id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all" role="tab" aria-controls="pills-all" aria-selected="true">
+                        All
+                        </a>
+                    </li>
+                    <li>
+                        <a class="btn fs-5" id="pills-claimed-tab" data-bs-toggle="pill" data-bs-target="#pills-claimed" role="tab" aria-controls="pills-claimed" aria-selected="false">
+                        Claimed
+                        </a>
+                    </li>
+                    <li>
+                        <a class="btn fs-5" id="pills-unclaimed-tab" data-bs-toggle="pill" data-bs-target="#pills-unclaimed" role="tab" aria-controls="pills-unclaimed" aria-selected="false">
+                        Unclaimed
+                        </a>
+                    </li>
+                    <li>
+                        <a class="btn fs-5" id="pills-pending-tab" data-bs-toggle="pill" data-bs-target="#pills-pending" role="tab" aria-controls="pills-pending" aria-selected="false">
+                        Pending
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            </section>
+            <section class="px-5">
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab" tabindex="0">
+                    <div class="table-responsive">
+                        <table class="custom-table">
+                            <thead>
+                                <tr>
+                                <th scope="col">Student Number</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Document</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Date</th>
+                                <th scope="col">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <td>17-1034</td>
+                                <td>Jade Oloroso</td>
+                                <td>CTC</td>
+                                <td class="text-danger">unclaimed</td>
+                                <td class="text-danger">11-29-23</td>
+                                <td><button type="button" class="btn btn-sub-1 btn-shadow btn-sm px-3 py-1" id="success"> RESCHEDULE </button></td>
+                                </tr>
+                                <tr>
+                                <td>17-1034</td>
+                                <td>Jade Oloroso</td>
+                                <td>CTC</td>
+                                <td class="text-danger">unclaimed</td>
+                                <td class="text-danger">11-29-23</td>
+                                <td><button type="button" class="btn btn-sub-1 btn-shadow btn-sm px-3 py-1" id="success"> RESCHEDULE </button></td>
+                                </tr>
+                                <tr>
+                                <td>17-1034</td>
+                                <td>Jade Oloroso</td>
+                                <td>CTC</td>
+                                <td class="text-danger">unclaimed</td>
+                                <td class="text-danger">11-29-23</td>
+                                <td><button type="button" class="btn btn-sub-1 btn-shadow btn-sm px-3 py-1" id="success"> RESCHEDULE </button></td>
+                                </tr>
+                                <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="text-danger"></td>
+                                <td class="text-danger"></td>
+                                <td></button></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-claimed" role="tabpanel" aria-labelledby="pills-claimed-tab" tabindex="0">
+                    <div class="table-responsive">    
+                        <table class="custom-table">
+                            <thead>
+                                <tr>
+                                <th scope="col">Student Number</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Document</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Date</th>
+                                <th scope="col">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <td>17-1034</td>
+                                <td>Jade Oloroso</td>
+                                <td>CTC</td>
+                                <td class="text-danger">unclaimed</td>
+                                <td class="text-danger">11-29-23</td>
+                                <td><button type="button" class="btn btn-sub-1 btn-shadow btn-sm px-3 py-1" id="success"> RESCHEDULE </button></td>
+                                </tr>
+                                <tr>
+                                <td>17-1034</td>
+                                <td>Jade Oloroso</td>
+                                <td>CTC</td>
+                                <td class="text-danger">unclaimed</td>
+                                <td class="text-danger">11-29-23</td>
+                                <td><button type="button" class="btn btn-sub-1 btn-shadow btn-sm px-3 py-1" id="success"> RESCHEDULE </button></td>
+                                </tr>
+                                <tr>
+                                <td>17-1034</td>
+                                <td>Jade Oloroso</td>
+                                <td>CTC</td>
+                                <td class="text-danger">unclaimed</td>
+                                <td class="text-danger">11-29-23</td>
+                                <td><button type="button" class="btn btn-sub-1 btn-shadow btn-sm px-3 py-1" id="success"> RESCHEDULE </button></td>
+                                </tr>
+                                <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="text-danger"></td>
+                                <td class="text-danger"></td>
+                                <td></button></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                    </div>
+                    </div>
+                
+                    <div class="tab-pane fade" id="pills-unclaimed" role="tabpanel" aria-labelledby="pills-unclaimed-tab" tabindex="0">
+                    <div class="table-responsive">    
+                        <table class="custom-table">
+                            <thead>
+                                <tr>
+                                <th scope="col">Student Number</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Document</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Date</th>
+                                <th scope="col">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <td>17-1034</td>
+                                <td>Jade Oloroso</td>
+                                <td>CTC</td>
+                                <td class="text-danger">unclaimed</td>
+                                <td class="text-danger">11-29-23</td>
+                                <td><button type="button" class="btn btn-sub-1 btn-shadow btn-sm px-3 py-1" id="success"> RESCHEDULE </button></td>
+                                </tr>
+                                <tr>
+                                <td>17-1034</td>
+                                <td>Jade Oloroso</td>
+                                <td>CTC</td>
+                                <td class="text-danger">unclaimed</td>
+                                <td class="text-danger">11-29-23</td>
+                                <td><button type="button" class="btn btn-sub-1 btn-shadow btn-sm px-3 py-1" id="success"> RESCHEDULE </button></td>
+                                </tr>
+                                <tr>
+                                <td>17-1034</td>
+                                <td>Jade Oloroso</td>
+                                <td>CTC</td>
+                                <td class="text-danger">unclaimed</td>
+                                <td class="text-danger">11-29-23</td>
+                                <td><button type="button" class="btn btn-sub-1 btn-shadow btn-sm px-3 py-1" id="success"> RESCHEDULE </button></td>
+                                </tr>
+                                <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="text-danger"></td>
+                                <td class="text-danger"></td>
+                                <td></button></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                    </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-pending" role="tabpanel" aria-labelledby="pills-pending-tab" tabindex="0">
+                    <div class="table-responsive">    
+                        <table class="custom-table">
+                            <thead>
+                                <tr>
+                                <th scope="col">Student Number</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Document</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Date</th>
+                                <th scope="col">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <td>17-1034</td>
+                                <td>Jade Oloroso</td>
+                                <td>CTC</td>
+                                <td class="text-danger">unclaimed</td>
+                                <td class="text-danger">11-29-23</td>
+                                <td><button type="button" class="btn btn-sub-1 btn-shadow btn-sm px-3 py-1" id="success"> RESCHEDULE </button></td>
+                                </tr>
+                                <tr>
+                                <td>17-1034</td>
+                                <td>Jade Oloroso</td>
+                                <td>CTC</td>
+                                <td class="text-danger">unclaimed</td>
+                                <td class="text-danger">11-29-23</td>
+                                <td><button type="button" class="btn btn-sub-1 btn-shadow btn-sm px-3 py-1" id="success"> RESCHEDULE </button></td>
+                                </tr>
+                                <tr>
+                                <td>17-1034</td>
+                                <td>Jade Oloroso</td>
+                                <td>CTC</td>
+                                <td class="text-danger">unclaimed</td>
+                                <td class="text-danger">11-29-23</td>
+                                <td><button type="button" class="btn btn-sub-1 btn-shadow btn-sm px-3 py-1" id="success"> RESCHEDULE </button></td>
+                                </tr>
+                                <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="text-danger"></td>
+                                <td class="text-danger"></td>
+                                <td></button></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                    </div>
+                    </div> 
+                </div>           
+            </section>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="css/bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="css/bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/toggle.js"></script>
+    <script src="js/loading.js"></script>
+</body>
+</html>

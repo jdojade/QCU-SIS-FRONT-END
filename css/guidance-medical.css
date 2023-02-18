@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800;900&display=swap');
+:root {
+    --dark-text: #f8fbff;
+    --light-body: #f3f8fe;
+    --light-main: #fdfdfd;
+    --light-second: #c3c2c8;
+    --light-hover: #f0f0f0;
+    --light-text: #151426;
+    --light-btn: #274C77;
+    --blue: #0000ff;
+    --white: #fff;
+    --black: #000;
+    --primary: #13212B;
+    --shadow: 4px 6px 4px rgba(0, 0, 0, 0.25);
+  }
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+/* --------------------Guidance----------------- */
+
+.table-info{
+    border-spacing: 2; 
+    border-collapse: collapse; 
+    background:var(--light-body);
+    border-radius: 10px;
+    overflow:hidden;
+    width: 100%;
+    margin: 25px auto;
+    position:relative;
+}
+td,th{
+    color: var(--light-btn);
+    height: 70px;
+    text-align: center;
+}
+thead tr { 
+    height:80px;
+    background:var(--light-btn);
+    font-size:16px;
+}
+  tbody tr {
+    height:48px;
+    border-bottom:1px solid #E3F1D5 ;
+}
+ &:last-child  {
+ border:0; 
+}
+tbody tr td:nth-child(1){
+  font-weight: 800;
+}
+
+/* --------------------Resposive------------------- */

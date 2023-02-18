@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guidance</title>
+    <link rel="stylesheet" href="css/fontawesome-free-6.2.1-web/css/all.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-5.2.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="shortcut icon" href="src/QCU logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/style0.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md sticky-top">
+        <div class="container-fluid p-0" >
+            <div class="d-flex flex-colum align-items-center">
+                <button class="btn-hamburger" type="button" id="hamburger">
+                    <div class="icon-hamburger"><span></span><span></span><span></span></div>
+                </button><span class="text-white fs-3">|</span>
+                <img src="img/1565034397472.jfif" alt="logo" class="logo rounded-circle">
+                <a href="student_dashboard.html" class="navbar-brand">&nbsp;Quezon City University</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i class="fa-solid fa-ellipsis-vertical text-white"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar nav p-0">
+                    <li class="navbar-item">
+                        <a href="student_dashboard.html" class="nav-link">HOME</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="inbox.html" class="nav-link">INBOX</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="nav-link">ABOUT QCU</a>
+                    </li>
+                    <li class="nav-item dropdown" onmouseleave="mouseLeave()">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="img/1565034397472.jfif" class="logo rounded-circle">
+                        </a>
+                        <ul class="dropdown-menu-cus text-center" style="right: 0;">
+                          <li><a class="dropdown-item" href="#">EDIT PROFILE</a></li>
+                          <li><a class="dropdown-item" href="#">REQUEST STATUS</a></li>
+                          <li><a class="dropdown-item" href="#">LOGOUT</a></li>
+                        </ul>
+                      </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="menu-container">
+        <ul class="menu">
+            <li><a href="Pre-Enrollment.html"><i class="fa-sharp fa-solid fa-clipboard icon"></i>PRE-ENROLLMENT</a></li>
+            <li><a href="req-doc.html"><i class="fa-solid fa-file-lines icon"></i>REQUEST DOCUMENT</a></li>
+            <li><a href="gradeslip.html"><i class="fa-solid fa-table-list icon"></i>GRADESLIP</a></li>
+            <li><a href="Course Curriculum.html"><i class="fa-solid fa-list icon "></i>CURRICULUM</a></li>
+            <li><a href="Evaluation.html"><i class="fa-solid fa-mobile-screen icon"></i>FACULTY EVALUATION</a></li>
+            <li><a href="vaccination.html"><i class="fa-solid fa-credit-card icon"></i>VACCINATION</a></li>
+            <li><a href="event.html"><i class="fa-solid fa-tag icon"></i>EVENTS</a></li>
+            <li><a href="Calendar.html"><i class="fa-solid fa-calendar-days icon"></i>UNIVERSITY CALENDAR</a></li>
+            <li><a href="faqs.html"><i class="fa-solid fa-info icon"></i>FAQS</a></li>
+        </ul>
+    </div>
+<!------------START BODY------------>
+    <div class="container-cus">
+<!------------START CONTENT------------>
+        <section>
+
+            <div class="container m-auto">
+                <form action="#" class="main-heading" id="heading">
+                    <h1 class="fs-1">GUIDANCE AND COUNSELLING DASHBOARD<i class="fa-sharp fa-solid fa-file-circle-check fa-2x"></i></h1>
+                    <hr class="my-2">&nbsp;
+
+                    <div class="d-flex py-2">
+                        <h5>STUDENT NAME:</h5>
+                        <a href="edit-profile.html" class="text-decoration-none link-secondary">
+                            <h5 class="font-weight-bold m-0">&nbsp; Example name</h5></a>
+                            <br>
+                        </div>
+
+                        <ul class="nav nav-pills nav-fill mb-3 " id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link gtab fs-5 fw-semibold px-5 active" id="pills-services-tab" data-bs-toggle="pill" data-bs-target="#pills-services" type="button" role="tab" aria-controls="pills-services" aria-selected="true">
+                                Services
+                              </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link gtab fs-5 fw-semibold px-5" id="pills-penalty-tab" data-bs-toggle="pill" data-bs-target="#pills-penalty" type="button" role="tab" aria-controls="pills-penalty" aria-selected="false">
+                                Penalty Records
+                              </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link gtab fs-5 fw-semibold px-5" id="pills-counsel-tab" data-bs-toggle="pill" data-bs-target="#pills-counsel" type="button" role="tab" aria-controls="pills-counsel" aria-selected="false">
+                                Counselling Records
+                              </button>
+                            </li>
+                            
+                          </ul>
+                          <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-services" role="tabpanel" aria-labelledby="pills-services-tab" tabindex="0">
+                                <div class="m-auto">
+                                    <div class="card bg-dark bg-opacity-10 border-0 p-4 my-1">
+                                        <ul class="flex-container g1">
+                                            <li class="flex-item">
+                                                <a href="#" class="d-flex text-decoration-none p-3 lcon">
+                                                    <span><i class="fa-sharp fa-solid fa-pen fa-lg"></i></span>
+                                                    <h3>Assessment &amp; Appraisal</h3>
+                                                    <button class="btn btn-sub-1 px-5 align-self-center" data-bs-toggle="modal" data-bs-target="#ans-req">ANSWER</button>
+                                                </a>
+                                            </li>
+                                            <li class="flex-item">
+                                                <a href="#" class="d-flex text-decoration-none p-3 lcon">
+                                                    <span><i class="fa-sharp fa-solid fa-user-group fa-lg"></i></span>
+                                                    <h3>Counselling Services</h3>
+                                                    <button class="btn btn-sub-1 px-5 align-self-center">SCHEDULE</button>
+                                                </a>
+                                            </li>
+                                            <li class="flex-item">
+                                                <a href="#" class="d-flex text-decoration-none p-3 lcon">
+                                                    <span><i class="fa-sharp fa-solid fa-file-lines fa-lg"></i></span>
+                                                    <h3>Request Good Moral</h3>
+                                                    <button class="btn btn-sub-1 px-5 align-self-center">REQUEST</button>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="pills-penalty" role="tabpanel" aria-labelledby="pills-penalty-tab" tabindex="0">
+                                <div class="table-border table-responsive penalty-rec">    
+                                    <table class="table-info pen-rec">
+                                        <thead>
+                                          <tr>
+                                            <th class="th-lg text-white">Date</th>
+                                            <th class="th-lg text-white">Violation</th>
+                                            <th class="th-lg text-white">Penalty</th>
+                                            <th class="th-lg text-white">Duration</th>
+                                            <th class="th-lg text-white">Penalty Status</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td>09-05-2022</td>
+                                            <td>Cheating</td>
+                                            <td>Community Service</td>
+                                            <td>09-09-2022 to 09-09-2022</td>
+                                            <td></td>
+                                          </tr>
+                                             <tr>
+                                            <td>09-05-2022</td>
+                                            <td>Cheating</td>
+                                            <td>Community Service</td>
+                                            <td>09-09-2022 to 09-09-2022</td>
+                                            <td></td>
+                                          </tr>
+                                             <tr>
+                                            <td>09-05-2022</td>
+                                            <td>Cheating</td>
+                                            <td>Community Service</td>
+                                            <td>09-09-2022 to 09-09-2022</td>
+                                            <td></td>
+                                          </tr>
+                                             <tr>
+                                            <td>09-05-2022</td>
+                                            <td>Cheating</td>
+                                            <td>Community Service</td>
+                                            <td>09-09-2022 to 09-09-2022</td>
+                                            <td class="text-success">Cleared</td>
+                                          </tr>
+             
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="pills-counsel" role="tabpanel" aria-labelledby="pills-counsel-tab" tabindex="0">
+                                <div class="table-border table-responsive penalty-rec">    
+                                    <table class="table-info pen-rec">
+                                        <thead>
+                                          <tr>
+                                            <th class="th-lg text-white">Date</th>
+                                            <th class="th-lg text-white">Time</th>
+                                            <th class="th-lg text-white">Counselor</th>
+                                            <th class="th-lg text-white">Duration</th>
+                                            <th class="th-lg text-white">Status</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td>09-05-2022</td>
+                                            <td>10:00am</td>
+                                            <td>Dr. Dina Vas</td>
+                                            <td>---</td>
+                                            <td>Pending</td>
+                                          </tr>
+                                             <tr>
+                                            <td>09-05-2022</td>
+                                            <td>10:00am</td>
+                                            <td>Dr. Dina Vas</td>
+                                            <td>3HRS</td>
+                                            <td class="text-success">Completed</td>
+                                          </tr>
+                                             <tr>
+                                            <td>09-05-2022</td>
+                                            <td>10:00am</td>
+                                            <td>Dr. Dina Vas</td>
+                                            <td>3HRS</td>
+                                            <td class="text-success">Completed</td>
+                                          </tr>
+                                             <tr>
+                                            <td>09-05-2022</td>
+                                            <td>10:00am</td>
+                                            <td>Dr. Dina Vas</td>
+                                            <td>3HRS</td>
+                                            <td class="text-success">Completed</td>
+                                          </tr>
+             
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            
+                          </div>
+                    
+                        
+        </section>
+
+<!-- Modal -->
+<div class="modal fade" id="ans-req" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="ans-reqLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="my-4">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="fs-3 text-center">
+            Click confirm to answer the assessment in Google Form
+          </p>
+        </div>
+        <div class="my-4 d-flex justify-content-between">
+            <button type="button" class="btn btn-danger px-4 mx-5 fw-bold" data-bs-dismiss="modal">CANCEL</button>
+            <button type="button" class="btn btn-success px-4 mx-5 fw-bold">CONFIRM</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!------------END CONTENT------------>        
+    </div>
+<!------------END BODY------------>
+
+    
+<!------------STAR FOOTER------------>
+    <footer id="sticky-footer" class="flex-shrink-0 py-1 text-white align-content-center">
+        <div class="container p-3">
+            <div class="row align-items-end">
+                <div class="col-md-5">
+                    <div class="row align-items-end">
+                        <div class="col-md-6">
+                            <span>VISIT AND CONTACT US ON:</span><br />
+                            <span><a href="https://www.facebook.com/qcu1994" class="text-decoration-none text-white"><i class="fa-brands fa-facebook"></i>&nbsp;@qcu1994</a></span><br />
+                            <span><a href="https://qcu.edu.ph/" class="text-decoration-none text-white"><i class="fa-sharp fa-solid fa-earth-asia"></i>&nbsp;https://qcu.edu.ph/</a></span>
+                        </div>
+                        <div class="col-md-6">
+                            <span><i class="fa-solid fa-envelope"></i>&nbsp;registrar@qcu.edu.ph</span><br />
+                            <span><i class="fa-solid fa-mobile-screen-button"></i>&nbsp;288063470</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 text-center">
+                    <img src="img/1565034397472.jfif" class="rounded-circle footer-brand" alt="Logo">
+                </div>
+                <div class="col-md-5">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <span>Terms and Conditions</span><br />
+                            <span>Frequently Asked Questions</span>
+                        </div>
+                        <div class="col-md-6">
+                            <span>Since 1994</span><br />
+                            <span>Copyright</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!------------END FOOTER------------>
+    <script src="css/bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="css/bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/toggle.js"></script>
+    <script src="js/calendar.js"></script>
+    <script src="js/loading.js"></script>
+</body>
+</html>

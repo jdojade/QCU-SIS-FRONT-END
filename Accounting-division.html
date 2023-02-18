@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Accounting Division </title>
+    <link rel="stylesheet" href="css/fontawesome-free-6.2.1-web/css/all.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-5.2.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-md sticky-top">
+        <div class="container-fluid p-0" >
+            <div class="d-flex flex-colum align-items-center">
+                <button class="btn-hamburger" type="button" id="hamburger">
+                    <div class="icon-hamburger"><span></span><span></span><span></span></div>
+                </button><span class="text-white fs-3">|</span>
+                <img src="img/1565034397472.jfif" alt="logo" class="logo rounded-circle">
+                <a href="student_dashboard.html" class="navbar-brand">&nbsp;Quezon City University</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i class="fa-solid fa-ellipsis-vertical text-white"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar nav p-0">
+                    <li class="navbar-item">
+                        <a href="student_dashboard.html" class="nav-link">HOME</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="inbox.html" class="nav-link">INBOX</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="nav-link">ABOUT QCU</a>
+                    </li>
+                    <li class="nav-item dropdown" onmouseleave="mouseLeave()">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="img/1565034397472.jfif" class="logo rounded-circle">
+                        </a>
+                        <ul class="dropdown-menu-cus text-center" style="right: 0;">
+                          <li><a class="dropdown-item" href="edit-profile.html">EDIT PROFILE</a></li>
+                          <li><a class="dropdown-item" href="#">REQUEST STATUS</a></li>
+                          <li><a class="dropdown-item" href="#">LOGOUT</a></li>
+                        </ul>
+                      </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="menu-container">
+        <ul class="menu">
+            <li><a href="Pre-Enrollment.html"><i class="fa-sharp fa-solid fa-clipboard icon"></i>PRE-ENROLLMENT</a></li>
+            <li><a href="req-doc.html"><i class="fa-solid fa-file-lines icon"></i>REQUEST DOCUMENT</a></li>
+            <li><a href="gradeslip.html"><i class="fa-solid fa-table-list icon"></i>GRADESLIP</a></li>
+            <li><a href="Course Curriculum.html"><i class="fa-solid fa-list icon "></i>CURRICULUM</a></li>
+            <li><a href="Evaluation.html"><i class="fa-solid fa-mobile-screen icon"></i>FACULTY EVALUATION</a></li>
+            <li><a href="vaccination.html"><i class="fa-solid fa-credit-card icon"></i>VACCINATION</a></li>
+            <li><a href="event.html"><i class="fa-solid fa-tag icon"></i>EVENTS</a></li>
+            <li><a href="Calendar.html"><i class="fa-solid fa-calendar-days icon"></i>UNIVERSITY CALENDAR</a></li>
+            <li><a href="faqs.html"><i class="fa-solid fa-info icon"></i>FAQS</a></li>
+        </ul>
+    </div>
+<!------------START BODY------------>
+    <div class="container-cus">
+<!------------START CONTENT------------>
+    <section class="p-5">
+            <div class="headline">
+                <h1>ACCOUNTING DIVISION</h1>
+                <i class="fa-solid fa-file-circle-check fa-3x"></i>
+            </div>
+            <div class="container m-auto">
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex mx-0 py-3">
+                        <h5 class="fw-bold">STUDENT NAME:</h5>
+                        <a href="edit-profile.html" class="text-decoration-none link-secondary">
+                            <h5 class="font-weight-bold m-0">&nbsp; Example name</h5></a>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+        </section>         
+        <section class="px-5">
+            <div class="acc-nav">
+                <ul id="pills-tab" role="tablist">
+                    <li>
+                        <a class="btn active" id="pills-services-tab" data-bs-toggle="pill" data-bs-target="#pills-services" role="tab" aria-controls="pills-services" aria-selected="true">
+                        Student Fee
+                        </a>
+                    </li>
+                    <li>
+                        <a class="btn" id="pills-penalty-tab" data-bs-toggle="pill" data-bs-target="#pills-penalty" role="tab" aria-controls="pills-penalty" aria-selected="false">
+                        Request SOA
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="px-5">
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-services" role="tabpanel" aria-labelledby="pills-services-tab" tabindex="0">
+                        <div class="table-responsive">
+                        <table class="accounting-table">
+                            <thead>
+                              <tr>
+                                <th scope="col">Student Account</th>
+                                <th scope="col">Amount</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Tuition Fee - 12 Units</td>
+                                <td>3,640.08</td>
+                              </tr>
+                                 <tr>
+                                <td>Development Fee</td>
+                                <td>400.00</td>
+                              </tr>
+                                 <tr>
+                                <td>Registration</td>
+                                <td>200.00</td>
+                              </tr>
+                              <tr>
+                                <td>Cultural Fee</td>
+                                <td>100.00</td>
+                              </tr>
+                                 <tr>
+                                <td>Student Welfare</td>
+                                <td>50.00</td>
+                              </tr>
+                                 <tr>
+                                <td>Medical & Dental</td>
+                                <td>50.00</td>
+                              </tr>
+                              <tr>
+                                <td>Athletics & Sports Dev.</td>
+                                <td>50.00</td>
+                              </tr>
+                                 <tr>
+                                <td>Comp/ Major Lab</td>
+                                <td>250.00</td>
+                              </tr>
+                                 <tr>
+                                <td>Library Fee</td>
+                                <td>100.00</td>
+                              </tr>
+                              <tr>
+                                <td>Student Council Fee</td>
+                                <td>40.00</td>
+                                
+                              </tr>
+                              <tr class="total">
+                                <td>
+                                Total:<br>
+                                Total Running Balance:  
+                                </td>
+                                <td>
+                                    4,980.08<br>
+                                    0
+                                </td>
+                               </tr>
+                            </tbody>
+                            
+                        </table>
+                        <div class="form-button">
+                            <button type="button" class="next-btn btn btn-sm btn-sub-1 btn-shadow px-5">PRINT</button>
+                            <button type="button" class="previous-btn btn btn-sm btn-sub-2 btn-shadow px-5 me-4">BACK</button>
+                        </div>   
+                    </div>
+                </div>     
+            <div class="tab-pane fade" id="pills-penalty" role="tabpanel" aria-labelledby="pills-penalty-tab" tabindex="0">       
+            <div class="container m-auto">
+                <div>
+                    <h2 class="fw-bold">PROCEDURE FOR REQUESTING SOA</h2>
+                </div>
+                <div class="card bg-dark bg-opacity-10 border-0 p-4 my-3">    
+                    <ol class="paragraph">
+                    <h4 class="fw-bold">Here are the procedures on how to request a STATEMENT OF ACCOUNT:</h4>
+                    <li class="fs-5 fw-300">Proceed to the Admin Building, 2nd Floor then go to the Accounting Office.</li>
+                    <li class="fs-5 fw-300">Go to the available window and ask the accounting staff that you're requesting for
+                        a statement of enrolled for the semester </li>
+                    <li class="fs-5 fw-300">The Accounting Staff will as for your official registration form or school id to 
+                        verify if you're currently enrolled for the semester.
+                    </li>
+                    <li class="fs-5 fw-300">Once the Accounting Staff verified your student number on their system,
+                        the staff will return your registration form/ school id.
+                    </li>
+                    <br>
+                    <i class="fs-4"> DISCLAIMER: THEY DO NOT ASK FOR PHOTOCOPY OF REGISTRATION FORM AND SCHOOL I.D. JUST PRESENT TO THEM
+                        YOU'RE REGISTRATION FORM OR SCHOOL ID FOR VERIFICATION TO THEIR SYSTEM
+                    </i>
+                    <br><br>
+                    <li class="fs-5 fw-300">Lastly, Just wait for 3-5 minutes to process and print your statement of account.</li>
+                    </ol>
+                    </div>
+                <div class="my-4 d-flex justify-content-end">
+                    <button type="button" class="btn btn-sub-2 btn-shadow btn-sm px-5 fw-bold" data-bs-dismiss="modal">BACK</button>    
+                </div>    
+            </div>
+        </div>
+        </section>
+        
+
+        </div>
+        
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="css/bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="css/bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/toggle.js"></script>
+    <script src="js/loading.js"></script>
+</body>
+</html>

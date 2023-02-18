@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="css/bootstrap-5.2.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome-free-6.2.1-web/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="css/style0.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md sticky-top nav-admin">
+        <div class="container-cus d-flex w-100" >
+            <div class="d-flex flex-colum align-items-center">
+                <img src="img/1565034397472.jfif" alt="logo" class="logo rounded-circle">
+                <a href="#" class="navbar-brand fs-5 fw-bolder text-white">&nbsp;Quezon City University</a>
+            </div>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="icon-sample"><span></span><span></span><span></span></div>
+            </button>
+            <div class="navbar-cus navbar-collapse collapse justify-content-end" id="navcol-1">
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item dropdown" onmouseleave="mouseLeave()">
+                        <a class="nav-link dropdown-toggle" href="#" role="button">
+                            <img src="img/1565034397472.jfif" class="logo rounded-circle">
+                        </a>
+                        <ul class="dropdown-menu-cus text-center" style="right: 0;" data-bs-keyboard="true" tabindex="-1" aria-hidden="false">
+                            <li><a class="dropdown-item" href="#">ADMIN PROFILE</a></li>
+                            <li><a class="dropdown-item" href="index.html">LOGOUT</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="menu-container admin">
+        <div class="hamburger">
+            <button class="btn-hamburger" type="button" id="hamburger">
+                <div class="icon-hamburger"><span></span><span></span><span></span></div>
+            </button>
+        </div>     
+        <div class="info">
+            <img src="img/1565034397472.jfif" alt="logo" class=" rounded-circle">
+            <h3>Library Panel</h3>
+            <span></span>
+        </div>
+        <ul class="menu"> 
+            <li class="active"><a href="library-index.html"><i class="fa-solid fa-house icon"></i>Home</a></li>
+            <li><a href="library-dashboard.html"><i class="fa-solid fa-id-card icon"></i>Library Card</a></li>
+            <li><a><i class="fa-solid fa-right-from-bracket icon"></i>Logout</a></li>
+        </ul>
+    </div>
+
+    
+<div class="container-cus">
+    <section class="p-5">
+      <div class="headline">
+        <h1>LIBRARY</h1>
+        <i class="fa-solid fa-solid fa-book-open fa-3x"></i>
+    </div>
+    <div class="wrapper container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+          <a class="dashboard-stat navy" href="#">
+            <div class="visual">
+              <i class="fa-solid fa-file-export"></i>
+            </div>
+            <div class="details">
+              <div class="number">
+                <span>15</span>
+              </div>
+              <div class="desc">Document Submitted</div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+          <a class="dashboard-stat gray" href="#">
+            <div class="visual">
+              <i class="fa-solid fa-file-import"></i>
+            </div>
+            <div class="details">
+              <div class="number">
+                <span>75</span>
+              </div>
+              <div class="desc">Library Card Application</div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+          <a class="dashboard-stat navy" href="#">
+            <div class="visual">
+              <i class="fa-solid fa-bars-progress"></i>
+            </div>
+            <div class="details">
+              <div class="number">
+                <span>75</span>
+              </div>
+              <div class="desc">Library Card Validation</div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+          <a class="dashboard-stat gray" href="#">
+            <div class="visual">
+              <i class="fa-solid fa-calendar-check"></i>
+            </div>
+            <div class="details">
+              <div class="number">
+                <span>75</span>
+              </div>
+              <div class="desc">Lost/Renewal of LIbrary Card</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+
+      <section class="px-5">
+        
+        <div class="d-flex justify-content-between my-2">
+          <div>
+            <h4 class="fw-bold">Library Card Application</h4>
+          </div>
+          <div class="p-0">
+              <a href="library-dashboard.html" class="text-decoration-none link-dark fw-semibold px-5">View All...</a>
+          </div>
+      </div>
+        <div class="d-flex justify-content-evenly analyticsTbl">
+          
+            <table class="table table-hover">
+                <thead class="table-dark">
+                  <tr>
+                    <th scope="col">Full Name</th>
+                    <th scope="col">Student no.</th>
+                    <th scope="col">Course</th>
+                    <th scope="col">Campus</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">Contact No.</th>
+                    <th scope="col">School Year</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Denice Klaire Villareal</td>
+                    <td>19-0594</td>
+                    <td>BSIT</td>
+                    <td>SAN BARTOLOME</td>
+                    <td>B25 LOT 5 MALIGAYA ELEMENTARY SCHOOL</td>
+                    <td>09123456789</td>
+                    <td>2021-2022</td>
+                  </tr>
+                     <td>Denice Klaire Villareal</td>
+                    <td>19-0594</td>
+                    <td>BSIT</td>
+                    <td>SAN BARTOLOME</td>
+                    <td>B25 LOT 5 MALIGAYA ELEMENTARY SCHOOL</td>
+                    <td>09123456789</td>
+                    <td>2021-2022</td>
+                  </tr>
+                    <tr>
+                        <td>Jade Oloroso</td>
+                        <td>19-0594</td>
+                        <td>BSIT</td>
+                        <td>SAN BARTOLOME</td>
+                        <td>B25 LOT 5 MALIGAYA ELEMENTARY SCHOOL</td>
+                        <td>09123456789</td>
+                        <td>2021-2022</td>
+                  </tr>
+
+                </tbody>
+            </table>
+      </div>
+    </section>
+    </div>
+    
+</div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="css/bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="css/bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/calendar.js"></script>
+  <script src="js/toggle.js"></script>
+  <script src="js/loading.js"></script>
+</body>
+</html> 

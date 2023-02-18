@@ -251,7 +251,7 @@
 .nav-link, .navbar-item{
     position: relative;
     color: #FFF;
-    height: 50px;
+    height: 60px;
 }
 .navbar-item .active{
     background-color: #FFFFFF !important;

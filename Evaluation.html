@@ -9,40 +9,40 @@
     <link rel="stylesheet" href="css/bootstrap-5.2.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/admin.css">
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/evaluation.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-md sticky-md-top">
+    <nav class="navbar navbar-expand-md sticky-top">
         <div class="container-fluid p-0" >
             <div class="d-flex flex-colum align-items-center">
                 <button class="btn-hamburger" type="button" id="hamburger">
                     <div class="icon-hamburger"><span></span><span></span><span></span></div>
-                </button><span class="text-white fs-3">&nbsp;|&nbsp;</span>
+                </button><span class="text-white fs-3">|</span>
                 <img src="img/1565034397472.jfif" alt="logo" class="logo rounded-circle">
-                <a href="student_dashboard.html" class="navbar-brand fs-6 fw-900 text-white">&nbsp;Quezon City University</a>
+                <a href="student_dashboard.html" class="navbar-brand">&nbsp;Quezon City University</a>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <!--<span class="navbar-toggler-icon"></span>-->
-                <div class="icon-hamburger"><span></span><span></span><span></span></div>
+                <span><i class="fa-solid fa-ellipsis-vertical text-white"></i></span>
             </button>
-            <div class="navbar-cus navbar-collapse collapse justify-content-end" id="navcol-1">
+            <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar nav p-0">
                     <li class="navbar-item">
-                        <a href="student_dashboard.html" class="nav-link text-white fs-6 fw-900 text-decoration-none">HOME</a>
+                        <a href="student_dashboard.html" class="nav-link">HOME</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="inbox.html" class="nav-link text-white fs-6 fw-900 text-decoration-none">INBOX</a>
+                        <a href="inbox.html" class="nav-link">INBOX</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="#" class="nav-link text-white fs-6 fw-900 text-decoration-none">ABOUT QCU</a>
+                        <a href="#" class="nav-link">ABOUT QCU</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button">
+                    <li class="nav-item dropdown" onmouseleave="mouseLeave()">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           <img src="img/1565034397472.jfif" class="logo rounded-circle">
                         </a>
-                        <ul class="dropdown-menu-cus text-center" style="right: 0;" data-bs-keyboard="true" tabindex="-1" aria-hidden="false">
-                          <li><a class="dropdown-item" href="#">EDIT PROFILE</a></li>
+                        <ul class="dropdown-menu-cus text-center" style="right: 0;">
+                          <li><a class="dropdown-item" href="edit-profile.html">EDIT PROFILE</a></li>
                           <li><a class="dropdown-item" href="#">REQUEST STATUS</a></li>
                           <li><a class="dropdown-item" href="#">LOGOUT</a></li>
                         </ul>
@@ -54,54 +54,555 @@
     <div class="menu-container">
         <ul class="menu">
             <li><a href="Pre-Enrollment.html"><i class="fa-sharp fa-solid fa-clipboard icon"></i>PRE-ENROLLMENT</a></li>
-            <li><a href="req-doc.html"><i class="fa-solid fa-file-lines icon"></i>REQUEST DOCUMENT</a></li>
+            <li><a href="request-doc-final.html"><i class="fa-solid fa-file-lines icon"></i>REQUEST DOCUMENT</a></li>
             <li><a href="gradeslip.html"><i class="fa-solid fa-table-list icon"></i>GRADESLIP</a></li>
-            <li class="active"><a href="Course Curriculum.html"><i class="fa-solid fa-list icon "></i>CURRICULUM</a></li>
-            <li><a href="#"><i class="fa-solid fa-mobile-screen icon"></i>FACULTY EVALUATION</a></li>
-            <li><a href="#"><i class="fa-solid fa-credit-card icon"></i>VACCINATION</a></li>
-            <li><a href="#"><i class="fa-solid fa-tag icon"></i>EVENTS</a></li>
-            <li><a href="#"><i class="fa-solid fa-calendar-days icon"></i>UNIVERSITY CALENDAR</a></li>
-            <li><a href="#"><i class="fa-solid fa-info icon"></i>FAQS</a></li>
+            <li><a href="Course Curriculum.html"><i class="fa-solid fa-list icon "></i>CURRICULUM</a></li>
+            <li class="active"><a href="Evaluation.html"><i class="fa-solid fa-mobile-screen icon"></i>FACULTY EVALUATION</a></li>
+            <li><a href="vaccination.html"><i class="fa-solid fa-credit-card icon"></i>VACCINATION</a></li>
+            <li><a href="event.html"><i class="fa-solid fa-tag icon"></i>EVENTS</a></li>
+            <li><a href="Calendar.html"><i class="fa-solid fa-calendar-days icon"></i>UNIVERSITY CALENDAR</a></li>
+            <li><a href="faqs.html"><i class="fa-solid fa-info icon"></i>FAQS</a></li>
         </ul>
     </div>
 <!------------START BODY------------>
     <div class="container-cus">
 <!------------START CONTENT------------>
-        <section>
-
-            <div class="container m-auto">
-        <form action="#" class="f-evaluation" id="evaluation">
-            <h1> Faculty Evaluation <i class="fa-solid fa-table-list fa-2x"></i>   </h1>
-            <hr class="my-2">&nbsp;
-            
-                <p>This section is the faculty evaluation that you as a student is responsible to answer.
-                    You will see the preview of the document here. </p>
-                    <br>
-                
-                    <!-- Preview pdf -->
-               
-            <div class="container">
-                <embed class="border-0 rounded-1 pdf" src="pdf/Evaluation sample.pdf">
+        <section class="container py-5">
+            <div class="headline">
+                <h1>FACULTY EVALUATION</h1>
+                <i class="fa-solid fa-mobile-screen fa-3x"></i>
             </div>
-                
-
-                    <!-- end of preview -->
-                    <div>
-                        <!-- <button type="button" class="btn btn-primary px-5 my-5 ms-3" type="submit">DOWNLOAD</button> -->
-                       <button class="btn btn-primary px-5 my-5 ms-3" onclick="window.open('pdf/2019-BSIT-Curriculum.pdf')" type="button">DOWNLOAD</button>
-                       <a href="#"> <button type="button" class="btn btn-outline-primary px-5 my-5 me-3">BACK </a> </button>
-
+        </section>
+        <section>
+            <div class="container mb-5">
+                <h5>This section ask you to evaluate all the Professors for your enrolled subjects. Please fill up and answer all the questions.</h5>
+                <form action="#" method="get">
+                    <div class="mt-3">
+                        <h4 class="fw-bold">PART I.</h4>
+                        <div class="form-floating mt-3">
+                            <input type="email" class="form-control" id="floatingEmail" placeholder="Email" value="juan.delacruz@gmail.com" disabled readonly>
+                            <label for="floatingEmail" class="ps-4">Email</label>
+                        </div>
+                        <div class="form-floating mt-3">
+                            <input type="text" class="form-control" id="floatingName" placeholder="Name" value="12-3456" disabled readonly>
+                            <label for="floatingName" class="ps-4">Student Number</label>
+                        </div>
+                        <div class="form-floating mt-3">
+                            <input type="text" class="form-control" id="floatingName" placeholder="Name" value="Juan Dela Cruz" disabled readonly>
+                            <label for="floatingName" class="ps-4">Name</label>
+                        </div>
                     </div>
-                
-                
-                  <br><br><br><br><br>  
-
-                    
-        </form>
-
-      </div>
-
-        
+                    <div class="my-5 ">
+                        <h4 class="fw-bold">PART II.</h4>
+                        <ul class="rating">
+                            <li>5 - Excellent</li>
+                            <li>4 - Good</li>
+                            <li>3 - Satisfactory</li>
+                            <li>2 - Fair</li>
+                            <li>1 - Poor</li>
+                        </ul>
+                        <div class="row mb-3">
+                            <div class="col-md-2">
+                                <span class="fs-5 fw-700">Professor:</span>
+                            </div>
+                            <div class="col-md-10">
+                                <select class="form-select">
+                                    <option>SANTOS, Richard Morris A.</option>
+                                    <option>TANJENTE, Rose Anne A.</option>
+                                    <option>IMPANG, Maria Aura C.</option>
+                                    <option>TANO, Isagani M.</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <span class="fs-5 fw-700">Subject:</span>
+                            </div>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" value="Automata Theory and Formal Language" disabled readonly>
+                            </div>
+                        </div>
+                    </div>
+                    <table class="table table-bordered table-light eval-form">
+                        <thead>
+                            <tr>
+                                <th scope="col">A. KNOWLEDGE OF THE SUBJECT MATTER</th>
+                                <th scope="col">5</th>
+                                <th scope="col">4</th>
+                                <th scope="col">3</th>
+                                <th scope="col">2</th>
+                                <th scope="col">1</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>The teacher explains the subject matter clearly.</td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="5" name="a1" value="5" checked>
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="4" name="a1" value="4" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="3" name="a1" value="3" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="2" name="a1" value="2" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="1" name="a1" value="1" >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>The teacher explains the relevance of the present topics to previous lessons.</td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="5" name="a2" value="5" checked>
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="4" name="a2" value="4" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="3" name="a2" value="3" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="2" name="a2" value="2" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="1" name="a2" value="1" >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>The teacher shares information anchored on the theories concepts and practices in his/her discipline.</td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="5" name="a3" value="5" checked>
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="4" name="a3" value="4" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="3" name="a3" value="3" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="2" name="a3" value="2" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="1" name="a3" value="1" >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>The teacher encourages the students to participate during the discussions.</td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="5" name="a4" value="5" checked>
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="4" name="a4" value="4" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="3" name="a4" value="3" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="2" name="a4" value="2" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="1" name="a4" value="1" >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>The teacher applies the lessons into practical situations.</td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="5" name="a5" value="5" checked>
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="4" name="a5" value="4" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="3" name="a5" value="3" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="2" name="a5" value="2" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="1" name="a5" value="1" >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>The professor demonstrates up-to-date knowledge or awareness of current trends.</td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="5" name="a6" value="5" checked>
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="4" name="a6" value="4" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="3" name="a6" value="3" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="2" name="a6" value="2" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="1" name="a6" value="1" >
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-bordered table-light eval-form">
+                        <thead>
+                            <tr>
+                                <th scope="col">B. MANAGEMENT OF LEARNING</th>
+                                <th scope="col">5</th>
+                                <th scope="col">4</th>
+                                <th scope="col">3</th>
+                                <th scope="col">2</th>
+                                <th scope="col">1</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>The students are encouraged to think critically, and are engaged in meaningful discussions.</td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="5" name="b1" value="5" checked>
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="4" name="b1" value="4" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="3" name="b1" value="3" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="2" name="b1" value="2" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="1" name="b1" value="1" >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>The activities given are reasonable and within the bounds of the discussed schedule.</td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="5" name="b2" value="5" checked>
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="4" name="b2" value="4" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="3" name="b2" value="3" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="2" name="b2" value="2" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="1" name="b2" value="1" >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>The students are given time to reflect on why they are learning the lesson/topic.</td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="5" name="b3" value="5" checked>
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="4" name="b3" value="4" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="3" name="b3" value="3" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="2" name="b3" value="2" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="1" name="b3" value="1" >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>The teacher utilizes learning tools such as apps, powerpoint, audio/video materials etc., to reinforce the learning process.</td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="5" name="b4" value="5" checked>
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="4" name="b4" value="4" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="3" name="b4" value="3" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="2" name="b4" value="2" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="1" name="b4" value="1" >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>The students feel that the assignment given by the professor is reasonable in terms of content and deadline.</td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="5" name="b5" value="5" checked>
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="4" name="b5" value="4" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="3" name="b5" value="3" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="2" name="b5" value="2" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="1" name="b5" value="1" >
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-bordered table-light eval-form">
+                        <thead>
+                            <tr>
+                                <th scope="col">C. COMMITMENT</th>
+                                <th scope="col">5</th>
+                                <th scope="col">4</th>
+                                <th scope="col">3</th>
+                                <th scope="col">2</th>
+                                <th scope="col">1</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>The teacher regularly attends the class.</td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="5" name="c1" value="5" checked>
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="4" name="c1" value="4" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="3" name="c1" value="3" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="2" name="c1" value="2" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="1" name="c1" value="1" >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>TThe teacher provides feedback on the students’ performance.</td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="5" name="c2" value="5" checked>
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="4" name="c2" value="4" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="3" name="c2" value="3" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="2" name="c2" value="2" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="1" name="c2" value="1" >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>The students are  encouraged to consult with their teacher using the messenger, email, on Google Classroom</td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="5" name="c3" value="5" checked>
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="4" name="c3" value="4" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="3" name="c3" value="3" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="2" name="c3" value="2" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="1" name="c3" value="1" >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>The teacher listens and understands students’ point of view. He/she may not agree, but students feel understood.</td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="5" name="c4" value="5" checked>
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="4" name="c4" value="4" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="3" name="c4" value="3" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="2" name="c4" value="2" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="1" name="c4" value="1" >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>The teacher applies the lessons into practical situations.The teacher shows passion and enthusiasm for teaching.</td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="5" name="c5" value="5" checked>
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="4" name="c5" value="4" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="3" name="c5" value="3" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="2" name="c5" value="2" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="1" name="c5" value="1" >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>The teacher has attained the course learning outcomes.</td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="5" name="c6" value="5" checked>
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="4" name="c6" value="4" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="3" name="c6" value="3" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="2" name="c6" value="2" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="1" name="c6" value="1" >
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-bordered table-light eval-form">
+                        <thead>
+                            <tr>
+                                <th scope="col">D. PERSONAL QUALITIES</th>
+                                <th scope="col">5</th>
+                                <th scope="col">4</th>
+                                <th scope="col">3</th>
+                                <th scope="col">2</th>
+                                <th scope="col">1</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>The teacher dresses appropriately.</td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="5" name="d1" value="5" checked>
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="4" name="d1" value="4" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="3" name="d1" value="3" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="2" name="d1" value="2" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="1" name="d1" value="1" >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>The teacher is firm and consistent in his interactions with students strict but reasonable.</td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="5" name="d2" value="5" checked>
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="4" name="d2" value="4" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="3" name="d2" value="3" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="2" name="d2" value="2" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="1" name="d2" value="1" >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>The teacher knows how to apply various actions that fit the classroom situation</td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="5" name="d3" value="5" checked>
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="4" name="d3" value="4" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="3" name="d3" value="3" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="2" name="d3" value="2" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="1" name="d3" value="1" >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>The teacher is fair and impartial to his or her students, and he or she respects individual differences.</td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="5" name="d4" value="5" checked>
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="4" name="d4" value="4" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="3" name="d4" value="3" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="2" name="d4" value="2" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="1" name="d4" value="1" >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>The teacher exercises self-control.</td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="5" name="d5" value="5" checked>
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="4" name="d5" value="4" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="3" name="d5" value="3" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="2" name="d5" value="2" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="1" name="d5" value="1" >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>The teacher is open to criticisms and suggestions.</td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="5" name="d6" value="5" checked>
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="4" name="d6" value="4" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="3" name="d6" value="3" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="2" name="d6" value="2" >
+                                </td>
+                                <td>
+                                    <input class="form-check-input" type="radio" id="1" name="d6" value="1" >
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="form-floating mb-5">
+                        <textarea class="form-control" id="comment" name="text" style="height: 150px;"></textarea>
+                        <label for="comment">Comments/Suggestions</label>
+                    </div>
+                    <div class="form-button mb-5">
+                        <button type="button" class="btn btn-sm btn-sub-1 btn-shadow px-5">SUBMIT</button>
+                        <button type="button" class="btn btn-sm btn-sub-2 btn-shadow px-5 me-4">CANCEL</button>
+                    </div>
+                </form>
+            </div>
         </section>
 <!------------END CONTENT------------>        
     </div>
@@ -110,39 +611,45 @@
     
 <!------------STAR FOOTER------------>
     <footer id="sticky-footer" class="flex-shrink-0 py-1 text-white align-content-center">
-        <div class="container">
+        <div class="container p-3">
             <div class="row align-items-end">
-                <div class="col-3">
-                    <span>VISIT AND CONTACT US ON:</span><br />
-                    <span><a href="https://www.facebook.com/qcu1994" class="text-decoration-none text-white"><i class="fa-brands fa-facebook"></i>&nbsp;https://www.facebook.com/qcu1994</a></span><br />
-                    <span><a href="https://qcu.edu.ph/" class="text-decoration-none text-white"><i class="fa-sharp fa-solid fa-earth-asia"></i>&nbsp;https://qcu.edu.ph/</a></span>
+                <div class="col-md-5">
+                    <div class="row align-items-end">
+                        <div class="col-md-6">
+                            <span>VISIT AND CONTACT US ON:</span><br />
+                            <span><a href="https://www.facebook.com/qcu1994" class="text-decoration-none text-white"><i class="fa-brands fa-facebook"></i>&nbsp;@qcu1994</a></span><br />
+                            <span><a href="https://qcu.edu.ph/" class="text-decoration-none text-white"><i class="fa-sharp fa-solid fa-earth-asia"></i>&nbsp;https://qcu.edu.ph/</a></span>
+                        </div>
+                        <div class="col-md-6">
+                            <span><i class="fa-solid fa-envelope"></i>&nbsp;registrar@qcu.edu.ph</span><br />
+                            <span><i class="fa-solid fa-mobile-screen-button"></i>&nbsp;288063470</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-2">
-                    <span><i class="fa-solid fa-envelope"></i>&nbsp;registrar@qcu.edu.ph</span><br />
-                    <span><i class="fa-solid fa-mobile-screen-button"></i>&nbsp;288063470</span>
+                <div class="col-md-2 text-center">
+                    <img src="img/1565034397472.jfif" class="rounded-circle footer-brand" alt="Logo">
                 </div>
-                <div class="col-2 text-center">
-                    <img src="img/1565034397472.jfif" class="rounded-circle w-50" alt="">
-                </div>
-                <div class="col-3">
-                    <span>Terms and Conditions</span><br />
-                    <span>Frequently Asked Questions</span>
-                </div>
-                <div class="col-2 text-end">
-                    <span>Since 1994</span><br />
-                    <span>Copyright</span>
+                <div class="col-md-5">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <span>Terms and Conditions</span><br />
+                            <span>Frequently Asked Questions</span>
+                        </div>
+                        <div class="col-md-6">
+                            <span>Since 1994</span><br />
+                            <span>Copyright</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
 <!------------END FOOTER------------>
-
-<!------------JS------------>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="css/bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"></script>
     <script src="css/bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/toggle.js"></script>
+    <script src="js/calendar.js"></script>
     <script src="js/loading.js"></script>
 </body>
 </html>

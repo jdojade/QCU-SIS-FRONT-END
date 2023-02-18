@@ -56,6 +56,12 @@ hr{
   #inbox {
     padding: 20px;
   }
+  #trash_btn{
+    margin: 5px;
+  }
+  #starred_btn{
+    margin: 5px;
+  }
 }
 #main {
   padding: 50px 20px;
@@ -65,6 +71,12 @@ hr{
 @media (max-width: 1199px) {
   #main {
     padding: 20px;
+  }
+  #trash_btn{
+    margin: 5px;
+  }
+  #starred_btn{
+    margin: 5px;
   }
 }
 /*Pre loader*/
@@ -206,10 +218,36 @@ h1{
 .qoute span:nth-child(6){
   color: #FFF;
 }
-.qoute p{
-
+/*---------Student Login---------*/
+.student-login{
+    position: relative;
+    display: flex;
+    animation: showtime 1s forwards;
+    width: 45rem;
+    background-color: var(--white);
+    border: .2rem solid #274C77;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: var(--shadow);
 }
-
+.student-login form{
+    width: 25rem;
+    text-align: center;
+    justify-content: center;
+    padding: 2rem;
+    margin-right: 2rem
+}
+.student-login form img{
+    width: 9rem
+}
+.student-login .side{
+    background-color: var(--light-btn);
+}.student-login .side h1{
+    display: block;
+    text-align: center;
+    color: var(--white);
+    margin-top: 2rem;
+}
 /*---------- BUTTONS -------------*/
 .btn-sub-1{
   border: 2px solid #274C77;
@@ -248,6 +286,48 @@ h1{
   width: 30%;
 }
 
+/*---------- Company ------------*/
+
+.company {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.company li a{
+  background: var(--gray);
+  padding: 20px;
+  width: 25rem;
+  height: 8rem;
+  margin: 1rem;
+  color: var(--primary);
+  font-weight: bold;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  border-radius: .5rem;
+  cursor: pointer;
+}
+.company li a:hover{
+  background-color: var(--light-text);
+  color: var(--white);
+}
+.company li a span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.company li a i{
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
 /*---------- DASHBOARD ------------*/
 .flex-container {
   display: flex;
@@ -284,9 +364,88 @@ h1{
 .flex-item a:hover img{
   filter: invert(100%) grayscale(100%);
 }
+.paragraph{
+  text-align: justify;
+  font-size: 1.25rem;
+}
+.staffs-container{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.staffs img{
+  background: #FFFFFF;
+  padding: 5px;
+  width: 15rem;
+  height: 15rem;
+  margin: 1rem;
+  line-height: 150px;
+  color: #13212B;
+  font-weight: bold;
+  font-size: 5em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  border-radius: .5rem;
+  box-shadow: 4px 6px 4px rgba(0, 0, 0, 0.25);
+}
 .carousel-control-next-icon, .carousel-control-prev-icon{
   filter: invert(100%);
 }
+/*---------- Carousel ------------*/
+#dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#dashboard li {
+  list-style-type: none;
+}
+#dashboard .flex-item a{
+  background: #FFFFFF;
+  padding: 5px;
+  width: 15rem;
+  height: 15rem;
+  margin: 1rem;
+  line-height: 150px;
+  color: #13212B;
+  font-weight: bold;
+  font-size: 5em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  border-radius: .5rem;
+  box-shadow: 4px 6px 4px rgba(0, 0, 0, 0.25);
+}
+#dashboard .flex-item span{
+  color: #13212B;
+  font-weight: bold;
+  font-size: 30px;
+}
+#dashboard .flex-item:hover a{
+  transition-timing-function: linear;
+  transition: 0.2s;
+  background-color: #13212B !important;
+  color: white !important;
+}
+#dashboard .flex-item:hover span{
+  transition: 0.2s;
+  transition-timing-function: linear;
+  color: #fff !important;
+  font-weight: bold;
+}
+/*---------- Carousel ------------*/
 
 /*---------- Carousel ------------*/
 #landing-carousel{
@@ -384,10 +543,10 @@ h1{
   right: 10px;
 }
 .student{
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 355px;
+    position: absolute;
+    bottom: -240px;
+    right: -50px;
+    width: 340px;
 }
 @media (max-width: 770px){
     #student_login .modal-dialog{
@@ -589,23 +748,55 @@ h1{
     border: rgba(0, 0, 0, 0);
 }
 /*-------- ACCORDION ----------*/
-
-.accordion-button:not(.collapsed) {
-    color: #fff !important;
-    background-color: #13212B !important;
-    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+.faq-card{
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 2em 6em 2em 4em;
+  position: relative;
+  margin: 2em;
+  transition: .5s ease;
+  overflow: hidden;
 }
 
-.accordion-button::after {
-    flex-shrink: 0;
-    width: var(--bs-accordion-btn-icon-width);
-    height: var(--bs-accordion-btn-icon-width);
-    margin-left: auto;
-    content: "";
-    background-image: var(--bs-accordion-btn-icon);
-    background-repeat: no-repeat;
-    background-size: var(--bs-accordion-btn-icon-width);
-    transition: var(--bs-accordion-btn-icon-transition);
+.toggle-btn{
+  font-size: 20px;
+  position: absolute;
+  top: .8em;
+  right: 1em;
+  cursor: pointer;
+}
+
+.toggle-btn .cross-btn{
+  display: none;
+}
+
+.faqs-ans{
+  display: none;
+  /* background-color: #f2f2f2; */
+}
+
+.faq-card.active{
+  color: var(--white);
+  background-color: var(--primary);
+  padding-bottom: 1.5em;
+}
+
+
+.faq-card.active .faqs-ans{
+  margin-top: 1em;
+  display: block;
+}
+
+.faq-card.active .toggle-btn .cross-btn{
+  display: flex;
+  /* fixing position */
+  position: relative;
+  top: .3em;
+  left: .1em;
+}
+
+.faq-card.active .toggle-btn .drop-btn{
+  display: none;
 }
 
 /*---------- ADMIN LOGIN ------------*/
@@ -693,12 +884,13 @@ h1{
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     font-weight: 600;
-    cursor: pointer;
+    cursor: default;
     color:rgb(104, 104, 104);
 }
 .calendar-week-days span:hover {
     color:black;
     transition: all .2s ease-in-out;
+    cursor: default;
 }
 .calendar-week-days span {
     display: grid;
@@ -722,7 +914,7 @@ h1{
     justify-content: center;
     padding: 5px;
     position: relative;
-    cursor: pointer;
+    cursor: default;
     animation: to-top 1s forwards;
 }
 .month-picker {
@@ -761,7 +953,7 @@ h1{
     background: #F8F8F8;
     border-radius: 25px;
     font-weight: 600;
-    cursor: pointer;
+    cursor: default;
     margin-top: 50px;
     margin-bottom: 50px;
     box-shadow: var(--shadow);
@@ -950,6 +1142,34 @@ h1{
     }
 }
 
+
+/*----------evaluation form----------*/
+.eval-form{
+    --bs-table-bg: white;
+    overflow: hidden;
+    overflow-x: scroll;
+}.eval-form thead th,
+.eval-form tbody td{
+    font-size: 1.2rem;
+    align-self: center;
+    padding: 15px;
+}.eval-form thead th:first-child,
+.eval-form tbody td:first-child{
+    text-align: start;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}.eval-form tr:hover td{
+    color: black;
+    background-color: lightgray
+}
+.form-check-input:checked  {
+    background-color: var(--primary);
+    border-color: var(--light-btn);
+}
+
+
+
 /*-----------Smart Form-----------*/
 .step {
   display: none;
@@ -972,8 +1192,14 @@ h1{
   display: block;
   direction: rtl;
   color: crimson;
-
 }
+.form-sda{
+    position: relative;
+    display: flex;
+    font-size: 1.3rem;
+    margin-right: 1rem
+}
+
 .form-control,.form-select{
     border: 1px solid #274C77;
     border-radius: 15px;
@@ -1044,3 +1270,142 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+
+.item{
+    padding:;
+}
+
+.rating{
+  position: relative;
+  display: flex ;
+  justify-content: space-evenly;
+  list-style: none;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+/*Gradeslip*/
+.year-level{
+  list-style: none;
+  width: 100%;
+  position: relative;
+  display: flex;
+  background-color: var(--light-btn);
+  padding: 0;
+  margin-bottom: 2rem;
+  justify-content: space-around;
+}.year-level li{
+  width: 100%;
+  height: 4.5rem;
+}.year-level li a{
+  width: inherit;
+  height: inherit;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}.year-level li a:hover,
+.year-level li.active{
+  background-color: var(--primary);
+}
+
+.grade-slip{
+  display: block;
+}.grade-slip > span{
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #3B90F2;
+}.grade-slip > h4{
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 4rem;
+  font-weight: 700;
+}.grade-slip{
+  background-color: white;
+}
+
+
+.grade-info{
+  margin-bottom: 3rem;
+  border: solid .8px #000;
+}.grade-info thead th{
+  background-color: var(--primary) !important;
+  color:white;
+}.grade-info tbody td{
+  background-color: white !important;
+  border: solid .8px #000;
+}.grade-info tbody tr:hover td{
+  background-color: #D9D9D9 !important;
+  color: var(--primary);
+}.grade-info tbody tr:last-child td{
+  background-color: #D9D9D9 !important;
+  border: 0;
+}
+
+.sem{
+  display: flex;
+  margin-bottom: 3rem;
+}.sem > h4{
+  margin: 0;
+  padding: .7rem;
+  background-color: var(--primary);
+  color: white;
+  font-weight: 500;
+  border-radius: 5px;
+}.sem-select{
+  padding: 0 .5rem;
+  font-size: 1.5rem;
+  border-left: 0px;
+}
+
+.s-info h4{
+  display: flex;
+  justify-content: space-between;
+  padding: .6rem;
+  border: solid .8px var(--primary);
+  margin: 0;
+  font-weight: 700;
+}.s-info h4:first-child{
+  background-color: var(--primary);
+  color: white;
+}
+/* Counseling Service*/
+.counseling{
+  position: relative;
+  display: flex;
+  width: 45rem;
+  background-color: var(--white);
+  border: .2rem solid #274C77;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+.counseling form{
+  width: 25rem;
+  text-align: center;
+  justify-content: center;
+  padding: 2rem;
+  margin-right: 2rem
+}
+.counseling .side{
+  width: 25rem;
+  background-color: var(--light-btn);
+}
+.counseling .side h1{
+  display: block;
+  text-align: center;
+  color: var(--white);
+  margin-top: 1rem;
+}
+.counseling .side img{
+  margin-top: 3rem;
+  width: 10rem;
+
+}
+

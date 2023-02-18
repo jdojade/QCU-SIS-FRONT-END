@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Library</title>
+    <link rel="stylesheet" href="css/bootstrap-5.2.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome-free-6.2.1-web/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md sticky-top nav-admin">
+        <div class="container-cus d-flex w-100" >
+            <div class="d-flex flex-colum align-items-center">
+                <img src="img/1565034397472.jfif" alt="logo" class="logo rounded-circle">
+                <a href="#" class="navbar-brand fs-5 fw-bolder text-white">&nbsp;Quezon City University</a>
+            </div>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="icon-sample"><span></span><span></span><span></span></div>
+            </button>
+            <div class="navbar-cus navbar-collapse collapse justify-content-end" id="navcol-1">
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item dropdown" onmouseleave="mouseLeave()">
+                        <a class="nav-link dropdown-toggle" href="#" role="button">
+                            <img src="img/1565034397472.jfif" class="logo rounded-circle">
+                        </a>
+                        <ul class="dropdown-menu-cus text-center" style="right: 0;" data-bs-keyboard="true" tabindex="-1" aria-hidden="false">
+                            <li><a class="dropdown-item" href="#">ADMIN PROFILE</a></li>
+                            <li><a class="dropdown-item" href="index.html">LOGOUT</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="menu-container admin">
+        <div class="hamburger">
+            <button class="btn-hamburger" type="button" id="hamburger">
+                <div class="icon-hamburger"><span></span><span></span><span></span></div>
+            </button>
+        </div>     
+        <div class="info">
+            <img src="img/1565034397472.jfif" alt="logo" class=" rounded-circle">
+            <h3>Library Panel</h3>
+            <span></span>
+        </div>
+        <ul class="menu"> 
+            <li><a href="library-index.html"><i class="fa-solid fa-house icon"></i>Home</a></li>
+            <li class="active"><a href="library-dashboard.html"><i class="fa-solid fa-id-card icon"></i>Library Card</a></li>
+            <li><a><i class="fa-solid fa-right-from-bracket icon"></i>Logout</a></li>
+            <li><a href="#"><i class="fa-solid fa-house icon"></i>Home</a></li>
+            <li><a href="SASD.html"><i class="fa-solid fa-user icon"></i>SASD Dashboard</a></li>
+            <li class="active"><a href="library-dashboard.html"><i class="fa-solid fa-user icon"></i>Library Dashboard</a></li>
+            <li><a href="index.html"><i class="fa-solid fa-right-from-bracket icon"></i>Logout</a></li>
+        </ul>
+    </div>
+    <div class="container-cus">
+        <section class="p-5">
+            <div class="headline">
+                <h1>LIBRARY DASHBOARD</h1>
+                <i class="fa-solid fa-file-circle-check fa-3x"></i>
+            </div>
+        </section>           
+        <section class="px-5">
+            <div class="table-nav">
+                <ul id="pills-tab" role="tablist">
+                    <li>
+                        <a class="btn active" id="pills-services-tab" data-bs-toggle="pill" data-bs-target="#pills-services" role="tab" aria-controls="pills-services" aria-selected="true">
+                        NEW APPLICATION
+                        </a>
+                    </li>
+                    <li>
+                        <a class="btn" id="pills-penalty-tab" data-bs-toggle="pill" data-bs-target="#pills-penalty" role="tab" aria-controls="pills-penalty" aria-selected="false">
+                        LOST ID APPLICATION
+                        </a>
+                    </li>
+                    
+                </ul>
+                <div class="search-container">
+                    <form action="#">
+                        <h6 class="fw-bold mx-2">Student Number:</h6>
+                        <input type="text" placeholder="Search..." name="search">
+                        <button type="button" class="search-btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>            
+        <section class="px-5">
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-services" role="tabpanel" aria-labelledby="pills-services-tab" tabindex="0">
+                    <h5>Total:&nbsp;<span class="count">2</span></h5>
+                    <div class="table-responsive">
+                        <table class="custom-table">
+                            <thead>
+                              <tr>
+                                <th scope="col">Full Name</th>
+                                <th scope="col">Student no.</th>
+                                <th scope="col">Course</th>
+                                <th scope="col">Campus</th>
+                                <th scope="col">Address</th>
+                                <th scope="col">Contact No.</th>
+                                <th scope="col">School Year</th>
+
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Denice Klaire Villareal</td>
+                                <td>19-0594</td>
+                                <td>BSIT</td>
+                                <td>SAN BARTOLOME</td>
+                                <td>B25 LOT 5 MALIGAYA ELEMENTARY SCHOOL</td>
+                                <td>09123456789</td>
+                                <td>2021-2022</td>
+                              </tr>
+                                 <td>Denice Klaire Villareal</td>
+                                <td>19-0594</td>
+                                <td>BSIT</td>
+                                <td>SAN BARTOLOME</td>
+                                <td>B25 LOT 5 MALIGAYA ELEMENTARY SCHOOL</td>
+                                <td>09123456789</td>
+                                <td>2021-2022</td>
+                              </tr>
+                                <tr>
+                                    <td>Jade Oloroso</td>
+                                    
+                              </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="pills-penalty" role="tabpanel" aria-labelledby="pills-penalty-tab" tabindex="0">
+                    <h5>Total:&nbsp;<span class="count">2</span></h5>
+                    <div class="table-responsive">
+                        <table class="custom-table">
+                            <thead>
+                              <tr>
+                                <th scope="col">Full Name</th>
+                                <th scope="col">Student no.</th>
+                                <th scope="col">Course</th>
+                                <th scope="col">Campus</th>
+                                <th scope="col">Address</th>
+                                <th scope="col">Contact No.</th>
+                                <th scope="col">School Year</th>
+                                <th scope="col">1x1 ID picture</th>
+                                <th scope="col">Affidavit of Loss</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Denice Klaire Villareal</td>
+                                <td>19-0594</td>
+                                <td>BSIT</td>
+                                <td>SAN BARTOLOME</td>
+                                <td>B25 LOT 5 MALIGAYA ELEMENTARY SCHOOL</td>
+                                <td>09123456789</td>
+                                <td>2021-2022</td>
+                                <td><img src="img/image 1.png" class=" w-75" alt=""></td>
+                                <td><img src="img/image 1.png" class=" w-75" alt=""></td>
+                              </tr>
+                                 <td>Denice Klaire Villareal</td>
+                                <td>19-0594</td>
+                                <td>BSIT</td>
+                                <td>SAN BARTOLOME</td>
+                                <td>B25 LOT 5 MALIGAYA ELEMENTARY SCHOOL</td>
+                                <td>09123456789</td>
+                                <td>2021-2022</td>
+                                <td><img src="img/image 1.png" class=" w-75" alt=""></td>
+                                <td><img src="img/image 1.png" class=" w-75" alt=""></td>
+                              </tr>
+                                <tr>
+            
+                              </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="css/bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="css/bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/toggle.js"></script>
+    <script src="js/loading.js"></script>
+</body>
+</html>

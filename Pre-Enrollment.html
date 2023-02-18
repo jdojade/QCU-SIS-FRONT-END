@@ -9,9 +9,8 @@
     <link rel="stylesheet" href="css/bootstrap-5.2.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/admin.css">
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/Enrollment.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-md sticky-top">
@@ -41,8 +40,8 @@
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           <img src="img/1565034397472.jfif" class="logo rounded-circle">
                         </a>
-                        <ul class="dropdown-menu-cus text-center" style="right: 0;">
-                          <li><a class="dropdown-item" href="#">EDIT PROFILE</a></li>
+                        <ul class="dropdown-menu-cus text-center" style="right: 0;" data-bs-keyboard="true" tabindex="-1" aria-hidden="false">
+                          <li><a class="dropdown-item" href="edit-profile.html">EDIT PROFILE</a></li>
                           <li><a class="dropdown-item" href="#">REQUEST STATUS</a></li>
                           <li><a class="dropdown-item" href="#">LOGOUT</a></li>
                         </ul>
@@ -53,8 +52,8 @@
     </nav>
     <div class="menu-container">
         <ul class="menu">
-            <li><a href="Pre-Enrollment.html"><i class="fa-sharp fa-solid fa-clipboard icon"></i>PRE-ENROLLMENT</a></li>
-            <li><a href="req-doc.html"><i class="fa-solid fa-file-lines icon"></i>REQUEST DOCUMENT</a></li>
+            <li class="active"><a href="Pre-Enrollment.html"><i class="fa-sharp fa-solid fa-clipboard icon"></i>PRE-ENROLLMENT</a></li>
+            <li><a href="request-doc-final.html"><i class="fa-solid fa-file-lines icon"></i>REQUEST DOCUMENT</a></li>
             <li><a href="gradeslip.html"><i class="fa-solid fa-table-list icon"></i>GRADESLIP</a></li>
             <li><a href="Course Curriculum.html"><i class="fa-solid fa-list icon "></i>CURRICULUM</a></li>
             <li><a href="Evaluation.html"><i class="fa-solid fa-mobile-screen icon"></i>FACULTY EVALUATION</a></li>
@@ -69,8 +68,100 @@
 <!------------START CONTENT------------>
         <section class="container py-5">
             <div class="headline">
-                <h1> Pre-Enrollment </h1>
-                <i class="fa-solid fa-address-book fa-3x"></i>
+                <h1>PRE-ENROLLMENT</h1>
+                <i class="fa-sharp fa-solid fa-clipboard fa-3x"></i>
+            </div>
+        </section>
+        <section>
+            <div class="container m-auto">
+                <h5>Fill up this form to pre-enroll for the upcoming semester. 
+                Make sure to fill all the necessary informations to avoid errors upon submission.</h5>
+                <br>
+        <form action="#pills-two" class="Pre-Enrollment" id="form1">         
+        <!-- start ng form -->
+                <div class="form-floating my-3">
+                    <input type="email" class="form-control" id="floatingFull Name" placeholder="Name" required>
+                    <label for="floatingEmail"> FULL NAME </label>
+                </div>
+
+<div class="form-floating my-3">
+    <input type="text" class="form-control" id="floatingContact Number" placeholder="Contact" required>
+    <label for="floatingContact">Contact Number</label>
+</div>
+
+<select class="form-select my-3" id="floatingCourse" placeholder="Course" required>
+    <option selected>Course</option>
+    <option value="1">Information Technology</option>
+    <option value="2">Industrial Engineering</option>
+    <option value="3">Electrical Engineering</option>
+    <option value="4">Accounting</option>
+    <option value="5">Entrepreneurship</option> 
+    <label for="floatingCourse"> Course </label>
+  </select>
+  <select class="form-select my-3" aria-label="Default select example" required>
+    <option selected>Campus</option>
+    <option value="1">San Bartolome</option>
+    <option value="2">Batasan</option>
+    <option value="3">San Francisco</option>
+  </select>
+
+<div class="form-floating my-3">
+    <input type="text" class="form-control" id="floatingEmail Address" placeholder="Email" required>
+    <label for="floatingPurpose">Email Address</label>
+</div>
+
+
+<a href="#"> <button class="btn btn-primary px-5 my-5 ms-3" id="next-two" data-bs-toggle="submit" data-bs-target="#pills-two" type="submit" role="button" aria-controls="pills-two" aria-selected="false"> NEXT</button></a>
+
+<a href="#"> <button type="button" class="btn btn-outline-primary px-5 my-5 me-3" data-bs-toggle="modal" data-bs-target="#exit-enrollment"> CANCEL</button></a>
+
+
+</form>
+</div>
+
+        <!-- -----------STEP TWO------------ -->
+
+            <div class="tab-pane fade" id="pills-two" role="tabpanel" aria-labelledby="pills-two-tab" tabindex="0">
+                <form action="#" id="form2">
+                <div class="container m-auto rounded-2">
+                    <p> Kindly check your information before submitting.</p>
+                        <br>
+                    <div class="table-borderless table-responsive-md m-0">
+                        <table class="table table-light table-fixed table-borderless m-auto text-start  rounded-2 enrollment-display">
+                            <tbody>
+                                <tr class="tw-bold">
+                                    <td class="tw-bold top">Email:</td>
+                                    <td class="tw-bold top" id="#">sample1email@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td class="tw-bold">Document:</td>
+                                    <td class="tw-bold" id="#">Registration Form</td>
+                                </tr>
+                                <tr>
+                                    <td class="tw-bold">Purpose:</td>
+                                    <td class="tw-bold" id="#">For Scholarship</td>
+                                </tr>
+                                <tr>
+                                    <td class="tw-bold">Date Needed:</td>
+                                    <td class="tw-bold" id="#">01/24/2023</td>
+                                </tr>
+                                <tr>
+                                    <td class="tw-bold bottom">Address:</td>
+                                    <td class="tw-bold bottom" id="#">N/A</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <button class="btn btn-primary px-5 my-5 ms-3" id="next-two" data-bs-toggle="button" data-bs-target="#pills-two" type="button" role="button" aria-controls="pills-two" aria-selected="false">NEXT</button>
+                    
+                    <button type="button" class="btn btn-primary px-5 my-5 me-3">EDIT</button>
+
+                    <button type="button" class="btn btn-outline-primary px-5 my-5 me-3" data-bs-toggle="modal" data-bs-target="#exit-enrollment">CANCEL</button>
+                
+                </div>
+            </form>
             </div>
         </section>
         <section>
@@ -194,9 +285,16 @@
                     </div>
                 </form>
             </div>
+        </div>
+
+    </div>
+<br><br><br><br><br><br><br>
+<!-- </section> -->
+ 
+<!------------END CONTENT------------>
         </section>
 <!------------END CONTENT------------>        
-</div>
+    </div>
 <!------------END BODY------------>
 
     
@@ -236,14 +334,10 @@
         </div>
     </footer>
 <!------------END FOOTER------------>
-    <script>
-        
-
-    </script>
     <script src="css/bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"></script>
     <script src="css/bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
     <script src="js/jquery.min.js"></script>
-    <script src="js/Enrollment.js"></script>
+    <script src="js/toggle.js"></script>
     <script src="js/calendar.js"></script>
     <script src="js/loading.js"></script>
 </body>
