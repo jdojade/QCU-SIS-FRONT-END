@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> New Library Card </title>
+    <title> Request Documents </title>
     <link rel="stylesheet" href="css/fontawesome-free-6.2.1-web/css/all.min.css"/>
     <link rel="stylesheet" href="css/bootstrap-5.2.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/admin.css">
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/evaluation.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-md sticky-top">
@@ -42,7 +42,7 @@
                           <img src="img/1565034397472.jfif" class="logo rounded-circle">
                         </a>
                         <ul class="dropdown-menu-cus text-center" style="right: 0;">
-                          <li><a class="dropdown-item" href="#">EDIT PROFILE</a></li>
+                          <li><a class="dropdown-item" href="edit-profile.html">EDIT PROFILE</a></li>
                           <li><a class="dropdown-item" href="#">REQUEST STATUS</a></li>
                           <li><a class="dropdown-item" href="#">LOGOUT</a></li>
                         </ul>
@@ -54,7 +54,7 @@
     <div class="menu-container">
         <ul class="menu">
             <li><a href="Pre-Enrollment.html"><i class="fa-sharp fa-solid fa-clipboard icon"></i>PRE-ENROLLMENT</a></li>
-            <li><a href="request-doc-final.html"><i class="fa-solid fa-file-lines icon"></i>REQUEST DOCUMENT</a></li>
+            <li class="active"><a href="request-doc-final.html"><i class="fa-solid fa-file-lines icon"></i>REQUEST DOCUMENT</a></li>
             <li><a href="gradeslip.html"><i class="fa-solid fa-table-list icon"></i>GRADESLIP</a></li>
             <li><a href="Course Curriculum.html"><i class="fa-solid fa-list icon "></i>CURRICULUM</a></li>
             <li><a href="Evaluation.html"><i class="fa-solid fa-mobile-screen icon"></i>FACULTY EVALUATION</a></li>
@@ -67,74 +67,56 @@
 <!------------START BODY------------>
     <div class="container-cus">
 <!------------START CONTENT------------>
-        <section class="container py-5">
+        <section class="container py-5 mb-5">
             <div class="headline">
-                <h1> NEW LIBRARY CARD </h1>
+                <h1>REQUEST DOCUMENT</h1>
                 <i class="fa-solid fa-address-book fa-3x"></i>
             </div>
         </section>
-        <section>
+        <section class="mb-5">
             <div class="container">
-                <form action="#" method="get">
+                <form action="request-doc-status.html" method="get">
                     <div class="step step-1 active">
-                        <div style="top: -38px; position: absolute;">
-                            <h6><b>Kindly fill up the form.</b></h6>
+                        <div style="top: -40px; position: absolute;">
+                            <h6><b>Are you requesting for your your specific document? You can fill up this form to send request. 
+                                <br>
+                                This section ask you to provide your what kind of document you requesting and other information 
+                                about it. Please answer it accurately.</b></h6>
                         </div>
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col">
                                 <div class="form-floating my-3">
-                                    <input type="text" class="form-control" id="studentName" name="Student Full Name" placeholder="Name">
-                                    <label for="studentName"> Student Full Name </label>
-                                    <span id="nameError"></span>       
+                                    <input type="email" class="form-control" id="emailAdd" name="Email Address" placeholder="Name">
+                                    <label for="emailAdd"> Email Address </label>
+                                    <span id="emailReq"></span>
                                 </div>
                                 <div class="form-floating my-3">
-                                    <input type="number" class="form-control" id="studentId" name="Student Number" placeholder="Name">
-                                    <label for="studentId"> Student Number </label>
-                                    <span id="studNoError"></span>
-                                </div>
-                                <div class="form-floating my-3">
-                                    <select class="form-select" id="floatingSelect1" aria-label="Floating label select example">
-                                      <option selected hidden >Choose your Course </option>
-                                      <option value="Bachelor of Science in Information Technology">Bachelor of Science in Information Technology</option>
-                                      <option value="Bachelor of Science in Industial Engineering">Bachelor of Science in Industial Engineering</option>
-                                      <option value="Bachelor of Science in Accountancy">Bachelor of Science in Accountancy</option>
-                                      <option value="Bachelor of Science in Entrepreneurship">Bachelor of Science in Entrepreneurship</option>
-                                      <option value="Bachelor of Electronics Engineering">Bachelor of Science in Electronics Engineering</option>
+                                    <select class="form-select" id="docuType" aria-label="Document Type" value="">
+                                      <option selected class="text-muted">--Select the document--</option>
+                                      <option value="1">Transcript of Record (TOR)</option>
+                                      <option value="2">Diploma</option>
+                                      <option value="3">Honorable Dismissal</option>
+                                      <option value="4">Certificate of Authenticity and Verification (CAV)</option>
+                                      <option value="5">Good Moral Certificate</option>
                                     </select>
-                                    <label for="floatingSelect"> Course </label>
-                                    <span id="CourseError"></span>
+                                    <label for="docuType"> Document </label>
+                                    <span id="docuReq"></span>
                                   </div>
                                   <div class="form-floating my-3">
-                                    <select class="form-select" id="floatingSelect2" aria-label="Floating label select example">
-                                      <option selected hidden>Choose your Campus </option>
-                                      <option value="San Bartolome">San Bartolome</option>
-                                      <option value="Batasan">Batasan</option>
-                                      <option value="San Francisco">San Francisco</option>
-                                    </select>
-                                    <label for="floatingSelect"> Campus </label>
-                                    <span id="campusError"></span>
-                                  </div>
-                            </div>
-                            <div class="col-md-6">
+                                    <input type="text" class="form-control" id="purposeDocu" name="Purpose" placeholder="Name">
+                                    <label for="purposeDocu"> Purpose </label>
+                                    <span id="purReq"></span>
+                                </div> 
+                                <div class="form-floating my-3">
+                                    <input type="date" class="form-control" id="floatingDate" placeholder="Date Needed" required>
+                                    <label for="floatingDate">Date Needed</label>
+                                    <span id="date"></span>
+                                </div>
                                 <div class="form-floating my-3">
                                     <input type="text" class="form-control" id="address" name="address" placeholder="Name">
-                                    <label for="address"> Address </label>
+                                    <label for="address"> Address to (Put N/A if not applicable)</label>
                                     <span id="addressError"></span>
-                                </div>
-                                <div class="form-floating my-3">
-                                    <input type="number" class="form-control" id="contactno" name="Contact Number" placeholder="Name">
-                                    <label for="contactno"> Contact Number </label>
-                                    <span id="conNoError"></span>
-                                </div>
-                                <div class="form-floating my-3">
-                                    <input type="text" class="form-control" id="schooly" name="School Year" placeholder="Name">
-                                    <label for="schooly"> School Year </label>
-                                    <span id="schoolyError"></span>
-                                </div>
-                                <div class="form-floating my-3">
-                                <input type="file" class="form-control" id="file" placeholder="Upload your photo" name="file">
-                                <label type="file"> 1x1 </label>
-                                </div>
+                                </div>                             
                             </div>
                         </div>
                         <div class="form-footer">
@@ -144,52 +126,40 @@
                                 <span></span>
                             </div>
                             <div class="form-button">
-                                <button type="button" class="btn btn-sm btn-sub-1 btn-shadow px-5" id="first_btn">NEXT</button>
+                                <button type="button" class="next-btn btn btn-sm btn-sub-1 btn-shadow px-5" id="first_btn">NEXT</button>
                                 <button type="button" class="btn btn-sm btn-sub-2 btn-shadow px-5 me-4">CANCEL</button>
                             </div>
                         </div>
                         <span id="submitError"></span>
                     </div>
                     <div class="step step-2">
-                        <div style="top: -38px;position: absolute;">
-                            <h6><b>Kindly check the your information before submitting.</b></h6>
+                        <div style="top: -40px;position: absolute;">
+                            <h6><b>Please review all the information you&#39;ve entered before submitting the form. 
+                                <br>
+                                You can click “EDIT” to edit.</b></h6>
                         </div>
                         <div class="row form-view">
-                            <div class="col-md-6">
+                            <div>
                                 <h5>
-                                    <strong>Student Full Name</strong>
+                                    <strong>Name:</strong>
                                     <span id="info_1"></span>
                                 </h5>
                                 <h5>
-                                    <strong>Contact</strong>
+                                    <strong>Student Number:</strong>
                                     <span id="info_2"></span>
                                 </h5>
                                 <h5>
-                                    <strong>Course</strong>
+                                    <strong>Email Address:</strong>
                                     <span id="info_3"></span>
                                 </h5>
                                 <h5>
-                                    <strong>Campus</strong>
+                                    <strong>Document:</strong>
                                     <span id="info_4"></span>
                                 </h5>
-                            </div>
-                            <div class="col-md-6">
                                 <h5>
-                                    <strong>Address</strong>
+                                    <strong>Purpose:</strong>
                                     <span id="info_5"></span>
-                                </h5>
-                                <h5>
-                                    <strong>Contact Number</strong>
-                                    <span id="info_6"></span>
-                                </h5>
-                                <h5>
-                                    <strong>School Year</strong>
-                                    <span id="info_7"></span>
-                                </h5>
-                                <h5>
-                                    <strong>1x1 Photo</strong>
-                                    <span id="info_8"></span>
-                                </h5>
+                                </h5>                                              
                             </div>
                         </div>
                         <div class="form-footer">
@@ -201,13 +171,12 @@
                             <div class="form-button">
                                 <button type="button" class="next-btn btn btn-sm btn-sub-1 btn-shadow px-5">NEXT</button>
                                 <button type="button" class="previous-btn btn btn-sm btn-sub-2 btn-shadow px-5 me-4">EDIT</button>
-                                <button type="button" class="btn btn-sm btn-sub-2 btn-shadow px-5 me-4">CANCEL</button>
                             </div>
                         </div>
                     </div>
                     <div class="step step-3">
-                        <div style="top: -38px; position: absolute;">
-                            <h6><b>Company information has been successfully submitted</b></h6>
+                        <div style="top: -40px; position: absolute;">
+                            <h6><b>Request has been successfully submitted</b></h6>
                         </div>
                         <div class="form-success">
                             <img src="img/Success.png" alt="Success">
@@ -267,14 +236,10 @@
         </div>
     </footer>
 <!------------END FOOTER------------>
-    <script>
-        
-
-    </script>
     <script src="css/bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"></script>
     <script src="css/bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
     <script src="js/jquery.min.js"></script>
-    <script src="js/Req-new.js"></script>
+    <script src="js/toggle.js"></script>
     <script src="js/calendar.js"></script>
     <script src="js/loading.js"></script>
 </body>
