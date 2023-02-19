@@ -54,11 +54,10 @@
     <div class="menu-container">
         <ul class="menu">
             <li><a href="Pre-Enrollment.html"><i class="fa-sharp fa-solid fa-clipboard icon"></i>PRE-ENROLLMENT</a></li>
-            <li><a href="Request-docs.html"><i class="fa-solid fa-file-lines icon"></i>REQUEST DOCUMENT</a></li>
+            <li><a href="request-doc-final.html"><i class="fa-solid fa-file-lines icon"></i>REQUEST DOCUMENT</a></li>
             <li><a href="gradeslip.html"><i class="fa-solid fa-table-list icon"></i>GRADESLIP</a></li>
             <li><a href="Course Curriculum.html"><i class="fa-solid fa-list icon "></i>CURRICULUM</a></li>
             <li><a href="Evaluation.html"><i class="fa-solid fa-mobile-screen icon"></i>FACULTY EVALUATION</a></li>
-            <li><a href="vaccination.html"><i class="fa-solid fa-credit-card icon"></i>VACCINATION</a></li>
             <li><a href="event.html"><i class="fa-solid fa-tag icon"></i>EVENTS</a></li>
             <li><a href="Calendar.html"><i class="fa-solid fa-calendar-days icon"></i>UNIVERSITY CALENDAR</a></li>
             <li><a href="faqs.html"><i class="fa-solid fa-info icon"></i>FAQS</a></li>
@@ -94,66 +93,61 @@
                                 </div>
                                 <div class="form-floating my-3">
                                     <select class="form-select" id="floatingSelect1" aria-label="Floating label select example">
-                                        <option selected hidden >Choose your Course </option>
-                                        <option value="Bachelor of Science in Information Technology">Bachelor of Science in Information Technology</option>
-                                        <option value="Bachelor of Science in Industial Engineering">Bachelor of Science in Industial Engineering</option>
-                                        <option value="Bachelor of Science in Accountancy">Bachelor of Science in Accountancy</option>
-                                        <option value="Bachelor of Science in Entrepreneurship">Bachelor of Science in Entrepreneurship</option>
-                                        <option value="Bachelor of Electronics Engineering">Bachelor of Science in Electronics Engineering</option>
+                                      <option selected hidden >Choose your Course </option>
+                                      <option value="Bachelor of Science in Information Technology">Bachelor of Science in Information Technology</option>
+                                      <option value="Bachelor of Science in Industial Engineering">Bachelor of Science in Industial Engineering</option>
+                                      <option value="Bachelor of Science in Accountancy">Bachelor of Science in Accountancy</option>
+                                      <option value="Bachelor of Science in Entrepreneurship">Bachelor of Science in Entrepreneurship</option>
+                                      <option value="Bachelor of Electronics Engineering">Bachelor of Science in Electronics Engineering</option>
                                     </select>
                                     <label for="floatingSelect"> Course </label>
-                                    <span id="courseError"></span>
-                                </div>
-                                <div class="form-floating my-3">
+                                    <span id="CourseError"></span>
+                                  </div>
+                                  <div class="form-floating my-3">
                                     <select class="form-select" id="floatingSelect2" aria-label="Floating label select example">
-                                        <option selected hidden>Choose your Campus </option>
-                                        <option value="San Bartolome">San Bartolome</option>
-                                        <option value="Batasan">Batasan</option>
-                                        <option value="San Francisco">San Francisco</option>
+                                      <option selected hidden>Choose your Campus </option>
+                                      <option value="San Bartolome">San Bartolome</option>
+                                      <option value="Batasan">Batasan</option>
+                                      <option value="San Francisco">San Francisco</option>
                                     </select>
                                     <label for="floatingSelect"> Campus </label>
                                     <span id="campusError"></span>
-                                </div>
+                                  </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating my-3">
-                                    <input type="text" class="form-control" id="address" name="address" placeholder="Address">
+                                    <input type="text" class="form-control" id="address" name="address" placeholder="Name">
                                     <label for="address"> Address </label>
                                     <span id="addressError"></span>
                                 </div>
                                 <div class="form-floating my-3">
-                                    <input type="number" class="form-control" id="contactno" name="Contact Number" placeholder="Contact Number">
+                                    <input type="number" class="form-control" id="contactno" name="Contact Number" placeholder="Name">
                                     <label for="contactno"> Contact Number </label>
                                     <span id="conNoError"></span>
                                 </div>
                                 <div class="form-floating my-3">
-                                    <input type="text" class="form-control" id="schooly" name="School Year" placeholder="School Year">
+                                    <input type="text" class="form-control" id="schooly" name="School Year" placeholder="Name">
                                     <label for="schooly"> School Year </label>
                                     <span id="schoolyError"></span>
-                                </div>   
+                                </div>
                                 <div class="form-floating my-3">
-                                    <input type="file" class="form-control" id="file" placeholder="Upload your photo" name="file">
-                                    <label type="file"> 1x1 Photo </label>
+                                <input type="file" class="form-control" id="file" placeholder="Upload your photo" name="file">
+                                <label type="file"> 1x1 </label>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-12">
-                        <div class="form-floating my-3">
-                            <input type="file" class="form-control" id="file" placeholder="Upload your Affidavit of loss" name="file">
-                            <label type="file"> Affidavit of loss </label>
-                        </div>
+                            <div class="col-md-12">
+                                <div class="form-floating my-3">
+                                    <input type="file" class="form-control" id="file" placeholder="Upload your photo" name="file">
+                                    <label type="file"> Upload your affidavit of loss</label>
+                                </div>
+                            </div>
+                        </div>    
                         <div class="form-footer">
                             <div class="form-page">
                                 <span class="current"></span>
                                 <span></span>
                                 <span></span>
                             </div>
-                            <div class="form-footer">
-                                <div class="form-page">
-                                    <span class="current"></span>
-                                    <span></span>
-                                    <span></span>
-                                </div>
                             <div class="form-button">
                                 <button type="button" class="btn btn-sm btn-sub-1 btn-shadow px-5" id="first_btn">NEXT</button>
                                 <button type="button" class="btn btn-sm btn-sub-2 btn-shadow px-5 me-4">CANCEL</button>
@@ -172,7 +166,7 @@
                                     <span id="info_1"></span>
                                 </h5>
                                 <h5>
-                                    <strong>Student Number</strong>
+                                    <strong>Contact</strong>
                                     <span id="info_2"></span>
                                 </h5>
                                 <h5>
@@ -183,6 +177,8 @@
                                     <strong>Campus</strong>
                                     <span id="info_4"></span>
                                 </h5>
+                            </div>
+                            <div class="col-md-6">
                                 <h5>
                                     <strong>Address</strong>
                                     <span id="info_5"></span>
@@ -195,15 +191,9 @@
                                     <strong>School Year</strong>
                                     <span id="info_7"></span>
                                 </h5>
-                                </div>
-                            <div class="col-md-6">
                                 <h5>
                                     <strong>1x1 Photo</strong>
                                     <span id="info_8"></span>
-                                </h5>
-                                <h5>
-                                    <strong>Affidavit of Lost</strong>
-                                    <span id="info_9"></span>
                                 </h5>
                             </div>
                         </div>
@@ -216,6 +206,7 @@
                             <div class="form-button">
                                 <button type="button" class="next-btn btn btn-sm btn-sub-1 btn-shadow px-5">NEXT</button>
                                 <button type="button" class="previous-btn btn btn-sm btn-sub-2 btn-shadow px-5 me-4">EDIT</button>
+                                <button type="button" class="btn btn-sm btn-sub-2 btn-shadow px-5 me-4">CANCEL</button>
                             </div>
                         </div>
                     </div>
@@ -288,7 +279,7 @@
     <script src="css/bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"></script>
     <script src="css/bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
     <script src="js/jquery.min.js"></script>
-    <script src="js/Req-lost.js"></script>
+    <script src="js/Req-new.js"></script>
     <script src="js/calendar.js"></script>
     <script src="js/loading.js"></script>
 </body>

@@ -58,7 +58,6 @@
             <li><a href="gradeslip.html"><i class="fa-solid fa-table-list icon"></i>GRADESLIP</a></li>
             <li><a href="Course Curriculum.html"><i class="fa-solid fa-list icon "></i>CURRICULUM</a></li>
             <li><a href="Evaluation.html"><i class="fa-solid fa-mobile-screen icon"></i>FACULTY EVALUATION</a></li>
-            <li><a href="vaccination.html"><i class="fa-solid fa-credit-card icon"></i>VACCINATION</a></li>
             <li><a href="event.html"><i class="fa-solid fa-tag icon"></i>EVENTS</a></li>
             <li><a href="Calendar.html"><i class="fa-solid fa-calendar-days icon"></i>UNIVERSITY CALENDAR</a></li>
             <li><a href="faqs.html"><i class="fa-solid fa-info icon"></i>FAQS</a></li>
@@ -86,6 +85,16 @@
                         <div class="row">
                             <div class="col">
                                 <div class="form-floating my-3">
+                                    <input type="text" class="form-control" id="name" name="Name" placeholder="Name">
+                                    <label for="name"> Name </label>
+                                    <span id="emailReq"></span>
+                                </div>
+                                <div class="form-floating my-3">
+                                    <input type="text" class="form-control" id="studNo" name="studNo" placeholder="Name">
+                                    <label for="studNo"> Student No. </label>
+                                    <span id="emailReq"></span>
+                                </div>
+                                <div class="form-floating my-3">
                                     <input type="email" class="form-control" id="emailAdd" name="Email Address" placeholder="Name">
                                     <label for="emailAdd"> Email Address </label>
                                     <span id="emailReq"></span>
@@ -102,21 +111,11 @@
                                     <label for="docuType"> Document </label>
                                     <span id="docuReq"></span>
                                   </div>
-                                  <div class="form-floating my-3">
+                                <div class="form-floating my-3">
                                     <input type="text" class="form-control" id="purposeDocu" name="Purpose" placeholder="Name">
                                     <label for="purposeDocu"> Purpose </label>
                                     <span id="purReq"></span>
-                                </div> 
-                                <div class="form-floating my-3">
-                                    <input type="date" class="form-control" id="floatingDate" placeholder="Date Needed" required>
-                                    <label for="floatingDate">Date Needed</label>
-                                    <span id="date"></span>
-                                </div>
-                                <div class="form-floating my-3">
-                                    <input type="text" class="form-control" id="address" name="address" placeholder="Name">
-                                    <label for="address"> Address to (Put N/A if not applicable)</label>
-                                    <span id="addressError"></span>
-                                </div>                             
+                                </div>                                
                             </div>
                         </div>
                         <div class="form-footer">
@@ -126,7 +125,7 @@
                                 <span></span>
                             </div>
                             <div class="form-button">
-                                <button type="button" class="next-btn btn btn-sm btn-sub-1 btn-shadow px-5">NEXT</button>
+                                <button type="button" class="next-btn btn btn-sm btn-sub-1 btn-shadow px-5" id="first_btn">NEXT</button>
                                 <button type="button" class="btn btn-sm btn-sub-2 btn-shadow px-5 me-4">CANCEL</button>
                             </div>
                         </div>
@@ -141,26 +140,27 @@
                         <div class="row form-view">
                             <div>
                                 <h5>
-                                    <strong>Email Address:</strong>
+                                    <strong>Name:</strong>
                                     <span id="info_1"></span>
                                 </h5>
                                 <h5>
-                                    <strong>Document:</strong>
+                                    <strong>Student Number:</strong>
                                     <span id="info_2"></span>
                                 </h5>
                                 <h5>
-                                    <strong>Purpose:</strong>
+                                    <strong>Email Address:</strong>
                                     <span id="info_3"></span>
                                 </h5>
                                 <h5>
-                                    <strong>Date Needed:</strong>
+                                    <strong>Document:</strong>
                                     <span id="info_4"></span>
                                 </h5>
                                 <h5>
-                                    <strong>Address</strong>
+                                    <strong>Purpose:</strong>
                                     <span id="info_5"></span>
-                                </h5>                                
+                                </h5>                                              
                             </div>
+                            
                         </div>
                         <div class="form-footer">
                             <div class="form-page">
@@ -176,7 +176,7 @@
                     </div>
                     <div class="step step-3">
                         <div style="top: -40px; position: absolute;">
-                            <h6><b>Company information has been successfully submitted</b></h6>
+                            <h6><b>Request has been successfully submitted</b></h6>
                         </div>
                         <div class="form-success">
                             <img src="img/Success.png" alt="Success">

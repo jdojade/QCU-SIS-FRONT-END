@@ -239,15 +239,15 @@
 .btn-1{
     background-color: #274C77 !important;
     border: 2px solid #274C77 !important;
-    font-weight: 700 !important;
+    font-weight: 900 !important;
     color:#FFF;
 }
   
 .btn-outline-1{
     border: 2px solid #274C77 !important;
     color: #FFF !important;
-    font-weight: 700 !important;
-}
+    font-weight: 900 !important;
+}s
   
 .btn-1:hover{
     background-color: #13212B !important;
