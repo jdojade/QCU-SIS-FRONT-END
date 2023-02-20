@@ -411,6 +411,10 @@ tbody tr td:nth-child(1){
     background-color: #002F49 !important;
   }
 
+.imgPost img {
+    width: 10rem;
+    height: 6rem;
+}
 
 
 /* ---------------SASD------------------*/
