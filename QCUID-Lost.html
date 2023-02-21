@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/admin.css">
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/evaluation.css">
+
 </head>
 <body>
     <nav class="navbar navbar-expand-md sticky-top">
@@ -54,11 +55,10 @@
     <div class="menu-container">
         <ul class="menu">
             <li><a href="Pre-Enrollment.html"><i class="fa-sharp fa-solid fa-clipboard icon"></i>PRE-ENROLLMENT</a></li>
-            <li><a href="req-doc.html"><i class="fa-solid fa-file-lines icon"></i>REQUEST DOCUMENT</a></li>
+            <li><a href="request-doc-final.html"><i class="fa-solid fa-file-lines icon"></i>REQUEST DOCUMENT</a></li>
             <li><a href="gradeslip.html"><i class="fa-solid fa-table-list icon"></i>GRADESLIP</a></li>
             <li><a href="Course Curriculum.html"><i class="fa-solid fa-list icon "></i>CURRICULUM</a></li>
             <li><a href="Evaluation.html"><i class="fa-solid fa-mobile-screen icon"></i>FACULTY EVALUATION</a></li>
-            <li><a href="vaccination.html"><i class="fa-solid fa-credit-card icon"></i>VACCINATION</a></li>
             <li><a href="event.html"><i class="fa-solid fa-tag icon"></i>EVENTS</a></li>
             <li><a href="Calendar.html"><i class="fa-solid fa-calendar-days icon"></i>UNIVERSITY CALENDAR</a></li>
             <li><a href="faqs.html"><i class="fa-solid fa-info icon"></i>FAQS</a></li>
@@ -108,13 +108,15 @@
                                     <br><br>
                                     Personal and sensitive information will be used in processing application, admission, and transaction with the University.
                                     <br><br>
-                                    <div class="form-check">
+                                    <br>
+                                    <div class="form-check inlineRadioOptions">
                                         <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                                         <label class="form-check-label" for="flexRadioDefault1">
                                         <strong>I AGREE</strong>
                                         </label>
+                                    <h5 class="float-end"><strong>Make sure all the information is correct.</strong></b></h5>
                                     </div>        
-                        </div>
+                                </div> 
                         <div class="form-footer">
                             <div class="form-page">
                                 <span class="current"></span>
@@ -122,12 +124,12 @@
                                 <span></span>
                             </div>
                             <div class="form-button">
-                                <button type="button" class="next-btn btn btn-sm btn-sub-1 btn-shadow px-5" id="first_btn">NEXT</button>
-                                <a href="QCUID.html"><button type="button" class="btn btn-sm btn-sub-2 btn-shadow px-5 me-4">CANCEL</button></a>
+                                <button type="button" class="next-btn btn btn-sm btn-sub-1 btn-shadow px-5" id="first_btn"><b>NEXT</b></button>
+                                <a href="QCUID.html"><button type="button" class="btn btn-sm btn-sub-2 btn-shadow px-5 me-4"><b>CANCEL</b></button></a>
                             </div>
                         </div>
                         <span id="submitError"></span>
-                    </div>
+                    </div>  
                     <div class="step step-2">
                         <div class="my-8 position: absolute;">
                             <h3><b>Student Information Section</b></h3>
@@ -213,8 +215,8 @@
                                 <span></span>
                             </div>
                             <div class="form-button">
-                                <button type="button" class="next-btn btn btn-sm btn-sub-1 btn-shadow px-5" id="first_btn">NEXT</button>
-                                <button type="button" class="btn btn-sm btn-sub-2 btn-shadow px-5 me-4">CANCEL</button>
+                                <button type="button" class="next-btn btn btn-sm btn-sub-1 btn-shadow px-5" id="first_btn"><b>NEXT</b></button>
+                                <a href="QCUID.html" button type="button" class="btn btn-sm btn-sub-2 btn-shadow px-5 me-4"><b>CANCEL</b></button></a>
                             </div>
                         </div>
                     </div>
@@ -224,7 +226,9 @@
                             </div>
                         <section>
                             <br>
-                        <h3 class="text-primary"><strong>REMINDERS</strong></h3>
+                            <div class="d-flex" style: h1 border: 2px solid red;>
+                                <h3 class="text-primary"><strong>REMINDERS</strong></h3>
+                            </div>
                         </secction>
                         <br>
                         <div class="row">
@@ -292,10 +296,20 @@
                                 </h5>
                             </div>
                             <hr></hr>
-                            <div>
-                                <h5><b>The photo must have been taken in the past 3 months. The file should be .jpeg. Failure to follow, your ID will not be printed.</b></h5>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5><b>The photo must have been taken in the past 3 months. The file should be .jpeg. Failure to follow, your ID will not be printed.</b></h5>
+                                    <div class="form-floating my-3">
+                                        <input type="file" class="form-control" id="file" placeholder="Upload Student Picture" name="file">
+                                        <label type="file"> Student Picture Upload Here </label>
+                                    </div> 
+                                    <div class="form-floating my-3">
+                                        <input type="file" class="form-control" id="file" placeholder="Upload Student Signature" name="file">
+                                        <label type="file"> Student Signature Upload Here </label>
+                                    </div>
+                                </div>
                             </div>
-                         </div>
+                        </div>        
                         <div class="form-footer">
                             <div class="form-page">
                                 <span></span>
@@ -303,8 +317,8 @@
                                 <span class="current"></span>
                             </div>
                             <div class="form-button">
-                                <button type="button" class="next-btn btn btn-sm btn-sub-1 btn-shadow px-5" id="first_btn">NEXT</button>
-                                <button type="button" class="btn btn-sm btn-sub-2 btn-shadow px-5 me-4">CANCEL</button>
+                                <button type="button" class="next-btn btn btn-sm btn-sub-1 btn-shadow px-5" id="first_btn"><b>NEXT</b></button>
+                                <button type="button" class="btn btn-sm btn-sub-2 btn-shadow px-5 me-4"><b>CANCEL</b></button>
                             </div>
                         </div>
                     </div>
@@ -349,8 +363,8 @@
                                 <span class="current"></span>
                             </div>
                             <div class="form-button">
-                                <button type="button" class="next-btn btn btn-sm btn-sub-1 btn-shadow px-5" id="first_btn">NEXT</button>
-                                <button type="button" class="btn btn-sm btn-sub-2 btn-shadow px-5 me-4">CANCEL</button>
+                                <button type="button" class="next-btn btn btn-sm btn-sub-1 btn-shadow px-5" id="first_btn"><b>NEXT</b></button>
+                                <button type="button" class="btn btn-sm btn-sub-2 btn-shadow px-5 me-4"><b>CANCEL</b></button>
                             </div>
                         </div>
                     </div>
@@ -432,8 +446,9 @@
                                 <span class="current"></span>
                             </div>
                             <div class="form-button">
-                                <button type="button" class="next-btn btn btn-sm btn-sub-1 btn-shadow px-5" id="first_btn">NEXT</button>
-                                <button type="button" class="btn btn-sm btn-sub-2 btn-shadow px-5 me-4">CANCEL</button>
+                                <button type="button" class="next-btn btn btn-sm btn-sub-1 btn-shadow px-5" id="first_btn"><b>NEXT</b></button>
+                                <button type="button" class="btn btn-sm btn-sub-2 btn-shadow px-5 me-4"><b>EDIT</b></button>
+                                <button type="button" class="btn btn-sm btn-sub-2 btn-shadow px-5 me-4"><b>CANCEL</b></button>
                             </div>
                         </div>
                     </div>
@@ -455,11 +470,7 @@
                                 <span></span>
                                 <span></span>
                                 <span class="current"></span>
-                            </div>
-                            <div class="form-button">
-                                <a href="QCUID.html">
-                                <button type="submit" class="submit-btn btn btn-sm btn-sub-1 btn-shadow px-5">CONFIRM</button></a>
-                            </div>
+                            </div>+
                         </div>
                     </div>  
                 </form>
