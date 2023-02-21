@@ -125,7 +125,7 @@ function validateStudNo(){
 function validateconNo(){
     var isValue = document.getElementById('contactno');
     if (!isValue.value){
-        conNoError.innerHTML = "Student No. 11 is required";
+        conNoError.innerHTML = "Contact No. 11 is required";
         isValue.classList.add('invalid');
         return false;
     }
@@ -135,7 +135,7 @@ function validateconNo(){
         return false;
     }
     if(!isValue.value.match(/^[0-9]{11}$/)){
-        isValue.innerHTML = "Student No. is required";
+        isValue.innerHTML = "Contact. is required";
         isValue.classList.add('invalid');
         return false; 
     }

@@ -75,25 +75,25 @@
         </section>
         <section class="mb-5">
             <div class="container">
-                <form action="request-doc-status.html" method="get">
+                <form action="#" method="get">
                     <div class="step step-1 active">
                         <div style="top: -40px; position: absolute;">
-                            <h6><b>Are you requesting for your your specific document? You can fill up this form to send request. 
+                            <h6><b>Are you requesting for your your specific document? You can fill up this form to send request.
                                 <br>
-                                This section ask you to provide your what kind of document you requesting and other information 
+                                This section ask you to provide your what kind of document you requesting and other information
                                 about it. Please answer it accurately.</b></h6>
                         </div>
                         <div class="row">
-                            <div class="col">
+                            <div class="col-md-6">
                                 <div class="form-floating my-3">
                                     <input type="text" class="form-control" id="name" name="Name" placeholder="Name">
                                     <label for="name"> Name </label>
-                                    <span id="emailReq"></span>
+                                    <span id="nameReq"></span>
                                 </div>
                                 <div class="form-floating my-3">
                                     <input type="text" class="form-control" id="studNo" name="studNo" placeholder="Name">
                                     <label for="studNo"> Student No. </label>
-                                    <span id="emailReq"></span>
+                                    <span id="snumberReq"></span>
                                 </div>
                                 <div class="form-floating my-3">
                                     <input type="email" class="form-control" id="emailAdd" name="Email Address" placeholder="Name">
@@ -102,12 +102,12 @@
                                 </div>
                                 <div class="form-floating my-3">
                                     <select class="form-select" id="docuType" aria-label="Document Type" value="">
-                                      <option selected class="text-muted">--Select the document--</option>
-                                      <option value="1">Transcript of Record (TOR)</option>
-                                      <option value="2">Diploma</option>
-                                      <option value="3">Honorable Dismissal</option>
-                                      <option value="4">Certificate of Authenticity and Verification (CAV)</option>
-                                      <option value="5">Good Moral Certificate</option>
+                                      <option selected hidden>--Select the document--</option>
+                                      <option value="Transcript of Record (TOR)">Transcript of Record (TOR)</option>
+                                      <option value="Diploma">Diploma</option>
+                                      <option value="Honorable Dismissal">Honorable Dismissal</option>
+                                      <option value="Certificate of Authenticity and Verification (CAV)">Certificate of Authenticity and Verification (CAV)</option>
+                                      <option value="Good Moral Certificate">Good Moral Certificate</option>
                                     </select>
                                     <label for="docuType"> Document </label>
                                     <span id="docuReq"></span>
@@ -116,7 +116,7 @@
                                     <input type="text" class="form-control" id="purposeDocu" name="Purpose" placeholder="Name">
                                     <label for="purposeDocu"> Purpose </label>
                                     <span id="purReq"></span>
-                                </div>                                
+                                </div>
                             </div>
                         </div>
                         <div class="form-footer">
@@ -126,7 +126,7 @@
                                 <span></span>
                             </div>
                             <div class="form-button">
-                                <button type="button" class="next-btn btn btn-sm btn-sub-1 btn-shadow px-5">NEXT</button>
+                                <button type="button" class="next-btn btn btn-sm btn-sub-1 btn-shadow px-5" id="first_btn">NEXT</button>
                                 <button type="button" class="btn btn-sm btn-sub-2 btn-shadow px-5 me-4">CANCEL</button>
                             </div>
                         </div>
@@ -134,26 +134,34 @@
                     </div>
                     <div class="step step-2">
                         <div style="top: -40px;position: absolute;">
-                            <h6><b>Please review all the information you&#39;ve entered before submitting the form. 
+                            <h6><b>Please review all the information you&#39;ve entered before submitting the form.
                                 <br>
                                 You can click “EDIT” to edit.</b></h6>
                         </div>
                         <div class="row form-view">
-                            <div>
+                            <div class="col-md-6">
                                 <h5>
-                                    <strong>Email Address:</strong>
+                                    <strong>Name:</strong>
                                     <span id="info_1"></span>
                                 </h5>
                                 <h5>
-                                    <strong>Document:</strong>
+                                    <strong>Student Number:</strong>
                                     <span id="info_2"></span>
                                 </h5>
                                 <h5>
-                                    <strong>Purpose:</strong>
+                                    <strong>Email Address:</strong>
                                     <span id="info_3"></span>
-                                </h5>                                
+                                </h5>
+                                <h5>
+                                    <strong>Document:</strong>
+                                    <span id="info_4"></span>
+                                </h5>
+                                <h5>
+                                    <strong>Purpose:</strong>
+                                    <span id="info_5"></span>
+                                </h5>
                             </div>
-                            
+
                         </div>
                         <div class="form-footer">
                             <div class="form-page">
@@ -164,6 +172,7 @@
                             <div class="form-button">
                                 <button type="button" class="next-btn btn btn-sm btn-sub-1 btn-shadow px-5">NEXT</button>
                                 <button type="button" class="previous-btn btn btn-sm btn-sub-2 btn-shadow px-5 me-4">EDIT</button>
+                                <button type="button" class="btn btn-sm btn-sub-2 btn-shadow px-5 me-4">CANCEL</button>
                             </div>
                         </div>
                     </div>
@@ -188,11 +197,11 @@
                 </form>
             </div>
         </section>
-<!------------END CONTENT------------>        
+<!------------END CONTENT------------>
 </div>
 <!------------END BODY------------>
 
-    
+
 <!------------STAR FOOTER------------>
     <footer id="sticky-footer" class="flex-shrink-0 py-1 text-white align-content-center">
         <div class="container p-3">
@@ -232,8 +241,8 @@
     <script src="css/bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"></script>
     <script src="css/bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
     <script src="js/jquery.min.js"></script>
-    <script src="js/toggle.js"></script>
-    <script src="js/calendar.js"></script>
+    <!-- <script src="js/toggle.js"></script> -->
+    <script src="js/request.js"></script>
     <script src="js/loading.js"></script>
 </body>
 </html>

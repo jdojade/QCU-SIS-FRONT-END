@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> COURSE CURRICULUM</title>
+    <title> SASD Student Deashboard </title>
     <link rel="stylesheet" href="css/fontawesome-free-6.2.1-web/css/all.min.css"/>
     <link rel="stylesheet" href="css/bootstrap-5.2.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/admin.css">
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/Course.css">
+    <link rel="stylesheet" href="css/style1.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-md sticky-top">
+    <nav class="navbar navbar-expand-md sticky-md-top">
         <div class="container-fluid p-0" >
             <div class="d-flex flex-colum align-items-center">
                 <button class="btn-hamburger" type="button" id="hamburger">
@@ -37,12 +37,12 @@
                     <li class="navbar-item">
                         <a href="#" class="nav-link text-white fs-6 fw-900 text-decoration-none">ABOUT QCU</a>
                     </li>
-                    <li class="nav-item dropdown" onmouseleave="mouseLeave()">
+                    <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button">
                           <img src="img/1565034397472.jfif" class="logo rounded-circle">
                         </a>
                         <ul class="dropdown-menu-cus text-center" style="right: 0;" data-bs-keyboard="true" tabindex="-1" aria-hidden="false">
-                          <li><a class="dropdown-item" href="#">EDIT PROFILE</a></li>
+                          <li><a class="dropdown-item" href="edit-profile.html">EDIT PROFILE</a></li>
                           <li><a class="dropdown-item" href="#">REQUEST STATUS</a></li>
                           <li><a class="dropdown-item" href="#">LOGOUT</a></li>
                         </ul>
@@ -54,9 +54,9 @@
     <div class="menu-container">
         <ul class="menu">
             <li><a href="Pre-Enrollment.html"><i class="fa-sharp fa-solid fa-clipboard icon"></i>PRE-ENROLLMENT</a></li>
-            <li><a href="request-doc-final.html"><i class="fa-solid fa-file-lines icon"></i>REQUEST DOCUMENT</a></li>
+            <li><a href="req-doc.html"><i class="fa-solid fa-file-lines icon"></i>REQUEST DOCUMENT</a></li>
             <li><a href="gradeslip.html"><i class="fa-solid fa-table-list icon"></i>GRADESLIP</a></li>
-            <li class="active"><a href="Course Curriculum.html"><i class="fa-solid fa-list icon "></i>CURRICULUM</a></li>
+            <li><a href="Course Curriculum.html"><i class="fa-solid fa-list icon "></i>CURRICULUM</a></li>
             <li><a href="Evaluation.html"><i class="fa-solid fa-mobile-screen icon"></i>FACULTY EVALUATION</a></li>
             <li><a href="vaccination.html"><i class="fa-solid fa-credit-card icon"></i>VACCINATION</a></li>
             <li><a href="event.html"><i class="fa-solid fa-tag icon"></i>EVENTS</a></li>
@@ -66,57 +66,56 @@
     </div>
 <!------------START BODY------------>
     <div class="container-cus">
-<!------------START CONTENT------------>
-        <section class="container py-5">
-            <div class="headline">
-                <h1>COURSE CURRICULUM</h1>
-                <i class="fa-solid fa-list fa-3x"></i>
-            </div>
-        </section>
-        <section>
+<!------------START CONTENT------------>    
+<section>
 
-            <div class="container m-auto">
+    <div class="container m-auto">
+        <form action="#" class="library-1" id="registrar">
+            <h1> SASD STUDENT DASHBOARD <i class="fa-solid fa-book-open fa-1x mt-5"></i></h1>
+            <hr class="my-3">&nbsp;
             
-                <h5>This section provides e-copy of your gradeslip where you can also download it. 
-                    Take note that this is not a certified true copy of your gradeslip. You stil need a request for that.</h5>
-                    <br>
-                
-                    <!-- start ng preview ng pdf -->
-               
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                    
+                </section>                    
+<section>
+    <div class="container">
+        <ul class="course">
 
-                <embed class="border-0 rounded-1 pdf" src="pdf/2019-BSIT-Curriculum.pdf">
-                
+            <li>
+                <a href="Borrowed-Item.html" class="d-flex text-decoration-none">
+                    <i class="fa-sharp fa-solid fa-desktop"></i>
+                    <span></span>
+                    <h3> LAPTOP / POCKET WIFI</h3>
+                </a>
+            </li>
 
-                    <!-- end of preview -->
-                    <div class="text-end w-100 py-5">
-                        <!-- <button type="button" class="btn btn-primary px-5 my-5 ms-3" type="submit">DOWNLOAD</button> -->
-                       <!--<button class="btn btn-primary px-5 my-5 ms-3" onclick="window.open('pdf/2019-BSIT-Curriculum.pdf')" type="button">DOWNLOAD</button>-->
-                        <a href="#" class="btn btn-sub-2 btn-shadow px-5 m-2 btn-sm"><b>BACK</b></a>
-                        <a href="pdf/2019-BSIT-Curriculum.pdf" download="Curriculum" class="btn btn-sub-1 btn-shadow px-5 m-2 btn-sm" onclick="window.open('pdf/2019-BSIT-Curriculum.pdf')" type="button"><b>Download</b></a>
+            <li>
+                <a href="Infractions.html" class="d-flex text-decoration-none">
+                    <i class="fa-sharp fa-solid fa-school"></i>
+                    <span></span>
+                    <h3> INFRACTIONS </h3>
+                </a>
+            </li>
+            
+            <li>
+                <a href="QCUID.html" class="d-flex text-decoration-none">
+                    <i class="fa-sharp fa-solid fa-book"></i>
+                    <span></span>
+                    <h3> QCU I.D APPLICATION</h3> 
+                </a>
+            </li>
+        </div>
+    </section>
+</section>
 
-                    </div>
-                
-                
-                  <br><br><br><br><br>  
+<br><br><br><br><br><br><br><br> 
 
-
-      </div>
-
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        
-        </section>
 <!------------END CONTENT------------>        
-    </div>
 <!------------END BODY------------>
-
-    
 <!------------STAR FOOTER------------>
     <footer id="sticky-footer" class="flex-shrink-0 py-1 text-white align-content-center">
-        <div class="container p-3">
+        <div class="container">
             <div class="row align-items-end">
                 <div class="col-md-5">
                     <div class="row align-items-end">
@@ -156,5 +155,6 @@
     <script src="js/toggle.js"></script>
     <script src="js/calendar.js"></script>
     <script src="js/loading.js"></script>
+    
 </body>
 </html>
