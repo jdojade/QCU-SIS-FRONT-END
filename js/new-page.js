@@ -37,3 +37,7 @@ function editRedirect() {
  function manageRedirect() {
     window.location.assign('guidance-posting.html');
  }
+
+ function requestRedirect() {
+   window.location.assign('request-doc-final.html');
+}
