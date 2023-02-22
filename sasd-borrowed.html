@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> SASD Borrowed</title>
+    <title> BORROWED ITEMS</title>
     <link rel="stylesheet" href="css/bootstrap-5.2.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/fontawesome-free-6.2.1-web/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -49,17 +49,17 @@
             <span></span>
         </div>
         <ul class="menu"> 
-            <li><a href="#"><i class="fa-solid fa-house icon"></i>Home</a></li>
-            <li class="active"><a href="sasd-borrowed.html"><i class="fa-solid fa-file-export icon"></i>Borrowed</a></li>
-            <li><a href="sasd-fraction.html"><i class="fa-solid fa-comment icon"></i>Fraction</a></li>
-            <li><a href="sasd-balance.html"><i class="fa-solid fa-money-check-dollar icon"></i>Balance</a></li>
-            <li><a href="index.html"><i class="fa-solid fa-right-from-bracket icon"></i>Logout</a></li>
+            <li><a href="SASD-index.html"><i class="fa-solid fa-house icon"></i>Home</a></li>
+            <li class="active"><a href="sasd-borrowed.html"><i class="fa-sharp fa-regular fa-square-check icon"></i>Borrowed Items</a></li>
+            <li><a href="sasd-fraction.html"><i class="fa-solid fa-list icon"></i>Fraction</a></li>
+            <li><a href="sasd-idApplication.html"><i class="fa-regular fa-id-card icon"></i>QCU ID Application</a></li>
+            <li><a href="#"><i class="fa-solid fa-right-from-bracket icon"></i>Logout</a></li>
         </ul>
     </div>
     <div class="container-cus">
         <section class="p-5">
             <div class="headline">
-                <h1>Borrowed</h1>
+                <h1>BORROWED ITEMS</h1>
                 <i class="fa-solid fa-file-export fa-3x"></i>
             </div>
         </section>           
@@ -67,17 +67,17 @@
             <div class="table-nav">
                 <ul id="pills-tab" role="tablist">
                     <li>
-                        <a class="btn active" id="pills-services-tab" data-bs-toggle="pill" data-bs-target="#pills-services" role="tab" aria-controls="pills-services" aria-selected="true">
+                        <a class="btn active" id="pills-allBorrowed-tab" data-bs-toggle="pill" data-bs-target="#pills-allBorrowed" role="tab" aria-controls="pills-allBorrowed" aria-selected="true">
                         All
                         </a>
                     </li>
                     <li>
-                        <a class="btn" id="pills-penalty-tab" data-bs-toggle="pill" data-bs-target="#pills-penalty" role="tab" aria-controls="pills-penalty" aria-selected="false">
+                        <a class="btn" id="pills-returnBorrowed-tab" data-bs-toggle="pill" data-bs-target="#pills-returnBorrowed" role="tab" aria-controls="pills-returnBorrowed" aria-selected="false">
                         Returned
                         </a>
                     </li>
                     <li>
-                        <a class="btn" id="pills-balance-tab" data-bs-toggle="pill" data-bs-target="#pills-balance" role="tab" aria-controls="pills-balance" aria-selected="false">
+                        <a class="btn" id="pills-notReturnedBorrowed-tab" data-bs-toggle="pill" data-bs-target="#pills-notReturnedBorrowed" role="tab" aria-controls="pills-notReturnedBorrowed" aria-selected="false">
                         Not Returned
                         </a>
                     </li>
@@ -91,7 +91,7 @@
             </h5>
 
             <div class="tab-content" id="pills-tabContent">
-                <div class="tab-pane fade show active" id="pills-services" role="tabpanel" aria-labelledby="pills-services-tab" tabindex="0">
+                <div class="tab-pane fade show active" id="pills-allBorrowed" role="tabpanel" aria-labelledby="pills-allBorrowed-tab" tabindex="0">
                     <h5>Total of Borrowed items:&nbsp;<span class="count">2</span></h5>
                     <div class="text-end w-100 mb-4">
                         <button type="submit" class="btn btn-sub-1 btn-shadow btn-sm px-5" id="success">ADD</button>
@@ -141,6 +141,82 @@
                         </table>
                     </div>
                 </div>
+
+                <div class="tab-pane fade" id="pills-returnBorrowed" role="tabpanel" aria-labelledby="pills-returnBorrowed-tab" tabindex="0">
+                    <h5>Total of Borrowed items:&nbsp;<span class="count">2</span></h5>
+                    <div class="text-end w-100 mb-4">
+                        <button type="submit" class="btn btn-sub-1 btn-shadow btn-sm px-5" id="success">ADD</button>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="custom-table">
+                            <thead>
+                              <tr>
+                                <th scope="col">Item</th>
+                                <th scope="col">Borrwed Date</th>
+                                <th scope="col">Condition</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Date of Returning</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                               <tr>
+                                <td>Laptop</td>
+                                <td>11-29-22</td>
+                                <td>Repaired</td>
+                                <td status="_isReturned"></td>
+                                <td>11-29-23</td>
+                              </tr>
+                                 <tr>
+                                <td>Pocket Wifi</td>
+                                <td>11-29-22</td>
+                                <td>Repaired</td>
+                                <td status="_isReturned"></td>
+                                <td>11-29-23</td>
+                              </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="pills-notReturnedBorrowed" role="tabpanel" aria-labelledby="pills-notReturnedBorrowed-tab" tabindex="0">
+                    <h5>Total of Borrowed items:&nbsp;<span class="count">2</span></h5>
+                    <div class="text-end w-100 mb-4">
+                        <button type="submit" class="btn btn-sub-1 btn-shadow btn-sm px-5" id="success">ADD</button>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="custom-table">
+                            <thead>
+                              <tr>
+                                <th scope="col">Item</th>
+                                <th scope="col">Borrwed Date</th>
+                                <th scope="col">Condition</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Date of Returning</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Laptop</td>
+                                <td>11-29-22</td>
+                                <td>Good</td>
+                                <td status="_isNotReturned"></td>
+                                <td>11-29-23</td>
+                              </tr>
+                              <tr>
+                                <td>Pocket Wifi</td>
+                                <td>11-29-22</td>
+                                <td>Good</td>
+                                <td status="_isNotReturned"></td>
+                                <td>11-29-23</td>
+                              </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+
             </div>
         </section>
     </div>

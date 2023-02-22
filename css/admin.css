@@ -764,7 +764,7 @@ tbody tr td:nth-child(1){
 }
 
 
-/*-------- Table style --------*/
+/*-------- Accounting Table style --------*/
 
 .accounting-table{
     width: 100%;
@@ -804,4 +804,49 @@ tbody tr td:nth-child(1){
     color:#FFF;
     background-color: #274C77;
 
+}
+
+
+/*-----------SASD table status------------*/
+
+.custom-table tbody td[status='_isPending']::after{
+    --bg-status: blue;
+    content: 'Pending';
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+
+.custom-table tbody td[status='_forEvaluation']::after{
+    --bg-status: gray;
+    content: 'For Evaluation';
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.custom-table tbody td[status='_isAccepted']::after{
+    --bg-status: orange;
+    content: 'Accepted';
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+
+.custom-table tbody td[status='_forResubmission']::after{
+    --bg-status: red;
+    content: 'For Resubmission';
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.custom-table tbody td[status='_forReleasing']::after{
+    --bg-status: yellow;
+    content: 'For Releasing';
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.custom-table tbody td[status='_isReleased']::after{
+    --bg-status: green;
+    content: 'Released';
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
 }
