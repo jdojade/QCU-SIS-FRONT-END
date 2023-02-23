@@ -1436,45 +1436,31 @@ input[type=number] {
 .req-stat tbody td span{
   margin: 1rem 0 !important;
 }
-.req-stat tbody td span[status="_isPending"]::after {
-  background-color: blue;
+.req-stat tbody td span[status="_pending"]::after {
+  background-color: gray;
   color: #FFFFFF;
   content: 'Pending';
-  padding: .1rem 1rem;
+  padding: .2rem 1rem;
   border-radius: .5rem;
 }
-.req-stat tbody td span[status="_forPickUp"]::after {
-  background-color: black;
+.req-stat tbody td span[status="_forReview"]::after {
+  background-color: blue;
   color: #FFFFFF;
-  content: 'For Pick Up';
-  padding: .1rem 1rem;
+  content: 'For Review';
+  padding: .2rem 1rem;
   border-radius: .5rem;
 }
-.req-stat tbody td span[status="_forResubmission"]::after {
+.req-stat tbody td span[status="_forCompliance"]::after {
   background-color: red;
-  content: 'For Resubmission';
+  content: 'For Compliance';
   color: #FFFFFF;
-  padding: .1rem 1rem;
+  padding: .2rem 1rem;
   border-radius: .5rem;
 }
-.req-stat tbody td span[status="_isUnclaimed"]::after {
-  background-color: orangered;
-  content: 'Unclaimed';
-  color: #FFFFFF;
-  padding: .1rem 1rem;
-  border-radius: .5rem;
-}
-.req-stat tbody td span[status="_isClaimed"]::after {
-  background-color: greenyellow;
-  content: 'Claimed';
-  color: #FFFFFF;
-  padding: .1rem 1rem;
-  border-radius: .5rem;
-}
-.req-stat tbody td span[status="_isApproved"]::after {
+.req-stat tbody td span[status="_forClaiming"]::after {
   background-color: green;
   color: #FFFFFF;
-  content: 'Approved';
-  padding: .1rem 1rem;
+  content: 'For Claiming';
+  padding: .2rem 1rem;
   border-radius: .5rem;
 }
