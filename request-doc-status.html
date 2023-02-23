@@ -74,14 +74,18 @@
         </section>
 
         <section class="container px-5">
+          
           <div class="m-auto table-border table-responsive">
+            <div class="mb-5 mt-3">
+              <button class="btn btn-sub-1 px-5 align-self-center float-end">Request New</button><br>
+            </div>
             <table class="table table-hover req-stat">
                 <thead>
                     <tr class="text-center">
                         <th scope="col" class="th-lg text-white">Reference Number</th>
                         <th scope="col" class="th-lg text-white">Details</th>
                         <th scope="col" class="th-lg text-white">Status</th>
-                        <th scope="col" class="th-lg text-white">Action</th>
+                        
                     </tr>
                   </thead>
                   <tbody>
@@ -100,10 +104,7 @@
                             <button class="btn btn-sub-1 px-5 align-self-center">Click to View Updates</button>
 
                           </td>
-                          <td class="tbl-action">
-                            <button class="btn btn-sub-1 px-5 align-self-center" onclick="Redirect()">Schedule for Pick-Up</button><br>
-                            
-                          </td>
+                          
                     </tr>
                        <tr>
                         <td>
@@ -117,13 +118,10 @@
                         </td>
                         <td>
                           <span status="_pending"></span><br><br>
-                          <button class="btn btn-sub-1 px-5 align-self-center">Click to View Updates</button>
+                          <button class="btn btn-sub-1 px-5 align-self-center" data-bs-toggle="modal" data-bs-target="#update">Click to View Updates</button>
 
                         </td>
-                        <td>
-                          <button class="btn btn-sub-1 px-5 align-self-center" onclick="Redirect()">Schedule for Pick-Up</button><br>
-                          
-                        </td>
+                        
                     </tr>
                     <tr>
                       <td>
@@ -137,13 +135,10 @@
                       </td>
                       <td>
                         <span status="_forCompliance"></span><br><br>
-                        <button class="btn btn-sub-1 px-5 align-self-center">Click to View Updates</button>
+                        <button class="btn btn-sub-1 px-5 align-self-center" data-bs-toggle="modal" data-bs-target="#update">Click to View Updates</button>
 
                       </td>
-                      <td class="tbl-action">
-                        <button class="btn btn-sub-1 px-5 align-self-center" onclick="Redirect()">Schedule for Pick-Up</button><br>
-                        
-                      </td>
+                      
                 </tr>
                    <tr>
                     <td>
@@ -157,16 +152,12 @@
                     </td>
                     <td>
                       <span status="_forClaiming"></span><br><br>
-                      <button class="btn btn-sub-1 px-5 align-self-center">Click to View Updates</button>
+                      <button class="btn btn-sub-1 px-5 align-self-center" data-bs-toggle="modal" data-bs-target="#update">Click to View Updates</button>
 
                     </td>
-                    <td>
-                      <button class="btn btn-sub-1 px-5 align-self-center" onclick="Redirect()">Schedule for Pick-Up</button><br>
-                      
-                    </td>
+                    
                 </tr>
                 <tr>
-                  <td></td>
                   <td></td>
                   <td></td>
                   <td></td>
@@ -174,243 +165,33 @@
 
                 </tbody>
             </table>
-            <button class="btn btn-sub-1 px-5 align-self-center" onclick="requestRedirect()">New Request</button><br>
+            
         </div>
         </section>
 
 
+<!-- Modal -->
+<div class="modal fade" id="update" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="update" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body text-center">
+        <p class="fs-3 fw-bold text-center">
+          Sample Document Modal Update
+        </p>
+        <img src="img/Success.png" alt="success!" class="w-50 h-50 m-auto">
+      </div>
+      <div class="my-4 d-flex justify-content-between">
+          <button type="button" class="btn btn-sub-1 px-5 mx-auto fw-bold" data-bs-dismiss="modal">CLOSE</button>
+      </div>
+    </div>
+  </div>
+</div>
 
-
-
-
-
-
-
-        <section>
-            <div class="container m-auto stat">
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item active rounded-circle" role="presentation">
-                  <button class="nav-link req-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all-tab-pane" type="button" role="tab" aria-controls="all-tab-pane" aria-selected="true">All</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link req-link" id="pending-tab" data-bs-toggle="tab" data-bs-target="#pending-tab-pane" type="button" role="tab" aria-controls="pending-tab-pane" aria-selected="false">Pending</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link req-link" id="approved-tab" data-bs-toggle="tab" data-bs-target="#approved-tab-pane" type="button" role="tab" aria-controls="approved-tab-pane" aria-selected="false">Approved</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link req-link" id="failed-tab" data-bs-toggle="tab" data-bs-target="#failed-tab-pane" type="button" role="tab" aria-controls="failed-tab-pane" aria-selected="false">Failed</button>
-                </li>
-              </ul>
-
-              <!-- ----------------ALL TAB------------------- -->
-
-              <div class="tab-content req-table" id="myTabContent">
-                <div class="tab-pane fade show active" id="all-tab-pane" role="tabpanel" aria-labelledby="all-tab" tabindex="0">
-                          <!----------- START NG TABLE ---------->
-                <div class="container m-auto">
-                    <div class="table-border table-responsive-md m-0">
-                        <table class="table table-light table-hover table-fixed m-auto table-stat text-center rounded-2">
-                            <thead>
-                              <tr>
-                                <th class="date th-lg">Date Requested</th>
-                                <th class="docu th-lg">Document</th>
-                                <th class="approved-status th-lg">Approved Status</th>
-                                <th class="claim th-lg">Claiming Date</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr class="table-hover">
-                                <td>09-05-2022</td>
-                                <td>Certificate</td>
-                                <td class="text-danger">Pending</td> 
-                                <td>N/A</td>
-                              </tr>
-                              <tr class="table-hover">
-                                <td>09-05-2022</td>
-                                <td>TOR</td>
-                                <td class="text-success">Approved</td>
-                                <td>09-09-2022</td>
-                              </tr>
-                              <tr class="table-hover">
-                                <td>09-05-2022</td>
-                                <td>TOR</td>
-                                <td class="text-danger">Failed</td>
-                                <td class="text-danger">Retry</td>
-                              </tr>
-                              <tr class="table-hover">
-                                <td>09-05-2022</td>
-                                <td>CTC</td>
-                                <td class="text-danger">Failed</td>
-                                <td class="text-danger">Retry</td>
-                              </tr>
-                                 
-                            </tbody>
-                        </table>
-                        
-                    </div>
-                    
-                    </div>
-                </div>
-
-                <!-- --------------------PENDING TAB-------------------- -->
-
-                <div class="tab-pane fade" id="pending-tab-pane" role="tabpanel" aria-labelledby="pending-tab" tabindex="0">
-                    <!----------- START NG TABLE ---------->
-                    <div class="container m-auto">
-                        <div class="table-border table-responsive-md">
-                            <table class="table table-light table-hover table-fixed m-auto table-stat text-center rounded-2">
-                                <thead>
-                                  <tr>
-                                    <th class="date th-lg">Date Requested</th>
-                                    <th class="docu th-lg">Document</th>
-                                    <th class="approved-status th-lg">Approved Status</th>
-                                    <th class="claim th-lg">Claiming Date</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr class="table-hover">
-                                    <td>09-05-2022</td>
-                                    <td>Certificate</td>
-                                    <td class="text-danger">Pending</td> 
-                                    <td>09-09-2022</td>
-                                  </tr>
-                                  <tr class="table-hover">
-                                    <td>09-05-2022</td>
-                                    <td>TOR</td>
-                                    <td class="text-success">Approved</td>
-                                    <td>09-09-2022</td>
-                                  </tr>
-                                  <tr class="table-hover">
-                                    <td>09-05-2022</td>
-                                    <td>TOR</td>
-                                    <td class="text-danger">Failed</td>
-                                    <td class="text-danger">Retry</td>
-                                  </tr>
-                                  <tr class="table-hover">
-                                    <td>09-05-2022</td>
-                                    <td>CTC</td>
-                                    <td class="text-danger">Failed</td>
-                                    <td class="text-danger">Retry</td>
-                                  </tr>
-                                     
-                                </tbody>
-                            </table>
-                            
-                        </div>
-                        
-                        </div>
-                </div>
-
-
-                <!-- -----------------APPROVED TAB-------------------- -->
-
-                <div class="tab-pane fade" id="approved-tab-pane" role="tabpanel" aria-labelledby="approved-tab" tabindex="0">
-                    <!----------- START NG TABLE ---------->
-                    <div class="container m-auto">
-                        <div class="table-border table-responsive-md">
-                            <table class="table table-light table-hover table-fixed m-auto table-stat text-center rounded-2">
-                                <thead>
-                                  <tr>
-                                    <th class="date th-lg">Date Requested</th>
-                                    <th class="docu th-lg">Document</th>
-                                    <th class="approved-status th-lg">Approved Status</th>
-                                    <th class="claim th-lg">Claiming Date</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr class="table-hover">
-                                    <td>09-05-2022</td>
-                                    <td>Certificate</td>
-                                    <td class="text-danger">Pending</td> 
-                                    <td>N/A</td>
-                                  </tr>
-                                  <tr class="table-hover">
-                                    <td>09-05-2022</td>
-                                    <td>TOR</td>
-                                    <td class="text-success">Approved</td>
-                                    <td>09-09-2022</td>
-                                  </tr>
-                                  <tr class="table-hover">
-                                    <td>09-05-2022</td>
-                                    <td>TOR</td>
-                                    <td class="text-danger">Failed</td>
-                                    <td class="text-danger">Retry</td>
-                                  </tr>
-                                  <tr class="table-hover">
-                                    <td>09-05-2022</td>
-                                    <td>CTC</td>
-                                    <td class="text-danger">Failed</td>
-                                    <td class="text-danger">Retry</td>
-                                  </tr>
-                                </tbody>
-                            </table>
-                            
-                        </div>
-                        
-                        </div>
-
-                </div>
-
-
-                <!-- ---------------------FAILED TAB----------------------- -->
-
-                <div class="tab-pane fade" id="failed-tab-pane" role="tabpanel" aria-labelledby="failed-tab" tabindex="0">
-                    <!----------- START NG TABLE ---------->
-                    <div class="container m-auto">
-                        <div class="table-border table-responsive-md">
-                            <table class="table table-light table-hover table-fixed m-auto table-stat text-center rounded-2">
-                                <thead>
-                                  <tr>
-                                    <th class="date th-lg">Date Requested</th>
-                                    <th class="docu th-lg">Document</th>
-                                    <th class="approved-status th-lg">Approved Status</th>
-                                    <th class="claim th-lg">Claiming Date</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr class="table-hover">
-                                    <td>09-05-2022</td>
-                                    <td>Certificate</td>
-                                    <td class="text-danger">Pending</td> 
-                                    <td>N/A</td>
-                                  </tr>
-                                  <tr class="table-hover">
-                                    <td>09-05-2022</td>
-                                    <td>TOR</td>
-                                    <td class="text-success">Approved</td>
-                                    <td>09-09-2022</td>
-                                  </tr>
-                                  <tr class="table-hover">
-                                    <td>09-05-2022</td>
-                                    <td>TOR</td>
-                                    <td class="text-danger">Failed</td>
-                                    <td class="text-danger">Retry</td>
-                                  </tr>
-                                  <tr class="table-hover">
-                                    <td>09-05-2022</td>
-                                    <td>CTC</td>
-                                    <td class="text-danger">Failed</td>
-                                    <td class="text-danger">Retry</td>
-                                  </tr>   
-                                </tbody>
-                            </table>
-                          </div>
-                        </div>
-                      </div>
-
-
-
-                <button type="button" class="btn btn-primary px-5 my-5 ms-3" type="submit">REQUEST NEW</button>
-              </div>
-              <br><br><br><br><br><br><br>
-            
-        </section>
 <!------------END CONTENT------------>        
     </div>
 <!------------END BODY------------>
 
-<!------------STAR FOOTER------------>
+<!------------START FOOTER------------>
     <footer id="sticky-footer" class="flex-shrink-0 py-1 text-white align-content-center" style="background-color: #274C77;">
         <div class="container p-3">
             <div class="row align-items-end">
