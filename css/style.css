@@ -1409,3 +1409,58 @@ input[type=number] {
 
 }
 
+/*---------REQUEST DOCUMENT STATUS-------*/
+.req-stat{
+  margin-bottom: 3rem;
+  border: solid .8px #000;
+}
+.req-stat thead th{
+  background-color: var(--primary) !important;
+  color:white;
+}
+.req-stat tbody td{
+  background-color: white !important;
+  border: solid .8px #000;
+}
+.req-stat tbody tr:hover td{
+  background-color: #D9D9D9 !important;
+  color: var(--primary);
+}
+.req-stat tbody tr:last-child td{
+  background-color: #D9D9D9 !important;
+  border: 0;
+}
+.req-stat tbody tr td:nth-of-type(3), td:nth-of-type(4){
+  text-align: center;
+}
+.req-stat tbody td span{
+  margin: 1rem 0 !important;
+}
+.req-stat tbody td span[status="_pending"]::after {
+  background-color: gray;
+  color: #FFFFFF;
+  content: 'Pending';
+  padding: .2rem 1rem;
+  border-radius: .5rem;
+}
+.req-stat tbody td span[status="_forReview"]::after {
+  background-color: blue;
+  color: #FFFFFF;
+  content: 'For Review';
+  padding: .2rem 1rem;
+  border-radius: .5rem;
+}
+.req-stat tbody td span[status="_forCompliance"]::after {
+  background-color: red;
+  content: 'For Compliance';
+  color: #FFFFFF;
+  padding: .2rem 1rem;
+  border-radius: .5rem;
+}
+.req-stat tbody td span[status="_forClaiming"]::after {
+  background-color: green;
+  color: #FFFFFF;
+  content: 'For Claiming';
+  padding: .2rem 1rem;
+  border-radius: .5rem;
+}
