@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> SASD Student Deashboard </title>
+    <title> QCU ID | New </title>
     <link rel="stylesheet" href="css/fontawesome-free-6.2.1-web/css/all.min.css"/>
     <link rel="stylesheet" href="css/bootstrap-5.2.2-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/admin.css">
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/evaluation.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-md sticky-md-top">
+    <nav class="navbar navbar-expand-md sticky-top">
         <div class="container-fluid p-0" >
             <div class="d-flex flex-colum align-items-center">
                 <button class="btn-hamburger" type="button" id="hamburger">
@@ -26,22 +26,22 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span><i class="fa-solid fa-ellipsis-vertical text-white"></i></span>
             </button>
-            <div class="navbar-cus navbar-collapse collapse justify-content-end" id="navcol-1">
+            <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar nav p-0">
                     <li class="navbar-item">
-                        <a href="student_dashboard.html" class="nav-link text-white fs-6 fw-900 text-decoration-none">HOME</a>
+                        <a href="student_dashboard.html" class="nav-link">HOME</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="inbox.html" class="nav-link text-white fs-6 fw-900 text-decoration-none">INBOX</a>
+                        <a href="inbox.html" class="nav-link">INBOX</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="#" class="nav-link text-white fs-6 fw-900 text-decoration-none">ABOUT QCU</a>
+                        <a href="#" class="nav-link">ABOUT QCU</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button">
+                    <li class="nav-item dropdown" onmouseleave="mouseLeave()">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           <img src="img/1565034397472.jfif" class="logo rounded-circle">
                         </a>
-                        <ul class="dropdown-menu-cus text-center" style="right: 0;" data-bs-keyboard="true" tabindex="-1" aria-hidden="false">
+                        <ul class="dropdown-menu-cus text-center" style="right: 0;">
                           <li><a class="dropdown-item" href="edit-profile.html">EDIT PROFILE</a></li>
                           <li><a class="dropdown-item" href="#">REQUEST STATUS</a></li>
                           <li><a class="dropdown-item" href="#">LOGOUT</a></li>
@@ -54,7 +54,7 @@
     <div class="menu-container">
         <ul class="menu">
             <li><a href="Pre-Enrollment.html"><i class="fa-sharp fa-solid fa-clipboard icon"></i>PRE-ENROLLMENT</a></li>
-            <li><a href="req-doc.html"><i class="fa-solid fa-file-lines icon"></i>REQUEST DOCUMENT</a></li>
+            <li><a href="request-doc-final.html"><i class="fa-solid fa-file-lines icon"></i>REQUEST DOCUMENT</a></li>
             <li><a href="gradeslip.html"><i class="fa-solid fa-table-list icon"></i>GRADESLIP</a></li>
             <li><a href="Course Curriculum.html"><i class="fa-solid fa-list icon "></i>CURRICULUM</a></li>
             <li><a href="Evaluation.html"><i class="fa-solid fa-mobile-screen icon"></i>FACULTY EVALUATION</a></li>
@@ -65,55 +65,71 @@
     </div>
 <!------------START BODY------------>
     <div class="container-cus">
-<!------------START CONTENT------------>    
-<section>
+<!------------START CONTENT------------>
+        <section class="container py-5">
+            <div class="headline">
+                <h1>LAPTOP / POCKET WIFI</h1>
+                <i class="fa-solid fa-address-book fa-3x"></i>
+            </div>
+            <div class="d-flex py-2">
+                <h5>STUDENT NAME:</h5>
+                <a href="edit-profile.html" class="text-decoration-none link-secondary">
+                    <h5 class="font-weight-bold m-0">&nbsp; Example name</h5></a>
+                </section>
+            <div class="container">
+                <form action="#" method="get">
+                    <div class="col-md-12">
+                        <div class="d-flex py-2">
+                            <h2 class="text-primary"><strong>PROCEDURES AND GUIDELINES</strong></h2>
+                        </div>
+                            <p class="paragraph">
+                                <h4><b>Et iusto quia non omnis temporibus aut recusandae assumenda.</b></h4>
+                                <p>Lorem ipsum dolor sit amet. In rerum mollitia eum quidem suntAt eius. Aut nostrum rerum ut quidem rerumest quasi est incidunt debitis. </p>
+                                <ol>
+                                    <li>Cum itaque assumenda sed repellendus optio ex explicabo eligendi. </li>
+                                    <li>Rem voluptas reiciendis sed doloribus distinctio et magnam aperiam vel laudantium dolorem? </li>
+                                    <li>Est tempore dignissimos sed odit quia aut veritatis accusamus est doloribus asperiores? </li>
+                                    <li>Et necessitatibus delectus et voluptatem iste. </li>
+                                    <li>Quo voluptas rerum rem fugit enim qui doloremque natus. </li>
+                                </ol>
+                                <h4><b>Et nulla molestias sit earum corrupti.</b></h4>
+                                <p>33 voluptas illum ea explicabo velitaut similique sed aliquam asperiores qui adipisci cumque. Id eligendi explicabo et aliquid aperiam 
+                                <em>Non dolores vel dolore voluptatem sit totam sunt ut sapiente consequatur</em>. Ex quod neque qui esse undeut sequi aut quis inventore.</p>
+                                
+                                <h4><b>Et harum veniam sed animi natus?</b></h3>
+                                <p>Est fuga harumEt eligendi in delectus ipsam ut rerum eveniet? Aut dolorum distinctio <a href="#" target="_blank">A optio aut ipsa dolores aut dolorem voluptatibus</a>. Non eius modi ex iure dicta 
+                                <em>In perspiciatis qui voluptates animi</em> est tenetur dolor rem nobis quod est temporibus quia. </p>
+                                
+                                <ul>
+                                    <li>Eos voluptates iusto ab labore saepe quo quos sunt? </li>
+                                    <li>Ex eveniet consequatur qui ducimus consequatur. </li>
+                                    <li>33 molestias sunt ut facilis delectus ut quae nesciunt. </li>
+                                    <li>Ad delectus officiis est labore delectus quo laudantium minus. </li>
+                                    <li>Ex esse necessitatibus sed possimus tempore. </li>
+                                    <li>Eos rerum explicabo ad officiis maiores aut voluptatem sapiente in totam harum. </li>
+                                </ul>
+                            </div>
+                        </div>    
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-1 btn-sub-1 btn-shadow px-5"><b>BACK</b></button></a>
+                    </div>
+                </section>
 
-    <div class="container m-auto">
-        <form action="#" class="library-1" id="registrar">
-            <h1> SASD STUDENT DASHBOARD <i class="fa-solid fa-book-open fa-1x mt-5"></i></h1>
-            <hr class="my-3">&nbsp;
-            
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-                    
-                </section>                    
-<section>
-    <div class="container">
-        <ul class="course">
-            <li>
-                <a href="Borrowed-guidelines.html" class="d-flex text-decoration-none">
-                    <i class="fa-sharp fa-solid fa-desktop"></i>
-                    <span></span>
-                    <h3> LAPTOP / POCKET WIFI</h3>
-                </a>
-            </li>
-
-            <li>
-                <a href="Infractions.html" class="d-flex text-decoration-none">
-                    <i class="fa-sharp fa-solid fa-school"></i>
-                    <span></span>
-                    <h3> INFRACTIONS </h3>
-                </a>
-            </li>
-            
-            <li>
-                <a href="QCUID.html" class="d-flex text-decoration-none">
-                    <i class="fa-sharp fa-solid fa-book"></i>
-                    <span></span>
-                    <h3> QCU I.D APPLICATION</h3> 
-                </a>
-            </li>
-        </div>
-    </section>
-</section>
-
-<br><br><br><br><br><br><br><br> 
-
+                    <br>
+                    <br>
+                    <br>
 <!------------END CONTENT------------>        
+</div>
 <!------------END BODY------------>
+
+    
 <!------------STAR FOOTER------------>
     <footer id="sticky-footer" class="flex-shrink-0 py-1 text-white align-content-center">
-        <div class="container">
+        <div class="container p-3">
             <div class="row align-items-end">
                 <div class="col-md-5">
                     <div class="row align-items-end">
@@ -153,6 +169,5 @@
     <script src="js/toggle.js"></script>
     <script src="js/calendar.js"></script>
     <script src="js/loading.js"></script>
-    
 </body>
 </html>
