@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/admin.css">
-    <link rel="stylesheet" href="css/style0.css">
+    <!-- <link rel="stylesheet" href="css/style0.css"> -->
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
 </head>
 <body>
@@ -134,60 +134,61 @@
               <a href="sasd-borrowed.html" class="text-decoration-none link-dark fw-semibold px-5">View All...</a>
           </div>
       </div>
-        <div class="d-flex justify-content-evenly analyticsTbl table-responsive">
-          
-            <table class="table table-hover">
-                <thead class="table-dark">
-                    <tr>
-                      <th scope="col">Item</th>
-                      <th scope="col">Borrwed Date</th>
-                      <th scope="col">Condition</th>
-                      <th scope="col">Status</th>
-                      <th scope="col">Date of Returning</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Laptop</td>
-                      <td>11-29-22</td>
-                      <td>Good</td>
-                      <td><a href="sasd-borrowed.html" class="btn btn-danger">Not Returned</a></td>
-                      <td>11-29-23</td>
-                    </tr>
-                    <tr>
-                      <td>Laptop</td>
-                      <td>11-29-22</td>
-                      <td>Repaired</td>
-                      <td><a href="sasd-borrowed.html" class="btn btn-success">Returned</a></td>
-                      <td>11-29-23</td>
-                    </tr>
-                       <tr>
-                      <td>Pocket Wifi</td>
-                      <td>11-29-22</td>
-                      <td>Good</td>
-                      <td><a href="sasd-borrowed.html" class="btn btn-danger">Not Returned</a></td>
-                      <td>11-29-23</td>
-                    </tr>
-                       <tr>
-                      <td>Pocket Wifi</td>
-                      <td>11-29-22</td>
-                      <td>Repaired</td>
-                      <td><a href="sasd-borrowed.html" class="btn btn-success">Returned</a></td>
-                      <td>11-29-23</td>
-                    </tr>
+      <div class="table-responsive">
+        <table class="custom-table">
+            <thead>
+              <tr>
+                <th scope="col">Item</th>
+                <th scope="col">Borrwed Date</th>
+                <th scope="col">Condition</th>
+                <th scope="col">Status</th>
+                <th scope="col">Date of Returning</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Laptop</td>
+                <td>11-29-22</td>
+                <td>Good</td>
+                <td status="_isNotReturned"></td>
+                <td>11-29-23</td>
+              </tr>
+              <tr>
+                <td>Laptop</td>
+                <td>11-29-22</td>
+                <td>Repaired</td>
+                <td status="_isReturned"></td>
+                <td>11-29-23</td>
+              </tr>
+                 <tr>
+                <td>Pocket Wifi</td>
+                <td>11-29-22</td>
+                <td>Good</td>
+                <td status="_isNotReturned"></td>
+                <td>11-29-23</td>
+              </tr>
+                 <tr>
+                <td>Pocket Wifi</td>
+                <td>11-29-22</td>
+                <td>Repaired</td>
+                <td status="_isReturned"></td>
+                <td>11-29-23</td>
+              </tr>
 
-                  </tbody>
-            </table>
+            </tbody>
+        </table>
+    </div>
+  </section>
       </div>
-    </section>
+
     </div>
     
 
 
 
   <script src="js/jquery-3.5.1.js"></script>
-  <script src="js/jquery.dataTables.min.js"></script>
-  <script src="js/dataTables.bootstrap5.min.js"></script>
+  <!-- <script src="js/jquery.dataTables.min.js"></script>
+  <script src="js/dataTables.bootstrap5.min.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
   <script src="css/bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"></script>
   <script src="css/bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
