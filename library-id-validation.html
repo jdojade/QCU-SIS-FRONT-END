@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/admin.css">
-    <link rel="stylesheet" href="css/style0.css">
+    <!-- <link rel="stylesheet" href="css/style0.css"> -->
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
 </head>
 <body>
@@ -50,8 +50,20 @@
             <span></span>
         </div>
         <ul class="menu"> 
-            <li class="active"><a href="library-index.html"><i class="fa-solid fa-house icon"></i>Home</a></li>
+            <li><a href="library-index.html"><i class="fa-solid fa-house icon"></i>Home</a></li>
+            <li>
+                <a href="library-borrowed-books.html">
+                    <i class="fa-solid fa-book-bookmark icon"></i>
+                    Borrowed Books
+                </a>
+            </li>
             <li><a href="library-dashboard.html"><i class="fa-solid fa-id-card icon"></i>Library Card</a></li>
+            <li  class="active">
+                <a href="library-id-validation.html">
+                    <i class="fa-solid fa-check-to-slot icon"></i>
+                    Library ID Validation
+                </a>
+            </li>
             <li><a><i class="fa-solid fa-right-from-bracket icon"></i>Logout</a></li>
         </ul>
     </div>
@@ -62,15 +74,15 @@
                     <div class="container py-5">
                         <div class="headline">
                             <h1>BORROWED BOOKS</h1>
-                            <i class="fa-solid fa-circle-check fa-3x"></i>
+                            <i class="fa-solid fa-solid fa-book-open fa-3x"></i>
                         </div>
                         
                     </div>
                     <div class="container m-auto">
                         
 
-                            <div class="table-border table-responsive penalty-rec">    
-                                <table class="table-info pen-rec">
+                        <div class="table-responsive">
+                            <table class="custom-table">
                                     <thead>
                                       <tr>
                                         <th class="th-lg text-white">Name</th>
